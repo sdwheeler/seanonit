@@ -1,0 +1,161 @@
+We have large projects where we are upgrading systems in our stores and we will schedule the same work for 30+ stores at a time. But to track that work we want a Work Order for each store. Entering all of those into our Remedy system by hand would take forever. So, I wrote a little utility in C# to bulk-create Remedy Work Orders from a CSV data file.
+
+It worked great.
+
+Until I deployed it to the people actually doing the work.
+
+The weird thing was that it worked for some users and not for others. It made no sense to me. I couldn't figure out which dependent files were missing. The error looked like this:
+
+```
+PS C:\Program Files (x86)\BMC Software\ARAPI80.NET> .\BulkWOCreate.exe /csv .\testdata.csv
+Unhandled Exception: System.IO.FileNotFoundException: The specified module could not be found. (Exception from HRESULT:0x8007007E)
+   at BMC.ARSystem.Server._Eval(Object v)
+   at BMC.ARSystem.Server._performLogin(String methodName, String server, String user, String password, String authentication, String locale, String charSet, Int32 port, String apiCmdLog, String apiResLog, Boolean logInitAndTerm)
+   at BMC.ARSystem.Server.Login(String server, String user, String password, String authentication, String locale, String charSet, Int32 port)
+   at BMC.ARSystem.Server.Login(String server, String user, String password, String authentication, Int32 port)
+   at BulkWOCreate.Program.Main(String[] args)
+```
+
+I found I had the same problem with my ARAPI.NET PowerShell scripts on the same machines. In PowerShell the error looks like this:
+
+```
+Exception calling "Login" with "5"; argument(s): "Could not load file or assembly 'BMC.arnettoc.dll' or one of its dependencies. The specified module could not be found."
+At C:\Program Files (x86)\BMC Software\ARAPI80.NET\get-arform.ps1:20 char:4
++    $arserver.Login($ARServerName, $ARSvcAccount, $ARSvcPassword, $ARAuthenticati ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : FileNotFoundException
+```
+
+This error was actually more helpful because it calls out BMC.arnettoc.dll. This gives us a place to start investigating.
+
+So the question is how to figure out what the dependencies are. The DUMPBIN tool from Visual Studio can show us the dependencies statically linked. So let us look at BMC.arnettoc.dll:
+
+```
+C:\Program Files (x86)\BMC Software\ARAPI80.NET> "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\dumpbin.exe" /dependents BMC.arnettoc.dll
+Microsoft (R) COFF/PE Dumper Version 12.00.21005.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+Dump of file BMC.arnettoc.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    MSVCR71.dll
+    KERNEL32.dll
+    USER32.dll
+    mscoree.dll
+    arcni80_build001.dll
+    OLEAUT32.dll
+
+  Summary
+
+        3000 .data
+        7000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        2000 .text
+```
+
+Next step is to verify that all of the dependent DLLs exist on the system and are accessible to my application. All of these DLLS exist except MSVCR71.DLL. But installing that DLL didn't fix the problem. So where are the other dependencies hiding? The most likely candidate is in another ARAPI.NET DLL. We can see that there is a dependency on arcni80_build001.dll so let's look at these dependencies.
+
+```
+C:\Program Files (x86)\BMC Software\ARAPI80.NET> "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\dumpbin.exe" /dependents arcni80_build001.dll
+Microsoft (R) COFF/PE Dumper Version 12.00.21005.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+Dump of file arcni80_build001.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    arapi80_build001.dll
+    cmdbapi75.dll
+    KERNEL32.dll
+    OLEAUT32.dll
+    MSVCP71.dll
+    MSVCR71.dll
+
+  Summary
+
+       43000 .data
+        B000 .rdata
+        C000 .reloc
+       97000 .text
+```
+
+Here we can see that we also need MSVCP71.DLL. Installing that DLL resolves the issue. Great, but what are these files and where do they come from. The following article from Microsoft gives us the answer.
+
+Redistribution of the shared C runtime component in Visual C++
+<a href="https://support.microsoft.com/en-us/help/326922/redistribution-of-the-shared-c-runtime-component-in-visual-c">https://support.microsoft.com/en-us/help/326922/redistribution-of-the-shared-c-runtime-component-in-visual-c</a>
+
+So, as you can see, these are C-Runtime DLLs from .NET 1.1.
+
+Unfortunately, BMC's .NET library was built with a very old version of .NET. They really need to fix this. The .NET 1.1 components do not ship in the OS anymore. Newer versions of .NET are supposed to be backward compatible, and, for the most part, they are. BMC should have included them in their distribution. But applications and libraries really should be recompiled to remove dependencies on these very old runtime components.
+
+So, what if you don't have copies of these DLLs available anywhere? Where can you find this from a reliable source?
+
+After a bit of searching I found:
+
+Microsoft .NET Framework Version 1.1 Redistributable Package
+<a href="https://www.microsoft.com/download/details.aspx?id=26">https://www.microsoft.com/download/details.aspx?id=26</a>
+
+There are a few problems with this package. First, it will not install on anything newer than Windows XP or Server 2003. Second, this package does not contain both DLLs. It only contains MSVCR71.DLL. After more searching, I found the .NET 1.1 SDK.
+
+.NET Framework SDK Version 1.1
+<a href="https://www.microsoft.com/download/details.aspx?id=16217">https://www.microsoft.com/download/details.aspx?id=16217</a>
+
+Again, this does not play well with newer OS versions but the good news is that it does contain both DLLs that we need. So now I just need to extract the files somehow.
+
+When you download this package you get a single setup.exe. Looking at the EXE file detailed properties I see that it is an IExpress package. IExpress is a setup framework that first shipped in the IEAK to help you package custom branded installations of Internet Explorer. You can read more about it here: <a href="https://docs.microsoft.com/internet-explorer/ie11-ieak/iexpress-command-line-options">https://docs.microsoft.com/en-us/internet-explorer/ie11-ieak/iexpress-command-line-options</a>
+
+An IExpress package has the following command-line options:
+
+```
+Command line options:
+/Q -- Quiet modes for package,
+/T: -- Specifies temporary working folder,
+/C -- Extract files only to the folder when used also with /T.
+/C: -- Override Install Command defined by author.
+```
+
+So the next step is to extract the contents of setup.exe to a folder.
+
+```
+D:\Downloads> setup.exe /t:D:\Downloads\dotnet11sdk /c
+
+D:\Downloads\dotnet11sdk> dir
+ Volume in drive D has no label.
+ Volume Serial Number is 40F1-817D
+
+ Directory of D:\Downloads\dotnet11sdk
+
+04/02/2015  03:59 PM              .
+04/02/2015  03:59 PM              ..
+02/20/2003  06:48 PM            94,208 Install.exe
+09/26/2001  05:07 PM         1,707,856 InstMsi.exe
+09/11/2001  02:46 PM         1,821,008 InstMsiW.exe
+03/29/2003  02:55 AM        81,380,073 netfxsd1.cab
+03/29/2003  02:55 AM        26,264,064 netfxsdk.msi
+               5 File(s)    111,267,209 bytes
+               2 Dir(s)  64,240,427,008 bytes free
+```
+
+The netfxsd1.cab file contains all of the files to be installed by netfxsdk.msi. All you need to do is open the CAB file using Windows Explorer and extract the following two files:
+
+<ul>
+    <li>FL_msvcp71_dll_____X86.3643236F_FC70_11D3_A536_0090278A1BB8</li>
+    <li>FL_msvcr71_dll_____X86.3643236F_FC70_11D3_A536_0090278A1BB8</li>
+</ul>
+
+Then just rename the extracted files and copy them to the ARAPI.NET folder.
+
+```
+D:\Downloads\dotnet11sdk> ren FL_msvcp71_dll_____X86.3643236F_FC70_11D3_A536_0090278A1BB8 msvcp71.dll
+D:\Downloads\dotnet11sdk> ren FL_msvcr71_dll_____X86.3643236F_FC70_11D3_A536_0090278A1BB8 msvcr71.dll
+```
+
+Now your applications should work.
+

@@ -1,0 +1,71 @@
+Recently we went through the exercise of updating our Windows Server 2012 R2 deployment image to include a bunch of updates. After this, we noticed that several PowerShell scripts were failing. I also noticed that some commands stopped working properly including PowerShell's own Get-Help cmdlet.
+
+```
+PS C:\temp> help
+Program 'more.com' failed to run: Object reference not set to an instance of an object.At line:14 char:14
++     $input | more.com
++              ~~~~~~~~.
+At line:14 char:5
++     $input | more.com
++     ~~~~~~~~~~~~~~~~~
++ CategoryInfo          : ResourceUnavailable: (:) [], ApplicationFailedException
++ FullyQualifiedErrorId : NativeCommandFailed
+```
+
+In fact, you will get the same error anytime you attempt to use a native command (EXE, etc.) in the pipeline. The problem occurs after <a title="KB3000850" href="https://support.microsoft.com/help/3000850/november-2014-update-rollup-for-windows-rt-8-1-windows-8-1-and-windows">KB3000850</a> is installed but is related to having PowerShell Module Logging <del>and Process Creation auditing enabled</del>.  See the following forum post for another reported example: <a href="https://community.idera.com/database-tools/powershell/ask_the_experts/f/learn_powershell_from_don_jones-24/19217/strange-program-more-com-failed-to-run-object-reference-not-set-to-an-instance-of-an-object#pi565=2" target="_blank" rel="noopener">https://community.idera.com/database-tools/powershell/ask_the_experts/f/learn_powershell_from_don_jones-24/19217/strange-program-more-com-failed-to-run-object-reference-not-set-to-an-instance-of-an-object#pi565=2</a>
+
+Here are the relevant policy settings in our environment.
+
+```
+Computer Settings
+  Administrative Templates
+    Windows Components/Windows PowerShell
+      Turn on Module Logging = Enabled
+      Module Names = *
+      Turn on Script Execution = Enabled
+      Execution Policy = Allow local scripts and remote signed scripts
+```
+
+<del>The forum post on powershell.com seems to indicate that you must also have "Include command line in process creation events" enabled but that is not the case in our environment.</del> You can work around the problem by disabling module logging for all modules for the duration of the PowerShell session/script.
+
+```powershell
+Get-Module | %{ $_.LogPipelineExecutionDetails=$false }
+```
+
+This is not a viable solution for the existing scripts and automation that we use. Plus, process creation auditing and module logging are enabled by policy for security purposes. Removing KB3000850 removes the problem. But there are many fixes rolled up in KB3000850 that we want in our environment. I also noticed that the file list attached to this KB article includes 60 files related to PowerShell but none of the articles listed in the rollup mention those files so there is no documentation about the PowerShell changes included in this rollup. I have opened a case with Microsoft. I will post updates as I learn more.
+
+<strong>Update 26-March-2015
+</strong>We did some more testing and ruled out the Process Creation auditing. Having that auditing enabled or disabled does not affect the problem. You only need Module Logging enabled for PowerShell. Microsoft is still investigating the issue.
+
+<strong>Update 22-April-2015</strong>
+Microsoft has finally been able to isolate the problem and has declared this to be a bug. Now we are waiting for them to decide how and when to fix the problem.
+
+<strong>Update 24-April-2015</strong>
+Found another side effect of this update. With the update installed, you may experience errors adding Roles and Features to your server. I was trying to add the Desktop Experience feature to my desktop server and it was failing with the message: "Object reference not set to an instance of an object." If you look in the Event log you will find the following event:
+
+```
+Log Name:      Microsoft-Windows-ServerManager-MultiMachine/Operational
+Source:        Microsoft-Windows-ServerManager-MultiMachine
+Date:          4/24/2015 11:08:43 AM
+Event ID:      2014
+Task Category: Server manager startup task.
+Level:         Information
+Keywords:
+User:          CONTOSO\adminuser
+Computer:      servername.contoso.net
+Description:
+Deployment Wizard commit action completed.  Target Server: localhost. Job: ID:d80f627f-4fee-4d87-bbe4-7858d64a2265;Feature installation. Status: Failed. Reason Object reference not set to an instance of an object.
+```
+
+So it seems that installing that Feature requires the use of a Native Command and it is failing for the same reason. Who knows how many other Roles and Features may be affected like this. Removing KB3000850 allowed me to add the Desktop Experience feature.
+
+<strong>Update 1-May-2015</strong>
+Good news! We just received a patch to test from Microsoft and have smoke-tested it on several machines. This patch resolves the issue. So now we just need Microsoft to test and package it for public consumption.
+
+<strong>Update 10-July-2015</strong>
+The fix is finally being released as KB3062960. It should be available on the 14th of July (Patch Tuesday).
+
+<strong>Update 14-July-2015</strong>
+The hotfix is now published: https://support.microsoft.com/en-us/kb/3062960
+You must download and deploy this manually. This is not published in Windows Update.
+
