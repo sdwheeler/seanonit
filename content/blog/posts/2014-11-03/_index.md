@@ -1,3 +1,8 @@
+---
+title: Working with certificates in PowerShell
+date: 2014-11-03T16:27:22
+draft: false
+---
 # Overview
 
 Today's script is an attempt to bring together several things I have learned about writing good
@@ -52,7 +57,7 @@ the local certificate store, or PFX files stored in the file system. In all case
 same for each certificate found. The script displays some basic information about the certificate
 and then checks that each certificate in the validity chain is still valid.
 
-### Example 1 – check the published PFX file for a device
+### Example 1 - check the published PFX file for a device
 
 This was the first scenario I needed to solve for. The script takes the specified device name and
 attempts to download the matching PFX file from the certificate broker.
@@ -63,18 +68,18 @@ PS C:\> .\check-devicecert.ps1 -devices DEV101
 
 You can specify one or more device IDs as an array of strings.
 
-### Example 2 – search for the device certificate in the local store
+### Example 2 - search for the device certificate in the local store
 
 The script takes the specified device name and searches for a certificate with a matching Subject
 name in the local certificate store.
 
 ```
-PS C:\> .\check-devicecert.ps1 -devices DEV101 –local
+PS C:\> .\check-devicecert.ps1 -devices DEV101 -local
 ```
 
 You can specify one or more device IDs as an array of strings.
 
-### Example 3 – load a PFX file from disk
+### Example 3 - load a PFX file from disk
 
 The script loads the specified PFX file(s) from disk.
 

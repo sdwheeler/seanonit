@@ -1,12 +1,17 @@
+---
+title: Fun with Regular Expressions
+date: 2014-10-21T18:47:03
+draft: false
+---
+
 A while back a friend of mine mentioned that he could not find a regular expression that was capable
 of parsing Windows Performance counter strings. He said that it couldn't be done with regex alone
 and he had written a lot of code to manually parse the strings. That sounded like a challenge to me.
 I had recently been working on a project where I needed regular expressions to find and clean up
 text that I was extracting from a large database. I had spent a lot of time learning what I could
-about regex to make the job easier. Along the way, I found a great tool called
-[Expresso](http://www.ultrapico.com/Expresso.htm "Expresso").
+about regex to make the job easier. Along the way, I found a great tool called [Expresso][04].
 
-![Expresso screenshot](https://seanonit.files.wordpress.com/2014/10/expresso.png)
+![Expresso screenshot][01]
 
 Expresso showing the parsed results of this regex
 
@@ -71,5 +76,11 @@ Instance =
 Counter = Latch Waits/sec (ms)
 ```
 
-By the way, the PowerShell script he was writing was part of [PAL](http://pal.codeplex.com/). Check
-out [Clint's](http://blogs.technet.com/b/clinth/) incredible performance analysis tool.
+By the way, the PowerShell script he was writing was part of [PAL][03]. Check out [Clint's][02]
+incredible performance analysis tool.
+
+<!-- link references -->
+[01]: expresso.png
+[02]: https://github.com/clinthuffman
+[03]: https://github.com/clinthuffman/PAL
+[04]: http://www.ultrapico.com/Expresso.htm "Expresso"

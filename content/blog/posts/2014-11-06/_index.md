@@ -1,7 +1,11 @@
-This Thursday I am returning to my scripting roots (if you don't count
-[VAX DCL](http://en.wikipedia.org/wiki/DIGITAL_Command_Language)) to talk about Windows Command
-Shell scripts. With nice powerful scripting options like PowerShell why does anyone bother with "DOS
-Batch" scripts anymore?
+---
+title: Throwback Thursday – Windows Command Shell (Batch) scripting
+date: 2014-11-06T05:30:00
+draft: false
+---
+This Thursday I am returning to my scripting roots (if you don't count [VAX DCL][01]) to talk about
+Windows Command Shell scripts. With nice powerful scripting options like PowerShell why does anyone
+bother with "DOS Batch" scripts anymore?
 
 First off, let me set the record straight. Windows Command Shell scripting is much more powerful
 than "DOS Batch" files. Yes, they share a common heritage and syntax. But the Windows Command shell
@@ -298,5 +302,9 @@ indicate that you were done executing and you want to return back to the caller.
 separate the "business logic" of your scripts into subroutines and it them separate from the "flow
 logic" of the main portion of the script.
 
-PS: this is a shout out to [DonR](http://www.cse.unt.edu/~donr) who got me started in a lot of
-scripting languages way back in 1987.
+PS: this is a shout out to [DonR][02] who got me started in a lot of scripting languages way back in
+1987.
+
+<!-- link references -->
+[01]: http://en.wikipedia.org/wiki/DIGITAL_Command_Language
+[02]: http://www.cse.unt.edu/~donr
