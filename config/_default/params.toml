@@ -135,8 +135,8 @@ numberOfRecentPosts = 8
 
 # website author
 [author]
-name = "Sean Wheeler"
-photo = "images/Profile-20190514-4x5.jpg" #include this if you would like to show the author photo on the sidebar
+name = "Sean on IT"
+photo = "images/OnIT.png" #include this if you would like to show the author photo on the sidebar
 
 [permalinks]
 blog = "/:year/:month/:day/:title/"
