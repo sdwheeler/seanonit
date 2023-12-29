@@ -2,7 +2,21 @@
 title: Using Git from PowerShell
 date: 2016-12-05T13:37:09
 draft: false
+showReadTime: false
+categories:
+  - PowerShell
+tags:
+  - git
+  - posh-git
+  - GitHub
+abstract: >
+  How to set up your PowerShell environment to use Git and GitHub.
 ---
+
+> This article was originally posted to my old [WordPress blog][wp]. The content is still relevant
+> but some details may have changed. For a more up-to-date discussion of this topic, see
+> [Taming Git and GitHub with PowerShell][07] on my Presentations site.
+
 This year has been full of changes for me. One of the biggest changes is that my job requires me to
 use Git and GitHub for almost all of my work. Before this new job, I had never used Git. By default,
 the Git installer installs the bash command shell. Most of the documentation is written assuming
@@ -12,10 +26,9 @@ on using Git but, rather, a example of what works for me and for my workflow.
 
 ## Download and install the Git for Windows
 
-First thing is to install Git for Windows. Download and run the
-[Git for Windows][01] installer. As you step through the
-installation wizard you are presented with several options. The following is a list of the options
-on each page of the installation wizard with the reasoning behind my choice.
+First thing is to install Git for Windows. Download and run the [Git for Windows][01] installer. As
+you step through the installation wizard you are presented with several options. The following is a
+list of the options on each page of the installation wizard with the reasoning behind my choice.
 
 - The **Select Components** page
   - Check **Git LFS (Large File Support)**
@@ -42,8 +55,7 @@ on each page of the installation wizard with the reasoning behind my choice.
     secure Git credential storage for Windows. GCM provides multi-factor authentication support for
     Visual Studio Team Services, Team Foundation Server, and GitHub. Enabling GCM prevents the need
     for Git to continuously prompt for your Git credentials for nearly every operation. For more
-    information see the
-    [GCM documentation][05] on GitHub.
+    information see the [GCM documentation][05] on GitHub.
   - Check **Enable symbolic links**
 
 These are the options I chose. You may have different requirements in your environment.
@@ -51,8 +63,8 @@ These are the options I chose. You may have different requirements in your envir
 ## Install the Posh-Git module
 
 Now that we have the Git client installed we need to enable Git functionality for PowerShell.
-[Posh-Git][06] from the Gallery. For more information about Posh-Git, see
-[Posh-Git on GitHub][03]. If you have PsGet installed just run:
+[Posh-Git][06] from the Gallery. For more information about Posh-Git, see [Posh-Git on GitHub][03].
+If you have PsGet installed just run:
 
 ```powershell
 Install-Module posh-git
@@ -105,9 +117,9 @@ You may want to customize some of the settings of your Git environment, especial
 install of Git. Being a good project contributor in Git you should identify yourself so that Git
 knows who to `blame` for your commits. Also, I found that the default colors used by Git in the
 shell could be hard to read. So I customized the colors to make them more visible. For more
-information, see the [Customizing Git][02] topic in the Git
-documentation. The following commands only need to be run once. You are setting global preferences
-so, once they are set, they are used every time you start a new shell.
+information, see the [Customizing Git][02] topic in the Git documentation. The following commands
+only need to be run once. You are setting global preferences so, once they are set, they are used
+every time you start a new shell.
 
 ```powershell
 # Configure your user information to match your GitHub profile
@@ -137,3 +149,5 @@ experiences in the comments.
 [04]: https://github.com/dahlbyk/posh-git/blob/master/readme.md
 [05]: https://github.com/Microsoft/Git-Credential-Manager-for-Windows
 [06]: https://www.powershellgallery.com/packages/posh-git
+[07]: https://sdwheeler.github.io/Presentations/github
+[wp]: https://seanonit.wordpress.com/

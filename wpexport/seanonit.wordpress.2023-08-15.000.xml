@@ -256,7 +256,7 @@
 	<link>https://seanonit.wordpress.com</link>
 	<width>32</width>
 	<height>32</height>
-</image> 
+</image>
 <item>
   <title><![CDATA[About]]></title>
   <link>https://seanonit.wordpress.com/about/</link>
@@ -1069,18 +1069,18 @@ This will do a simple query for a Person record in Remedy. The outline looks lik
 param ($searchValue=&quot;Allen&quot;,
        $fieldID=4,
        $ARServerName = &quot;arserver.calbrosvcs.internal&quot;,
-       $ARSvcAccount = &quot;Demo&quot;, 
-       $ARSvcPassword = &quot;Password&quot;, 
-       $ARAuthentication = &quot;&quot;, 
+       $ARSvcAccount = &quot;Demo&quot;,
+       $ARSvcPassword = &quot;Password&quot;,
+       $ARAuthentication = &quot;&quot;,
        $ARServerPort = 51100,
        $formName = &quot;CTM:People&quot;)
 
-if ($Env:PROCESSOR_ARCHITECTURE -ne &quot;x86&quot;) { 
+if ($Env:PROCESSOR_ARCHITECTURE -ne &quot;x86&quot;) {
   $powershell=Join-Path $PSHOME.tolower().replace(&quot;system32&quot;,&quot;syswow64&quot;) powershell.exe
-  &quot;Launching Windows Powershell (x86)...&quot; 
+  &quot;Launching Windows Powershell (x86)...&quot;
   &amp; &quot;$powershell&quot; -NonInteractive -ExecutionPolicy Bypass $myInvocation.Line
-} 
-else { 
+}
+else {
    # Load the ARAPI.NET classes
    add-type -path 'C:\Program Files (x86)\BMC Software\ARAPI80.NET\BMC.ARSystem.dll'
 
@@ -1170,9 +1170,9 @@ Let's break this down a bit. First, I define the command line parameters for the
 param ($searchValue=&quot;Allen&quot;,
        $fieldID=4,
        $ARServerName = &quot;arserver.calbrosvcs.internal&quot;,
-       $ARSvcAccount = &quot;Demo&quot;, 
-       $ARSvcPassword = &quot;Password&quot;, 
-       $ARAuthentication = &quot;&quot;, 
+       $ARSvcAccount = &quot;Demo&quot;,
+       $ARSvcPassword = &quot;Password&quot;,
+       $ARAuthentication = &quot;&quot;,
        $ARServerPort = 51100,
        $formName = &quot;CTM:People&quot;)
 [/code]
@@ -1183,9 +1183,9 @@ Any of these parameters can be passed on the command line. For example, if you w
 Next, I check to see if the script is running in a 32-bit instance of PowerShell. Windows sets the PROCESSOR_ARCHITECTURE environment variable of a process to the reflect processor architecture (e.g. AMD64 = 64-bit, x86 = 32-bit). This part of the script checks that variable and relaunches the script using the 32-bit version of PowerShell if necessary.
 
 [code language="powershell" firstline="10"]
-if ($Env:PROCESSOR_ARCHITECTURE -ne &quot;x86&quot;) { 
+if ($Env:PROCESSOR_ARCHITECTURE -ne &quot;x86&quot;) {
   $powershell=Join-Path $PSHOME.tolower().replace(&quot;system32&quot;,&quot;syswow64&quot;) powershell.exe
-  &quot;Launching Windows Powershell (x86)...&quot; 
+  &quot;Launching Windows Powershell (x86)...&quot;
   &amp; &quot;$powershell&quot; -NonInteractive -ExecutionPolicy Bypass $myInvocation.Line
 }
 [/code]
@@ -1418,25 +1418,25 @@ When I am developing scripts I end up spending a lot of time in Remedy Developer
 [code language="powershell"]
 param ($formName = &quot;User&quot;,
        $ARServerName = &quot;arserver.calbrosvcs.internal&quot;,
-       $ARSvcAccount = &quot;Demo&quot;, 
-       $ARSvcPassword = &quot;Password&quot;, 
-       $ARAuthentication = &quot;&quot;, 
+       $ARSvcAccount = &quot;Demo&quot;,
+       $ARSvcPassword = &quot;Password&quot;,
+       $ARAuthentication = &quot;&quot;,
        $ARServerPort = 51100
       )
 
-if ($Env:PROCESSOR_ARCHITECTURE -ne &quot;x86&quot;) { 
+if ($Env:PROCESSOR_ARCHITECTURE -ne &quot;x86&quot;) {
   $powershell=Join-Path $PSHOME.tolower().replace(&quot;system32&quot;,&quot;syswow64&quot;) powershell.exe
-  &quot;Launching Windows Powershell (x86)...&quot; 
+  &quot;Launching Windows Powershell (x86)...&quot;
   &amp; &quot;$powershell&quot; -NonInteractive -ExecutionPolicy Bypass $myInvocation.Line
-} 
-else { 
+}
+else {
    # Load the ARAPI.NET classes
    add-type -path 'C:\Program Files (x86)\BMC Software\ARAPI80.NET\BMC.ARSystem.dll'
 
    # Login to the AR Server
    $arserver = new-object BMC.ARSystem.Server
    $arserver.Login($ARServerName, $ARSvcAccount, $ARSvcPassword, $ARAuthentication, $ARServerPort)
-   
+  
    [BMC.ARSystem.ARForm] $ARForm = $arserver.GetForm($formName)
    &quot;Form Name  = {0}&quot; -f $ARForm.Name
    &quot;Form Type  = {0}&quot; -f $ARForm.GetType()
@@ -1445,13 +1445,13 @@ else {
    $ResultListFields = $ARForm.ResultListFields
    $ResultListFields | %{ $defaultList += ,$_.FieldId }
    $fieldOptions = @{ 1=&quot;Required&quot;; 2=&quot;Optional&quot;; 3=&quot;System&quot;; 4=&quot;Display&quot;; 5=&quot;Forced&quot;; }
-   
+  
    $fields = $arserver.GetAllFields($formName)
-   $fields.keys | sort | %{ 
+   $fields.keys | sort | %{
       if ($defaultList -contains $_) { $defResult = &quot;*&quot; } else { $defResult = &quot; &quot; }
       [Int32] $op = $fields[$_].FieldOption
-      if ($fields[$_].IsDataField()) { 
-         &quot;[{0:0000000000}] {1} {2,-48} {3,-8} {4}&quot; -f $_, $defResult, $fields[$_].Name, $fieldOptions[$op], $fields[$_].GetType().Name 
+      if ($fields[$_].IsDataField()) {
+         &quot;[{0:0000000000}] {1} {2,-48} {3,-8} {4}&quot; -f $_, $defResult, $fields[$_].Name, $fieldOptions[$op], $fields[$_].GetType().Name
       }
    }
    $arserver.Logout()
@@ -1843,7 +1843,7 @@ Anyway, here's the working code for anyone who's interested...
 
 $MailboxName = $args[0]
 
-## Load Managed API dll  
+## Load Managed API dll
 ###CHECK FOR EWS MANAGED API, IF PRESENT IMPORT THE HIGHEST VERSION EWS DLL, ELSE EXIT
 $EWSDLL = (($(Get-ItemProperty -ErrorAction SilentlyContinue -Path Registry::$(Get-ChildItem -ErrorAction SilentlyContinue -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Web Services'|Sort-Object Name -Descending| Select-Object -First 1 -ExpandProperty Name)).'Install Directory') + "Microsoft.Exchange.WebServices.dll")
 if (Test-Path $EWSDLL)
@@ -1859,25 +1859,25 @@ else
     ""
     "Exiting Script."
     exit
-    } 
-  
-## Set Exchange Version  
-$ExchangeVersion = [Microsoft.Exchange.WebServices.Data.ExchangeVersion]::Exchange2010_SP2  
-  
-## Create Exchange Service Object  
-$service = New-Object Microsoft.Exchange.WebServices.Data.ExchangeService($ExchangeVersion)  
-  
-## Set Credentials to use two options are availible Option1 to use explict credentials or Option 2 use the Default (logged On) credentials  
-  
-#Credentials Option 1 using UPN for the windows Account  
-$psCred = Get-Credential  
-$creds = New-Object System.Net.NetworkCredential($psCred.UserName.ToString(),$psCred.GetNetworkCredential().password.ToString())  
-$service.Credentials = $creds      
-#Credentials Option 2  
-#service.UseDefaultCredentials = $true  
-  
-## Choose to ignore any SSL Warning issues caused by Self Signed Certificates  
-  
+    }
+
+## Set Exchange Version
+$ExchangeVersion = [Microsoft.Exchange.WebServices.Data.ExchangeVersion]::Exchange2010_SP2
+
+## Create Exchange Service Object
+$service = New-Object Microsoft.Exchange.WebServices.Data.ExchangeService($ExchangeVersion)
+
+## Set Credentials to use two options are availible Option1 to use explict credentials or Option 2 use the Default (logged On) credentials
+
+#Credentials Option 1 using UPN for the windows Account
+$psCred = Get-Credential
+$creds = New-Object System.Net.NetworkCredential($psCred.UserName.ToString(),$psCred.GetNetworkCredential().password.ToString())
+$service.Credentials = $creds
+#Credentials Option 2
+#service.UseDefaultCredentials = $true
+
+## Choose to ignore any SSL Warning issues caused by Self Signed Certificates
+
 ## Code From http://poshcode.org/624
 ## Create a compilation environment
 $Provider=New-Object Microsoft.CSharp.CSharpCodeProvider
@@ -1891,16 +1891,16 @@ $Params.ReferencedAssemblies.Add("System.DLL") | Out-Null
 $TASource=@'
   namespace Local.ToolkitExtensions.Net.CertificatePolicy{
     public class TrustAll : System.Net.ICertificatePolicy {
-      public TrustAll() { 
+      public TrustAll() {
       }
       public bool CheckValidationResult(System.Net.ServicePoint sp,
-        System.Security.Cryptography.X509Certificates.X509Certificate cert, 
+        System.Security.Cryptography.X509Certificates.X509Certificate cert,
         System.Net.WebRequest req, int problem) {
         return true;
       }
     }
   }
-'@ 
+'@
 $TAResults=$Provider.CompileAssemblyFromSource($Params,$TASource)
 $TAAssembly=$TAResults.CompiledAssembly
 
@@ -1909,20 +1909,20 @@ $TrustAll=$TAAssembly.CreateInstance("Local.ToolkitExtensions.Net.CertificatePol
 [System.Net.ServicePointManager]::CertificatePolicy=$TrustAll
 
 ## end code from http://poshcode.org/624
-  
-## Set the URL of the CAS (Client Access Server) to use two options are availbe to use Autodiscover to find the CAS URL or Hardcode the CAS to use  
-  
-#CAS URL Option 1 Autodiscover  
-$service.AutodiscoverUrl($MailboxName,{$true})  
-"Using CAS Server : " + $Service.url   
-   
+
+## Set the URL of the CAS (Client Access Server) to use two options are availbe to use Autodiscover to find the CAS URL or Hardcode the CAS to use
+
+#CAS URL Option 1 Autodiscover
+$service.AutodiscoverUrl($MailboxName,{$true})
+"Using CAS Server : " + $Service.url
+
 
 # Bind to the Inbox
-$folderid= new-object Microsoft.Exchange.WebServices.Data.FolderId([Microsoft.Exchange.WebServices.Data.WellKnownFolderName]::Inbox,$MailboxName)   
+$folderid= new-object Microsoft.Exchange.WebServices.Data.FolderId([Microsoft.Exchange.WebServices.Data.WellKnownFolderName]::Inbox,$MailboxName)
 $MailboxRoot= new-object Microsoft.Exchange.WebServices.Data.FolderId([Microsoft.Exchange.WebServices.Data.WellKnownFolderName]::MsgFolderRoot,$MailboxName)
 $InboxFolder= [Microsoft.Exchange.WebServices.Data.Folder]::Bind($service,$folderid)
 
-#Define Date to Query 
+#Define Date to Query
 $StartDate = [system.DateTime]::Today.AddDays(-14)
 $EndDate = [system.DateTime]::Today.AddDays(1)
 
@@ -1983,7 +1983,7 @@ Exit]]></wp:comment_content>
     <wp:comment_date>2015-01-13 18:59:47</wp:comment_date>
     <wp:comment_date_gmt>2015-01-14 02:59:47</wp:comment_date_gmt>
     <wp:comment_content><![CDATA[Hi Vinodh,
-Take a look at the EAS Managed API reference (linked in the original article). In line 33 of my script I use the FindItems method to get all of the items in the Inbox. This will return a collection of EmailMessage items. From there you can look at the Subject property of each item to find the messages you are interested in. 
+Take a look at the EAS Managed API reference (linked in the original article). In line 33 of my script I use the FindItems method to get all of the items in the Inbox. This will return a collection of EmailMessage items. From there you can look at the Subject property of each item to find the messages you are interested in.
 
 See http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage_members(v=exchg.80).aspx for more info.]]></wp:comment_content>
     <wp:comment_approved>1</wp:comment_approved>
@@ -2023,7 +2023,7 @@ See http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.
     <wp:comment_author_IP>168.189.8.1</wp:comment_author_IP>
     <wp:comment_date>2015-01-13 06:42:19</wp:comment_date>
     <wp:comment_date_gmt>2015-01-13 14:42:19</wp:comment_date_gmt>
-    <wp:comment_content><![CDATA[Hi Sean wheeler, 
+    <wp:comment_content><![CDATA[Hi Sean wheeler,
 
 Thanks for your script. I really appreciate your work.
 
@@ -2080,7 +2080,7 @@ Vinodh]]></wp:comment_content>
     <wp:comment_author_IP>116.50.59.180</wp:comment_author_IP>
     <wp:comment_date>2015-01-21 03:53:50</wp:comment_date>
     <wp:comment_date_gmt>2015-01-21 11:53:50</wp:comment_date_gmt>
-    <wp:comment_content><![CDATA[Hi Sean, 
+    <wp:comment_content><![CDATA[Hi Sean,
 Thanks for the script. Even I'm looking for a solution to create tickets when a mail is sent to a particular email ID in specific format. can you please share that script as well?
 Vel]]></wp:comment_content>
     <wp:comment_approved>1</wp:comment_approved>
@@ -2237,7 +2237,7 @@ NOTE: Output is the same results regardless which $Exchange variable is used.
 
 # Load the EWS Managed API
 Add-Type -Path "C:\Program Files\Microsoft\Exchange\Web Services\2.2\Microsoft.Exchange.WebServices.dll"
- 
+
 try {
   $Exchange2007SP1 = [Microsoft.Exchange.WebServices.Data.ExchangeVersion]::Exchange2007_SP1
   $Exchange2010    = [Microsoft.Exchange.WebServices.Data.ExchangeVersion]::Exchange2010
@@ -2245,17 +2245,17 @@ try {
   $Exchange2010SP2 = [Microsoft.Exchange.WebServices.Data.ExchangeVersion]::Exchange2010_SP2
   $Exchange2013    = [Microsoft.Exchange.WebServices.Data.ExchangeVersion]::Exchange2013
   $Exchange2013SP1 = [Microsoft.Exchange.WebServices.Data.ExchangeVersion]::Exchange2013_SP1
- 
+
   # create EWS Service object for the target mailbox name
   $exchangeService = New-Object -TypeName Microsoft.Exchange.WebServices.Data.ExchangeService -ArgumentList $Exchange2013SP1
   $exchangeService.UseDefaultCredentials = $true
 # actual email is used below when running the script
   $exchangeService.AutodiscoverUrl("@.com")
- 
+
   # bind to the Inbox folder of the target mailbox
   $inboxFolderName = [Microsoft.Exchange.WebServices.Data.WellKnownFolderName]::Inbox
   $inboxFolder = [Microsoft.Exchange.WebServices.Data.Folder]::Bind($exchangeService,$inboxFolderName)
- 
+
   $itemView = New-Object -TypeName Microsoft.Exchange.WebServices.Data.ItemView
 
   Write-Output $inboxFolderName, $inboxFolder, $itemView
@@ -2285,15 +2285,15 @@ DisplayName              : Inbox
 FolderClass              : IPF.Note
 TotalCount               : 9
 ExtendedProperties       : {}
-ManagedFolderInformation : 
-EffectiveRights          : CreateAssociated, CreateContents, CreateHierarchy, 
+ManagedFolderInformation :
+EffectiveRights          : CreateAssociated, CreateContents, CreateHierarchy,
                            Delete, Modify, Read
-Permissions              : {Microsoft.Exchange.WebServices.Data.UserId, 
+Permissions              : {Microsoft.Exchange.WebServices.Data.UserId,
                            Microsoft.Exchange.WebServices.Data.UserId}
 UnreadCount              : 1
-PolicyTag                : 
-ArchiveTag               : 
-WellKnownFolderName      : 
+PolicyTag                :
+ArchiveTag               :
+WellKnownFolderName      :
 Schema                   : {Id, ParentFolderId, FolderClass, DisplayName...}
 Service                  : Microsoft.Exchange.WebServices.Data.ExchangeService
 IsNew                    : False
@@ -2385,10 +2385,10 @@ Since the catch was running and all the variables appeared to have values, inclu
 Took out the catch statement and its code and ran the script again. This caused an error to display in the terminal.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-New-Object : A constructor was not found. Cannot find an appropriate 
+New-Object : A constructor was not found. Cannot find an appropriate
 constructor for type Microsoft.Exchange.WebServices.Data.ItemView.
 At H:\Alan's docs\readoutlook3_wEWS.ps1:20 char:15
-+   $itemView = New-Object -TypeName 
++   $itemView = New-Object -TypeName
 Microsoft.Exchange.WebServices.Data.ItemView
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -2399,11 +2399,11 @@ I'm also working on another tack, using Powershell Outlook cmdlets to query the 
 I'll get it sooner or later. Hoping for sooner. For now it's a contest between my head and the wall.
 
 ~~~~~~~~~~~~alternate code that's reading my Inbox~~~~~~~~~~~~
-Add-type -assembly "Microsoft.Office.Interop.Outlook" | out-null 
-$olFolders = "Microsoft.Office.Interop.Outlook.olDefaultFolders" -as [type]  
-$outlook = new-object -comobject outlook.application 
-$namespace = $outlook.GetNameSpace("MAPI") 
-$folder = $namespace.getDefaultFolder($olFolders::olFolderInBox) 
+Add-type -assembly "Microsoft.Office.Interop.Outlook" | out-null
+$olFolders = "Microsoft.Office.Interop.Outlook.olDefaultFolders" -as [type]
+$outlook = new-object -comobject outlook.application
+$namespace = $outlook.GetNameSpace("MAPI")
+$folder = $namespace.getDefaultFolder($olFolders::olFolderInBox)
 $folder.items |  Select-Object -Property SenderName, SenderEmailAddress, Subject]]></wp:comment_content>
     <wp:comment_approved>1</wp:comment_approved>
     <wp:comment_type/>
@@ -2484,7 +2484,7 @@ I'm logging in with the account that owns the mailbox (because of $service.UseDe
 
 and the script will be where it needs to be. I'll own that and post back when I figure it out.
 
-Would not have gotten to this point without your help. 
+Would not have gotten to this point without your help.
 
 Thank you again.
 
@@ -2564,7 +2564,7 @@ Thank you again.
     <wp:comment_author_IP>24.105.145.11</wp:comment_author_IP>
     <wp:comment_date>2015-04-14 09:55:41</wp:comment_date>
     <wp:comment_date_gmt>2015-04-14 17:55:41</wp:comment_date_gmt>
-    <wp:comment_content><![CDATA[Slowly but surely. 
+    <wp:comment_content><![CDATA[Slowly but surely.
 
 Took a while to figure out how to "...calling the Load() method on each item in $frFolderResult...". So simple once I found the answer.
 
@@ -3102,7 +3102,7 @@ The certificate lifecycle an unmanaged process. There is no policy mechanism to 
 
 This script looks for certificates in one of three locations: the certificate broker (web server), the local certificate store, or PFX files stored in the file system. In all cases, the output is the same for each certificate found. The script displays some basic information about the certificate and then checks that each certificate in the validity chain is still valid.
 
-<h3>Example 1 – check the published PFX file for a device</h3>
+<h3>Example 1 - check the published PFX file for a device</h3>
 
 This was the first scenario I needed to solve for. The script takes the specified device name and attempts to download the matching PFX file from the certificate broker.
 
@@ -3112,17 +3112,17 @@ PS C:\&gt; .\check-devicecert.ps1 -devices DEV101
 
 You can specify one or more device IDs as an array of strings.
 
-<h3>Example 2 – search for the device certificate in the local store</h3>
+<h3>Example 2 - search for the device certificate in the local store</h3>
 
 The script takes the specified device name and searches for a certificate with a matching Subject name in the local certificate store.
 
 [code language="text" light="true"]
-PS C:\&gt; .\check-devicecert.ps1 -devices DEV101 –local
+PS C:\&gt; .\check-devicecert.ps1 -devices DEV101 -local
 [/code]
 
 You can specify one or more device IDs as an array of strings.
 
-<h3>Example 3 – load a PFX file from disk</h3>
+<h3>Example 3 - load a PFX file from disk</h3>
 
 The script loads the specified PFX file(s) from disk.
 
@@ -3165,23 +3165,23 @@ function import-pfxbytes {
 }
 [/code]
 
-The <strong>import-pfxbytes</strong> creates an empty X.509 certificate and imports the data using a static password and returns a certificate object. In this case, I have hard-coded the password. For better security, you should prompt the user to enter a password (for example, using <strong>Read-Host –AsSecureString</strong>).
+The <strong>import-pfxbytes</strong> creates an empty X.509 certificate and imports the data using a static password and returns a certificate object. In this case, I have hard-coded the password. For better security, you should prompt the user to enter a password (for example, using <strong>Read-Host -AsSecureString</strong>).
 
 For example #2 I am using PowerShell’s built-in provider to access the local certificate store. With this access method, you receive a certificate object, not a PFX-formatted data blob. Once I have an X.509 certificate object I pass it to <strong>show-certinfo</strong> to inspect the important properties and verify the validity of the trust chain.
 
 [code language="powershell" title="Check-DeviceCert.ps1"]
 &lt;#
 .SYNOPSIS
-Checks a device certificate for validity. 
+Checks a device certificate for validity.
 
 .DESCRIPTION
-The script downloads a device certificate PFX file from the cert broker or reads an existing PFX file then checks for the validity. 
+The script downloads a device certificate PFX file from the cert broker or reads an existing PFX file then checks for the validity.
 
 .PARAMETER devices
-An array of device numbers .PARAMETER local Indicates that you want to search the local certificate device. 
+An array of device numbers .PARAMETER local Indicates that you want to search the local certificate device.
 
 .PARAMETER pfxfiles
-An array of pathnames to PFX files deviced on disk. .INPUTS You can provide an array of PFX file names in the pipeline. 
+An array of pathnames to PFX files deviced on disk. .INPUTS You can provide an array of PFX file names in the pipeline.
 
 .EXAMPLE
 PS C:\&gt; .\check-devicecert.ps1 -devices DEV101
@@ -3539,7 +3539,7 @@ catch {
     <wp:comment_author_IP>199.201.65.3</wp:comment_author_IP>
     <wp:comment_date>2017-01-05 21:31:26</wp:comment_date>
     <wp:comment_date_gmt>2017-01-06 05:31:26</wp:comment_date_gmt>
-    <wp:comment_content><![CDATA[well had I known sooner someone else had done the same work as me :).. can you fix the formatting on it please? 
+    <wp:comment_content><![CDATA[well had I known sooner someone else had done the same work as me :).. can you fix the formatting on it please?
 
 My use case is mostly different (device provisioning, get name, add entries where they might go, get certificates through a prop interface, store certificates temporarily, provision device, track cert info (expiration, device name, thumbprint hash)]]></wp:comment_content>
     <wp:comment_approved>1</wp:comment_approved>
@@ -3637,7 +3637,7 @@ My use case is mostly different (device provisioning, get name, add entries wher
   </wp:comment>
 </item>
 <item>
-  <title><![CDATA[Throwback Thursday – Windows Command Shell (Batch) scripting]]></title>
+  <title><![CDATA[Throwback Thursday - Windows Command Shell (Batch) scripting]]></title>
   <link>https://seanonit.wordpress.com/2014/11/06/throwback-thursday-windows-command-shell-batch-scripting/</link>
   <pubDate>Thu, 06 Nov 2014 13:30:00 +0000</pubDate>
   <dc:creator>swsamwa</dc:creator>
@@ -5111,7 +5111,7 @@ function GetTargetFolder {
 function GetItems {
    param ($targetFolder)
    #Define ItemView to retrive just 100 Items at a time
-   $ivItemView = New-Object Microsoft.Exchange.WebServices.Data.ItemView(100) 
+   $ivItemView = New-Object Microsoft.Exchange.WebServices.Data.ItemView(100)
 
    $AQSString = $null  #find all messages
    do
@@ -5919,7 +5919,7 @@ $irheader = [ordered]@{
              }
 
 &quot;===============================&quot;
-new-object -type PSObject -prop $irheader             
+new-object -type PSObject -prop $irheader
 
 foreach ($wl in $fieldvalues) {
    &quot;-------------------------------&quot;
@@ -6304,7 +6304,7 @@ $dlGroup.psbase.CommitChanges()
     <wp:comment_author_IP>153.2.247.32</wp:comment_author_IP>
     <wp:comment_date>2015-09-18 10:20:07</wp:comment_date>
     <wp:comment_date_gmt>2015-09-18 18:20:07</wp:comment_date_gmt>
-    <wp:comment_content><![CDATA[I'm hitting this issue now that we are upgrading from Exchange 2007 to 2013. This operation works fine with the Exchange PowerShell command Add/Remove-DistributionGroupMember, but because of split permissions, we now must the AD PowerShell command Add/Remove-ADGroupMember. I was thinking I may have to do this the old fashioned way, and you just confirmed it for me. 
+    <wp:comment_content><![CDATA[I'm hitting this issue now that we are upgrading from Exchange 2007 to 2013. This operation works fine with the Exchange PowerShell command Add/Remove-DistributionGroupMember, but because of split permissions, we now must the AD PowerShell command Add/Remove-ADGroupMember. I was thinking I may have to do this the old fashioned way, and you just confirmed it for me.
 Thanks,
 Anthony]]></wp:comment_content>
     <wp:comment_approved>1</wp:comment_approved>

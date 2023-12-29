@@ -2,7 +2,20 @@
 title: Adding a Contact to a Distribution List with PowerShell
 date: 2015-07-21T10:27:02
 draft: false
+showReadTime: false
+categories:
+  - PowerShell
+  - Active Directory
+tags:
+  - contact
+  - distribution list
+  - ADSI
+abstract: >
+  Work around the limitation of the ActiveDirectory module using the `[adsi]` type accelerator.
 ---
+> This article was originally posted to my old [WordPress blog][wp]. The content is still relevant
+> but some details may have changed.
+
 The PowerShell ActiveDirectory module has a lot of great features that I use on a daily basis.
 However, there is one shortcoming that I have struggled with for a while. I did a lot of internet
 searching and testing to see if I was missing some hidden secret. But, alas, this is one task that
@@ -25,3 +38,5 @@ $dlGroup = [adsi]'LDAP://CN=DL-Group Name,OU=Corp Distribution Lists,DC=contoso,
 $dlGroup.Member.Add('CN=mobile-username,OU=Corp Contacts,DC=contoso,DC=net')
 $dlGroup.psbase.CommitChanges()
 ```
+<!-- link references -->
+[wp]: https://seanonit.wordpress.com/

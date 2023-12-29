@@ -2,7 +2,17 @@
 title: Using PowerShell and EWS to monitor a mailbox
 date: 2014-10-29T12:51:51
 draft: false
+showReadTime: false
+categories:
+  - PowerShell
+tags:
+  - Exchange Web Services
+  - EWS
+abstract: An example of using PowerShell and Exchange Web Services to monitor a mailbox.
 ---
+
+> This article was originally posted to my old [WordPress blog][wp]. The content is still relevant
+> but some details may have changed.
 
 I support a suite of application services that implement our ITIL processes. One of the functions
 allows users to create trouble tickets by sending a specially crafted email message to a specific
@@ -127,3 +137,4 @@ try {
 <!-- link references -->
 [01]: https://github.com/officedev/ews-managed-api
 [02]: https://learn.microsoft.com/dotnet/api/microsoft.exchange.webservices.data.emailmessage?view=exchange-ews-api
+[wp]: https://seanonit.wordpress.com/

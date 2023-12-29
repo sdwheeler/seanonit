@@ -2,7 +2,17 @@
 title: Fun with Regular Expressions
 date: 2014-10-21T18:47:03
 draft: false
+showReadTime: false
+categories:
+  - PowerShell
+tags:
+  - Regular Expressions
+  - regex
+abstract: My recommended tool for learning how to use regular expressions.
 ---
+
+> This article was originally posted to my old [WordPress blog][wp]. The content is still relevant
+> but some details may have changed.
 
 A while back a friend of mine mentioned that he could not find a regular expression that was capable
 of parsing Windows Performance counter strings. He said that it couldn't be done with regex alone
@@ -11,9 +21,7 @@ I had recently been working on a project where I needed regular expressions to f
 text that I was extracting from a large database. I had spent a lot of time learning what I could
 about regex to make the job easier. Along the way, I found a great tool called [Expresso][04].
 
-![Expresso screenshot][01]
-
-Expresso showing the parsed results of this regex
+![Expresso showing the parsed results of this regex][01]
 
 Expresso is a power tool for developing and testing regular expressions. In just a few minutes I was
 able to create a regex that fit the bill. Since he was writing code in PowerShell to process these
@@ -84,3 +92,4 @@ incredible performance analysis tool.
 [02]: https://github.com/clinthuffman
 [03]: https://github.com/clinthuffman/PAL
 [04]: http://www.ultrapico.com/Expresso.htm "Expresso"
+[wp]: https://seanonit.wordpress.com/

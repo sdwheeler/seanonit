@@ -2,7 +2,18 @@
 title: Use PowerShell and EWS to find out who is sending you email
 date: 2015-03-18T07:46:24
 draft: false
+showReadTime: false
+categories:
+  - PowerShell
+tags:
+  - Exchange Web Services
+  - EWS
+abstract: >
+  Another example of using PowerShell and Exchange Web Services to manage your email.
 ---
+> This article was originally posted to my old [WordPress blog][wp]. The content is still relevant
+> but some details may have changed.
+
 I get a lot of email from a lot of different sources. A lot of it is from automated alerts generated
 by services accounts that monitor various applications that my team supports. Each month I like to
 see how many messages I have gotten from the various sources. Looking at these numbers over time can
@@ -103,3 +114,6 @@ $targetFolder = GetTargetFolder '\Inbox\Alert Message\Current'
 $itemList = GetItems $targetFolder
 $itemList | group-object Sender -noelement | sort Count -desc | ft -a
 ```
+
+<!-- link references -->
+[wp]: https://seanonit.wordpress.com/

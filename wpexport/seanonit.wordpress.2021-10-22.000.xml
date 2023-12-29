@@ -3086,7 +3086,7 @@ The certificate lifecycle an unmanaged process. There is no policy mechanism to 
 
 This script looks for certificates in one of three locations: the certificate broker (web server), the local certificate store, or PFX files stored in the file system. In all cases, the output is the same for each certificate found. The script displays some basic information about the certificate and then checks that each certificate in the validity chain is still valid.
 
-<h3>Example 1 – check the published PFX file for a device</h3>
+<h3>Example 1 - check the published PFX file for a device</h3>
 
 This was the first scenario I needed to solve for. The script takes the specified device name and attempts to download the matching PFX file from the certificate broker.
 
@@ -3096,17 +3096,17 @@ PS C:\> .\check-devicecert.ps1 -devices DEV101
 
 You can specify one or more device IDs as an array of strings.
 
-<h3>Example 2 – search for the device certificate in the local store</h3>
+<h3>Example 2 - search for the device certificate in the local store</h3>
 
 The script takes the specified device name and searches for a certificate with a matching Subject name in the local certificate store.
 
 ```
-PS C:\> .\check-devicecert.ps1 -devices DEV101 –local
+PS C:\> .\check-devicecert.ps1 -devices DEV101 -local
 ```
 
 You can specify one or more device IDs as an array of strings.
 
-<h3>Example 3 – load a PFX file from disk</h3>
+<h3>Example 3 - load a PFX file from disk</h3>
 
 The script loads the specified PFX file(s) from disk.
 
@@ -3149,7 +3149,7 @@ function import-pfxbytes {
 }
 ```
 
-The <strong>import-pfxbytes</strong> creates an empty X.509 certificate and imports the data using a static password and returns a certificate object. In this case, I have hard-coded the password. For better security, you should prompt the user to enter a password (for example, using <strong>Read-Host –AsSecureString</strong>).
+The <strong>import-pfxbytes</strong> creates an empty X.509 certificate and imports the data using a static password and returns a certificate object. In this case, I have hard-coded the password. For better security, you should prompt the user to enter a password (for example, using <strong>Read-Host -AsSecureString</strong>).
 
 For example #2 I am using PowerShell's built-in provider to access the local certificate store. With this access method, you receive a certificate object, not a PFX-formatted data blob. Once I have an X.509 certificate object I pass it to <strong>show-certinfo</strong> to inspect the important properties and verify the validity of the trust chain.
 
@@ -3621,7 +3621,7 @@ My use case is mostly different (device provisioning, get name, add entries wher
   </wp:comment>
 </item>
 <item>
-  <title>Throwback Thursday – Windows Command Shell (Batch) scripting</title>
+  <title>Throwback Thursday - Windows Command Shell (Batch) scripting</title>
   <link>https://seanonit.wordpress.com/2014/11/06/throwback-thursday-windows-command-shell-batch-scripting/</link>
   <pubDate>Thu, 06 Nov 2014 13:30:00 +0000</pubDate>
   <dc:creator>swsamwa</dc:creator>

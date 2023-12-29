@@ -2,7 +2,21 @@
 title: Understanding Byte Arrays in PowerShell
 date: 2014-11-11T11:48:28
 draft: false
+showReadTime: false
+categories:
+  - PowerShell
+tags:
+  - byte arrays
+  - encoding
+  - Unicode
+  - UTF8
+abstract: >
+  Not all strings are created equal. Text encoding can change how strings are stored in memory.
+  Learn how to use byte arrays to work with binary data in PowerShell.
 ---
+> This article was originally posted to my old [WordPress blog][wp]. The content is still relevant
+> but some details may have changed.
+
 In a previous [article][04], I presented a PowerShell script for inspecting and validating
 certificates stored as PFX files. My goal is to get data into an X509Certificate2 object so that I
 can validate the certificate properties. The [X509Certificate2 Import() methods][05] have two sets
@@ -124,3 +138,4 @@ The result is an unreadable value stored in `$string`.
 [04]: ../2014-11-03/
 [05]: https://learn.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509certificate2.import#overloads
 [06]: https://learn.microsoft.com/powershell/module/Microsoft.PowerShell.Management/Get-Content
+[wp]: https://seanonit.wordpress.com/

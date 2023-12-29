@@ -1,8 +1,21 @@
 ---
-title: Throwback Thursday – Windows Command Shell (Batch) scripting
+title: Throwback Thursday - Windows Command Shell (Batch) scripting
 date: 2014-11-06T05:30:00
 draft: false
+showReadTime: false
+categories:
+  - Windows Command Shell
+  - Throwback Thursday
+tags:
+  - cmd.exe
+  - batch files
+abstract: >
+  Some advanced techniques for handling paramters, parsing results, and creating subroutines
+  (functions) in Windows Command Shell batch files.
 ---
+> This article was originally posted to my old [WordPress blog][wp]. The content is still relevant
+> but some details may have changed.
+
 This Thursday I am returning to my scripting roots (if you don't count [VAX DCL][01]) to talk about
 Windows Command Shell scripts. With nice powerful scripting options like PowerShell why does anyone
 bother with "DOS Batch" scripts anymore?
@@ -308,3 +321,4 @@ PS: this is a shout out to [DonR][02] who got me started in a lot of scripting l
 <!-- link references -->
 [01]: http://en.wikipedia.org/wiki/DIGITAL_Command_Language
 [02]: http://www.cse.unt.edu/~donr
+[wp]: https://seanonit.wordpress.com/

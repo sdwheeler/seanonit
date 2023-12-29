@@ -4,13 +4,22 @@ date: 2023-08-15T15:30:13-05:00
 draft: false
 ---
 
-Hi, my name is Sean Wheeler. My interest in computers started in 1978 when I first learned to
-program in BASIC from a book without access to a computer. My first computer was the Netronics ELF
-II built from a kit. It had 256 bytes of RAM.
+## About me
 
-|                                 |                                           |
-| ------------------------------- | ----------------------------------------- |
-| ![Elf 2 graphics](tvgrafik.png) | ![Netronics Elf 2 computer](elfphoto.png) |
+Hi, I'm Sean Wheeler.
+
+I'm the lead documentarian for [PowerShell][02] at Microsoft. For over 25 years at Microsoft, I've
+delivered many workshops on scripting, debugging, and advanced troubleshooting. Using scripting, I
+created tools to help customers collect and analyze data used to troubleshoot and optimize their
+environments.
+
+My interest in computers started in 1978 when I first learned to program in BASIC from a book
+without access to a computer. My first computer was the Netronics ELF II built from a kit. It had
+256 bytes of RAM.
+
+|                       |                                 |
+| --------------------- | ------------------------------- |
+| ![Elf 2 graphics][04] | ![Netronics Elf 2 computer][01] |
 
 Later, I saved up my money and bought an Apple //e. This got me through my first two years of
 college. By then, the PC Clone market was starting to heat up and I bought a Turbo XT clone, the
@@ -19,17 +28,24 @@ for the university's VAX cluster. I loved the DCL scripting language in VMS. Aft
 into NetWare. That paid the bills for several years. In February of 1995, I hired by Microsoft to
 support Windows (WFW 3.11, LanMan 2.x, NT 3.1, & NT 3.5) for large corporate customers.
 
-These days I am a writer for PowerShell on Microsoft Docs. I have a long history with scripting
-languages. I have taught several courses on VBScript and PowerShell over the years. PowerShell is my
-current favorite.
+## About this blog
 
-_&lt;disclaimer&gt;_
+I started this blog to share my the things I have learned during the course of my career. Most of
+the content here is about PowerShell, but I also write about other topics that interest me. I hope
+you find it useful.
 
-_Any views and opinions presented on this blog are my own and do not represent views or opinions of
-any of my employers - past, present or future. The information presented here is provided without
-warranty. Use at your own risk. Dry clean only. Use a cool iron. Don't get it wet. Don't feed it
-after midnight._
+> _&lt;disclaimer&gt;_<br>
+> _Any views and opinions presented on this blog are my own and don't represent views or opinions of
+> any of my employers - past, present or future. The information presented here is provided without
+> warranty. Use at your own risk. Dry clean only. Use a cool iron. Don't get it wet. Don't feed it
+> after midnight._<br>
+> _&lt;/disclaimer&gt;_
 
-_The contents of the blog are Copyright &copy; 2023 Sean Wheeler, unless otherwise stated._
+The articles on this blog are copyrighted by me and can't be reproduced without my permission. The
+code samples are licensed under the [MIT License][03] and are free to use however you want.
 
-_&lt;/disclaimer&gt;_
+<!-- link references -->
+[01]: elfphoto.png
+[02]: https://learn.microsoft.com/powershell
+[03]: https://opensource.org/licenses/MIT
+[04]: tvgrafik.png

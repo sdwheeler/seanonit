@@ -2,8 +2,18 @@
 title: Working with certificates in PowerShell
 date: 2014-11-03T16:27:22
 draft: false
+showReadTime: false
+categories:
+  - PowerShell
+tags:
+  - Certificates
+  - X.509
+abstract: >
+  An example script for working with certificates. The example also illustrates some advanced
+  PowerShell scripting techniques like, parameter sets, comment-based help, and error handling.
 ---
-# Overview
+> This article was originally posted to my old [WordPress blog][wp]. The content is still relevant
+> but some details may have changed.
 
 Today's script is an attempt to bring together several things I have learned about writing good
 PowerShell scripts. I still have a lot to learn and this is not necessarily a sterling example of
@@ -349,3 +359,6 @@ catch {
     $_.InvocationInfo.PositionMessage
 }
 ```
+
+<!-- link references -->
+[wp]: https://seanonit.wordpress.com/

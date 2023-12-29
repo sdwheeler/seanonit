@@ -2,7 +2,18 @@
 title: Opening the door to the Mystery of Dates in PowerShell
 date: 2015-11-27T16:26:43
 draft: false
+showReadTime: false
+categories:
+  - PowerShell
+tags:
+  - datetime
+  - epoch
+abstract: >
+  Different applications and operating systems store dates in differing formats. This article
+  summarizes the most common formats and how to convert between them.
 ---
+> This article was originally posted to my old [WordPress blog][wp].
+
 Formatting and converting dates can be very confusing. Every programming language, operating system,
 and runtime environment seem to do it differently. And part of the difficulty in conversion is
 knowing what units you are starting with. First, it is helpful to know the [Epoch][07] (or starting
@@ -97,3 +108,4 @@ date) a stored value is based on. Wikipedia has a good article on this. Here is 
 [05]: https://docs.microsoft.com/previous-versions/windows/it-pro/windows-powershell-1.0/ee692801(v=technet.10)
 [06]: https://learn.microsoft.com/dotnet/api/system.datetime.parseexact?view=net-8.0#overloads
 [07]: https://wikipedia.org/wiki/Epoch_(reference_date)
+[wp]: https://seanonit.wordpress.com/
