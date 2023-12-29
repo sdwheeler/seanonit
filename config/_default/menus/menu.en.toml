@@ -1,0 +1,66 @@
+[[main]]
+  name = "Home"
+  url = ""
+  weight = -110
+
+# Submenus are done this way: parent -> identifier
+[[main]]
+  name = "Presentations"
+  identifier = "Presentations"
+  url = "https://sdwheeler.github.io/Presentations/"
+  weight = -108
+#[[main]]
+#  name = "Links"
+#  identifier = "Links"
+#  weight = -108
+#[[main]]
+#  parent = "Links"
+#  name = "LinkedIn"
+#  url = "https://www.linkedin.com/in/scriptingsean/"
+#[[main]]
+#  parent = "Links"
+#  name = "Twitter"
+#  url = "https://twitter.com/swsamwa"
+
+[[main]]
+  name = "About"
+  url = "about/"
+  weight = -107
+
+# social menu links
+
+[[social]]
+  name = "github"
+  type = "social"
+  weight = 1
+  url = "https://github.com/sdwheeler"
+[[social]]
+  name = "linkedin"
+  weight = 2
+  url = "https://www.linkedin.com/in/scriptingsean/"
+[[social]]
+  name = "mastodon"
+  weight = 3
+  url = "https://fosstodon.org/@sdwheeler"
+[[social]]
+  name = "twitter"
+  weight = 4
+  url = "https://x.com/swsamwa"
+[[social]]
+  name = "rss"
+  weight = 5
+  url = "index.xml"
+
+# other supported social links
+# name = "youtube"
+# url = "https://www.youtube.com/#"
+# name = "facebook"
+# url = "https://facebook.com/#"
+# name = "instagram"
+# url = "https://instagram.com/#"
+# name = "stackoverflow"
+# url = "https://stackoverflow.com/#"
+# name = "gitlab"
+# url = "https://gitlab.com/#"
+# name = "discord"
+# url = "https://discord.gg/#"
