@@ -8,9 +8,9 @@ Hi, my name is Sean Wheeler. My interest in computers started in 1978 when I fir
 program in BASIC from a book without access to a computer. My first computer was the Netronics ELF
 II built from a kit. It had 256 bytes of RAM.
 
-|                                          |                                            |
-| ---------------------------------------- | ------------------------------------------ |
-| ![Image of Elf 2 graphics](tvgrafik.png) | ![Picture of Elf 2 computer](elfphoto.png) |
+|                                 |                                           |
+| ------------------------------- | ----------------------------------------- |
+| ![Elf 2 graphics](tvgrafik.png) | ![Netronics Elf 2 computer](elfphoto.png) |
 
 Later, I saved up my money and bought an Apple //e. This got me through my first two years of
 college. By then, the PC Clone market was starting to heat up and I bought a Turbo XT clone, the
@@ -31,4 +31,5 @@ warranty. Use at your own risk. Dry clean only. Use a cool iron. Don't get it we
 after midnight._
 
 _The contents of the blog are Copyright &copy; 2023 Sean Wheeler, unless otherwise stated._
+
 _&lt;/disclaimer&gt;_

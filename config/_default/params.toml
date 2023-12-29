@@ -49,10 +49,10 @@ fontsDir = "fonts/" # without a leading forward slash
 
 # Social media sharing image: Will be used on Twitter, Facebook, LinkedIn, etc.
 # when a given page has no other image present.
-fallBackOgImage = "images/thumbnail.png"
+# fallBackOgImage = "images/thumbnail.png"
 
 # Logo image
-# logo = "logos/logo.png"
+#logo = "images/OnIT-15x15.png"
 
 # center logo on navbar
 centerLogo = true # Set to "true" for centering or "false" for left aligned.
@@ -83,15 +83,15 @@ mobileNavigation = "left" # if you prefer right change to 'right'
 
 # please also not that mode toggle UI will remain in place. That way, if a user prefers darkmode, they can have their way.
 
-enforceLightMode = false
+enforceLightMode = true
 # enforceDarkMode = false
 
 # customize footer icon. see issue https://github.com/chipzoller/hugo-clarity/issues/77
 footerLogo = "images/OnIT-15x15.png"
 
 # Customize Sidebar Disclaimer Text
-# sidebardisclaimer = true
-# disclaimerText = "The opinions expressed on this site are my own personal opinions and do not represent my employer’s view in any way."
+sidebardisclaimer = true
+disclaimerText = "The opinions expressed on this site are my own personal opinions and do not represent my employer’s view in any way."
 
 # Text for the languages menu.
 # languageMenuName = "🌐"
@@ -137,18 +137,6 @@ numberOfRecentPosts = 8
 [author]
 name = "Sean Wheeler"
 photo = "images/Profile-20190514-4x5.jpg" #include this if you would like to show the author photo on the sidebar
-
-[plausible_analytics]
-enable = false # to enable plausible analytics set to true.
-websiteDomain = "sdwheeler.github.io" # domain name of your website, most cases same as your base url
-# plausibleDomain = "plausible.io" # default is set to plausible.io, only required if plausible is selfhosted
-# scritpName = "plausible" # default is set to plausible, only required if using a custome name for script
-
-[matomo_analytics]
-enable = false # To enable matomo analytics change to `true`.
-websiteDomain = "sdwheeler.github.io" # Set the domain name of your website, in most cases same as your base URL this is required.
-matomoDomain = "sdwheeler.github.io" # Set to Matomo domain
-matomoSiteID = "1" # Default is set to 1, change this to the siteid being tracked
 
 [permalinks]
 blog = "/:year/:month/:day/:title/"

@@ -1,26 +1,59 @@
 ---
 title: "{{ replace .Name "-" " " | title }}" # Title of the blog post.
-date: {{ .Date }} # Date of post creation.
 description: "Article description." # Description used for search engine.
-featured: true # Sets if post is a featured post, making appear on the home page side bar.
-draft: true # Sets whether to render this page. Draft of true will not be rendered.
-toc: false # Controls if a table of contents should be generated for first-level links automatically.
-# menu: main
-usePageBundles: false # Set to true to group assets like images in the same folder as this post.
-featureImage: "/images/path/file.jpg" # Sets featured image on blog post.
-featureImageAlt: 'Description of image' # Alternative text for featured image.
-featureImageCap: 'This is the featured image.' # Caption (optional).
-thumbnail: "/images/path/thumbnail.png" # Sets thumbnail image appearing inside card on homepage.
-shareImage: "/images/path/share.png" # Designate a separate image for social media sharing.
-codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
-codeLineNumbers: false # Override global value for showing of line numbers within code block.
-figurePositionShow: true # Override global value for showing the figure label.
+date: {{ .Date }} # Date of post creation.
+url: /2023/10/05/title-of-blog-article/ # Set the URL of the page.
+shareImage: "share.png" # Designate a separate image for social media sharing.
 categories:
-  - Technology
+  - PowerShell
 tags:
-  - Tag_name1
-  - Tag_name2
-# comment: false # Disable comment if false.
+  - PowerShell
+  - Azure
+showReadTime: false
+draft: true # Sets whether to render this page. Draft of true will not be rendered.
 ---
 
-**Insert Lead paragraph here.**
+Insert lead paragraph here.
+
+> Block quote
+
+**bold**
+
+_italic_
+
+Unordered list
+
+- first
+- second
+- third
+
+Ordered list
+
+1. first
+1. second
+1. third
+
+Inline code `Get-Help`.
+
+Cmdlet name `Get-Help`.
+
+Parameter name **ParameterName**.
+
+Parameter value `$true`.
+
+```powershell
+PowerShell example code
+```
+
+![alt text](image.png)
+
+## Summary
+
+Insert summary here.
+
+### References
+
+- [website](url)
+
+<!-- link references -->
+[link-reference]: url
