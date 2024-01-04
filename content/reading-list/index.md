@@ -9,6 +9,10 @@ showReadTime: false
 This is a collection of books that I have found helpful or insightful. I will add titles as they
 come to me, so check back occasionally to see what's new.
 
+- [Books on writing](#books-on-writing)
+- [Books on PowerShell](#books-on-powershell)
+- [Books on business](#books-on-business)
+
 ## Books on writing
 
 #### Writing Without Bullshit by Josh Bernoff
