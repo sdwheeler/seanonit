@@ -5,7 +5,7 @@ title = 'Sean on IT'  # Edit directly from config/_default/languages.toml
                       # alternatively, uncomment this and remove `title` entry
                       # from the aforemention file.
 titleCaseStyle = 'none'
-copyright = 'Copyright © 2023, Sean Wheeler'
+copyright = ', Sean Wheeler'
 # canonifyurls = true
 paginate = 10
 enableEmoji = true
