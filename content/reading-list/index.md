@@ -9,11 +9,13 @@ showReadTime: false
 This is a collection of books that I have found helpful or insightful. I will add titles as they
 come to me, so check back occasionally to see what's new.
 
-- [Books on writing](#books-on-writing)
+- [Books on Writing](#books-on-writing)
 - [Books on PowerShell](#books-on-powershell)
-- [Books on business](#books-on-business)
+- [Books on Business](#books-on-business)
 
-## Books on writing
+---
+
+## Books on Writing
 
 #### Writing Without Bullshit by Josh Bernoff
 
@@ -53,6 +55,8 @@ explicit models, communicate the real-world practices of successful technical wr
 This is another book that I keep on my desk. It's a great reference for technical writers. This is a
 reference book I use it to look up specific topics, as opposed to a _Writing Without Bullshit_,
 which is a book that you read cover to cover.
+
+---
 
 ## Books on PowerShell
 
@@ -96,7 +100,9 @@ parallel execution."
 This is definitive reference on how PowerShell works, outside of the
 [PowerShell Language Specification][04], which is was also written by Bruce Payette.
 
-## Books on business
+---
+
+## Books on Business
 
 #### Radical Candor By Kim Scott
 

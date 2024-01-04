@@ -2,29 +2,29 @@
 enableSearch = true
 
 # socials
-twitter = "@swsamwa"
+twitter = '@swsamwa'
 largeTwitterCard = false # set to true if you want to show a large twitter card image. The default is a small twitter card image
-introDescription = "Scripting | Documentation"
-introURL = "about/" # set the url for the 'read more' button below the introDescription, or set to false to not show the button
-description = "Random thoughts and things I have learned in my IT journey." # Set your site's meta tag (SEO) description here. Alternatively set this description in your home page content file e.g. content/_index.md. Whatever is set in the latter will take precedence.
-# keywords = ["design", "clarity", "hugo theme"] # Set your site's meta tag (SEO) keywords here. Alternatively set these in your home page content file e.g. content/_index.md. Whatever is set in the latter will take precedence.
+introDescription = 'Scripting | Documentation'
+introURL = 'about/' # set the url for the 'read more' button below the introDescription, or set to false to not show the button
+description = 'Random thoughts and things I have learned in my IT journey.' # Set your site's meta tag (SEO) description here. Alternatively set this description in your home page content file e.g. content/_index.md. Whatever is set in the latter will take precedence.
+# keywords = ['design', 'clarity', 'hugo theme'] # Set your site's meta tag (SEO) keywords here. Alternatively set these in your home page content file e.g. content/_index.md. Whatever is set in the latter will take precedence.
 
 # showShare = false # Uncomment to not show share buttons on each post. Also available in each post's front matter.
 
 # Google analytics Id
-ga_analytics = ""
+ga_analytics = ''
 
 # Google tag manager
-google_tag_manager_id = ""
+google_tag_manager_id = ''
 
 # Baidu analytics Id
-# baidu_analytics = "XXXXXXXX"
+# baidu_analytics = 'XXXXXXXX'
 
 # limit the number of taxonomies links shown on the sidebar of each page by default.
 numberOfTagsShown = 14 # Applies for all other default & custom taxonomies. e.g categories, brands see https://gohugo.io/content-management/taxonomies#what-is-a-taxonomy
 
 # Whether to default to storing images and other assets in the `static` directory, or use Hugo page bundles.
-# Switch to `true` if you'd like to group assets with the post itself (as a "leaf bundle").
+# Switch to `true` if you'd like to group assets with the post itself (as a 'leaf bundle').
 # This can be overridden at the page level; what is set below acts as the default if no page variable is set.
 # Details on page bundles: https://gohugo.io/content-management/page-bundles/#leaf-bundles
 usePageBundles = true
@@ -41,21 +41,21 @@ usePageBundles = true
 # the originals to get the files included with Hugo Clarity.
 #
 # Images:
-imagesDir = "images/" # without a leading forward slash
+imagesDir = 'images/' # without a leading forward slash
 # Icons:
-iconsDir = "icons/" # without a leading forward slash
+iconsDir = 'icons/' # without a leading forward slash
 # Fonts:
-fontsDir = "fonts/" # without a leading forward slash
+fontsDir = 'fonts/' # without a leading forward slash
 
 # Social media sharing image: Will be used on Twitter, Facebook, LinkedIn, etc.
 # when a given page has no other image present.
-# fallBackOgImage = "images/thumbnail.png"
+# fallBackOgImage = 'images/thumbnail.png'
 
 # Logo image
-#logo = "images/OnIT-15x15.png"
+#logo = 'images/OnIT-15x15.png'
 
 # center logo on navbar
-centerLogo = true # Set to "true" for centering or "false" for left aligned.
+centerLogo = true # Set to 'true' for centering or 'false' for left aligned.
 
 # sets the maximum number of lines per codeblock. The codeblock will however be scrollable and expandable.
 # codeMaxLines = 7
@@ -67,15 +67,15 @@ codeLineNumbers = false
 enableMathNotation = false
 
 # directory(s) where your articles are located
-mainSections = ["blog"] # see config details here https://gohugo.io/functions/where/#mainsections
+mainSections = ['blog'] # see config details here https://gohugo.io/functions/where/#mainsections
 
 # Label Non inline images on an article body
 figurePositionShow = true # toggle on or off globally
 # you can toggle this behaviour on or off on per page using the same variable inside your articles frontmatter
-figurePositionLabel = "Figure" # the text before image number e.g Figure 1.0
+figurePositionLabel = 'Figure' # the text before image number e.g Figure 1.0
 
 # Set the collapsed mobile navigation to either appear from the left or the right
-mobileNavigation = "left" # if you prefer right change to 'right'
+mobileNavigation = 'left' # if you prefer right change to 'right'
 
 # some site owners want to decide how they would like their sites to be introduced users. These settings give you as a site owner to decide how the user will view your site for the first time.
 
@@ -87,27 +87,27 @@ enforceLightMode = true
 # enforceDarkMode = false
 
 # customize footer icon. see issue https://github.com/chipzoller/hugo-clarity/issues/77
-footerLogo = "images/OnIT-15x15.png"
+footerLogo = 'images/OnIT-15x15.png'
 
 # Customize Sidebar Disclaimer Text
 sidebardisclaimer = true
-disclaimerText = "The opinions expressed on this site are my own personal opinions and do not represent my employer’s view in any way."
+disclaimerText = 'The opinions expressed on this site are my own personal opinions and do not represent my employer’s view in any way.'
 
 # Text for the languages menu.
-# languageMenuName = "🌐"
+# languageMenuName = '🌐'
 
 # Title separator, default to |.
-# titleSeparator = "|"
+# titleSeparator = '|'
 
 # Enable or disable comments globally. Default to true.
 # comments = false
 
 # Enable or disable Utterances (https://github.com/utterance/utterances) Github Issue-Based Commenting
 # utterances = true  # Run the utterances script in the single.html layout to load https://utteranc.es comments
-# utterancesRepo = "GHUsername/Repository.Name" # Utterances is enabled when this param is set
-# utterancesLabel = "blog comments ✨💬✨" # The label needs to be manually added to your Github repository issues before configuring here
-# utterancesTheme = "github-light" # Default: github-dark
-# utterancesIssueTerm = "pathname" # Default: pathname
+# utterancesRepo = 'GHUsername/Repository.Name' # Utterances is enabled when this param is set
+# utterancesLabel = 'blog comments ✨💬✨' # The label needs to be manually added to your Github repository issues before configuring here
+# utterancesTheme = 'github-light' # Default: github-dark
+# utterancesIssueTerm = 'pathname' # Default: pathname
 
 # Maximum number of recent posts. (default: 8)
 numberOfRecentPosts = 8
@@ -122,12 +122,12 @@ numberOfRecentPosts = 8
 # numberOfPinnedPosts = 8
 
 # Date format. Checkout https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference for details.
-# dateFormat = "2006-01-02" # Default to "Jan 2, 2006".
+# dateFormat = '2006-01-02' # Default to 'Jan 2, 2006'.
 # customFonts = false # toggle to true if you want to use custom fonts only.
 
 # The year when ths website was created, this value is used in the copyright
 # notice of the footer.
-# since = 2016
+since = 2014
 
 # Show related content at the end of an article based on the 'series' taxonomy. Can be set in post front matter.
 # showRelatedInArticle = false
@@ -135,8 +135,8 @@ numberOfRecentPosts = 8
 
 # website author
 [author]
-name = "Sean on IT"
-photo = "images/OnIT.png" #include this if you would like to show the author photo on the sidebar
+name = 'Sean on IT'
+photo = 'images/OnIT.png' #include this if you would like to show the author photo on the sidebar
 
 [permalinks]
-blog = "/:year/:month/:day/:title/"
+blog = '/:year/:month/:day/:title/'

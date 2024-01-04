@@ -1,6 +1,5 @@
 [en]
-  title = "Sean on IT"
-  LanguageName = "English"
+  LanguageName = 'English'
   weight = 1
 
   # tip: assign the default language the lowest Weight

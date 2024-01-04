@@ -1,14 +1,20 @@
 # set `baseurl` to your root domain
-# if you set it to "/" share icons won't work properly on production
-baseurl = "http://sdwheeler.github.io/seanonit/"  # Include trailing slash
-# title = "Clarity"  # Edit directly from config/_default/languages.toml # alternatively, uncomment this and remove `title` entry from the aforemention file.
-copyright = "Copyright © 2023, Sean Wheeler"
+# if you set it to '/' share icons won't work properly on production
+baseurl = 'http://sdwheeler.github.io/seanonit/'  # Include trailing slash
+title = 'Sean on IT'  # Edit directly from config/_default/languages.toml
+                      # alternatively, uncomment this and remove `title` entry
+                      # from the aforemention file.
+titleCaseStyle = 'none'
+copyright = 'Copyright © 2023, Sean Wheeler'
 # canonifyurls = true
 paginate = 10
-theme = "github.com/chipzoller/hugo-clarity"
-disqusShortname = ""
+enableEmoji = true
+enableRobotsTXT = true
+theme = 'github.com/chipzoller/hugo-clarity'
+timeZone = 'America/Chicago'
+disqusShortname = ''
 
-DefaultContentLanguage = "en"
+DefaultContentLanguage = 'en'
 # [languages]
 # config/_default/languages.toml
 
@@ -16,9 +22,9 @@ DefaultContentLanguage = "en"
 # config/_default/menus/menu.xx.toml
 
 [taxonomies]
-category = "categories"
-tag = "tags"
-series = "series"
+category = 'categories'
+tag = 'tags'
+series = 'series'
 
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+home = ['HTML', 'RSS', 'JSON']
