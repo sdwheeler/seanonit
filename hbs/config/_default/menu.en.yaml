@@ -1,0 +1,10 @@
+main:
+  - name: 'Presentations'
+    url: https://sdwheeler.github.io/Presentations/
+    weight: -108
+  - name: Books
+    pageRef: '/reading-list'
+    weight: -107
+  - name: About
+    pageRef: /about
+    weight: -106

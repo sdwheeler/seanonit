@@ -1,0 +1,17 @@
+name: Sean D. Wheeler
+avatar: images/OnIT-noborder.png
+bio: 'PowerShell documentarian'
+company: Microsoft # HTML markup are supported, such as: <a href="https://example.com" target="_blank" rel="noopener noreferrer">Company</a>.
+location: 'Denton, TX' # HTML markup are supported, such as: <a href='https://www.openstreetmap.org/search?query=Earth'>Earth</a>.
+# about: https://razonyang.com # The external about page. The internal about page will be used if not set.
+params: {
+  layout: compact
+}
+# See https://hbs.razonyang.com/v1/en/docs/widgets/social-links/.
+#social:
+  # email: swsamwa@live.com
+  #linkedin: scriptingsean
+  #github: sdwheeler
+  #mastodon: https://sdwheeler@fosstodon.org
+  #twitter: swsamwa
+  #rss: "" # Remove RSS

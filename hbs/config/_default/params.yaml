@@ -1,0 +1,254 @@
+mainSections:
+  - blog
+  - posts
+
+titleCase: true # Capitalized title.
+# titleSeparator: '|' # Title separator. Default to -.
+
+# backgroundImage: ['/images/bg-light.png', '/images/bg-dark.png']
+
+comment: false
+
+# toc: false # Disable TOC globally.
+tocPosition: content
+tocWordCount: 208
+
+breadcrumb: true
+breadcrumbDivider: > # Breadcrumb divider
+
+dateFormat: ":date_long"
+poweredBy: false # Whether to show powered by.
+
+# math: true # Enable math globally.
+# diagram: true
+
+logo: images/OnIT.png # Logo image. Default to images/logo.webp.
+# logo: false # Disable Logo
+brand: Sean on IT
+description: Random thoughts and things I have learned in my IT journey.
+keywords: PowerShell, technical writing
+
+color: light # light, dark or auto. Default to auto.
+palette: blue # Default palette. Optional. You'll need to clear the browser cache after modifying this.
+# Available palettes. Default to ALL. Empty array means disable.
+palettes: [blue, blue-gray, brown, cyan, green, indigo, orange, pink, purple, red, teal, yellow]
+#  - brown
+#  - cyan
+#  - indigo
+#  - orange
+#  - pink
+#  - purple
+#  - red
+#  - yellow
+
+favicon:
+  sizes:
+  - size: 16x16
+  - size: 32x32
+  - size: 150x150
+  - rel: apple-touch-icon
+    size: 180x180
+  - size: 192x192
+
+# carouselPostCount: 5 # The number of posts shown on the homepage carousel.
+featuredPostCount: 5 # The number of featured posts shown in sidebar. Turn off by setting it to false.
+recentPostCount: 5 # The number of recent posts shown in sidebar. Turn off by setting it to false.
+relatedPostCount: false # The number of related posts. Turn off by setting it to false.
+# categoryCount: 10 # The number of categories shown in sidebar. Turn off by setting it to false.
+# tagCount: 10 # The number of tags shown in sidebar. Turn off by setting it to false.
+# seriesCount: 20 # The number of series shown in sidebar. Turn off by setting it to false.
+# taxonomyPaginate: 5 # Default to 10.
+taxonomyPostCount: 20 # The number of taxonomy's posts. Turn off by setting it to false.
+# taxonomySortingMethod: popularity	# Sorting taxonomies by popularity, sort alphabetically by default.
+countTaxonomyPosts: true # Count posts of taxonomy.
+sidebarTaxonomies: [categories, tags, series] # The order of taxonomies on the sidebar.
+
+# fullWidth: true # Full width.
+# fixedHeader: false # Turn on/off fixed header.
+
+# reward:
+  #alipay: images/reward/alipay.png
+  #wechat: images/reward/wechat.png
+  #paypal: images/reward/paypal.png
+  #patreon: images/reward/patreon.png
+  #liberapay: images/reward/liberapay.png
+
+#share:
+  #addThis:  # AddThis pubid.
+
+# Comment or remove this settings to disable font size switcher.
+fontSize:
+  extraSmall: .8rem
+  small: .9rem
+  large: 1.1rem
+  extraLarge: 1.2rem
+
+social:
+  # See https://hbs.razonyang.com/v1/en/docs/widgets/social-links/.
+  #email: swsamwa@live.com
+  linkedin: scriptingsean
+  github: sdwheeler
+  mastodon: https://sdwheeler@fosstodon.org
+  twitter: swsamwa
+# socialShare: false # disable social network sharing
+# searchBar: false # disable search-bar
+
+topAppBar:
+  # See https://hbs.razonyang.com/v1/en/docs/widgets/social-links/.
+  social:
+    linkedin: scriptingsean
+    github: sdwheeler
+    mastodon: https://sdwheeler@fosstodon.org
+    twitter: swsamwa
+
+# Site verification
+siteVerification:
+  google:
+  bing:
+  baidu:
+  baiduUnion:  # Baidu Union
+  so:
+  sogou:
+  shenma:
+
+analytics:
+  # baidu:  # Baidu Analytics
+
+# Google Adsense
+#googleAdsense:
+
+# Custom CSS and JS
+customCSS:
+customJS:
+
+# creativeCommons:
+  # by: true # Credit must be given to you, the creator.
+  # nc: true # Only noncommercial use of your work is permitted.
+  # nd: true # No derivatives or adaptations of your work are permitted.
+  # sa: true # Adaptations must be shared under the same terms.
+
+codeBlock:
+  # maxLines: 8
+  lineNos: true # true/false represents that show/hide the line numbers by default.
+
+post:
+  excerpt: description
+  # excerptMaxLength: 120
+  copyright: false # Whether to display copyright section on each post.
+  # plainifyExcerpt: false # Format excerpt in HTML if false.
+  featuredImage: true # Show the featured image above the content.
+  numberifyHeadings: false # Count headings automatically.
+  # numberifyHeadingsEndLevel: 4 # The depth of headings to count. Default to 6.
+  # numberifyHeadingsSeparator: . # The separator between of number and headings.
+  tocStyleType: disc # The TOC's CSS list-style-type property.
+  # imageTitleAsCaption: true
+  # panel: false # Disable the post panel.
+  # nav: false # Disable post navigations.
+  # The page position after clicking the read more button, read more from content if true. Default to the beginning of page.
+  # It supports only of the manual summaries spliting via <!--more-->.
+  # readMoreFromContent: true
+
+viewer: true # Image Viewer
+# pwa:
+  # manifest:
+    # name:  # Default to site title.
+    # short_name: HBS
+    # display: fullscreen # Default to standalone.
+    # description:  # Default to site description.
+    # theme_color:
+    # background_color:
+
+    # Icons
+    # [[pwa.manifest.icons]]
+    #   sizes: 96x96
+    #   src: /images/icons/icon-96x96.png
+    # [[pwa.manifest.icons]]
+    #   sizes: 144x144
+    #   src: /images/icons/icon-144x144.png
+
+sidebar:
+  fixed: false
+  # archives: true # Enable archives widget
+  # taxonomiesToggle: false # Disable taxonomy toggle
+  # categories: true # Enable categories widget
+  # tags: true # Enable tags widget
+  # series: true # Enable series widget
+  # authors: true # Enable authors widget
+  # postsToggle: false # Disable posts toggle
+  featuredPosts: false # Enable featured posts widget
+  recentPosts: false # Enable featured posts widget
+  collapsed: true # Collapse sidebar widgets by default on small screens.
+
+# metaRobots: noindex, nofollow # Default value for Meta Tag robots
+# metaRobots:  # disable Meta Tag robots
+contact:
+  # endpoint: https://getform.io/f/56041c81-9e03-4c24-b9c5-61238854d4cd # Backend endpoint, remove this line if you're using Netlify.
+  # file: true # Enable file upload
+  # fileField: image # The name of file field.
+  # reCaptcha:
+    # siteKey: ""
+# pinnedPost: false # Turn on/off pinned posts.
+pinnedPostCount: 3 # The number of pinned posts.
+
+rss: home # link the RSS button to homepage all the times.
+feeds:
+  content: true
+
+actionsPanel:
+  disabled: true
+
+repo:
+  url: https://github.com/sdwheeler/seanonit
+  branch: main
+  # subPath: exampleSite
+  # dateFormat: 02/01/2006, 15:04:05 PM
+
+readingTime: false # Whether to display the reading time.
+# postDate: false # Whether to display the post date in the post meta section.
+
+tocWordCount: 1 # TOC is displayed only if the post's word count exceeds this value.
+
+docs:
+  # excerpt: description
+  # excerptMaxLength: 120
+  copyright: false # Whether to display copyright section on each post.
+  # plainifyExcerpt: false # Format excerpt in HTML if false.
+  featuredImage: true # Show the featured image above the content.
+  numberifyHeadings: false # Count headings automatically.
+  # numberifyHeadingsEndLevel: 4 # The depth of headings to count. Default to 6.
+  # numberifyHeadingsSeparator: . # The separator between of number and headings.
+  tocStyleType: disc # The TOC's CSS list-style-type property.
+  # imageTitleAsCaption: true
+  # panel: false # Disable the post panel.
+  # nav: false # Disable post navigations.
+  # The page position after clicking the read more button, read more from content if true. Default to the beginning of page.
+  # It supports only of the manual summaries spliting via <!--more-->.
+  # readMoreFromContent: true
+
+archive:
+  paginate: 20 # Archive pagination. Default to 100.
+  # basePath = "/archiv" # The base path of archive pages.
+  # dateFormat: 01-02 # Archive date format. Default to Jan 2.
+
+search:
+  paginate: 5 # Pagination. Default to 10.
+  # resultContentWordCount: 240 # The maximum word count of result content for displaying.
+  # Fuse.js options. See https://fusejs.io/api/options.html.
+  fuse:
+    # ignoreLocation: true
+    # location: 0
+    # isCaseSensitive: false
+    # minMatchCharLength: 1
+    threshold: 0.1
+    # distance: 100
+    # useExtendedSearch: true
+
+#docsearch:
+  # https://docsearch.algolia.com/docs/api
+  # container: ".search-bar" # replace it if necessary, default to '.search-bar'.
+  # appId: ""
+  # apiKey: ""
+  # indexName: ""
+  # debug: true
+#algolia:
+
