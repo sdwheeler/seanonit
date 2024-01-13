@@ -8,7 +8,7 @@ categories:
 tags:
   - datetime
   - epoch
-abstract: >
+description: >
   Different applications and operating systems store dates in differing formats. This article
   summarizes the most common formats and how to convert between them.
 ---

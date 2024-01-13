@@ -29,17 +29,9 @@ description: Random thoughts and things I have learned in my IT journey.
 keywords: PowerShell, technical writing
 
 color: light # light, dark or auto. Default to auto.
-palette: blue # Default palette. Optional. You'll need to clear the browser cache after modifying this.
+palette: cyan # Default palette. Optional. You'll need to clear the browser cache after modifying this.
 # Available palettes. Default to ALL. Empty array means disable.
-palettes: [blue, blue-gray, brown, cyan, green, indigo, orange, pink, purple, red, teal, yellow]
-#  - brown
-#  - cyan
-#  - indigo
-#  - orange
-#  - pink
-#  - purple
-#  - red
-#  - yellow
+# palettes: [blue, blue-gray, brown, cyan, green, indigo, orange, pink, purple, red, teal, yellow]
 
 favicon:
   sizes:

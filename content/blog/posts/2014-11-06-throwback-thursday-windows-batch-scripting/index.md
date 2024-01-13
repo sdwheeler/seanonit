@@ -9,7 +9,7 @@ categories:
 tags:
   - cmd.exe
   - batch files
-abstract: >
+description: >
   Some advanced techniques for handling paramters, parsing results, and creating subroutines
   (functions) in Windows Command Shell batch files.
 ---

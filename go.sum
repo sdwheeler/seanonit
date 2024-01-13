@@ -1,2 +1,4 @@
-github.com/chipzoller/hugo-clarity v0.0.0-20230830081649-d0ec11e00b01 h1:PuU29l2I9Vem6NyHg14+E3YwyJ3/5bFOl7P0jRRbtnw=
-github.com/chipzoller/hugo-clarity v0.0.0-20230830081649-d0ec11e00b01/go.mod h1:v1JkaKdcLRibyUCalLP2CNeFo6FGzfd4ipEr4dK0+Zg=
+github.com/razonyang/hugo-theme-bootstrap v1.3.1 h1:M/xtutNGXTSf0lDyCtzGT5aPs/aA1tOxds8sIrMIC6o=
+github.com/razonyang/hugo-theme-bootstrap v1.3.1/go.mod h1:o+IIPL/5wreiTojnN4MsQqKuxbv3fWAQnMhG9geltQo=
+github.com/razonyang/hugo-theme-bootstrap v1.5.1 h1:3QO7+VCQvx1L2ddv1/TYY9k/w6/tI+u3S/Z+b80eVEY=
+github.com/razonyang/hugo-theme-bootstrap v1.5.1/go.mod h1:o+IIPL/5wreiTojnN4MsQqKuxbv3fWAQnMhG9geltQo=

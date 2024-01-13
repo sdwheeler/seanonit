@@ -8,7 +8,7 @@ categories:
 tags:
   - Exchange Web Services
   - EWS
-abstract: An example of using PowerShell and Exchange Web Services to monitor a mailbox.
+description: An example of using PowerShell and Exchange Web Services to monitor a mailbox.
 ---
 
 > This article was originally posted to my old [WordPress blog][wp]. The content is still relevant

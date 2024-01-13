@@ -9,7 +9,7 @@ tags:
   - git
   - posh-git
   - GitHub
-abstract: >
+description: >
   How to set up your PowerShell environment to use Git and GitHub.
 ---
 

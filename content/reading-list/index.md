@@ -9,15 +9,11 @@ showReadTime: false
 This is a collection of books that I have found helpful or insightful. I will add titles as they
 come to me, so check back occasionally to see what's new.
 
-- [Books on Writing](#books-on-writing)
-- [Books on PowerShell](#books-on-powershell)
-- [Books on Business](#books-on-business)
-
 ---
 
 ## Books on Writing
 
-#### Writing Without Bullshit by Josh Bernoff
+### Writing Without Bullshit by Josh Bernoff
 
 - [Buy on Amazon][06]
 - [Other books][02]
@@ -32,7 +28,7 @@ This is a great book for anyone who wants to learn how to write for business. It
 filled with tons of examples and practical advice. This is the first book on writing that was
 immediately useful to me. The blog is also a great resource.
 
-#### The Global English Style Guide by John R. Kohl
+### The Global English Style Guide by John R. Kohl
 
 - [Buy on Amazon][10]
 
@@ -44,7 +40,7 @@ are clearly defined with examples. Each rule also includes a rationale for why i
 strategies for avoiding common translation pitfalls. I keep my copy on my desk and refer to it
 often.
 
-#### The Handbook of Technical Writing by Alred, Oliu, and Brusaw
+### The Handbook of Technical Writing by Alred, Oliu, and Brusaw
 
 - [Buy on Amazon][09]
 
@@ -60,7 +56,7 @@ which is a book that you read cover to cover.
 
 ## Books on PowerShell
 
-#### PowerShell 101 by Mike F. Robbins
+### PowerShell 101 by Mike F. Robbins
 
 - [Buy on LeanPub][03]
 - [Read it online][05]
@@ -74,7 +70,7 @@ This book is available for free online. You can also buy it on LeanPub. If you b
 the profits are donated the [OnRamp scholarship program][14] to help bootstrap others into the
 industry.
 
-#### Learn PowerShell in a Month of Lunches by Plunk, Petty, Leonhardt, Jones, & Hicks
+### Learn PowerShell in a Month of Lunches by Plunk, Petty, Leonhardt, Jones, & Hicks
 
 - [Buy on Amazon][11]
 
@@ -88,7 +84,7 @@ This is the book that everyone in the PowerShell community recommends. It's a gr
 learning PowerShell by solving real-world problems. The latest edition has been update for
 PowerShell 7.
 
-#### Windows PowerShell in Action by Bruce Payette & Richard Siddaway
+### Windows PowerShell in Action by Bruce Payette & Richard Siddaway
 
 - [Buy on Amazon][12]
 
@@ -104,7 +100,7 @@ This is definitive reference on how PowerShell works, outside of the
 
 ## Books on Business
 
-#### Radical Candor By Kim Scott
+### Radical Candor By Kim Scott
 
 - [Buy on Amazon][13]
 
@@ -114,7 +110,7 @@ Empathy—you can be kind and clear at the same time."
 
 This book teaches you how to give feedback to your team in a way that is both kind and clear.
 
-#### The Five Dysfunctions of a Team by Patrick Lencioni
+### The Five Dysfunctions of a Team by Patrick Lencioni
 
 - [Buy on Amazon][07]
 
@@ -125,7 +121,7 @@ getting every one rowing in the same direction."
 
 All of Lencioni's books are written as a novel that teach the business lessons through storytelling.
 
-#### The Phoenix Project
+### The Phoenix Project
 
 - [Buy on Amazon][08]
 

@@ -8,7 +8,7 @@ categories:
 tags:
   - Regular Expressions
   - regex
-abstract: My recommended tool for learning how to use regular expressions.
+description: My recommended tool for learning how to use regular expressions.
 ---
 
 > This article was originally posted to my old [WordPress blog][wp]. The content is still relevant

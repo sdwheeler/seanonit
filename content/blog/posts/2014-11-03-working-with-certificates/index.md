@@ -8,7 +8,7 @@ categories:
 tags:
   - Certificates
   - X.509
-abstract: >
+description: >
   An example script for working with certificates. The example also illustrates some advanced
   PowerShell scripting techniques like, parameter sets, comment-based help, and error handling.
 ---

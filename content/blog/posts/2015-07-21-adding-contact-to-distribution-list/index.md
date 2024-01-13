@@ -10,7 +10,7 @@ tags:
   - contact
   - distribution list
   - ADSI
-abstract: >
+description: >
   Work around the limitation of the ActiveDirectory module using the `[adsi]` type accelerator.
 ---
 > This article was originally posted to my old [WordPress blog][wp]. The content is still relevant

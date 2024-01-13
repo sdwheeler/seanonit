@@ -1,2 +1,6 @@
 # Hugo temporary files
+/node_modules
+/resources
+/save
 .hugo_build.lock
+hugo_stats.json

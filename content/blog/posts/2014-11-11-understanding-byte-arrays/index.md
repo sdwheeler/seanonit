@@ -10,7 +10,7 @@ tags:
   - encoding
   - Unicode
   - UTF8
-abstract: >
+description: >
   Not all strings are created equal. Text encoding can change how strings are stored in memory.
   Learn how to use byte arrays to work with binary data in PowerShell.
 ---
