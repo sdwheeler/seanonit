@@ -44,6 +44,22 @@ There is more to technical writing than just writing the documentation. This boo
 process from beginning to end. The authors are all experienced technical writers and regular
 contributors to the [Write the Docs][98] community and the [Write the Docs Slack][99].
 
+### Enterprise Content Strategy: A Project Guide
+
+**by Nichols & Rockley**
+
+- [Buy on Amazon][15]
+
+"... \[This book\] outlines best practices for conducting and executing content strategy projects.
+His book is a step-by-step guide to building an enterprise content strategy for your organization.
+Enterprise Content Strategy draws on Kevin Nichols' experience managing one of the largest and most
+successful global content strategy teams to provide an insider's look at how to build an enterprise
+content strategy. Full of definitions, questions you need to ask, checklists, and guidelines, this
+book focuses not on the what or why, but on the how."
+
+This was the text book for a Masters-level class I took on content strategy. It's a short, well
+organized, reference for anyone getting started with large scale content projects.
+
 ---
 
 ## Style Guides
@@ -184,6 +200,7 @@ story. It makes reading about IT fun.
 [12]: https://www.amazon.com/gp/product/1633430294?&linkCode=ll1&tag=scriptingsean-20&linkId=87e449f7794b08aafa37a31eec63d678&language=en_US&ref_=as_li_ss_tl "Affiliate link"
 [13]: https://www.amazon.com/gp/product/B09V5HVK3N?&linkCode=ll1&tag=scriptingsean-20&linkId=c2f42d198e474d5432e949940eb6339a&language=en_US&ref_=as_li_ss_tl "Affiliate link"
 [14]: https://www.amazon.com/Docs-Developers-Engineers-Technical-Writing/dp/1484272161?&_encoding=UTF8&tag=scriptingsean-20&linkCode=ur2&linkId=9ef9d5b397ac66c0d290a8c01c0d5fcf&camp=1789&creative=9325 "Affiliate link"
+[15]: https://www.amazon.com/Enterprise-Content-Strategy-Project-Guide/dp/1937434443?&_encoding=UTF8&tag=scriptingsean-20&linkCode=ur2&linkId=c572b6c0883c3e1a5509410653ff7060&camp=1789&creative=9325 "Affiliate link"
 [97]: https://www.powershellsummit.org/onramp/
 [98]: https://www.writethedocs.org
 [99]: https://www.writethedocs.org/slack
