@@ -1,0 +1,23 @@
+{{- if default true .Site.Params.topAppBar.colorToggle }}
+<li class="nav-item dropdown col-6 col-xxl-auto">
+    {{- $modes := dict "light" (dict "icon" "sun") "dark" (dict "icon" "moon") "auto" (dict "icon" "adjust") }}
+    {{- $mode := default "auto" $.Site.Params.color }}
+    {{- if not (in (slice "light" "dark" "auto") $mode) }}
+      {{- $mode = "auto" }}
+    {{- end }}
+    <a class="nav-link px-0 py-2 px-xxl-1" href="#" id="modeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="mode-icon fas fa-fw fa-{{ (index $modes $mode ).icon }}" id="modeIcon"></i>
+        <span class="d-xxl-none">{{ i18n "mode" }}</span>
+    </a>
+    <ul class="mode-dropdown-menu dropdown-menu dropdown-menu-end" aria-labelledby="modeDropdown">
+        {{- range slice "light" "dark" "auto" }}
+        {{- $item := index $modes . }}
+        <li class="mode-item{{ if eq $mode . }} active{{ end }}" data-color-mode="{{ . }}" data-icon="{{ $item.icon }}">
+            <button class="dropdown-item">
+                <i class="mode-icon fas fa-fw fa-{{ $item.icon }}"></i> {{ printf "theme_%s" . | i18n }}
+            </button>
+        </li>
+        {{- end }}
+    </ul>
+</li>
+{{- end -}}

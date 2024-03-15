@@ -1,0 +1,26 @@
+{{- $metaURL := relURL "/search/meta.json" -}}
+{{- if gt (len $.Site.Home.AllTranslations) 1 -}}
+  {{- $metaURL = relLangURL "/search/meta.json" -}}
+{{- end -}}
+{{- $meta := resources.Get "search/meta.json" | resources.ExecuteAsTemplate $metaURL . -}}
+<meta name="search-meta" content="{{ $meta.RelPermalink }}">
+{{- $pages := where .Site.AllPages "Kind" "page" }}
+{{- $paginate := default 1000 .Site.Params.search.indexPaginate }}
+{{- $totalPages := div (add (len $pages) (sub $paginate 1)) $paginate }}
+{{- $tmpl := resources.Get "search/index.json" }}
+{{- $page := . }}
+{{- $searchIndies := slice }}
+{{- $preload := default true $.Site.Params.search.indexPreload }}
+{{- range seq $totalPages }}
+  {{- $indexURL := relURL (printf "/search/index.%d.json" .) }}
+  {{- if gt (len $.Site.Home.AllTranslations) 1 -}}
+    {{- $indexURL = relLangURL (printf "/search/index.%d.json" .) -}}
+  {{- end -}}
+  {{- $page.Scratch.Set "indexPage" . }}
+  {{- $index := $tmpl | resources.ExecuteAsTemplate $indexURL $page }}
+  {{- $searchIndies = $searchIndies | append $index.RelPermalink }}
+  <meta name="search-index" content="{{ $index.RelPermalink }}">
+  {{- if $preload }}
+  <link rel="preload" href="{{ $index.RelPermalink }}" as="fetch" type="application/json" crossorigin="anonymous">
+  {{- end }}
+{{- end }}

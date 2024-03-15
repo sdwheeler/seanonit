@@ -1,0 +1,37 @@
+{{- $src := "" }}
+{{- $manual := false }}
+{{- $loadInfo := "" }}
+{{- if .IsNamedParams }}
+  {{- $src = .Get "src" }}
+  {{- with .Get "trigger" }}{{ $manual = eq "manual" . }}{{ end }}
+  {{- with .Get "loadInfo" }}{{ $loadInfo = . }}{{ end }}
+{{- else }}
+  {{- $src = .Get 0 }}
+{{- end }}
+<div class="iframe-wrapper ratio ratio-16x9 my-2">
+    <div class="d-flex flex-column align-items-center justify-content-center">
+        {{- if $manual }}
+        <button class="btn btn-primary iframe-load" style="z-index: 1;">
+            <i class="fas fa-play-circle me-1"></i>
+            {{- i18n "button_run_game" -}}
+        </button>
+        {{- end }}
+        {{- with $loadInfo }}
+        <p class="iframe-load-info text-secondary mt-3 px-2 text-center mb-0" style="z-index: 1;">
+            {{ . | markdownify }}
+        </p>
+        {{- end }}
+        <div class="iframe-panel-bottom position-absolute bottom-0 end-0 bg-dark opacity-75" style="z-index: 1;">
+            <a role="button" class="iframe-fullscreen px-2 py-1 text-white{{ if $manual }} d-none{{ end }}" style="z-index: 1;"
+                title="{{ i18n "button_fullscreen" }}">
+                <i class="fas fa-expand"></i>
+            </a>
+        </div>
+    </div>
+    <iframe class="iframe bg-dark"
+        allowfullscreen
+        scrolling="no"
+        loading="lazy"
+        {{ if $manual }}data-src="{{ $src }}" src="about:blank"{{ else }}src="{{ $src }}"{{ end }}>
+    </iframe>
+</div>

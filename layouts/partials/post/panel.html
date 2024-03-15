@@ -1,0 +1,15 @@
+{{- if default true .Site.Params.post.panel -}}
+<div class="post-panel-wrapper position-relative d-flex justify-content-center">
+  <div class="d-flex flex-row justify-content-center rounded-5 border post-panel position-fixed px-3 py-1 surface shadow-1">
+    {{ partial "hooks/post-panel-begin" . }}
+    {{ partial "post/panel/translations" . }}
+    {{ partial "post/panel/reward" . }}
+    {{ partial "post/panel/funding" . }}
+    {{ partial "post/panel/toc" . }}
+    {{ partial "post/panel/copyright" . }}
+    {{ partial "post/panel/comments" . }}
+    {{ partial "post/panel/sidebar-toggler" . }}
+    {{ partial "hooks/post-panel-end" . }}
+  </div>
+</div>
+{{- end -}}

@@ -1,0 +1,4 @@
+{{- if $.Site.Params.staticman.reCaptchaKey }}
+{{- partialCached "staticman/assets/recaptcha" . . }}
+<script src="https://www.google.com/recaptcha/api.js?onload=renderCaptchas&render=explicit" async defer></script>
+{{- end }}

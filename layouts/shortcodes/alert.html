@@ -1,0 +1,7 @@
+{{- $type := default "info" (.Get 0) -}}
+<div class="alert alert-{{ $type }}" role="alert">
+  {{- if not (findRE "<i.*class=\"alert-icon.*\".*></i>" .Inner) }}
+    {{- partial "utilities/alert-icon" $type }}
+  {{- end }}
+  {{ .Inner }}
+</div>

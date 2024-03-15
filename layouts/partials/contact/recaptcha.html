@@ -1,0 +1,9 @@
+{{- with $.Site.Params.contact.reCaptcha -}}
+<div class="mb-3">
+    <label id="reCaptchaLabel" class="form-label text-danger">reCAPTCHA</label>
+    <div class="g-recaptcha" data-sitekey="{{ .siteKey }}" data-callback="reCaptchaCallback"
+        data-expired-callback="reCaptchaExpiredCallback"></div>
+</div>
+{{- partialCached "staticman/assets/recaptcha" . . }}
+<script src="https://www.google.com/recaptcha/api.js?onload=reCaptchaOnload" defer></script>
+{{- end -}}

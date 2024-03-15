@@ -1,0 +1,57 @@
+{{ define "content" }}
+<div class="{{ if default true .Params.sidebar }}col-xxl-8{{ else }}col-xxl-12{{ end }}">
+  <div class="container">
+    {{- partial "breadcrumb" . -}}
+    <div class="taxonomys">
+      {{- range .Paginator.Pages -}}
+      {{- $count := len .Pages -}}
+      <div class="taxonomy row card component">
+        <div class="card-header">
+          {{- if eq .Data.Plural "authors" }}
+            <div class="author d-flex mt-2 flex-column flex-md-row align-items-center">
+                {{- partial "author/avatar" .Page }}
+                <div class="text-center text-md-start flex-grow-1 ms-0 ms-md-4">
+                    <h2 class="taxonomy-title card-title author-name fs-4 mb-2 text-surface">
+                      <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+                    </h2>
+                    {{- with .Page.Description }}
+                    <div class="author-description mb-2">{{ . }}</div>
+                    {{- end }}
+                    {{- partial "author/social" .Page }}
+                </div>
+            </div>
+          {{- else }}
+          <h2 class="taxonomy-title card-title fs-4 my-2 text-surface">
+            <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+          </h2>
+          {{- end }}
+        </div>
+        <div class="card-body">
+          <div class="taxonomy-meta mt-1 mb-3">
+            <span class="taxonomy-post-count"><i class="fas fa-fw fa-file-alt me-1"></i>{{ i18n "post_count" (dict "Count" $count) }}</span>
+          </div>
+          {{- $postCount := $.Site.Params.taxonomyPostCount -}}
+          {{- if $postCount -}}
+          <ul class="taxonomy-posts post-list list-unstyled ms-1">
+            {{- range first $postCount .Pages -}}
+            <li class="taxonomy-post mb-2">
+              <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+              <span class="float-end post-date">{{ .Date | time.Format $.Site.Params.dateFormat }}</span>
+            </li>
+            {{- end -}}
+          </ul>
+          {{- end -}}
+        </div>
+        {{- if gt $count $postCount -}}
+        <div class="card-footer">
+          <a class="btn btn-sm btn-outline-primary" href="{{ .Page.RelPermalink }}">{{ i18n "read_more" }}</a>
+        </div>
+        {{- end -}}
+      </div>
+      {{- end -}}
+    </div>
+    {{- partial "pagination" . -}}
+  </div>
+</div>
+{{- partial "sidebar" . -}}
+{{ end }}

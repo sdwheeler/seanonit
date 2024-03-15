@@ -1,0 +1,54 @@
+{{- $collapsed := default false .Site.Params.sidebar.collapsed }}
+{{- range $expected := $.Site.Params.sidebarTaxonomies }}
+{{- range $key, $value := $.Site.Taxonomies }}
+  {{- $enable := false }}
+  {{- with $.Site.Params.sidebar }}
+    {{- $enable = default false (index . $key) }}
+  {{- end }}
+  {{- if and $enable (eq $key $expected) }}
+  {{- $countParams := dict "categories" "categoryCount" "tags" "tagCount" "series" "seriesCount" }}
+  {{- $param := default "" (index $countParams $key) }}
+  {{- $taxonomyCount := default 10 ($.Site.Param $param) }}
+  {{- if $taxonomyCount }}
+    {{- with $value.ByCount }}
+      <div class="accordion {{ $key }}-taxonomies">
+         <section class="row card component">
+          <div class="card-header">
+            <h2 class="card-title my-2 fs-4 text-surface d-none d-lg-block">
+              <a href="{{ absLangURL (urlize $key) }}">{{ i18n $key }}</a>
+            </h2>
+            <a
+              class="accordion-button d-lg-none mb-1 shadow-none p-0 bg-transparent text-surface{{ if $collapsed }} collapsed{{ end }}"
+              role="button" data-bs-toggle="collapse" href="#taxonomy-{{ $key }}" aria-expanded="{{ if $collapsed }}false{{ else }}true{{ end }}" aria-controls="taxonomy-{{ $key }}">
+                {{ i18n $key }}
+            </a>
+          </div>
+          <div class="card-body collapse accordion-collapse accordion-body d-lg-block{{ if not $collapsed }} show{{ end }}" id="taxonomy-{{ $key }}">
+            <div class="py-2">
+            {{- $count := 0 }}
+            {{- range . }}
+              {{- if and (lt $count $taxonomyCount) (ne .Name "") }}
+              <a href="{{ .Page.RelPermalink }}" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-{{ $key | singularize }} me-2 mb-2" title="{{ .Page.Title }}">
+                {{ .Page.Title }}
+                {{- if $.Site.Params.countTaxonomyPosts }}
+                  <span class="badge badge-sm text-secondary bg-white ms-1">{{ .Count }}</span>
+                {{- end }}
+              </a>
+              {{- $count = add $count 1 }}
+              {{- end }}
+            {{- end }}
+            {{- if gt (len $value) $taxonomyCount }}
+            <a href="{{ absLangURL (urlize $key) }}" class="btn btn-sm btn-secondary post-taxonomy ps-3 post-{{ $key | singularize }} me-2 mb-2" title='{{ i18n "all" | upper }}'>
+              {{ i18n "all" | upper }}
+              <span class="badge badge-sm text-secondary bg-white ms-1">{{ len $value }}</span>
+            </a>
+            {{- end }}
+            </div>
+          </div>
+        </section>
+      </div>
+    {{- end }}
+  {{- end }}
+  {{- end }}
+{{- end }}
+{{- end }}

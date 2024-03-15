@@ -1,0 +1,64 @@
+<aside class="docs-nav col-xxl-2" tabindex="-1" data-bs-hide="focusout">
+  <div class="offcanvas-xxl offcanvas-start" id="offcanvasDocsNav" aria-labelledby="offcanvasDocsNavLabel">
+    <div class="offcanvas-header border-bottom">
+      <div class="offcanvas-title h5" id="offcanvasDocsNavLabel">{{ i18n "browse_docs" }}</div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#offcanvasDocsNav"></button>
+    </div>
+    <div class="offcanvas-body pt-2 flex-column">
+      {{- partial "hooks/docs/nav-begin" . -}}
+      {{ template "walk-nav" (dict "section" .FirstSection "page" .) }}
+      {{- partial "hooks/docs/nav-end" . -}}
+    </div>
+  </div>
+</aside>
+
+{{- define "walk-nav" -}}
+{{- $section := .section -}}
+{{- $page := .page -}}
+<ul class="list-unstyled mb-2 w-100">
+{{- $expand := default false .page.Site.Params.docs.nav.expand -}}
+    {{- $pages := sort (where $section.Pages "Params.navWeight" ">" 0) "Params.navWeight" "desc" -}}
+    {{- $pages = union $pages (sort $section.Pages "Title") -}}
+    {{- range $pages -}}
+        {{- if .IsSection -}}
+        {{- $sectionId := printf "nav-%s" .File.UniqueID -}}
+        {{- $active := false -}}
+        {{- if hasPrefix $page.RelPermalink .RelPermalink -}}
+          {{- $active = true -}}
+        {{- end -}}
+        <li class="mb-2" tabindex="-1">
+          <div class="py-1 d-flex justify-content-between align-items-center ms-3{{ if $active }} text-primary{{ end }}">
+            <a class="docs-nav-link d-flex align-items-center" href="{{ .RelPermalink }}">{{- template "nav-title" . -}}</a>
+            <a class="btn-toggle ms-1{{ if and (not $active) (not $expand) }} collapsed{{ end }}" role="button" data-bs-toggle="collapse"
+              data-bs-target="#{{ $sectionId }}" aria-expanded="{{ if or $active $expand }}true{{ else }}false{{ end }}" aria-controls="{{ $sectionId }}">
+              <i class="btn-toggle-icon fas fa-chevron-down ms-auto" data-fa-transform="rotate-270"></i>
+            </a>
+          </div>
+          <div class="docs-nav-subnavs border-start mt-2 collapse {{ if or $active $expand}} show{{ end }}{{ if $active }} border-primary{{ end }}" id="{{ $sectionId }}">
+            <div class="btn-toggle-nav fw-normal ms-2 small">
+              {{ template "walk-nav" (dict "section" . "page" $page) }}
+            </div>
+          </div>
+        </li>
+        {{- else -}}
+        <li class="mb-2 py-1 ms-3{{ if eq .RelPermalink $page.RelPermalink }} text-primary{{ end }}" tabindex="-1">
+          <a class="docs-nav-link d-flex align-items-center" href="{{ .RelPermalink }}"{{ if .Params.redirect }} target="_blank"{{ end }}>
+            {{- template "nav-title" . -}}
+            {{- if .Params.redirect -}}
+              <i class="ms-1 fas fa-external-link-square-alt"></i>
+            {{- end -}}
+          </a>
+        </li>
+        {{- end -}}
+    {{- end -}}
+</ul>
+{{- end -}}
+
+{{- define "nav-title" -}}
+  {{- with .Params.linkTitleIcon -}}
+    <span class="docs-nav-title-icon me-1">{{- . | safeHTML -}}</span>
+  {{- end -}}
+  <span class="docs-nav-title">
+    {{- .LinkTitle -}}
+  </span>
+{{- end -}}

@@ -1,0 +1,10 @@
+{{- if isset $.Site.Params "pwa" -}}
+{{- $options := dict "targetPath" "service-worker.min.js" "minify" hugo.IsProduction -}}
+{{- $index := resources.Get "service-worker/index.ts" }}
+{{- $config := resources.Get "service-worker/config.template.ts" | resources.ExecuteAsTemplate "service-worker/config.ts" . -}}
+{{- $script := slice $config $index | resources.Concat "service-worker/bundle.ts" | js.Build $options -}}
+{{- $register := resources.Get "service-worker/register.ts" }}
+{{- $registerCtx := dict "src" $script.RelPermalink }}
+{{- $register = $register | resources.ExecuteAsTemplate "js/sw-register.js" $registerCtx }}
+<script src="{{ $register.RelPermalink }}" defer></script>
+{{- end -}}

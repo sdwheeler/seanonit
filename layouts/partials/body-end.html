@@ -1,0 +1,16 @@
+{{- partialCached "assets/main/js" . -}}
+{{- partialCached "assets/icons/js" . -}}
+{{- partial "assets/viewer/js" . -}}
+{{- partialCached "assets/algolia/js" . -}}
+{{- partial "assets/math/js" . -}}
+{{- partial "assets/diagram/js" . -}}
+{{- partial "plugins/addthis" . -}}
+{{- partialCached "assets/baidu-analytics" . -}}
+{{- partial "assets/search/js" . -}}
+{{- partial "assets/masonry/js" . -}}
+{{- partialCached "assets/docsearch/js" . -}}
+{{- partial "hooks/body-end" . -}}
+{{- partialCached "assets/service-worker/js" . -}}
+{{- if and .IsPage (not .IsHome) (default true .Site.Params.comment) (default true .Params.comment) }}
+{{- partialCached "assets/giscus/js" . -}}
+{{- end }}

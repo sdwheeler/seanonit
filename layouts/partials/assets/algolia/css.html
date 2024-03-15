@@ -1,0 +1,11 @@
+{{- if .Site.Params.algolia }}
+{{- $outputStyle := "expanded" }}
+{{- if hugo.IsProduction }}{{ $outputStyle = "compressed" }}{{ end }}
+{{- $options := dict
+    "targetPath" "assets/algolia/bundle.min.css"
+    "outputStyle" $outputStyle
+    "includePaths" (slice "node_modules")
+}}
+{{- $style := resources.Get "algolia/scss/index.scss" | toCSS $options | fingerprint }}
+<link data-precache rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+{{- end -}}
