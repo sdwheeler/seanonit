@@ -1,0 +1,19 @@
+{{- if eq .Kind "term" }}
+    {{- if eq .Data.Plural "authors" }}
+        <div class="row card author component">
+            <div class="card-body">
+                <div class="d-flex flex-column flex-md-row align-items-center">
+                    {{- partial "author/avatar" . }}
+                    <div class="text-center text-md-start flex-grow-1 ms-0 ms-md-4">
+                        <h1 class="author-name mb-2 text-surface">{{ .Title }}</h1>
+                        {{- with .Description }}
+                        <div class="author-description mb-2">{{ . }}</div>
+                        {{- end }}
+                        {{- partial "author/social" . }}
+                        {{- partial "author/meta" . }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{- end }}
+{{- end -}}

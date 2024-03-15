@@ -1,0 +1,36 @@
+{{- $title := .Title -}}
+{{- $pageNumber := "" -}}
+{{- $paginator := false -}}
+{{- if .IsHome -}}
+  {{- $allPosts := where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
+  {{- $pinnedPosts := slice -}}
+  {{- if $.Site.Params.pinnedPost -}}
+  {{- $pinnedPosts = first $.Site.Params.pinnedPostCount ((where $allPosts ".Params.pinned" true).ByParam "pinnedWeight") -}}
+  {{- range $pinnedPosts -}}
+    {{- with .File.UniqueID -}}
+      {{- $.Scratch.Add "pinnedPosts" (slice .) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- end -}}
+  {{- $paginator = .Paginate (union $pinnedPosts $allPosts) -}}
+{{- else if eq .Kind "taxonomy" -}}
+  {{- $pages := .Pages.ByTitle -}}
+  {{- if eq $.Site.Params.taxonomySortingMethod "popularity" -}}{{- $pages = (sort $pages ".Data.Pages" "desc") -}}{{- end -}}
+  {{- $paginator = .Paginate $pages .Site.Params.taxonomyPaginate -}}
+{{- else if not .IsPage -}}
+  {{- $paginator = .Paginate .RegularPagesRecursive -}}
+{{- end -}}
+{{- if $paginator -}}
+  {{- if gt $paginator.PageNumber 1 -}}
+    {{- $title = printf "%s %s" $title (i18n "pagination_title" $paginator) -}}
+  {{- end -}}
+{{- end  -}}
+{{- $titles := slice $title -}}
+{{- if eq .Kind "term" -}}
+  {{- $titles = $titles | append (i18n .Data.Plural)  -}}
+{{- end -}}
+{{- if not .IsHome -}}
+  {{- $titles = $titles | append .Site.Title -}}
+{{- end -}}
+{{- $separator := printf " %s " .Site.Params.titleSeparator -}}
+{{- delimit $titles $separator -}}

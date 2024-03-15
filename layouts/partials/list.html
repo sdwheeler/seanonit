@@ -1,0 +1,15 @@
+<div class="container">
+  {{- if not .IsHome }}
+    {{- partial "breadcrumb" . }}
+    {{- partialCached "sections" . .Section }}
+  {{- end }}
+  {{- partial "author/profile" . }}
+  {{- partial "hooks/list-begin" . }}
+  <div class="posts mb-4">
+  {{- range .Paginator.Pages }}
+    {{- partial "list-item" (dict "Page" . "PinnedPosts" ($.Scratch.Get "pinnedPosts")) }}
+  {{- end }}
+  </div>
+  {{- partial "hooks/list-end" . }}
+  {{- partial "pagination" . }}
+</div>

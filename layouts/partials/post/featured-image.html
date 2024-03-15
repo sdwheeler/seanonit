@@ -1,0 +1,30 @@
+{{- if default false .Site.Params.post.featuredImage -}}
+  {{- $alt := partialCached "functions/featured-img-alt" . . }}
+  {{- if .Params.images -}}
+    {{- $formats := slice "avif" "webp" "jxl" -}}
+    <picture class="d-flex justify-content-center">
+      {{- $img := index .Params.images 0 -}}
+      {{- $url := urls.Parse $img -}}
+      {{- if not $url.Scheme -}}
+        {{- $ext := $img | path.Ext }}
+        {{- range $formats -}}
+          {{- $filename := replace $img $ext (printf ".%s" .) -}}
+          {{- if and (not (strings.HasSuffix $ext .)) (fileExists (path.Join "static" $filename)) -}}
+            <source srcset="{{ $filename | absURL }}" type="image/{{ . }}" />
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+      <img class="post-featured-img h-auto w-auto mb-3" alt="{{ $alt }}" src="{{ $img | absURL  }}"/>
+    </picture>
+  {{- else -}}
+    {{- $featured := partialCached "functions/featured-img" . . -}}
+    {{- with $featured -}}
+    <picture class="d-flex justify-content-center">
+      {{- $smallImg := $featured.Resize "x270" -}}
+      {{- $largeImg := $featured.Resize "x480" -}}
+      <source srcset="{{ $smallImg.RelPermalink }}" type="{{ $smallImg.MediaType }}" media="(max-width: 576px)" width="{{ $smallImg.Width }}" height="{{ $smallImg.Height }}">
+      <img class="post-featured-img h-auto w-auto mb-3" alt="{{ $alt }}" src="{{ $largeImg.RelPermalink }}" width="{{ $largeImg.Width }}" height="{{ $largeImg.Height }}" data-src="{{ $featured.RelPermalink }}"/>
+    </picture>
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

@@ -1,0 +1,13 @@
+{{- partialCached "assets/google-analytics" . -}}
+{{- partialCached "assets/google-adsense" . -}}
+{{- if  eq .Site.Language.LanguageDirection "rtl" }}
+  {{- partialCached "assets/main/css-rtl" . }}
+{{- else }}
+  {{- partialCached "assets/main/css" . }}
+{{- end }}
+{{- partial "assets/math/css" . }}
+{{- partialCached "assets/viewer/css" . }}
+{{- partialCached "assets/docsearch/css" . -}}
+{{- partialCached "assets/plausible-analytics/js" . -}}
+{{- partial "assets/search/head" . }}
+{{- partial "assets/algolia/css" . }}

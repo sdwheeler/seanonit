@@ -1,0 +1,10 @@
+{{- partialCached "sidebar/profile" . .Site }}
+{{- partialCached "sidebar/taxonomies-toggle" . }}
+{{- partial "sidebar/posts-toggle" . }}
+{{- if ne "content" .Site.Params.tocPosition }}
+  {{- partial "sidebar/toc" . }}
+{{- end }}
+{{- partial "sidebar/featured-posts" . .Section }}
+{{- partial "sidebar/recent-posts" . .Section }}
+{{- partialCached "sidebar/taxonomies" . }}
+{{- partialCached "sidebar/archive" . }}

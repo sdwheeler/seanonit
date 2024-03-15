@@ -1,0 +1,57 @@
+{{- $scratch := newScratch -}}
+{{- $paginate := default 1000 .Site.Params.search.indexPaginate }}
+{{- $currentPage := .Scratch.Get "indexPage" }}
+{{- $max := mul $paginate $currentPage }}
+{{- $min := sub $max $paginate }}
+{{- $scratch.Add "pages" slice -}}
+{{- $counter := 0 }}
+{{- $pages := where (where .Site.AllPages "Kind" "page") "Params.index" "ne" false -}}
+{{- range $pages -}}
+  {{- if and (ge $counter $min) (lt $counter $max) }}
+    {{- $page := . }}
+    {{- $date := .Date | time.Format ":date_long" -}}
+    {{- $title := .Title }}
+    {{- if $.Site.Params.titleCase -}}
+        {{- $title = title $title -}}
+    {{- end -}}
+    {{- $img := "" -}}
+    {{- $smallImg := "" -}}
+    {{- $largeImg := "" -}}
+    {{- if .Params.Images -}}
+      {{- $img = index .Params.Images 0 | absURL -}}
+    {{- else -}}
+      {{- $featured := partialCached "functions/thumbnail" . . }}
+      {{- with $featured -}}
+        {{- $smallImage := .Resize "180x" -}}
+        {{- $smallImg = $smallImage.RelPermalink -}}
+        {{- $largeImage := .Resize "500x" -}}
+        {{- $largeImg = $largeImage.RelPermalink -}}
+        {{- $img = .RelPermalink -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $item := (dict 
+      "lang" .Language.Lang
+      "langName" .Language.LanguageName
+      "title" $title 
+      "content" .Plain 
+      "permalink" .RelPermalink
+      "date" $date 
+      "timestamp" .Date.Unix
+      "img" $img 
+      "smallImg" $smallImg
+      "largeImg" $largeImg
+    ) -}}
+    {{- range $taxonomyName, $value := $.Site.Taxonomies }}
+      {{- $terms := slice }}
+      {{- range $page.GetTerms $taxonomyName }}
+        {{- $terms = $terms | append (dict "title" .Title "url" .RelPermalink) }}
+      {{- end }}
+      {{- $item = merge $item (dict
+          $taxonomyName $terms
+      )}}
+    {{- end }}
+    {{- $scratch.Add "pages" (slice $item) }}
+  {{- end }}
+  {{- $counter = add $counter 1 }}
+{{- end -}}
+{{- $scratch.Get "pages"| jsonify }}

@@ -1,0 +1,5 @@
+{{- $placeholder := "search_input_placeholder" | i18n }}
+{{- with partialCached "functions/search-shortcut" . }}
+  {{- $placeholder = i18n "search_shortcut" (dict "Shortcut" (delimit . "+")) }}
+{{- end }}
+{{- return $placeholder -}}

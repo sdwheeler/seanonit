@@ -1,0 +1,33 @@
+{{ define "content" }}
+<div class="search container">
+  <div class="row">
+    <div class="d-flex col-12 {{ if default true .Params.sidebar }}col-xxl-8{{ else }}col-xxl-12{{ end }} component py-3 pt-4 px-2 rounded">
+      <div class="container">
+        {{- partial "search/form" . }}
+        <div id="searchResults" class="search-results mb-3 row"></div>
+        {{- partial "search/loading" . }}
+        <div class="text-center mb-3">
+          <button class="btn btn-sm btn-secondary w-100 d-none" type="button" id="btnLoadMore">{{ i18n "load_more" }}</button>
+        </div>
+      </div>
+    </div>
+    {{- if default true .Params.sidebar }}
+    <div class="col-xxl-4 d-none d-xxl-block">
+      {{- partial "search/sidebar" . }}
+    </div>
+    {{- end }}
+  </div>
+</div>
+<script type="text/html" id="templateResult">
+  {{ (resources.Get "search/templates/result.html").Content | safeHTML }}
+</script>
+<script type="text/html" id="templateMissingKeywords">
+  {{ i18n "search_missing_keywords" }}
+</script>
+<script type="text/html" id="templateNoResults">
+  {{ i18n "search_no_results" }}
+</script>
+<script type="text/html" id="templateStat">
+  {{ i18n "search_stat" (dict "Total" "<span class=\"text-primary\">{{total}}</span>") | safeHTML }}
+</script>
+{{ end }}

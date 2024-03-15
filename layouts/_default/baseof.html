@@ -1,0 +1,30 @@
+<!doctype html>
+{{- $color := partialCached "functions/color" . }}
+<html class="position-relative" itemscope itemtype="https://schema.org/WebPage" lang="{{ .Lang }}"
+  data-bs-theme="{{ $color }}"
+  {{- with $.Site.Language.LanguageDirection }} dir="{{ . }}"{{ end }}
+  {{- with $.Site.Params.palette }} data-palette="{{ replace . " " "-" }}"{{ end }}>
+  <head>
+    {{- partial "assets/init/js" . -}}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{- block "title" . -}}{{- partial "head/title" . -}}{{- end -}}</title>
+    {{- partial "head.html" . -}}
+    {{- block "head-end" . -}}{{- end -}}
+    {{- partial "hooks/head-end" . -}}
+  </head>
+  <body>
+    {{- partial "hooks/body-begin" . }}
+    {{- partial "header.html" . }}
+    {{- partial "hooks/main-begin" . }}
+    <main class="{{- partialCached "functions/container-class" . .FirstSection -}}">
+      <div class="row content">
+        {{- partialCached "noscript" . .Language.Lang }}
+        {{- block "content" . }}{{ end }}
+      </div>
+    </main>
+    {{- partial "hooks/main-end" . }}
+    {{- partial "footer.html" . }}
+    {{- partial "body-end" . }}
+  </body>
+</html>

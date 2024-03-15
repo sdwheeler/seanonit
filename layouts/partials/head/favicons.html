@@ -1,0 +1,32 @@
+{{- $sizes := slice 
+  (dict "size" "16x16")
+  (dict "size" "32x32")
+  (dict "size" "150x150")
+  (dict "size" "180x180" "rel" "apple-touch-icon")
+  (dict "size" "192x192")
+}}
+{{- with .Site.Params.favicon.sizes }}
+  {{- $sizes = . }}
+{{- end }}
+{{- $favicon := partialCached "functions/favicon" . }}
+{{- range $sizes }}
+  {{- $filename := printf "icon-%s.png" .size }}
+  {{- $rel := default "icon" .rel }}
+  {{- $filepath := path.Join "static" "images" "icons" $filename }}
+  {{- if fileExists $filepath }}
+    {{- $file := readFile $filepath }}
+    <link rel="{{ $rel }}" href="{{ printf "/images/icons/%s" $filename | absURL }}?version={{ $file | md5 }}" sizes="{{ .size }}">
+  {{- else }}
+    {{- $img := $favicon.Resize .size }}
+    <link rel="{{ $rel }}" href="{{ $img.RelPermalink }}" sizes="{{ .size }}" type="{{ $img.MediaType }}">
+  {{- end }}
+{{- end -}}
+
+{{- $maskIcon := resources.Get "safari-pinned-tab.svg" }}
+<link rel="mask-icon" href="{{ $maskIcon.RelPermalink }}" color="#6f42c1">
+{{- $fallbackIcon := "images/icons/favicon.ico" }}
+{{- $fallbackIconPath := path.Join "static" $fallbackIcon }}
+{{- if fileExists $fallbackIconPath }}
+  {{- $fallbackIconFile := readFile $fallbackIconPath -}}
+  <link rel="icon" href="{{ absURL $fallbackIcon }}?version={{ $fallbackIconFile | md5 }}">
+{{- end -}}

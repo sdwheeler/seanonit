@@ -1,0 +1,6 @@
+{{- .Pre -}}
+{{- with .Params.icon }}
+<span class="menu-icon me-1">{{ . | safeHTML }}</span>
+{{- end }}
+{{- .Name -}}
+{{- .Post -}}

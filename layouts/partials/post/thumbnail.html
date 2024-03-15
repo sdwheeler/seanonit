@@ -1,0 +1,42 @@
+{{ if .Params.images }}
+  {{- $formats := slice "avif" "webp" "jxl" -}}
+  <picture>
+  {{- $img := index .Params.images 0 -}}
+  {{- $ext := $img | path.Ext }}
+  {{- $url := urls.Parse $img -}}
+  {{- $width := false -}}
+  {{- $height := false }}
+  {{- $validExts := slice ".svg" ".avif" -}}
+  {{- if not $url.Scheme -}}
+    {{- range $formats -}}
+      {{- $filename := replace $img $ext (printf ".%s" .) -}}
+      {{- if and (not (strings.HasSuffix $ext .)) (fileExists (path.Join "static" $filename)) -}}
+        <source srcset="{{ $filename | absURL }}" type="image/{{ . }}" />
+      {{- end -}}
+    {{- end -}}
+    {{- $filename := path.Join "static" $url.Path -}}
+    {{- if fileExists $filename -}}
+      {{- if not (in $validExts $ext) -}}
+        {{- $config := imageConfig $filename -}}
+        {{- $width = $config.Width -}}
+        {{- $height = $config.Height -}}
+      {{- end -}}
+    {{- else -}}
+      {{- warnf "no such image can be found in page resources and the static folder: %s" $filename -}}
+    {{- end -}}
+  {{- end -}}
+    <img class="img-fluid" alt="{{ .Title }}" src="{{ $img | absURL  }}" loading="lazy"
+    {{ with $width }} width="{{ . }}"{{ end }}
+    {{ with $height}} height="{{ . }}"{{ end }}/>
+  </picture>
+{{- else -}}
+  {{- $featured := partialCached "functions/thumbnail" . . }}
+  {{- with $featured -}}
+    {{- $smallImage := .Resize "180x" -}}
+    {{- $largeImage := .Resize "500x" -}}
+    <picture>
+      <source srcset="{{ $largeImage.RelPermalink }}" media="(max-width: 576px)" height="{{ $largeImage.Height }}" width="{{ $largeImage.Width }}">
+      <img class="img-fluid" height="{{ $smallImage.Height }}" width="{{ $smallImage.Width }}" alt="{{ .Title }}" src="{{ $smallImage.RelPermalink  }}" data-src="{{ $featured.RelPermalink }}" loading="lazy"/>
+    </picture>
+  {{- end -}}
+{{- end -}}
