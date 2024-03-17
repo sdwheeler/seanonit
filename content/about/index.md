@@ -18,9 +18,9 @@ My interest in computers started in 1978 when I first learned to program in BASI
 without access to a computer. My first computer was the Netronics ELF II built from a kit. It had
 256 bytes of RAM.
 
-|                       |                                 |
-| --------------------- | ------------------------------- |
-| ![Elf 2 graphics][04] | ![Netronics Elf 2 computer][01] |
+|                       |                                                                              |
+| --------------------- | ---------------------------------------------------------------------------- |
+| ![Elf 2 graphics][04] | ![Netronics Elf 2 computer][01]<br><sub>source: [oldcomputers.net][07]</sub> |
 
 Later, I saved up my money and bought an Apple //e. This got me through my first two years of
 college. By then, the PC Clone market was starting to heat up and I bought a Turbo XT clone, the
@@ -53,9 +53,10 @@ The articles on this blog are copyrighted by me and can't be reproduced without 
 code samples are licensed under the [MIT License][03] and are free to use however you want.
 
 <!-- link references -->
-[01]: elfphoto.png
+[01]: netronics-elf.jpg "Netronics ELF II"
 [02]: https://learn.microsoft.com/powershell
 [03]: https://opensource.org/licenses/MIT
 [04]: tvgrafik.png
 [05]: Profile-20190514-4x5.jpg?height=200px#float-start
 [06]: OnIT-15x15.png#float-start
+[07]: https://oldcomputers.net/netronics-elf.html
