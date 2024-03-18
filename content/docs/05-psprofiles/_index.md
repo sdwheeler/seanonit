@@ -3,7 +3,7 @@ linkTitle: PowerShell profile
 linkTitleIcon: <i class="fas fa-duotone fa-terminal"></i>
 title: Optimizing your PowerShell profile
 weight: 5
-navWeight: -500
+navWeight: -5000
 ---
 <!-- markdownlint-disable MD041 -->
 ![Optimizing your PowerShell profile](psprofiles.png)

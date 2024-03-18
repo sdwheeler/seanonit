@@ -3,7 +3,7 @@ linkTitle: Crescendo
 linkTitleIcon: <i class="fas fa-less-than"></i>
 title: Turning command-line tools into cmdlets using Crescendo
 weight: 7
-navWeight: -700
+navWeight: -7000
 ---
 <!-- markdownlint-disable MD041 -->
 ![Turning command-line tools into cmdlets using Crescendo][02]

@@ -3,7 +3,7 @@ linkTitle: Open Source
 linkTitleIcon: <i class="fab fa-osi"></i>
 title: How to Contribute to an Open Source Project
 weight: 2
-navWeight: -200
+navWeight: -2000
 ---
 <!-- markdownlint-disable MD041 -->
 ![How to Contribute to an Open Source Project](opensource.png)

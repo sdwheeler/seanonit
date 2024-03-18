@@ -3,7 +3,7 @@ linkTitle: Contribute to Docs
 linkTitleIcon: <i class="fas fa-book"></i>
 title: Contribute to Docs like a Microsoft Insider
 weight: 1
-navWeight: -100
+navWeight: -1000
 ---
 <!-- markdownlint-disable MD041 -->
 ![Contribute to Docs like a Microsoft Insider][02]

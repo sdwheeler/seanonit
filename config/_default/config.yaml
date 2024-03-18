@@ -3,7 +3,8 @@ title: Sean on IT
 theme: github.com/razonyang/hugo-theme-bootstrap
 copyright: 'Copyright © 2014-{year} Sean D. Wheeler. All Rights Reserved.'
 defaultContentLanguage: en
-# hasCJKLanguage: true # Uncomment it if your content contains Chinese/Japanese/Korean Languages.
+### Uncomment it if your content contains Chinese/Japanese/Korean Languages.
+# hasCJKLanguage: true
 # defaultContentLanguageInSubdir: true
 # disableLanguages:
 #  - fr
@@ -34,9 +35,13 @@ permalinks:
 # module:
   # proxy: https://goproxy.cn
 
+# disqusShortname:
+
 # services:
 #   disqus:
 #     shortname: your-disqus-shortname
+#   googleAnalytics
+#     ID:
 
 markup:
   goldmark:

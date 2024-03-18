@@ -1,36 +1,64 @@
+### Default is 'posts'
+## What are the possible values?
+### Adding 'docs' puts docs in the main page list
 mainSections:
   - blog
   - posts
 
-titleCase: true # Capitalized title.
-# titleSeparator: '|' # Title separator. Default to -.
+### Capitalized title
+titleCase: true
 
+### Title separator. Default to -.
+# titleSeparator: '|'
 # backgroundImage: ['/images/bg-light.png', '/images/bg-dark.png']
 
+### Toggle comment widget on/off
 comment: false
 
-# toc: false # Disable TOC globally.
+### Disable TOC globally.
+# toc: false
+## What are the possible values? 'sidebar', 'content', ??
 tocPosition: content
+## What does this control?
 tocWordCount: 208
 
+### Breadcrumb settings
 breadcrumb: true
-breadcrumbDivider: > # Breadcrumb divider
+breadcrumbDivider: >
 
+## Possible values - https://gohugo.io/functions/time/format/
+## Token         Result
+## :date_full    Friday, January 27, 2023
+## :date_long    January 27, 2023
+## :date_medium  Jan 27, 2023
+## :date_short   1/27/23
+## :time_full    11:44:58 pm Pacific Standard Time
+## :time_long    11:44:58 pm PST
+## :time_medium  11:44:58 pm
+## :time_short   11:44 pm
+## Or use a parsable formatted time string
 dateFormat: ":date_long"
-poweredBy: false # Whether to show powered by.
 
-# math: true # Enable math globally.
+# Whether to show powered by.
+poweredBy: false
+
+### Enable math globally.
+# math: true
 # diagram: true
 
-logo: images/OnIT.png # Logo image. Default to images/logo.webp.
-# logo: false # Disable Logo
+### Logo image. Default to images/logo.webp.
+logo: images/OnIT.png
+### Disable Logo
+# logo: false
 brand: Sean on IT
 description: Random thoughts and things I have learned in my IT journey.
 keywords: PowerShell, technical writing
 
-color: light # light, dark or auto. Default to auto.
-palette: cyan # Default palette. Optional. You'll need to clear the browser cache after modifying this.
-# Available palettes. Default to ALL. Empty array means disable.
+### light, dark or auto. Default to auto.
+color: light
+### Default palette. Optional. You'll need to clear the browser cache after modifying this.
+palette: blue
+### Available palettes. Default to ALL. Empty array means disable.
 # palettes: [blue, blue-gray, brown, cyan, green, indigo, orange, pink, purple, red, teal, yellow]
 
 favicon:
@@ -42,28 +70,35 @@ favicon:
     size: 180x180
   - size: 192x192
 
-# carouselPostCount: 5 # The number of posts shown on the homepage carousel.
-featuredPostCount: 5 # The number of featured posts shown in sidebar. Turn off by setting it to false.
-recentPostCount: 5 # The number of recent posts shown in sidebar. Turn off by setting it to false.
-relatedPostCount: false # The number of related posts. Turn off by setting it to false.
-# categoryCount: 10 # The number of categories shown in sidebar. Turn off by setting it to false.
-# tagCount: 10 # The number of tags shown in sidebar. Turn off by setting it to false.
-# seriesCount: 20 # The number of series shown in sidebar. Turn off by setting it to false.
-# taxonomyPaginate: 5 # Default to 10.
-taxonomyPostCount: 20 # The number of taxonomy's posts. Turn off by setting it to false.
-# taxonomySortingMethod: popularity	# Sorting taxonomies by popularity, sort alphabetically by default.
-countTaxonomyPosts: true # Count posts of taxonomy.
-sidebarTaxonomies: [categories, tags, series] # The order of taxonomies on the sidebar.
+### The number of posts shown on the homepage carousel.
+# carouselPostCount: 5
+### The number of featured posts shown in sidebar. Turn off by setting it to false.
+featuredPostCount: 5
+### The number of recent posts shown in sidebar. Turn off by setting it to false.
+recentPostCount: 5
+### The number of related posts. Turn off by setting it to false.
+relatedPostCount: false
+### The number of categories shown in sidebar. Turn off by setting it to false.
+# categoryCount: 10
+### The number of tags shown in sidebar. Turn off by setting it to false.
+# tagCount: 10
+### The number of series shown in sidebar. Turn off by setting it to false.
+# seriesCount: 20
+### Number taxonomy pages. Default to 10.
+# taxonomyPaginate: 10
+### The number of taxonomy's posts. Turn off by setting it to false.
+taxonomyPostCount: 20
+### Sorting taxonomies by popularity, sort alphabetically by default.
+# taxonomySortingMethod: popularity
+### Count posts of taxonomy.
+countTaxonomyPosts: true
+### The order of taxonomies on the sidebar.
+sidebarTaxonomies: [categories, tags, series]
 
-# fullWidth: true # Full width.
-# fixedHeader: false # Turn on/off fixed header.
-
-# reward:
-  #alipay: images/reward/alipay.png
-  #wechat: images/reward/wechat.png
-  #paypal: images/reward/paypal.png
-  #patreon: images/reward/patreon.png
-  #liberapay: images/reward/liberapay.png
+### Full width.
+# fullWidth: true
+### Turn on/off fixed header.
+# fixedHeader: false
 
 #share:
   #addThis:  # AddThis pubid.
@@ -82,8 +117,11 @@ social:
   github: sdwheeler
   mastodon: https://sdwheeler@fosstodon.org
   twitter: swsamwa
-# socialShare: false # disable social network sharing
-# searchBar: false # disable search-bar
+
+### disable social network sharing
+# socialShare: false
+### disable search-bar
+searchBar: false
 
 topAppBar:
   # See https://hbs.razonyang.com/v1/en/docs/widgets/social-links/.
@@ -92,22 +130,8 @@ topAppBar:
     github: sdwheeler
     mastodon: https://sdwheeler@fosstodon.org
     twitter: swsamwa
-
-# Site verification
-siteVerification:
-  google:
-  bing:
-  baidu:
-  baiduUnion:  # Baidu Union
-  so:
-  sogou:
-  shenma:
-
-analytics:
-  # baidu:  # Baidu Analytics
-
-# Google Adsense
-#googleAdsense:
+  coloredInDark: true # false Colored in dark mode.
+  dropdownMenuToggle: true # true
 
 # Custom CSS and JS
 customCSS:
@@ -121,32 +145,46 @@ customJS:
 
 codeBlock:
   # maxLines: 8
-  lineNos: true # true/false represents that show/hide the line numbers by default.
+  ### true/false represents that show/hide the line numbers by default.
+  lineNos: true
 
 post:
   excerpt: description
   # excerptMaxLength: 120
-  copyright: false # Whether to display copyright section on each post.
-  # plainifyExcerpt: false # Format excerpt in HTML if false.
-  featuredImage: true # Show the featured image above the content.
-  numberifyHeadings: false # Count headings automatically.
-  # numberifyHeadingsEndLevel: 4 # The depth of headings to count. Default to 6.
-  # numberifyHeadingsSeparator: . # The separator between of number and headings.
-  tocStyleType: disc # The TOC's CSS list-style-type property.
+  ### Whether to display copyright section on each post.
+  copyright: false
+  ### Format excerpt in HTML if false.
+  # plainifyExcerpt: false
+  ### Show the featured image above the content.
+  featuredImage: true
+  ### Count headings automatically.
+  numberifyHeadings: false
+  ### The depth of headings to count. Default to 6.
+  # numberifyHeadingsEndLevel: 4
+  ### The separator between of number and headings.
+  # numberifyHeadingsSeparator: .
+  ### The TOC's CSS list-style-type property.
+  tocStyleType: disc
   # imageTitleAsCaption: true
-  # panel: false # Disable the post panel.
-  # nav: false # Disable post navigations.
-  # The page position after clicking the read more button, read more from content if true. Default to the beginning of page.
-  # It supports only of the manual summaries spliting via <!--more-->.
+  ### Disable the post panel.
+  # panel: false
+  ### Disable post navigations.
+  # nav: false
+  ### The page position after clicking the read more button, read more from content if true.
+  ### Default to the beginning of page.
+  ### Support manual summary splitting via <!--more-->.
   # readMoreFromContent: true
 
 viewer: true # Image Viewer
 # pwa:
   # manifest:
-    # name:  # Default to site title.
+    ### Default to site title.
+    # name:
     # short_name: HBS
-    # display: fullscreen # Default to standalone.
-    # description:  # Default to site description.
+    ### Default to standalone.
+    # display: fullscreen
+    ### Default to site description.
+    # description:
     # theme_color:
     # background_color:
 
@@ -160,29 +198,48 @@ viewer: true # Image Viewer
 
 sidebar:
   fixed: false
-  # archives: true # Enable archives widget
-  # taxonomiesToggle: false # Disable taxonomy toggle
-  # categories: true # Enable categories widget
-  # tags: true # Enable tags widget
-  # series: true # Enable series widget
-  # authors: true # Enable authors widget
-  # postsToggle: false # Disable posts toggle
-  featuredPosts: false # Enable featured posts widget
-  recentPosts: false # Enable featured posts widget
-  collapsed: true # Collapse sidebar widgets by default on small screens.
+  ### Enable archives widget
+  # archives: true
+  ### Disable taxonomy toggle
+  # taxonomiesToggle: false
+  ### Enable categories widget
+  # categories: true
+  ### Enable tags widget
+  # tags: true
+  ### Enable series widget
+  # series: true
+  ### Enable authors widget
+  # authors: true
+  ### Disable posts toggle
+  # postsToggle: false
+  ### Enable featured posts widget
+  featuredPosts: false
+  ### Enable featured posts widget
+  recentPosts: false
+  ### Collapse sidebar widgets by default on small screens.
+  collapsed: true
 
-# metaRobots: noindex, nofollow # Default value for Meta Tag robots
-# metaRobots:  # disable Meta Tag robots
+### Default value for Meta Tag robots. Empty value disables Meta Tag robots
+# metaRobots: noindex, nofollow
+
+### Contact form settings
 contact:
-  # endpoint: https://getform.io/f/56041c81-9e03-4c24-b9c5-61238854d4cd # Backend endpoint, remove this line if you're using Netlify.
-  # file: true # Enable file upload
-  # fileField: image # The name of file field.
+  ### Backend endpoint, remove this line if you're using Netlify.
+  # endpoint: https://getform.io/f/56041c81-9e03-4c24-b9c5-61238854d4cd
+  ### Enable file upload
+  # file: true
+  ### The name of file field.
+  # fileField: image
   # reCaptcha:
     # siteKey: ""
-# pinnedPost: false # Turn on/off pinned posts.
-pinnedPostCount: 3 # The number of pinned posts.
 
-rss: home # link the RSS button to homepage all the times.
+### Pinned posts settings
+# pinnedPost: false
+### The number of pinned posts.
+pinnedPostCount: 3
+
+### link the RSS button to homepage
+rss: home
 feeds:
   content: true
 
@@ -195,36 +252,53 @@ repo:
   # subPath: exampleSite
   # dateFormat: 02/01/2006, 15:04:05 PM
 
-readingTime: false # Whether to display the reading time.
-# postDate: false # Whether to display the post date in the post meta section.
+### Whether to display the reading time.
+readingTime: false
+### Whether to display the post date in the post meta section.
+# postDate: false
 
-tocWordCount: 1 # TOC is displayed only if the post's word count exceeds this value.
+### TOC is displayed only if the post's word count exceeds this value.
+tocWordCount: 1
 
 docs:
   # excerpt: description
   # excerptMaxLength: 120
-  copyright: false # Whether to display copyright section on each post.
-  # plainifyExcerpt: false # Format excerpt in HTML if false.
-  featuredImage: true # Show the featured image above the content.
-  numberifyHeadings: false # Count headings automatically.
-  # numberifyHeadingsEndLevel: 4 # The depth of headings to count. Default to 6.
-  # numberifyHeadingsSeparator: . # The separator between of number and headings.
-  tocStyleType: disc # The TOC's CSS list-style-type property.
+  ### Whether to display copyright section on each post.
+  copyright: false
+  ### Format excerpt in HTML if false.
+  # plainifyExcerpt: false
+  ### Show the featured image above the content.
+  featuredImage: true
+  ### Count headings automatically.
+  numberifyHeadings: false
+  ### The depth of headings to count. Default to 6.
+  # numberifyHeadingsEndLevel: 4
+  ### The separator between of number and headings.
+  # numberifyHeadingsSeparator: .
+  ### The TOC's CSS list-style-type property.
+  tocStyleType: disc
   # imageTitleAsCaption: true
-  # panel: false # Disable the post panel.
-  # nav: false # Disable post navigations.
-  # The page position after clicking the read more button, read more from content if true. Default to the beginning of page.
-  # It supports only of the manual summaries spliting via <!--more-->.
+  ### Disable the post panel.
+  # panel: false
+  ### Disable post navigations.
+  # nav: false
+  ### The page position after clicking the read more button, read more from content if true.
+  ### Default to the beginning of page. Supports manual summary spliting via <!--more-->.
   # readMoreFromContent: true
 
 archive:
-  paginate: 20 # Archive pagination. Default to 100.
-  # basePath = "/archiv" # The base path of archive pages.
-  # dateFormat: 01-02 # Archive date format. Default to Jan 2.
+  ### Archive pagination. Default to 100.
+  paginate: 20
+  ### The base path of archive pages.
+  # basePath = "/archiv"
+  ### Archive date format. Default to Jan 2.
+  # dateFormat: 01-02
 
 search:
-  paginate: 5 # Pagination. Default to 10.
-  # resultContentWordCount: 240 # The maximum word count of result content for displaying.
+  ### Pagination. Default to 10.
+  paginate: 5
+  ### The maximum word count of result content for displaying.
+  # resultContentWordCount: 240
   # Fuse.js options. See https://fusejs.io/api/options.html.
   fuse:
     # ignoreLocation: true
@@ -237,10 +311,11 @@ search:
 
 #docsearch:
   # https://docsearch.algolia.com/docs/api
-  # container: ".search-bar" # replace it if necessary, default to '.search-bar'.
+  ### replace it if necessary, default to '.search-bar'.
+  # container: ".search-bar"
   # appId: ""
   # apiKey: ""
   # indexName: ""
   # debug: true
-#algolia:
 
+#algolia:

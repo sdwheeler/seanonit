@@ -3,7 +3,7 @@ linkTitle: PowerShell Help
 linkTitleIcon: <i class="fas fa-duotone fa-terminal"></i>
 title: Unlocking the secrets of PowerShell Help
 weight: 6
-navWeight: -600
+navWeight: -6000
 ---
 
 ![Unlocking the secrets of PowerShell Help][01]

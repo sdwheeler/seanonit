@@ -3,7 +3,7 @@ linkTitle: GitHub
 title: Taming Git and GitHub with PowerShell
 linkTitleIcon: <i class="fab fa-github"></i>
 weight: 4
-navWeight: -400
+navWeight: -4000
 ---
 # Taming Git and GitHub with PowerShell
 <!-- markdownlint-disable MD041 -->
