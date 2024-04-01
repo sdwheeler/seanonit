@@ -32,7 +32,7 @@ The presentations are available in PDF format, and the source code is available 
 
 - [Taming Git and GitHub with PowerShell][03]
   - RTPSUG - 2023-07-05 - [<i class="fab fa-youtube"></i> YouTube][24]
-  - GNVPSUG - 2023-02-13 - [<i class="fab fa-youtube"></i> YouTube][28]
+  - GNVPSUG - 2024-02-13 - [<i class="fab fa-youtube"></i> YouTube][28]
 
 ## Optimizing your PowerShell profile
 
@@ -57,7 +57,12 @@ The presentations are available in PDF format, and the source code is available 
   - [A closer look at the parsing code of a Crescendo output handler][12]
   - [A closer look at the Crescendo configuration][11]
 
-## Podcast appearances
+## Other appearances
+
+[Contribute to Microsoft Learn - site][31]
+
+- Meta Skills - Contributing to Communities and Careers - [<i class="fa-solid fa-play"></i> Video][30]
+  -	September 21 & 27, 2023 - copresented with Mikey Lombardi
 
 PowerShell Podcast - [website][18] - [RSS][15]
 
@@ -95,5 +100,7 @@ PowerShell Podcast - [website][18] - [RSS][15]
 [27]: https://www.youtube.com/watch?v=sajRAA9dkEY "RTPSUG - 2023-11-01"
 [28]: https://www.youtube.com/watch?v=SuNCSbDzaow "GNVPSUG - 2023-02-13"
 [29]: https://www.youtube.com/watch?v=ZQODV8krq1Q "PowerShell+DevOps Summit 2023"
+[30]: https://learn-video.azurefd.net/vod/player?id=afb384b7-fd83-474d-a3f2-23dfacc127cf "MVP PGI Presentation series"
+[31]: https://learn.microsoft.com/contribute/
 [aa]: ./03-markdown/
 [bb]: /downloads/Markdown/Markdown-Essentials.pdf

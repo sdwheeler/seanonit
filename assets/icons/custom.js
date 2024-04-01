@@ -1,5 +1,5 @@
 import {
-    faBlog, faBook, faFile, faNewspaper, faTerminal, faLessThan
+    faBlog, faBook, faFile, faNewspaper, faTerminal, faLessThan, faPlay
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
@@ -11,7 +11,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 const icons = [
-    faBook, faBlog, faFile, faNewspaper, faTerminal, faLessThan,
+    faBook, faBlog, faFile, faNewspaper, faTerminal, faLessThan, faPlay,
     faAddressBook, faFilePdf,
     faAmazon, faGoogle, faMarkdown, faOsi
 ];
