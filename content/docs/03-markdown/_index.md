@@ -33,5 +33,5 @@ The goal of this presentation is to explain what Markdown is and what it's used 
 overview of the markup syntax, and teach you where to find more information.
 
 <!-- link references -->
-[01]: ../../downloads/markdown/Markdown-Essentials.pdf
+[01]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/markdown/Markdown-Essentials.pdf
 [02]: markdown-essentials.png

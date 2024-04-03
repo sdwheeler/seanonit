@@ -20,7 +20,7 @@ These presentations contain a lot of demonstrations of tools and techniques for 
 Microsoft Docs website. Watch the videos to see the demos in action.
 
 <!-- link references -->
-[01]: ../../downloads/contributedocs/Contribute-to-Docs-like-a-Microsoft-Insider.pdf
+[01]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/contributedocs/Contribute-to-Docs-like-a-Microsoft-Insider.pdf
 [02]: contributedocs.png
 [03]: https://www.youtube.com/watch?v=9-_VPIu6zLw
 [04]: https://www.youtube.com/watch?v=ZQODV8krq1Q

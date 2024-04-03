@@ -27,4 +27,3 @@ index: true
 1. Remove all breakpoints and show the output as objects
 1. Switch to terminal and show the verbose output
    - Jim, what is I am having trouble? How can I see what native command is actually being run?
-

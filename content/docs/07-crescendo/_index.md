@@ -21,7 +21,7 @@ My Crescendo Journey - blog series
 - [A closer look at the Crescendo configuration][03]
 
 <!-- link references -->
-[01]: ../../downloads/crescendo/Get-more-from-your-tooling-with-Crescendo.pdf
+[01]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/crescendo/Get-more-from-your-tooling-with-Crescendo.pdf
 [02]: crescendo.png
 [03]: https://devblogs.microsoft.com/powershell-community/a-closer-look-at-the-crescendo-configuration/
 [04]: https://devblogs.microsoft.com/powershell-community/a-closer-look-at-the-parsing-code-of-a-crescendo-output-handler/

@@ -18,7 +18,7 @@ The presentations are available in PDF format, and the source code is available 
 - [Contribute to Docs like a Microsoft Insider][01] - [<i class="far fa-file-pdf"></i> Slides][07]
   - PowerShell+DevOps Summit 2022 - Bellevue, WA - [<i class="fab fa-youtube"></i> YouTube][25]
   - PowerShell+DevOps Summit 2023 - Bellevue, WA - [<i class="fab fa-youtube"></i> YouTube][29]
-- [How to contribute to an Open Source project][04]
+- [How to contribute to an Open Source project][04] - [<i class="far fa-file-pdf"></i> Slides][cc]
   - [SpiceWorld][22] 2022 - Austin, TX
 - How anyone can contribute to the MS Docs website!
   - RTPSUG - 2020-09-16 - [<i class="fab fa-youtube"></i> YouTube][23]
@@ -76,11 +76,12 @@ PowerShell Podcast - [website][18] - [RSS][15]
 [03]: ./04-github/
 [04]: ./02-opensource/
 [05]: ./06-pshelp/
-[06]: ./06-psprofiles/
-[07]: downloads/ContributeDocs/Contribute%20to%20Docs%20like%20a%20Microsoft%20Insider.pdf
-[08]: downloads/Crescendo/Get%20more%20from%20your%20tooling%20with%20Crescendo.pdf
-[09]: downloads/PSHelp/Unlocking%20the%20secrets%20of%20PowerShell%20Help.pdf
-[10]: downloads/PSProfiles/Optimizing%20Your%20PowerShell%20Profile.pdf
+[06]: ./05-psprofiles/
+[aa]: ./03-markdown/
+[07]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/contributedocs/Contribute-to-Docs-like-a-Microsoft-Insider.pdf
+[08]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/crescendo/Get-more-from-your-tooling-with-Crescendo.pdf
+[09]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/pshelp/Unlocking-the-secrets-of-PowerShell-Help.pdf
+[10]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/psprofiles/Optimizing-Your-PowerShell-Profile.pdf
 [11]: https://devblogs.microsoft.com/powershell-community/a-closer-look-at-the-crescendo-configuration/
 [12]: https://devblogs.microsoft.com/powershell-community/a-closer-look-at-the-parsing-code-of-a-crescendo-output-handler/
 [13]: https://devblogs.microsoft.com/powershell-community/converting-string-output-to-objects/
@@ -102,5 +103,5 @@ PowerShell Podcast - [website][18] - [RSS][15]
 [29]: https://www.youtube.com/watch?v=ZQODV8krq1Q "PowerShell+DevOps Summit 2023"
 [30]: https://learn-video.azurefd.net/vod/player?id=afb384b7-fd83-474d-a3f2-23dfacc127cf "MVP PGI Presentation series"
 [31]: https://learn.microsoft.com/contribute/
-[aa]: ./03-markdown/
-[bb]: /downloads/Markdown/Markdown-Essentials.pdf
+[bb]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/markdown/Markdown-Essentials.pdf
+[cc]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/opensource/How-to-contribute-to-an-Open-Source-project.pdf

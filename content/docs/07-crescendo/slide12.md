@@ -21,4 +21,4 @@ index: true
 [01]: images/crescendo/slide12.png
 [02]: https://devblogs.microsoft.com/powershell-community/tag/crescendo/
 [03]: https://devblogs.microsoft.com/powershell/tag/powershell-crescendo/
-[04]: https://github.com/sdwheeler/tools-by-sean/tree/master/modules/vssadmin
+[04]: https://github.com/sdwheeler/ToolModules/tree/main/Modules/VssAdmin

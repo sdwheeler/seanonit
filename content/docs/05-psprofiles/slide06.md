@@ -68,7 +68,6 @@ index: true
   Alias           write -> Write-Output
   ```
 
-
   Linux:
 
   ```powershell

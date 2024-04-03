@@ -47,6 +47,6 @@ Demo scripts
 [08]: https://www.powershellgallery.com/packages/CompletionPredictor/
 [09]: https://www.powershellgallery.com/packages/Microsoft.PowerShell.UnixTabCompletion/
 [10]: https://www.powershellgallery.com/packages/PSStyle/
-[11]: https://github.com/sdwheeler/seanonit/tree/main/content/docs/downloads/PSProfiles/demo.ps1 "Right-click to download"
-[12]: https://github.com/sdwheeler/seanonit/tree/main/content/docs/downloads/PSProfiles/Microsoft.PowerShell_profile.ps1 "Right-click to download"
-[13]: https://github.com/sdwheeler/seanonit/tree/main/content/docs/downloads/PSProfiles/Microsoft.VSCode_profile.ps1 "Right-click to download"
+[11]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/psprofiles/demo.ps1 "Right-click to download"
+[12]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/PSProfiles/Microsoft.PowerShell_profile.ps1 "Right-click to download"
+[13]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/PSProfiles/Microsoft.VSCode_profile.ps1 "Right-click to download"

@@ -73,6 +73,6 @@ index: true
 
 <!-- link references -->
 [01]: ./images/psprofiles/slide08.png
-[02]: https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_prompts
+[02]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_prompts
 [03]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_parameters_default_values
 [04]: https://learn.microsoft.com/powershell/module/psreadline/set-psreadlineoption
