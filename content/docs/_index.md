@@ -47,7 +47,7 @@ The presentations are available in PDF format, and the source code is available 
 - [Unlocking the secrets of PowerShell Help][05] - [<i class="far fa-file-pdf"></i> Slides][09]
   - PowerShell on the River 2023 - Chattanooga, TN
 
-## Crescendo
+## PowerShell Crescendo
 
 - [Turning command-line tools into cmdlets using Crescendo][02] - [<i class="far fa-file-pdf"></i> Slides][08]
   - Automation+DevOps Summit - 2021-11-16 - [<i class="fab fa-youtube"></i> YouTube][26]

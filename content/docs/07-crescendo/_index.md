@@ -1,5 +1,5 @@
 ---
-linkTitle: Crescendo
+linkTitle: PowerShell Crescendo
 linkTitleIcon: <i class="fas fa-less-than"></i>
 title: Turning command-line tools into cmdlets using Crescendo
 weight: 7
