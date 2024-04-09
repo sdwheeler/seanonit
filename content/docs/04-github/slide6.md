@@ -15,7 +15,7 @@ The following image illustrates the workflow for using Git and GitHub to add or 
 a working branch for a single repository. The step shown in red is a one-time action for each
 machine you work on. The numbered steps (in black) are described in the table below.
 
-![Single clone GitHub workflow](images/github/psmoduleproject-gitflow.png)
+![Single clone GitHub workflow](images/github/PSModuleProject-gitflow.png)
 
 | Steps |       Description of steps        |                                                                                                                                                   Git command / GitHub actions                                                                                                                                                   |
 | :---: | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

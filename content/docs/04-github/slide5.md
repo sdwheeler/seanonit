@@ -53,4 +53,4 @@ The numbered steps (in black) are described in the table below.
 <!-- link references -->
 [01]: https://docs.github.com/en/get-started/quickstart/contributing-to-projects
 [02]: https://docs.github.com/en/get-started/quickstart/github-flow
-[03]: images/github/powershell-docs-gitflow.png
+[03]: images/github/PowerShell-Docs-gitflow.png
