@@ -21,7 +21,7 @@ been marked up with tags or formatting instructions." - from John Gruber's [phil
 Markdown.
 
 Take a moment to view the [simple-example.md][03] file in GitHub for a simple example of Markdown
-and how it is rendered.
+and how it's rendered.
 
 By design, Markdown syntax elements are comprised of punctuation characters. The characters were
 carefully chosen to convey meaning. For example:
@@ -38,4 +38,4 @@ Compare the plaintext (Raw) view to the syntax-highlighted view (Code) to the re
 <!-- link references -->
 [01]: images/markdown/slide4.png
 [02]: https://daringfireball.net/projects/markdown/syntax#philosophy
-[03]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/Markdown/simple-example.md
+[03]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/markdown/simple-example.md
