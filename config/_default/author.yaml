@@ -11,10 +11,11 @@ params: {
   layout: compact
 }
 # See https://hbs.razonyang.com/v1/en/docs/widgets/social-links/.
-#social:
+social:
   # email: swsamwa@live.com
-  #linkedin: scriptingsean
-  #github: sdwheeler
-  #mastodon: https://sdwheeler@fosstodon.org
-  #twitter: swsamwa
-  #rss: "" # Remove RSS
+  linkedin: scriptingsean
+  github: sdwheeler
+  mastodon: https://sdwheeler@fosstodon.org
+  twitter: swsamwa
+  rss: "" # Remove RSS
+  website: https://sessionize.com/sean-wheeler
