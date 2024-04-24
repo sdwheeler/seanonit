@@ -11,6 +11,10 @@ postDate: false
 index: true
 ---
 <!-- markdownlint-disable MD041 -->
-![5 steps to creating a module](images/crescendo/slide03.png)
+![5 steps to creating a module][02]
 
-Watch the demos in the [YouTube recording](https://youtu.be/acynivRDg7g?t=375).
+Watch the demos in the [YouTube recording][01].
+
+<!-- link references -->
+[01]: https://youtu.be/acynivRDg7g?t=375
+[02]: images/crescendo/slide03.png

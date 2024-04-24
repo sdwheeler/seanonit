@@ -12,17 +12,17 @@ index: true
 ---
 <!-- markdownlint-disable MD041 -->
 
-![Setting up Git for PowerShell](images/github/slide3.png)
+![Setting up Git for PowerShell][03]
 
 ## Installing Git for Windows
 
 Download the latest version of Git for the platform you are using. There are versions for Windows,
-macOS, and Linux. [https://git-scm.com/downloads](https://git-scm.com/downloads)
+macOS, and Linux. [https://git-scm.com/downloads][01]
 
 The installer for Windows presents a series of pages with configuration options. The following lists
 show the recommended settings for each page of the installer.
 
-![Git for Windows installer](images/github/git-install.png)
+![Git for Windows installer][02]
 
 **Select Components**
 
@@ -111,3 +111,8 @@ installing on macOS or Linux, you need to configure the default branch name and 
 git config --global init.defaultBranch main
 git config --global credential.helper store
 ```
+
+<!-- link references -->
+[01]: https://git-scm.com/downloads
+[02]: images/github/git-install.png
+[03]: images/github/slide3.png

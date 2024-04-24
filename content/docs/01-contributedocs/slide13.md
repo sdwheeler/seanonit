@@ -11,7 +11,7 @@ postDate: false
 index: true
 ---
 <!-- markdownlint-disable MD041 -->
-![Resources & Links](./images/contributedocs/slide13.png)
+![Resources & Links][01]
 
 Tools
 
@@ -22,3 +22,6 @@ Markdown resources
 
 - Markdown reference
 - CommonMark Specification
+
+<!-- link references -->
+[01]: ./images/contributedocs/slide13.png

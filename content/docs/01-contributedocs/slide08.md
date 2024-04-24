@@ -11,6 +11,9 @@ postDate: false
 index: true
 ---
 <!-- markdownlint-disable MD041 -->
-![GitHub workflow](./images/contributedocs/slide08.png)
+![GitHub workflow][01]
 
 See video for demo
+
+<!-- link references -->
+[01]: ./images/contributedocs/slide08.png

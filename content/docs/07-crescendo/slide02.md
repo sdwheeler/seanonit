@@ -11,4 +11,7 @@ postDate: false
 index: true
 ---
 <!-- markdownlint-disable MD041 -->
-![Presenters](images/crescendo/slide02.png)
+![Presenters][01]
+
+<!-- link references -->
+[01]: images/crescendo/slide02.png

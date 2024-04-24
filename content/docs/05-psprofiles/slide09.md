@@ -11,7 +11,7 @@ postDate: false
 index: true
 ---
 <!-- markdownlint-disable MD041 -->
-![Other tips](./images/psprofiles/slide09.png)
+![Other tips][01]
 
 - Sync your profile scripts using a OneDrive folder or a GitHub repository.
 
@@ -39,3 +39,6 @@ index: true
 - Move utility functions out of your profile and into a module.
 
   They can be loaded on demand, no need to include in profile.
+
+<!-- link references -->
+[01]: ./images/psprofiles/slide09.png

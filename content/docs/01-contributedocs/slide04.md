@@ -11,7 +11,7 @@ postDate: false
 index: true
 ---
 <!-- markdownlint-disable MD041 -->
-![Getting Started](./images/contributedocs/slide04.png)
+![Getting Started][01]
 
 Create a GitHub account
 
@@ -25,3 +25,6 @@ Read the contributor docs
 Markdown reference for docs.microsoft.com
 
 Using the Microsoft Doc Authoring Pack
+
+<!-- link references -->
+[01]: ./images/contributedocs/slide04.png

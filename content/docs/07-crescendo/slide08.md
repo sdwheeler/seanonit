@@ -11,7 +11,7 @@ postDate: false
 index: true
 ---
 <!-- markdownlint-disable MD041 -->
-![Step 4 - Create a cmdlet configuration](images/crescendo/slide08.png)
+![Step 4 - Create a cmdlet configuration][01]
 
 1. I implement all but one subcommand. Let's add that to the configuration file now.
 1. See how the JSON schema validation helps us with the authoring process.
@@ -30,3 +30,6 @@ index: true
    - What is NoGap? Jim - how does Crescendo construct the native command line
    - See that MaxSize has validation
    - Jim - what is Platform used for?
+
+<!-- link references -->
+[01]: images/crescendo/slide08.png

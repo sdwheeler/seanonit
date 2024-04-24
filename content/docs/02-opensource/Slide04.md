@@ -11,7 +11,7 @@ postDate: false
 index: true
 ---
 <!-- markdownlint-disable MD041 -->
-![Elements of an open source project](images/opensource/slide04.png)
+![Elements of an open source project][02]
 
 ## Traditionally volunteer driven
 
@@ -49,4 +49,8 @@ made transparently.
 
 ## Further reading
 
-- [Open source - Wikipedia](https://wikipedia.org/wiki/Open_source)
+- [Open source - Wikipedia][01]
+
+<!-- link references -->
+[01]: https://wikipedia.org/wiki/Open_source
+[02]: images/opensource/slide04.png

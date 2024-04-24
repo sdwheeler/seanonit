@@ -6,7 +6,7 @@ weight: 2
 navWeight: -2000
 ---
 <!-- markdownlint-disable MD041 -->
-![How to Contribute to an Open Source Project](opensource.png)
+![How to Contribute to an Open Source Project][01]
 
 Abstract: Using PowerShell as the example, I explore the different ways you can contribute to an
 Open Source project. In this presentation you will learn:
@@ -21,3 +21,6 @@ Open Source project. In this presentation you will learn:
 - Submitting changes via pull requests
 
 This presentation was delivered at SpiceWorld 2022 in Austin, TX.
+
+<!-- link references -->
+[01]: opensource.png

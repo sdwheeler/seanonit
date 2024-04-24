@@ -11,7 +11,7 @@ postDate: false
 index: true
 ---
 <!-- markdownlint-disable MD041 -->
-![Key takeaways](./images/contributedocs/slide12.png)
+![Key takeaways][01]
 
 Read the contributor & style guides
 
@@ -23,3 +23,6 @@ The process is the same for contributing to any docs.microsoft.com content
 
 - Only difference would be content-specific styling
 - PowerShell content is everywhere – Azure, Office, Windows, SQL, etc.
+
+<!-- link references -->
+[01]: ./images/contributedocs/slide12.png

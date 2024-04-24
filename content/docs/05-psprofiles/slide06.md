@@ -11,7 +11,7 @@ postDate: false
 index: true
 ---
 <!-- markdownlint-disable MD041 -->
-![Platform differences](./images/psprofiles/slide06.png)
+![Platform differences][01]
 
 ## Differences between PowerShell 7 on Windows and non-Windows platforms
 
@@ -99,5 +99,10 @@ index: true
 
 ## Related articles
 
-- [Release history of modules and cmdlets](https://learn.microsoft.com/powershell/scripting/whats-new/cmdlet-versions)
-- [PowerShell differences on non-Windows platforms](https://learn.microsoft.com/powershell/scripting/whats-new/unix-support)
+- [Release history of modules and cmdlets][02]
+- [PowerShell differences on non-Windows platforms][03]
+
+<!-- link references -->
+[01]: ./images/psprofiles/slide06.png
+[02]: https://learn.microsoft.com/powershell/scripting/whats-new/cmdlet-versions
+[03]: https://learn.microsoft.com/powershell/scripting/whats-new/unix-support

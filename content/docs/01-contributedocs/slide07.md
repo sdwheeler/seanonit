@@ -11,7 +11,7 @@ postDate: false
 index: true
 ---
 <!-- markdownlint-disable MD041 -->
-![Azure-DOCS-PowerShell structure](./images/contributedocs/slide07.png)
+![Azure-DOCS-PowerShell structure][01]
 
 Two repositories
 
@@ -25,3 +25,6 @@ Edit button points to Source repo for cmdlet reference
 Published M-F at 10am and 3pm PST
 
 Azure PowerShell release schedule
+
+<!-- link references -->
+[01]: ./images/contributedocs/slide07.png

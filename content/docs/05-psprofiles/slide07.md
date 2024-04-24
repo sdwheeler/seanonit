@@ -11,7 +11,7 @@ postDate: false
 index: true
 ---
 <!-- markdownlint-disable MD041 -->
-![Host differences](./images/psprofiles/slide07.png)
+![Host differences][01]
 
 - VS Code isn't the same as ConsoleHost or ISE
 
@@ -29,3 +29,6 @@ index: true
 
 - The `$Host` variable can't be replaced, so you can't use it your scripts except to get Host
   information.
+
+<!-- link references -->
+[01]: ./images/psprofiles/slide07.png

@@ -11,9 +11,12 @@ postDate: false
 index: true
 ---
 <!-- markdownlint-disable MD041 -->
-![PowerShell-Docs structure](./images/contributedocs/slide06.png)
+![PowerShell-Docs structure][01]
 
 - Reference vs. conceptual content
 - Version management
 - How the TOC works
 - Published M-F at 3pm PST
+
+<!-- link references -->
+[01]: ./images/contributedocs/slide06.png

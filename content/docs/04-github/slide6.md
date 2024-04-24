@@ -15,7 +15,7 @@ The following image illustrates the workflow for using Git and GitHub to add or 
 a working branch for a single repository. The step shown in red is a one-time action for each
 machine you work on. The numbered steps (in black) are described in the table below.
 
-![Single clone GitHub workflow](images/github/PSModuleProject-gitflow.png)
+![Single clone GitHub workflow][01]
 
 | Steps |       Description of steps        |                                                                                                                                                   Git command / GitHub actions                                                                                                                                                   |
 | :---: | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -32,3 +32,6 @@ machine you work on. The numbered steps (in black) are described in the table be
 |   9   | PR is merged                      | Go to step 10                                                                                                                                                                                                                                                                                                                    |
 |  10   | Cleanup unneeded branch info      | `git checkout main; git push origin --delete v1release; git branch -D v1release`<br><br>The `git push` command deletes the branch in your fork and deletes the tracking branch from your local repo. The `git branch` command delete the branch from your local repo.                                                    |
 |  11   | Start new post                    | Go to step 0                                                                                                                                                                                                                                                                                                                     |
+
+<!-- link references -->
+[01]: images/github/PSModuleProject-gitflow.png

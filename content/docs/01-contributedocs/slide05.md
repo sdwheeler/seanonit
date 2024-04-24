@@ -11,7 +11,7 @@ postDate: false
 index: true
 ---
 <!-- markdownlint-disable MD041 -->
-![Make a simple change](./images/contributedocs/slide05.png)
+![Make a simple change][01]
 
 See https://docs.microsoft.com/en-us/contribute/
 
@@ -19,3 +19,6 @@ See https://docs.microsoft.com/en-us/contribute/
 - Use the GitHub web interface to edit
 - Good for small changes to a single file
 - Use the full workflow for complex changes and multiple files
+
+<!-- link references -->
+[01]: ./images/contributedocs/slide05.png

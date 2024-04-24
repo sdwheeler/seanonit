@@ -11,7 +11,7 @@ postDate: false
 index: true
 ---
 <!-- markdownlint-disable MD041 -->
-![Step 2 - Choose the native command](images/crescendo/slide06.png)
+![Step 2 - Choose the native command][01]
 
 - Start with the help for each subcommand
 - Get sample output for each subcommand
@@ -21,3 +21,6 @@ index: true
 - VSSAdmin is a good choice
   - It has decent documentation
   - The output is structured well
+
+<!-- link references -->
+[01]: images/crescendo/slide06.png

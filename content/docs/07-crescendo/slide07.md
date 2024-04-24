@@ -11,7 +11,7 @@ postDate: false
 index: true
 ---
 <!-- markdownlint-disable MD041 -->
-![Step 3 - Created the output parsers](images/crescendo/slide07.png)
+![Step 3 - Created the output parsers][01]
 
 1. Crescendo doesn't make this part any easier, but it does allow you to focus on parsing the output
 1. I started with the parsing functions because I was more comfortable writing PowerShell than JSON
@@ -27,3 +27,6 @@ index: true
 1. Remove all breakpoints and show the output as objects
 1. Switch to terminal and show the verbose output
    - Jim, what is I am having trouble? How can I see what native command is actually being run?
+
+<!-- link references -->
+[01]: images/crescendo/slide07.png

@@ -11,9 +11,12 @@ postDate: false
 index: true
 ---
 <!-- markdownlint-disable MD041 -->
-![Step 5 - Export the configuration to a module](images/crescendo/slide09.png)
+![Step 5 - Export the configuration to a module][01]
 
 1. Delete the module from the export folder
 1. Export the module
 1. Switch to PS 5.1 - show that VSSAdmin and Crescendo are not loaded
 1. Import VSSAdmin and run some commands
+
+<!-- link references -->
+[01]: images/crescendo/slide09.png

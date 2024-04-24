@@ -12,7 +12,7 @@ index: true
 ---
 <!-- markdownlint-disable MD041 -->
 
-![What is Git and GitHub?](images/github/slide2.png)
+![What is Git and GitHub?][02]
 
 ## What is Git?
 
@@ -32,4 +32,8 @@ the GitHub flow, developers simply create a branch to work on updates, commit ch
 open a pull request to propose and discuss changes, and merge pull requests once everyone is on the
 same page.
 
-(source: [GitHub Docs](https://docs.github.com/en/get-started/using-git/about-git))
+(source: [GitHub Docs][01])
+
+<!-- link references -->
+[01]: https://docs.github.com/en/get-started/using-git/about-git
+[02]: images/github/slide2.png

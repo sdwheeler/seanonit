@@ -20,8 +20,8 @@ tab completion support for git commands, branch names, paths, and more.
 
 For more information, see:
 
-- [`posh-git` on the PowerShell Gallery](https://www.powershellgallery.com/packages/posh-git)
-- [`posh-git` on GitHub](https://github.com/dahlbyk/posh-git)
+- [`posh-git` on the PowerShell Gallery][02]
+- [`posh-git` on GitHub][01]
 
 Install `posh-git` using the following command:
 
@@ -40,7 +40,7 @@ Import-Module posh-git
 Once **posh-git** is installed and imported, you'll see Git status summary information in your
 prompt.
 
-![Animation showing the posh-git user experience](images/github/using-posh-git.gif)
+![Animation showing the posh-git user experience][03]
 
 ## Understanding the posh-git prompt
 
@@ -119,3 +119,8 @@ For example, a status of `[main ≡ +0 ~2 -1 | +1 ~1 -0]` corresponds to the fol
 #
 #        new.file
 ```
+
+<!-- link references -->
+[01]: https://github.com/dahlbyk/posh-git
+[02]: https://www.powershellgallery.com/packages/posh-git
+[03]: images/github/using-posh-git.gif
