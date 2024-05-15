@@ -1,6 +1,6 @@
 baseURL: https://sdwheeler.github.io/seanonit/
 title: Sean on IT
-theme: github.com/razonyang/hugo-theme-bootstrap
+# theme: github.com/razonyang/hugo-theme-bootstrap
 copyright: 'Copyright © 2014-{year} Sean D. Wheeler. All Rights Reserved.'
 defaultContentLanguage: en
 ### Uncomment it if your content contains Chinese/Japanese/Korean Languages.
@@ -15,6 +15,10 @@ paginate: 10
 enableRobotsTXT: true
 enableEmoji: true
 pygmentsUseClasses: true
+
+module:
+  imports:
+  - path: github.com/razonyang/hugo-theme-bootstrap
 
 blackfriday:
   hrefTargetBlank: true
