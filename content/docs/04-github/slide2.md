@@ -1,7 +1,7 @@
 ---
-title: 'What is Git and GitHub?'
+title: 'What are Git and GitHub?'
 weight: 2
-navWeight: 6
+navWeight: 7
 featured: false
 draft: false
 comment: false
@@ -12,7 +12,7 @@ index: true
 ---
 <!-- markdownlint-disable MD041 -->
 
-![What is Git and GitHub?][02]
+![What are Git and GitHub?][02]
 
 ## What is Git?
 

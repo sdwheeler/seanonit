@@ -1,7 +1,7 @@
 ---
 title: Glossary & FAQ
 weight: 7
-navWeight: 1
+navWeight: 2
 featured: false
 draft: false
 comment: false

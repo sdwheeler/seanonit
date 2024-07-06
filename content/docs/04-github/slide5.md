@@ -1,7 +1,7 @@
 ---
 title: GitHub workflow for a forked repository
 weight: 5
-navWeight: 3
+navWeight: 4
 featured: false
 draft: false
 comment: false

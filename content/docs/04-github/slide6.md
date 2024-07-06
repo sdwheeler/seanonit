@@ -1,7 +1,7 @@
 ---
 title: GitHub workflow for single clone
 weight: 6
-navWeight: 2
+navWeight: 3
 featured: false
 draft: false
 comment: false

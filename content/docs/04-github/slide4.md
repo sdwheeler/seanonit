@@ -1,7 +1,7 @@
 ---
 title: Installing and using posh-git
 weight: 4
-navWeight: 4
+navWeight: 5
 featured: false
 draft: false
 comment: false

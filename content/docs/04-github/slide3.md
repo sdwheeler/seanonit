@@ -1,7 +1,7 @@
 ---
 title: Setting up Git for PowerShell
 weight: 3
-navWeight: 5
+navWeight: 6
 featured: false
 draft: false
 comment: false
@@ -104,7 +104,9 @@ git config --global color.branch.current "green bold"
 git config --global core.excludesfile ~/.gitignore
 ```
 
-When you are installing on Windows, the installer walks you through all of the settings. If you are
+For more information, see the [Customizing Git][04] topic in the Git documentation.
+
+When you are installing on Windows, the installer walks you through all the settings. If you are
 installing on macOS or Linux, you need to configure the default branch name and credential manager.
 
 ```powershell
@@ -112,7 +114,47 @@ git config --global init.defaultBranch main
 git config --global credential.helper store
 ```
 
+### Git ignore settings
+
+Creating the .gitignore as a global configuration ensures that you are ignoring the same files
+across all repositories.
+
+The tools you use to create and edit your content may create hidden, system, or temporary files
+that you do not want Git to sync to Github. Also, you can create workspace-specific settings for VS
+Code in a `.vscode` folder in your repository. This folder can contain code snippets or style sheets
+that you use in VS Code for that group of content. A `.gitignore` file tells Git which files and
+folders ignore for change tracking. You can create a global file in `$HOME\.gitignore`.
+
+```ini
+.vscode/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+```
+
 <!-- link references -->
 [01]: https://git-scm.com/downloads
 [02]: images/github/git-install.png
 [03]: images/github/slide3.png
+[04]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration

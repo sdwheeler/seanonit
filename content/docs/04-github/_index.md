@@ -20,5 +20,11 @@ PowerShell Users Group (RTPSUG).
 - In the [YouTube video][01], I show how to work with **branches** and _how_ and _why_ to **rebase**
   your commit history. I also cover how to keep your repository clean.
 
+---
+<div style="text-align:center;" >
+<a href='./slide2'>What are Git and GitHub? ❯</a>
+</div>
+
 <!-- link references -->
 [01]: https://www.youtube.com/watch?v=5TPR66fFrsQ
+[02]: ./slide2
