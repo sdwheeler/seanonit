@@ -33,11 +33,12 @@ The presentations are available in PDF format, and the source code is available 
 - [Taming Git and GitHub with PowerShell][04]
   - [RTPSUG - 2023-07-05 - <i class="fab fa-youtube"></i> YouTube][24]
   - [GNVPSUG - 2024-02-13 - <i class="fab fa-youtube"></i> YouTube][28]
+  - [SQL Saturday Baton Rouge 2024-07-27 (#1076)][31] (no video)
 
 ## Optimizing your PowerShell profile
 
 - [Optimizing your PowerShell profile][05]
-  - SQL Saturday #1016 - Baton Rouge 2023-07-29 (no video)
+  - [SQL Saturday Baton Rouge 2023-07-29 (#1060)][30] (no video)
   - [RTPSUG - 2023-11-01 - <i class="fab fa-youtube"></i> YouTube][27]
 
 ## PowerShell Help System
@@ -101,3 +102,5 @@ PowerShell Podcast - [website][17] - [RSS][12]
 [27]: https://www.youtube.com/watch?v=sajRAA9dkEY
 [28]: https://www.youtube.com/watch?v=SuNCSbDzaow
 [29]: https://www.youtube.com/watch?v=ZQODV8krq1Q
+[30]: https://sqlsaturday.com/2023-07-29-sqlsaturday1060/
+[31]: https://sqlsaturday.com/2024-07-27-sqlsaturday1076/
