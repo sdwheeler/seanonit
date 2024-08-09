@@ -1,9 +1,9 @@
 ---
 linkTitle: Parameter Binding
 title: Understanding & Troubleshooting PowerShell Parameter Binding
-linkTitleIcon: <i class="fab fa-github"></i>
-weight: 4
-navWeight: -4000
+linkTitleIcon: <i class="fas fa-duotone fa-terminal"></i>
+weight: 8
+navWeight: -8000
 ---
 <!-- markdownlint-disable MD041 -->
 
