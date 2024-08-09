@@ -24,14 +24,14 @@
     Licensed under the MIT License.
 
     .LINK
-    https://sdwheeler.github.io/seanonit/docs/
+    https://sdwheeler.github.io/seanonit/docs/08-binding/
 
     .LINK
     https://github.com/sdwheeler/seanonit/blob/main/content/downloads/binding/make-echoargs.ps1
 
 #>
 
-[CmdletBinding(HelpUri = 'https://sdwheeler.github.io/seanonit/docs/')]
+[CmdletBinding(HelpUri = 'https://sdwheeler.github.io/seanonit/docs/08-binding/')]
 param(
     [ValidateScript({
         $result = Get-Item -LiteralPath $_ -ErrorAction SilentlyContinue
