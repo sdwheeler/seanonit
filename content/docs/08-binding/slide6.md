@@ -31,7 +31,7 @@ an error if it can't determine which parameter set is being used.
 
 ## $PSBoundParameters
 
-This automatic variable contains a dictionary of the parameters and the values what were bound to
+This automatic variable contains a dictionary of the parameters and the values that were bound to
 them. The parameter names are the keys, and the argument values are the values. If a parameter
 wasn't bound, it isn't in the dictionary.
 
