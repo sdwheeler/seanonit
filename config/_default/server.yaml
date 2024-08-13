@@ -1,7 +1,13 @@
+### https://gohugo.io/getting-started/configuration/#configure-server
 headers:
-  for: /*
-  values:
-    Referrer-Policy: strict-origin-when-cross-origin
-    X-Content-Type-Options: nosniff
-    X-Frame-Options: deny
-    X-XSS-Protection: 1; mode=block
+  - for: /*
+    values:
+      _merge: none
+      referrer-policy: strict-origin-when-cross-origin
+      x-content-type-options: nosniff
+      x-frame-options: deny
+      x-xss-protection: 1; mode=block
+redirects:
+  - from: '**'
+    status: 404
+    to: /404.html

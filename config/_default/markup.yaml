@@ -1,0 +1,65 @@
+### https://gohugo.io/getting-started/configuration-markup/
+markup:
+  defaultmarkdownhandler: goldmark
+  asciidocext:
+    backend: html5
+    failurelevel: fatal
+    noheaderorfooter: true
+    safemode: unsafe
+  goldmark:
+    extensions:
+      definitionlist: true
+      footnote: true
+      linkify: true
+      linkifyprotocol: https
+      strikethrough: true
+      table: true
+      tasklist: true
+      cjk:
+        eastasianlinebreaksstyle: simple
+      extras:
+        delete:
+          enable: true
+        insert:
+          enable: true
+        mark:
+          enable: true
+        subscript:
+          enable: true
+        superscript:
+          enable: true
+      passthrough:
+        delimiters: {}
+      typographer:
+        apostrophe: '&rsquo;'
+        ellipsis: '&hellip;'
+        emdash: '&mdash;'
+        endash: '&ndash;'
+        leftanglequote: '&laquo;'
+        leftdoublequote: '&ldquo;'
+        leftsinglequote: '&lsquo;'
+        rightanglequote: '&raquo;'
+        rightdoublequote: '&rdquo;'
+        rightsinglequote: '&rsquo;'
+    parser:
+      autoheadingid: true
+      autoheadingidtype: github
+      attribute:
+        block: true
+        title: true
+    renderer:
+      unsafe: true
+    renderhooks:
+      image:
+        enabledefault: true
+      link:
+        enabledefault: true
+  highlight:
+    codefences: true
+    linenostart: 1
+    linenumbersintable: true
+    style: monokai
+    tabwidth: 4
+  tableofcontents:
+    endlevel: 3
+    startlevel: 2

@@ -1,0 +1,11 @@
+threshold: 80
+indices:
+  - name: keywords
+    type: basic
+    weight: 100
+  - name: date
+    type: basic
+    weight: 10
+  - name: tags
+    type: basic
+    weight: 80

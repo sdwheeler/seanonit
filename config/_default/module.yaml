@@ -1,0 +1,26 @@
+noproxy: none
+private: '*.*'
+proxy: direct
+workspace: 'off'
+hugoversion: {}
+imports:
+  - path: github.com/razonyang/hugo-theme-bootstrap
+mounts:
+  - source: package.hugo.json
+    target: assets\_jsconfig\package.hugo.json
+  - source: package.json
+    target: assets\_jsconfig\package.json
+  - source: content
+    target: content
+  - source: data
+    target: data
+  - source: layouts
+    target: layouts
+  - source: i18n
+    target: i18n
+  - source: archetypes
+    target: archetypes
+  - source: assets
+    target: assets
+  - source: static
+    target: static

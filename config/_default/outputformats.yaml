@@ -1,0 +1,63 @@
+amp:
+  basename: index
+  ishtml: true
+  mediatype: text/html
+  path: amp
+  permalinkable: true
+  rel: amphtml
+calendar:
+  basename: index
+  isplaintext: true
+  mediatype: text/calendar
+  protocol: webcal://
+  rel: alternate
+css:
+  basename: styles
+  isplaintext: true
+  mediatype: text/css
+  notalternative: true
+  rel: stylesheet
+csv:
+  basename: index
+  isplaintext: true
+  mediatype: text/csv
+  rel: alternate
+html:
+  basename: index
+  ishtml: true
+  mediatype: text/html
+  permalinkable: true
+  rel: canonical
+  weight: 10
+json:
+  basename: index
+  isplaintext: true
+  mediatype: application/json
+  rel: alternate
+markdown:
+  basename: index
+  isplaintext: true
+  mediatype: text/markdown
+  rel: alternate
+robots:
+  basename: robots
+  isplaintext: true
+  mediatype: text/plain
+  rel: alternate
+  root: true
+rss:
+  basename: index
+  mediatype: application/rss+xml
+  nougly: true
+  rel: alternate
+sitemap:
+  basename: sitemap
+  mediatype: application/xml
+  rel: sitemap
+  ugly: true
+webappmanifest:
+  basename: manifest
+  isplaintext: true
+  mediatype: application/manifest+json
+  notalternative: true
+  rel: manifest

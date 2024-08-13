@@ -1,0 +1,175 @@
+application/json:
+  delimiter: .
+  suffixes:
+    - json
+application/manifest+json:
+  delimiter: .
+  suffixes:
+    - webmanifest
+application/octet-stream:
+  delimiter: .
+application/pdf:
+  delimiter: .
+  suffixes:
+    - pdf
+application/rss+xml:
+  delimiter: .
+  suffixes:
+    - xml
+    - rss
+application/toml:
+  delimiter: .
+  suffixes:
+    - toml
+application/wasm:
+  delimiter: .
+  suffixes:
+    - wasm
+application/xml:
+  delimiter: .
+  suffixes:
+    - xml
+application/yaml:
+  delimiter: .
+  suffixes:
+    - yaml
+    - yml
+font/otf:
+  delimiter: .
+  suffixes:
+    - otf
+font/ttf:
+  delimiter: .
+  suffixes:
+    - ttf
+image/bmp:
+  delimiter: .
+  suffixes:
+    - bmp
+image/gif:
+  delimiter: .
+  suffixes:
+    - gif
+image/jpeg:
+  delimiter: .
+  suffixes:
+    - jpg
+    - jpeg
+    - jpe
+    - jif
+    - jfif
+image/png:
+  delimiter: .
+  suffixes:
+    - png
+image/svg+xml:
+  delimiter: .
+  suffixes:
+    - svg
+image/tiff:
+  delimiter: .
+  suffixes:
+    - tif
+    - tiff
+image/webp:
+  delimiter: .
+  suffixes:
+    - webp
+text/asciidoc:
+  delimiter: .
+  suffixes:
+    - adoc
+    - asciidoc
+    - ad
+text/calendar:
+  delimiter: .
+  suffixes:
+    - ics
+text/css:
+  delimiter: .
+  suffixes:
+    - css
+text/csv:
+  delimiter: .
+  suffixes:
+    - csv
+text/html:
+  delimiter: .
+  suffixes:
+    - html
+    - htm
+text/javascript:
+  delimiter: .
+  suffixes:
+    - js
+    - jsm
+    - mjs
+text/jsx:
+  delimiter: .
+  suffixes:
+    - jsx
+text/markdown:
+  delimiter: .
+  suffixes:
+    - md
+    - mdown
+    - markdown
+text/org:
+  delimiter: .
+  suffixes:
+    - org
+text/pandoc:
+  delimiter: .
+  suffixes:
+    - pandoc
+    - pdc
+text/plain:
+  delimiter: .
+  suffixes:
+    - txt
+text/rst:
+  delimiter: .
+  suffixes:
+    - rst
+text/tsx:
+  delimiter: .
+  suffixes:
+    - tsx
+text/typescript:
+  delimiter: .
+  suffixes:
+    - ts
+text/x-sass:
+  delimiter: .
+  suffixes:
+    - sass
+text/x-scss:
+  delimiter: .
+  suffixes:
+    - scss
+video/3gpp:
+  delimiter: .
+  suffixes:
+    - 3gpp
+    - 3gp
+video/mp4:
+  delimiter: .
+  suffixes:
+    - mp4
+video/mpeg:
+  delimiter: .
+  suffixes:
+    - mpg
+    - mpeg
+video/ogg:
+  delimiter: .
+  suffixes:
+    - ogv
+video/webm:
+  delimiter: .
+  suffixes:
+    - webm
+video/x-msvideo:
+  delimiter: .
+  suffixes:
+    - avi

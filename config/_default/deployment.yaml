@@ -1,0 +1,3 @@
+invalidatecdn: true
+maxdeletes: 256
+workers: 10

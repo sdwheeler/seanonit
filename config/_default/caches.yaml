@@ -1,0 +1,21 @@
+assets:
+  dir: ':resourceDir/_gen'
+  maxage: -1
+getcsv:
+  dir: ':cacheDir/:project'
+  maxage: -1
+getjson:
+  dir: ':cacheDir/:project'
+  maxage: -1
+getresource:
+  dir: ':cacheDir/:project'
+  maxage: -1
+images:
+  dir: ':resourceDir/_gen'
+  maxage: -1
+misc:
+  dir: ':cacheDir/:project'
+  maxage: -1
+modules:
+  dir: ':cacheDir/modules'
+  maxage: -1

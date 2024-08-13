@@ -13,23 +13,13 @@ main:
 ## Menu documentation: https://gohugo.io/content-management/menus/#properties-front-matter
 ## The name of menu
 # name:
-## The ID of menu.
-# identifier:
-## The weight of menu that used for sorting in ascending order.
-# weight:
-## The `identifier` of parent menu entry.
-# parent:
-## The URL of menu.
-# url:
-## The leading string before menu name.
-# pre:
-## The trailing string after menu name.
-# post:
-## Menu parameters.
-# params:
-#   ## true means divider.
-#   divider:
-#   ## The icon HTML.
-#   icon:
-#   ## The description for top app bar dropdown menus only.
-#   description:
+# identifier:     ## The ID of menu.
+# weight:         ## The weight of menu that used for sorting in ascending order.
+# parent:         ## The `identifier` of parent menu entry.
+# url:            ## The URL of menu.
+# pre:            ## The leading string before menu name.
+# post:           ## The trailing string after menu name.
+# params:         ## Menu parameters.
+#   divider:      ## true means divider.
+#   icon:         ## The icon HTML.
+#   description:  ## The description for top app bar dropdown menus only.

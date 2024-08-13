@@ -1,0 +1,6 @@
+page:
+  blog: /blog/:year/:month/:title/
+  news: /news/:year/:month/:title/
+term:
+  blog: /blog/:year/:month/:title/
+  news: /news/:year/:month/:title/

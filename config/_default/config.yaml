@@ -1,57 +1,34 @@
-baseURL: https://sdwheeler.github.io/seanonit/
-title: Sean on IT
-# theme: github.com/razonyang/hugo-theme-bootstrap
-copyright: 'Copyright © 2014-{year} Sean D. Wheeler. All Rights Reserved.'
+### https://gohugo.io/getting-started/configuration/
+archetypeDir: archetypes
+assetDir: assets
+baseUrl: https://sdwheeler.github.io/seanonit/
+cacheDir: C:\Users\sewhee\AppData\Local\hugo_cache
+capitalizeListTitles: true
+contentDir: content
+copyright: Copyright © 2014-{year} Sean D. Wheeler. All Rights Reserved.
+dataDir: data
 defaultContentLanguage: en
-### Uncomment it if your content contains Chinese/Japanese/Korean Languages.
-# hasCJKLanguage: true
-# defaultContentLanguageInSubdir: true
-# disableLanguages:
-#  - fr
-#  - zh-cn
-#  - zh-tw
-paginate: 10
-# paginatePath: page
-enableRobotsTXT: true
 enableEmoji: true
-pygmentsUseClasses: true
-
-module:
-  imports:
-  - path: github.com/razonyang/hugo-theme-bootstrap
-
-blackfriday:
-  hrefTargetBlank: true
-
-taxonomies:
-  category: categories
-  series: series
-  tag: tags
-  authors: authors
-
-build:
-  writeStats: true
-
-permalinks:
-  news: /news/:year/:month/:title/
-  blog: /blog/:year/:month/:title/
-
-# module:
-  # proxy: https://goproxy.cn
-
-# disqusShortname:
-
-# services:
-#   disqus:
-#     shortname: your-disqus-shortname
-#   googleAnalytics
-#     ID:
-
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-    parser:
-      wrapStandAloneImageWithinParagraph: false
-      attribute:
-        block: true
+enableRobotsTxt: true
+environment: production
+i18nDir: i18n
+layoutDir: layouts
+mainSections:
+  - blog
+  - posts
+paginate: 10
+pluralizeListTitles: true
+publishDir: public
+resourceDir: resources
+staticDir:
+  - static
+summaryLength: 70
+themesDir: themes
+timeout: 30s
+timezone: America/Chicago
+title: Sean on IT
+titleCaseStyle: chicago
+workingDir: D:\Git\My-Repos\seanonit
+pagination:
+  pagerSize: 10
+  path: page

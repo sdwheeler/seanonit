@@ -1,0 +1,6 @@
+useresourcecachewhen: fallback
+buildstats:
+  enable: true
+cachebusters:
+  - source: (postcss|tailwind)\.config\.js
+    target: (css|styles|scss|sass)

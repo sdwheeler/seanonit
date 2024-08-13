@@ -1,0 +1,16 @@
+home:
+  - html
+  - rss
+page:
+  - html
+rss:
+  - rss
+section:
+  - html
+  - rss
+taxonomy:
+  - html
+  - rss
+term:
+  - html
+  - rss

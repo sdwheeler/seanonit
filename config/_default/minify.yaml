@@ -1,0 +1,16 @@
+tdewolff:
+  css:
+    keepcss2: true
+  html:
+    keepdefaultattrvals: true
+    keepdocumenttags: true
+    keependtags: true
+    keepspecialcomments: true
+    templatedelims:
+      - ''
+      - ''
+  js:
+    version: 2022
+  json: {}
+  svg: {}
+  xml: {}
