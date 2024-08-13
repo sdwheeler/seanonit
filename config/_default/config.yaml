@@ -2,7 +2,7 @@
 archetypeDir: archetypes
 assetDir: assets
 baseUrl: https://sdwheeler.github.io/seanonit/
-cacheDir: C:\Users\sewhee\AppData\Local\hugo_cache
+# cacheDir: C:\Users\sewhee\AppData\Local\hugo_cache
 capitalizeListTitles: true
 contentDir: content
 copyright: Copyright © 2014-{year} Sean D. Wheeler. All Rights Reserved.
