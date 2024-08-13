@@ -28,7 +28,7 @@ timeout: 30s
 timezone: America/Chicago
 title: Sean on IT
 titleCaseStyle: chicago
-workingDir: D:\Git\My-Repos\seanonit
+# workingDir: D:\Git\My-Repos\seanonit
 pagination:
   pagerSize: 10
   path: page
