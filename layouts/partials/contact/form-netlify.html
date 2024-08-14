@@ -1,4 +1,0 @@
-<form class="needs-validation" name="contact" method="POST" enctype="multipart/form-data"
-    data-netlify="true" {{ with .Site.Params.contact.reCaptcha }} data-netlify-recaptcha="true"{{ end }} novalidate>
-    {{- partial "contact/form-body" . -}}
-</form>
