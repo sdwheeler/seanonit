@@ -6,7 +6,7 @@
 #--------------------------------------------------------------------------------
 #region Initialize demo environment
 #--------------------------------------------------------------------------------
-
+# Hit F5 to run the initialization code
 $inputObject = [pscustomobject]@{
     NumProcs     = 8
     ComputerName = $env:COMPUTERNAME
@@ -69,7 +69,7 @@ function Show-Binding2 {
 }
 
 return
-
+# The F5 run exits here.  The rest of the script is for demonstration purposes.
 #--------------------------------------------------------------------------------
 #endregion Initialize demo environment
 #--------------------------------------------------------------------------------
