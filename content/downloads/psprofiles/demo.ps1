@@ -74,7 +74,11 @@ $env:PATH -split [System.IO.Path]::PathSeparator
 [System.IO.Path] | Get-Member -Static -Type Property
 
 'DirectorySeparatorChar', 'PathSeparator', 'VolumeSeparatorChar' |
-    ForEach-Object { [System.IO.Path]::$_ }
+    ForEach-Object { "$_ = $([System.IO.Path]::$_)" }
+
+[System.IO.Path]::InvalidPathChars | Format-Hex
+
+[System.Environment]::NewLine | Format-Hex
 
 # Aliases vs. native commands
 Get-Command cat, clear, cp, diff, kill, ls, man, mount, mv, ps, rm, rmdir,
@@ -86,7 +90,8 @@ Get-Command cat, clear, cp, diff, kill, ls, man, mount, mv, ps, rm, rmdir,
 #region Host-specific differences
 #-------------------------------------------------------
 #Host-specific commands - VS Code != console/terminal
-"$($Host.Name) version = $($Host.Version)"; "PowerShell version = $($PSVersionTable.PSVersion)"
+"$($Host.Name) version = $($Host.Version)"
+"PowerShell version = $($PSVersionTable.PSVersion)"
 
 #-------------------------------------------------------
 #endregion

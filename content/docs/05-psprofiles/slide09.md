@@ -17,18 +17,20 @@ index: true
 
   You can use symlinks to link the runtime location to source location.
 
+  You can use a script to create the symlink.
+
   ```powershell
   # Creating the symbolic link to the profile
   $newItemSplat = @{
       ItemType = 'SymbolicLink'
-      Value = 'D:\Git\My-Repos\Presentations\SQLSaturday\2023-BatonRouge\profile.ps1'
+      Value = 'C:\Git\My-Repos\tools-by-sean\profile\scripts\CurrentUserAllHosts.ps1'
       Path = $PROFILE.CurrentUserAllHosts
   }
   New-Item @newItemSplat
   ```
 
-  Don't let OneDrive redirect your `Documents` folder on Windows. This causes problems with the
-  command discovery and module loading.
+  However, be careful using OneDrive. OneDrive won't sync symlinks. Don't let OneDrive redirect your
+  `Documents` folder on Windows. This causes problems with the command discovery and module loading.
 
 - Use the profile hierarchy to separate configuration items.
 
@@ -38,7 +40,12 @@ index: true
 
 - Move utility functions out of your profile and into a module.
 
-  They can be loaded on demand, no need to include in profile.
+  The modules get loaded on demand. There is no need to include them in your profile.
+
+- Don't pollute your environment with a bunch of variables in your profile.
+
+  - Wrap code in functions or script blocks to limit the scope of variables.
+  - Use the `$global:` scope to create and manage the variables to want to be available everywhere.
 
 <!-- link references -->
 [01]: ./images/psprofiles/slide09.png

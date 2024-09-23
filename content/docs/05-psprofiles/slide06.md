@@ -17,6 +17,20 @@ index: true
 
 - PowerShell on Windows has several modules that aren't available on non-Windows platforms
 
+  The following modules are only available on Windows:
+
+  - CimCmdlets
+  - ISE (Windows PowerShell 5.1 only)
+  - Microsoft.PowerShell.Diagnostics
+  - Microsoft.PowerShell.LocalAccounts (Windows PowerShell 5.1 only)
+  - Microsoft.PowerShell.ODataUtils (Windows PowerShell 5.1 only)
+  - Microsoft.PowerShell.Operation.Validation (Windows PowerShell 5.1 only)
+  - Microsoft.WsMan.Management
+  - PSDiagnostics
+  - PSScheduledJob
+  - PSWorkflow (Windows PowerShell 5.1 only)
+  - PSWorkflowUtility (Windows PowerShell 5.1 only)
+
 - Non-Windows platforms don't support graphical features like `Out-GridView` and
   `Get-Help -ShowWindow`
 
@@ -24,7 +38,8 @@ index: true
 
 - Non-Windows platforms are case-sensitive
 
-  For example, environment variables are case-sensitive on Linux.
+  PowerShell is case-insensitive but case-preserving on all platforms. Non-Windows platforms are
+  case-sensitive. For example, environment variables are case-sensitive on Linux.
 
   ```powershell
   PS> lsb_release -a
@@ -43,11 +58,13 @@ index: true
 
 - PowerShell on Windows has several aliases that mimic native commands on non-Windows platforms
 
+  ```powershell
+  Get-Command cat, clear, cp, diff, kill, ls, man, mount, mv, ps, rm, rmdir, sleep, sort, tee, write
+  ```
+
   Windows:
 
-  ```powershell
-  PS> Get-Command cat, clear, cp, diff, kill, ls, man, mount, mv, ps, rm, rmdir, sleep, sort, tee, write
-
+  ```Output
   CommandType     Name                      Version    Source
   -----------     ----                      -------    ------
   Alias           cat -> Get-Content
@@ -70,39 +87,45 @@ index: true
 
   Linux:
 
-  ```powershell
-  PS> Get-Command cat, clear, cp, diff, kill, ls, man, mount, mv, ps, rm, rmdir, sleep, sort, tee, write
-
-  CommandType     Name                      Version    Source
-  -----------     ----                      -------    ------
-  Application     cat                       0.0.0.0    /usr/bin/cat
-  Application     clear                     0.0.0.0    /usr/bin/clear
-  Application     cp                        0.0.0.0    /usr/bin/cp
-  Application     diff                      0.0.0.0    /usr/bin/diff
-  Application     kill                      0.0.0.0    /usr/bin/kill
-  Application     ls                        0.0.0.0    /usr/bin/ls
-  Application     man                       0.0.0.0    /usr/bin/man
-  Application     mount                     0.0.0.0    /usr/bin/mount
-  Application     mv                        0.0.0.0    /usr/bin/mv
-  Application     ps                        0.0.0.0    /usr/bin/ps
-  Application     rm                        0.0.0.0    /usr/bin/rm
-  Application     rmdir                     0.0.0.0    /usr/bin/rmdir
-  Application     sleep                     0.0.0.0    /usr/bin/sleep
-  Application     sort                      0.0.0.0    /usr/bin/sort
-  Application     tee                       0.0.0.0    /usr/bin/tee
-  Application     write                     0.0.0.0    /usr/bin/write
+  ```Output
+  CommandType     Name     Version    Source
+  -----------     ----     -------    ------
+  Application     cat      0.0.0.0    /usr/bin/cat
+  Application     clear    0.0.0.0    /usr/bin/clear
+  Application     cp       0.0.0.0    /usr/bin/cp
+  Application     diff     0.0.0.0    /usr/bin/diff
+  Application     kill     0.0.0.0    /usr/bin/kill
+  Application     ls       0.0.0.0    /usr/bin/ls
+  Application     man      0.0.0.0    /usr/bin/man
+  Application     mount    0.0.0.0    /usr/bin/mount
+  Application     mv       0.0.0.0    /usr/bin/mv
+  Application     ps       0.0.0.0    /usr/bin/ps
+  Application     rm       0.0.0.0    /usr/bin/rm
+  Application     rmdir    0.0.0.0    /usr/bin/rmdir
+  Application     sleep    0.0.0.0    /usr/bin/sleep
+  Application     sort     0.0.0.0    /usr/bin/sort
+  Application     tee      0.0.0.0    /usr/bin/tee
+  Application     write    0.0.0.0    /usr/bin/write
   ```
 
 - PowerShell doesn't support Linux-style background jobs
 
-- PATH and directory separator characters are different
+- PATH, directory separator, and line-ending characters are different
+
+  - Use `[System.IO.Path]` class to handle path separators
+  - Use `[System.Environment]::NewLine` to handle line-ending characters
 
 ## Related articles
 
-- [Release history of modules and cmdlets][02]
-- [PowerShell differences on non-Windows platforms][03]
+- [Release history of modules and cmdlets][04]
+- [PowerShell differences on non-Windows platforms][05]
+- [Release history of modules and cmdlets][04]
+- [Path Class (System.IO)][03]
+- [Environment.NewLine Property][02]
 
 <!-- link references -->
 [01]: ./images/psprofiles/slide06.png
-[02]: https://learn.microsoft.com/powershell/scripting/whats-new/cmdlet-versions
-[03]: https://learn.microsoft.com/powershell/scripting/whats-new/unix-support
+[02]: https://learn.microsoft.com/dotnet/api/system.environment.newline
+[03]: https://learn.microsoft.com/dotnet/api/system.io.path
+[04]: https://learn.microsoft.com/powershell/scripting/whats-new/cmdlet-versions
+[05]: https://learn.microsoft.com/powershell/scripting/whats-new/unix-support

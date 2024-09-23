@@ -40,16 +40,16 @@ index: true
 
 - The behavior of some cmdlets has changed in PowerShell 7
 
-  For example, the `Invoke-RestMethod` cmdlet has 4 parameter sets and 53 parameters in PowerShell
+  For example, the `Invoke-RestMethod` cmdlet has 4 parameter sets and 58 parameters in PowerShell
   7.
 
   ```powershell
   PS> $PSVersionTable.PSVersion.ToString()
-  7.3.6
+  7.4.5
   PS> (Get-Command Invoke-RestMethod).ParameterSets.Count
   4
   PS> (Get-Command Invoke-RestMethod).Parameters.Count
-  53
+  58
   ```
 
   The same command in Windows PowerShell has 1 parameter set and 34 parameters.
@@ -64,6 +64,19 @@ index: true
   ```
 
 - PowerShell 7 has new experimental features
+
+  ```powershell
+  PS>  Get-ExperimentalFeature
+
+  Name                             Enabled Source   Description
+  ----                             ------- ------   -----------
+  PSCommandNotFoundSuggestion         True PSEngine Recommend potential commands based on fuzzy search on a CommandNotFo…
+  PSCommandWithArgs                  False PSEngine Enable `-CommandWithArgs` parameter for pwsh
+  PSFeedbackProvider                  True PSEngine Replace the hard-coded suggestion framework with the extensible feed…
+  PSLoadAssemblyFromNativeCode       False PSEngine Expose an API to allow assembly loading from native code
+  PSModuleAutoLoadSkipOfflineFiles    True PSEngine Module discovery will skip over files that are marked by cloud provi…
+  PSSubsystemPluginModel              True PSEngine A plugin model for registering and un-registering PowerShell subsyst…
+  ```
 
 - PowerShell 7 has new operators that aren't available in Windows PowerShell 5.1
 
@@ -95,16 +108,18 @@ index: true
 
 ## Related articles
 
-- [Differences between Windows PowerShell 5.1 and PowerShell 7.x][06]
-- [about Special Characters][04]
+- [Differences between Windows PowerShell 5.1 and PowerShell 7.x][07]
+- [about Special Characters][05]
 - [about_ANSI_Terminals][02]
-- [Using Experimental Features in PowerShell][05]
-- [about_Operators][03]
+- [Using Experimental Features in PowerShell][06]
+- [about_Operators][04]
+- [about_Character_Encoding][03]
 
 <!-- link references -->
 [01]: ./images/psprofiles/slide05.png
 [02]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_ANSI_Terminals
-[03]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_Operators
-[04]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_special_characters
-[05]: https://learn.microsoft.com/powershell/scripting/learn/experimental-features
-[06]: https://learn.microsoft.com/powershell/scripting/whats-new/differences-from-windows-powershell
+[03]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_character_encoding
+[04]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_Operators
+[05]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_special_characters
+[06]: https://learn.microsoft.com/powershell/scripting/learn/experimental-features
+[07]: https://learn.microsoft.com/powershell/scripting/whats-new/differences-from-windows-powershell

@@ -22,9 +22,13 @@ index: true
   Notice the version of the Host in the PowerShell Extension terminal of VS Code.
 
   ```powershell
-  PS> "$($Host.Name) version = $($Host.Version)"; "PowerShell version = $($PSVersionTable.PSVersion)"
-  Visual Studio Code Host version = 2023.9.1
-  PowerShell version = 7.3.6
+  "$($Host.Name) version = $($Host.Version)"
+  "PowerShell version = $($PSVersionTable.PSVersion)"
+  ```
+
+  ```Output
+  Visual Studio Code Host version = 2024.3.2
+  PowerShell version = 7.4.5
   ```
 
 - The `$Host` variable can't be replaced, so you can't use it your scripts except to get Host

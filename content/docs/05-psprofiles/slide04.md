@@ -14,16 +14,27 @@ index: true
 ![Profile basics][01]
 
 In PowerShell, the profile script is used to customize the shell environment and define functions,
-aliases, and variables. The profile is a PowerShell script file that is executed when you start a
+aliases, and variables. The profile is a PowerShell script file that's executed when you start a
 PowerShell session, whether it's an interactive session or a script execution.
 
-There are different profile scripts, in different locations, for the current user and all users on
-the system. PowerShell runs the profile scripts in the following order.
+## Order of precedence
+
+There are different profile scripts, in different locations, that apply to all users on the system
+or just the current user. PowerShell runs the profile scripts in the following order.
 
 - All Users, All Hosts
 - All Users, Current Host
 - Current User, All Hosts
 - Current user, Current Host
+
+Any settings in the profile scripts are applied in the order they are run. The last setting applied
+overrides any previous settings.
+
+The different profile scopes and locations allow you to create scripts that can be shared across
+your enterprise. You can deploy scripts using group policy or configuration management tools so that
+you can have a consistent PowerShell environment across all your systems.
+
+## File locations
 
 Use the following command to see the list of profiles scripts and locations.
 
@@ -50,6 +61,7 @@ CurrentUserAllHosts    : /home/sdwheeler/.config/powershell/profile.ps1
 CurrentUserCurrentHost : /home/sdwheeler/.config/powershell/Microsoft.PowerShell_profile.ps1
 Length                 : 67
 ```
+
 PowerShell doesn't load profiles from remote sessions. If you are in a remote interactive session
 you can dot-source the profile script to load it.
 

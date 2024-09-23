@@ -31,10 +31,18 @@ index: true
 
 - Configuring colors and keybindings
 
-  PSReadLine allows you to configure colors and keybindings. Add these commands to your profile so
-  they persist across sessions.
+  PowerShell 7.2 added a new automatic variable, `$PSStyle`, and changes to the PowerShell engine to
+  support the output of ANSI-decorated text. For Windows PowerShell, you can use the **PSStyle**
+  module to achieve similar results. Also, the **PSReadLine** allows you to configure colors for
+  syntax highlighting on the command line.
 
-- `$PSDefaultParameterValues`
+  **PSReadLine** also lets you customize keybindings. For example, you can map the keybinding for
+  `<Enter>` to the `ValidateAndAcceptLine` function. This function prevents you from running
+  a command with syntax errors.
+
+  Add these commands to your profile so they persist across sessions.
+
+- Default parameter values
 
   The `$PSDefaultParameterValues` preference variable allows you to set default parameter values for
   cmdlets. For example, you may want the `Install-Module` to alway use the **SkipPublisherCheck**
@@ -49,10 +57,10 @@ index: true
       'Export-Csv:NoTypeInformation'      = $true         # PS5.1 defaults to $false
       'ConvertTo-Csv:NoTypeInformation'   = $true         # PS5.1 defaults to $false
       'Receive-Job:Keep'                  = $true         # Prevents accidental loss of output
+      # 'Group-Object:NoElement'          = $true         # Minimize noise in output
       'Install-Module:AllowClobber'       = $true         # Default behavior in Install-PSResource
       'Install-Module:Force'              = $true         # Default behavior in Install-PSResource
       'Install-Module:SkipPublisherCheck' = $true         # Default behavior in Install-PSResource
-      'Group-Object:NoElement'            = $true         # Minimize noise in output
       'Find-Module:Repository'            = 'PSGallery'   # Useful if you have private test repos
       'Install-Module:Repository'         = 'PSGallery'   # Useful if you have private test repos
       'Find-PSResource:Repository'        = 'PSGallery'   # Useful if you have private test repos
@@ -62,14 +70,15 @@ index: true
 
 - Custom prompts
 
-  In PowerShell, the command prompt that is displayed is created by the `prompt` function. You can
-  write your own custom `prompt` function to display whatever you want.
+  The prompt that PowerShell displays is created by the `prompt` function. You can write your own
+  custom `prompt` function to display whatever you want.
 
 ## Related articles
 
 - [about_Prompts][02]
 - [about_Parameters_Default_Values][03]
 - [Set-PSReadLineOption][04]
+- [PSStyle module](https://www.powershellgallery.com/packages/PSStyle)
 
 <!-- link references -->
 [01]: ./images/psprofiles/slide08.png
