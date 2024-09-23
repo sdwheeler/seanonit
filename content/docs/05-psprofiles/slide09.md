@@ -45,7 +45,7 @@ index: true
 - Don't pollute your environment with a bunch of variables in your profile.
 
   - Wrap code in functions or script blocks to limit the scope of variables.
-  - Use the `$global:` scope to create and manage the variables to want to be available everywhere.
+  - Use the `$global:` scope to create and manage the variables you want to be available everywhere.
 
 <!-- link references -->
 [01]: ./images/psprofiles/slide09.png
