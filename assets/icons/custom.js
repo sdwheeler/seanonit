@@ -1,9 +1,9 @@
 import {
-    faBlog, faBook, faFile, faNewspaper, faTerminal, faLessThan, faPlay,  faPenNib
+    faBlog, faBook, faFile, faNewspaper, faTerminal, faLessThan, faPlay, faScroll, faUserPen
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
-    faAddressBook, faFilePdf
+    faAddressBook, faFilePdf, faCircleQuestion
 } from '@fortawesome/free-regular-svg-icons';
 
 import {
@@ -11,8 +11,8 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 const icons = [
-    faBook, faBlog, faFile, faNewspaper, faTerminal, faLessThan, faPlay, faPenNib,
-    faAddressBook, faFilePdf,
+    faBook, faBlog, faFile, faNewspaper, faTerminal, faLessThan, faPlay, faScroll, faUserPen,
+    faAddressBook, faFilePdf, faCircleQuestion,
     faAmazon, faGoogle, faMarkdown, faOsi
 ];
 export default icons;

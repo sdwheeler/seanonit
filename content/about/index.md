@@ -35,7 +35,7 @@ support Windows (WFW 3.11, LanMan 2.x, NT 3.1, & NT 3.5) for large corporate cus
 ![Blog logo][06] I started this blog to share my the things I have learned during the course of
 my career in IT. The logo and the name were meant to reflect the "IT" part of my career. Most of the
 content here is about PowerShell However, I will also write about other topics that interest me. So
-the the "IT" may just become "it".
+the "IT" may just become "it".
 
 I hope you find it useful.
 {{% /clearfix %}}

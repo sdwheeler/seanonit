@@ -1,6 +1,6 @@
 ---
 linkTitle: Contribute to Docs
-linkTitleIcon: <i class="fas fa-pen-nib"></i>
+linkTitleIcon: <i class="fa-solid fa-user-pen"></i>
 title: Contribute to Docs like a Microsoft Insider
 weight: 1
 navWeight: -1000

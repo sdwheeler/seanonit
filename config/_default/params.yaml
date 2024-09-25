@@ -1,75 +1,36 @@
-brand: Sean on IT
-breadcrumb: true
-carouselpostcount: 5
-color: light ### light, dark or auto. Default to auto.
-counttaxonomyposts: true
-dateformat: ':date_long' ## Possible values - https://gohugo.io/functions/time/format/
-description: Random thoughts and things I have learned in my IT journey.
-featuredpostcount: 5
-fixedheader: true
-keywords: PowerShell, technical writing
-logo: images/OnIT.png
-mainsections:
-  - blog
-  - posts     ### Default is 'posts'
-  # - docs    ### Adding 'docs' puts docs in the main page list
-metarobots: index, follow  ### Empty value disables Meta Tag robots
-sass_transpiler: dartsass
-palette: blue
-palettes:
-  - blue
-  - blue gray
-  - brown
-  - cyan
-  - green
-  - indigo
-  - orange
-  - pink
-  - purple
-  - red
-  - teal
-  - yellow
-pinnedpost: true
-pinnedpostcount: 3
-postdate: true
-recentpostcount: 5
-rss: home
-sidebartaxonomies:
-  - categories
-  - tags
-  - series
-taxonomypaginate: 10
-taxonomypostcount: 20
-titlecase: true
-titleseparator: '-'
-tocposition: content
-tocwordcount: 208
-viewer: true
 actionspanel:
   disabled: true
 archive:
-  paginate: 20            ### Archive pagination. Default to 100.
+  paginate: 20 ### Archive pagination. Default to 100.
   # basePath = "/archiv"  ### The base path of archive pages.
   # dateFormat: 01-02     ### Archive date format. Default to Jan 2.
 author:
-  name: Sean D. Wheeler
   avatar: images/OnIT-noborder.png
-  bio: 'PowerShell documentarian'
+  bio: "PowerShell documentarian"
   company: Microsoft
-  location: 'Denton, TX'
+  location: "Denton, TX"
+  name: Sean D. Wheeler
   params:
     layout: compact
   social:
     # email: swsamwa@live.com
-    linkedin: scriptingsean
     github: sdwheeler
+    linkedin: scriptingsean
     mastodon: https://sdwheeler@fosstodon.org
-    twitter: swsamwa
     rss: "" # Remove RSS
+    twitter: swsamwa
     website: https://sessionize.com/sean-wheeler
+brand: Sean on IT
+breadcrumb: true
+carouselpostcount: 5
 codeblock:
   # maxLines: 8
   linenos: true
+color: light ### light, dark or auto. Default to auto.
+comment: false ### Toggle comment widget on/off
+counttaxonomyposts: true
+dateformat: ":date_long" ## Possible values - https://gohugo.io/functions/time/format/
+description: Random thoughts and things I have learned in my IT journey.
 docs:
   copyright: false ### Whether to display copyright section on each post.
   featuredImage: true ### Show the featured image above the content.
@@ -94,23 +55,48 @@ favicon:
     - rel: apple-touch-icon
       size: 180x180
     - size: 192x192
+featuredpostcount: 5
 feeds:
   content: true
+fixedheader: true
 fontsize:
   extralarge: 1.2rem
   extrasmall: .8rem
   large: 1.1rem
   small: .9rem
+keywords: PowerShell, technical writing
+logo: images/OnIT.png
+mainsections:
+  - blog
+  - posts ### Default is 'posts'
+  # - docs    ### Adding 'docs' puts docs in the main page list
+metarobots: index, follow ### Empty value disables Meta Tag robots
+palette: blue
+palettes:
+  - blue
+  - blue gray
+  - brown
+  - cyan
+  - green
+  - indigo
+  - orange
+  - pink
+  - purple
+  - red
+  - teal
+  - yellow
+pinnedpost: true
+pinnedpostcount: 3
 post:
-  excerpt: description
   # excerptMaxLength: 120
   copyright: false
+  excerpt: description
   # plainifyExcerpt: false   ### Format excerpt in HTML if false.
-  featuredImage: true        ### Show the featured image above the content.
-  numberifyHeadings: false   ### Count headings automatically.
+  featuredImage: true ### Show the featured image above the content.
+  numberifyHeadings: false ### Count headings automatically.
   # numberifyHeadingsEndLevel: 4  ### The depth of headings to count. Default to 6.
   # numberifyHeadingsSeparator: . ### The separator between of number and headings.
-  tocStyleType: disc         ### The TOC's CSS list-style-type property.
+  tocStyleType: disc ### The TOC's CSS list-style-type property.
   # imageTitleAsCaption: true
   # panel: false
   # nav: false
@@ -118,13 +104,19 @@ post:
   ### Default to the beginning of page.
   ### Support manual summary splitting via <!--more-->.
   # readMoreFromContent: true
+postdate: true
+poweredBy: false
+readingTime: false
+recentpostcount: 5
+relatedPostCount: false ### The number of related posts.
 repo:
   branch: main
   url: https://github.com/sdwheeler/seanonit
   # subPath: exampleSite
   # dateFormat: 02/01/2006, 15:04:05 PM
+rss: home
+sass_transpiler: dartsass
 search:
-  paginate: 5     ### Pagination. Default to 10.
   # resultContentWordCount: 240 ### The maximum word count of result content for displaying.
   # Fuse.js options. See https://fusejs.io/api/options.html.
   fuse:
@@ -135,24 +127,38 @@ search:
     threshold: 0.6
     # distance: 100
     # useExtendedSearch: true
+  paginate: 5 ### Pagination. Default to 10.
+
+searchBar: false
 sidebar:
-  fixed: false
   # archives: true
   # taxonomiesToggle: false
   # categories: true
   # tags: true
   # series: true
   authors: true
+  collapsed: true
   # postsToggle: false
   featuredPosts: false
+  fixed: false
   recentPosts: false
-  collapsed: true
+sidebartaxonomies:
+  - categories
+  - tags
+  - series
 social:
   github: sdwheeler
   linkedin: scriptingsean
   mastodon: https://sdwheeler@fosstodon.org
   twitter: swsamwa
   website: https://sessionize.com/sean-wheeler
+taxonomypaginate: 10
+taxonomypostcount: 20
+titlecase: true
+titleseparator: "-"
+tocWordCount: 208 # TOC is displayed only if the post's word count exceeds this value.
+tocposition: content
+tocwordcount: 208
 topappbar:
   coloredindark: true
   dropdownmenutoggle: true
@@ -162,11 +168,4 @@ topappbar:
     mastodon: https://sdwheeler@fosstodon.org
     twitter: swsamwa
     website: https://sessionize.com/sean-wheeler
-
-
-searchBar: false
-poweredBy: false
-readingTime: false
-relatedPostCount: false ### The number of related posts.
-tocWordCount: 208 # TOC is displayed only if the post's word count exceeds this value.
-comment: false ### Toggle comment widget on/off
+viewer: true

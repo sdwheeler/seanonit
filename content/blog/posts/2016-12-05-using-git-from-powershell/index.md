@@ -13,6 +13,7 @@ description: >
   How to set up your PowerShell environment to use Git and GitHub.
 ---
 
+> [!NOTE]
 > This article was originally posted to my old [WordPress blog][wp]. The content is still relevant
 > but some details may have changed. For a more up-to-date discussion of this topic, see
 > [Taming Git and GitHub with PowerShell][07] on my Presentations site.

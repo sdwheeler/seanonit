@@ -16,7 +16,9 @@ layoutDir: layouts
 mainSections:
   - blog
   - posts
-paginate: 10
+pagination:
+  pagerSize: 10
+  path: page
 pluralizeListTitles: true
 publishDir: public
 resourceDir: resources
@@ -29,6 +31,3 @@ timezone: America/Chicago
 title: Sean on IT
 titleCaseStyle: chicago
 # workingDir: D:\Git\My-Repos\seanonit
-pagination:
-  pagerSize: 10
-  path: page

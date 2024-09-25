@@ -1,7 +1,7 @@
 ---
 linkTitle: Parameter Binding
 title: Understanding & Troubleshooting PowerShell Parameter Binding
-linkTitleIcon: <i class="fas fa-duotone fa-terminal"></i>
+linkTitleIcon: <i class="fa-solid fa-terminal"></i>
 weight: 8
 navWeight: -8000
 ---

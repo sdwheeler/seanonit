@@ -1,6 +1,6 @@
 ---
 linkTitle: Cross-platform profile
-linkTitleIcon: <i class="fas fa-duotone fa-terminal"></i>
+linkTitleIcon: <i class="fa-solid fa-scroll"></i>
 title: Make your PowerShell profile work cross-platform
 weight: 5
 navWeight: -5000
