@@ -60,8 +60,6 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo mod get
-          cat /home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/razonyang/hugo-theme-bootstrap@v1.7.3-0.20240916132454-b73d2214f5e6/assets/main/scss/_bootstrap.scss
           hugo \
             --gc \
             --minify \
