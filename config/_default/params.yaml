@@ -29,6 +29,8 @@ codeblock:
 color: light ### light, dark or auto. Default to auto.
 comment: false ### Toggle comment widget on/off
 counttaxonomyposts: true
+#customCSS:
+#  - css/main.css
 dateformat: ":date_long" ## Possible values - https://gohugo.io/functions/time/format/
 description: Random thoughts and things I have learned in my IT journey.
 docs:
