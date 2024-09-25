@@ -150,5 +150,5 @@ experiences in the comments.
 [04]: https://github.com/dahlbyk/posh-git/blob/master/readme.md
 [05]: https://github.com/Microsoft/Git-Credential-Manager-for-Windows
 [06]: https://www.powershellgallery.com/packages/posh-git
-[07]: https://sdwheeler.github.io/Presentations/github
+[07]: https://sdwheeler.github.io/seanonit/docs/04-github/
 [wp]: https://seanonit.wordpress.com/
