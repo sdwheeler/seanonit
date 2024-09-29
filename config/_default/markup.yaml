@@ -58,7 +58,7 @@ markup:
     codefences: true
     linenostart: 1
     linenumbersintable: true
-    style: monokai
+    style: github
     tabwidth: 4
   tableofcontents:
     endlevel: 3

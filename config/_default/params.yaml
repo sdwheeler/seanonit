@@ -24,7 +24,7 @@ brand: Sean on IT
 breadcrumb: true
 carouselpostcount: 5
 codeblock:
-  # maxLines: 8
+  #maxLines: 50
   linenos: true
 color: light ### light, dark or auto. Default to auto.
 comment: false ### Toggle comment widget on/off

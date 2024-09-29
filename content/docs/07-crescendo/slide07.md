@@ -1,5 +1,5 @@
 ---
-title: Step 3 - Created the output parsers
+title: How to Author JSON in VS Code
 weight: 7
 navWeight: 6
 featured: false
@@ -11,22 +11,17 @@ postDate: false
 index: true
 ---
 <!-- markdownlint-disable MD041 -->
-![Step 3 - Created the output parsers][01]
+![Author JSON in VS Code][01]
 
-1. Crescendo doesn't make this part any easier, but it does allow you to focus on parsing the output
-1. I started with the parsing functions because I was more comfortable writing PowerShell than JSON
-1. I captured the output of each subcommand into a text file that I could easily use as input to my parsing function
-1. Let's step through an example for parsing the output from vssadmin list shadows
-   - Here is the output of the native command
-   - Notice how the labels and data are presented
-1. Set breakpoints on first line and Original Volume line
-1. Step through first line
-   - Notice that I convert the string to a GUID object
-1. Remove break point and run until next breakpoint
-   - See how the line is subdivided into multiple property values
-1. Remove all breakpoints and show the output as objects
-1. Switch to terminal and show the verbose output
-   - Jim, what is I am having trouble? How can I see what native command is actually being run?
+Crescendo includes a JSON schema file that enables IntelliSense in Visual Studio Code and ensures
+that the JSON file is correctly structured.
+
+With IntelliSense enabled, you get tooltips when you hover over properties in the JSON file. When
+you add new values, IntelliSense provides a list of valid property names and values.
+
+![Cresendo Intellisense][02]
+
 
 <!-- link references -->
-[01]: images/crescendo/slide07.png
+[01]: images/crescendo/slide7.png
+[02]: images/crescendo/Crescendo-Intellisense.gif
