@@ -71,13 +71,13 @@ See the _Required Metadata for Items Published to the PowerShell Gallery_ sectio
 ### Updating your module
 
 You should never try to edit the module (`.PSM1`) file created by Crescendo. If you need to make
-changes, change the source files and configurations, then re-export the module.
+changes, edit the source files and configurations, then re-export the module.
 
 > [!WARNING]
-> `Export-CrescendoModule` recreates the module manifest. Any custom changes you have made to the
-> manifest will be lost. You can use the **NoClobberManifest** parameter to prevent overwriting the
-> manifest. However, if you have added new cmdlets, you will need to add them to the manifest
-> manually.
+> By default, `Export-CrescendoModule` recreates the module manifest. Any custom changes you have
+> made to the manifest will be lost. You can use the **NoClobberManifest** parameter to prevent
+> overwriting the manifest. However, if you have added new cmdlets, you will need to add them to the
+> manifest manually.
 
 ## Finding Crescendo modules
 

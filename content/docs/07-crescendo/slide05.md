@@ -50,7 +50,7 @@ There are two ways to create a Crescendo definition file:
    ```json
    {
        "$schema": "https://aka.ms/PowerShell/Crescendo/Schemas/2022-06",
-       "commands": [
+       "Commands": [
 
        ]
    }

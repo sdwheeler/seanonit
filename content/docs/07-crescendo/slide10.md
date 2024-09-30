@@ -43,6 +43,8 @@ user.
 ]
 ```
 
+For more information, see [Handling errors in Crescendo][05].
+
 ## Argument value transformation
 
 You may find situations where the input values handed to a Crescendo wrapped command should be
@@ -62,50 +64,56 @@ the `Handler` and `HandlerType` members. The value `ArgumentTransformType` can b
 Crescendo passes the parameter's argument values to the argument transformation code. The code must
 return the transformed values.
 
-Example: Multiplication of a value.
+In this example the Crescendo configuration defines the `Connect-WindowsShare` cmdlet that wraps the
+`net use` command. The `Credential` parameter is a **PSCredential** object that must be converted to
+a username and password for the `net use` command.
 
 ```json
-"Parameters": [
-    {
-        "Name": "mult2",
-        "OriginalName": "--p3",
-        "ParameterType": "int",
-        "OriginalPosition": 2,
-        "ArgumentTransform": "param([int]$v) $v * 2",
-        "ArgumentTransformType": "Inline"
-    }
-]
+{
+    "$schema": "https://aka.ms/PowerShell/Crescendo/Schemas/2022-06",
+    "Commands": [
+        {
+            "Verb": "Connect",
+            "Noun": "WindowsShare",
+            "OriginalName": "NET.exe",
+            "Platform": [
+                "Windows"
+            ],
+            "OriginalCommandElements": [ "USE" ],
+            "Parameters": [
+                {
+                    "Name": "DriveName",
+                    "OriginalName": "",
+                    "DefaultValue": "*",
+                    "ParameterType": "string",
+                    "OriginalPosition": 0
+                },
+                {
+                    "Name": "Share",
+                    "OriginalName": "",
+                    "Mandatory": true,
+                    "OriginalPosition": 1,
+                    "ParameterType": "string"
+                },
+                {
+                    "Name": "Credential",
+                    "OriginalName": "",
+                    "ParameterType": "PSCredential",
+                    "Mandatory": true,
+                    "OriginalPosition": 10,
+                    "ArgumentTransform": "\"/USER:$($Credential.UserName)\";$Credential.GetNetworkCredential().Password",
+                    "ArgumentTransformType": "Inline"
+                }
+            ]
+        }
+    ]
+}
 ```
 
-Example: Accepting an ordered hashtable.
+The argument transformer converst the **PSCredential** object to `/USER:username password` for the
+`net use` command.
 
-```json
-"Parameters": [
-    {
-        "Name": "hasht2",
-        "OriginalName": "--p1ordered",
-        "ParameterType": "System.Collections.Specialized.OrderedDictionary",
-        "OriginalPosition": 0,
-        "ArgumentTransform": "param([System.Collections.Specialized.OrderedDictionary]$v) $v.Keys.ForEach({''{0}={1}'' -f $_,$v[$_]}) -join '',''",
-        "ArgumentTransformType": "Inline"
-    }
-]
-```
-
-Example: Argument transformation with join.
-
-```json
-"Parameters": [
-    {
-        "Name": "join",
-        "OriginalName": "--p2",
-        "ParameterType": "string[]",
-        "OriginalPosition": 1,
-        "ArgumentTransform": "param([string[]]$v) $v -join '',''",
-        "ArgumentTransformType": "Inline"
-    }
-]
-```
+For more information, see [Transforming arguments in Crescendo][06].
 
 ## Creating parameters that are not used by the native command
 
@@ -177,3 +185,8 @@ have `sudo` permission. Accessing this list requires elevation.
 <!-- link references -->
 [01]: images/crescendo/slide10.png
 [02]: https://github.com/gerardog/gsudo
+
+[05]: https://learn.microsoft.com/powershell/utility-modules/crescendo/advanced/handling-errors
+[06]: https://learn.microsoft.com/powershell/utility-modules/crescendo/advanced/transforming-arguments
+[07]: https://learn.microsoft.com/powershell/utility-modules/crescendo/overview
+[08]: https://learn.microsoft.com/powershell/utility-modules/crescendo/whats-new/whats-new-in-crescendo-11

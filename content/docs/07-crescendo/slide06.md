@@ -11,17 +11,17 @@ postDate: false
 index: true
 ---
 <!-- markdownlint-disable MD041 -->
-![Create Crescendo objects][01]
+![Create Crescendo objects][02]
 
 The **Microsoft.PowerShell.Crescendo** module includes cmdlets that create command, parameter,
 example, help, and output handler objects for Crescendo. These objects are then serialized to a JSON
-file that is used as the Crescendo definition file.
+file that's used as the Crescendo definition file.
 
 The following steps show how to create Crescendo objects using the cmdlets.
 
 1. Create a new Crescendo command using the `New-CrescendoCommand` cmdlet. The **Verb** and **Noun**
    parameters are required. The **OriginalName** parameter is optional and is used to specify the
-   path to the original command that the Crescendo cmdlet will replace.
+   path to the original command that the Crescendo cmdlet replaces.
 
    After creating the base command object, you can set additional properties. Some properties are
    optional, while others are required for the configuration to be valid.
@@ -96,7 +96,7 @@ The following steps show how to create Crescendo objects using the cmdlets.
    ```json
    {
      "$schema": "https://aka.ms/PowerShell/Crescendo/Schemas/2022-06",
-     "commands": [
+     "Commands": [
        {
          "Verb": "Get",
          "Noun": "VssProvider",
@@ -138,5 +138,11 @@ The following steps show how to create Crescendo objects using the cmdlets.
    }
    ```
 
+> [!NOTE]
+> There is a bug in the export commands that writes the `commands` property instead of `Commands`.
+> This bug was fixed in PR [PowerShell/Crescendo#217][217]. However, the fix hasn't been released
+> yet.
+
 <!-- link references -->
-[01]: images/crescendo/slide6.png
+[02]: images/crescendo/slide6.png
+[217]: https://github.com/PowerShell/Crescendo/pull/217

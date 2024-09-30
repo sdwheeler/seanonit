@@ -50,7 +50,7 @@ The presentations are available in PDF format, and the source code is available 
 
 ## PowerShell Crescendo
 
-- [Turning command-line tools into cmdlets using Crescendo][07]
+- [Geting started with Crescendo][07]
   - [Automation+DevOps Summit - 2021-11-16 - <i class="fab fa-youtube"></i> YouTube][26]
 - My Crescendo Journey - blog series
   - [My Crescendo journey][11]
