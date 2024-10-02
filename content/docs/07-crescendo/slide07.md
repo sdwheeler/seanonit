@@ -19,7 +19,7 @@ that the JSON file is correctly structured.
 With IntelliSense enabled, you get tooltips when you hover over properties in the JSON file. When
 you add new values, IntelliSense provides a list of valid property names and values.
 
-![Cresendo Intellisense][02]
+![Crescendo Intellisense][02]
 
 
 <!-- link references -->
