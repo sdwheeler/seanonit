@@ -24,4 +24,4 @@ you add new values, IntelliSense provides a list of valid property names and val
 
 <!-- link references -->
 [01]: images/crescendo/slide7.png
-[02]: images/crescendo/Crescendo-Intellisense.gif
+[02]: images/crescendo/Crescendo-IntelliSense.gif
