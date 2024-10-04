@@ -35,9 +35,9 @@ The presentations are available in PDF format, and the source code is available 
   - [GNVPSUG - 2024-02-13 - <i class="fab fa-youtube"></i> YouTube][28]
   - [SQL Saturday Baton Rouge 2024-07-27 (#1076)][31] (no video)
 
-## Optimizing your PowerShell profile
+## PowerShell profile scripts
 
-- [Optimizing your PowerShell profile][05]
+- [Make your PowerShell profile work cross-platform][05]
   - [SQL Saturday Baton Rouge 2023-07-29 (#1060)][30] (no video)
   - [RTPSUG - 2023-11-01 - <i class="fab fa-youtube"></i> YouTube][27]
 
@@ -57,6 +57,10 @@ The presentations are available in PDF format, and the source code is available 
   - [Converting string output to objects][10]
   - [A closer look at the parsing code of a Crescendo output handler][09]
   - [A closer look at the Crescendo configuration][08]
+
+## PowerShell Parameter Binding
+
+- [Understanding & troubleshooting PowerShell Parameter Binding][32]
 
 ## Other appearances
 
@@ -80,6 +84,7 @@ PowerShell Podcast - [website][17] - [RSS][12]
 [05]: ./05-psprofiles/
 [06]: ./06-pshelp/
 [07]: ./07-crescendo/
+[32]: ./08-binding/
 [08]: https://devblogs.microsoft.com/powershell-community/a-closer-look-at-the-crescendo-configuration/
 [09]: https://devblogs.microsoft.com/powershell-community/a-closer-look-at-the-parsing-code-of-a-crescendo-output-handler/
 [10]: https://devblogs.microsoft.com/powershell-community/converting-string-output-to-objects/
