@@ -105,7 +105,7 @@ Trace-Command -Name ParameterBinding -Expression {
 
 # Show parameter binding for native commands
 Trace-Command -Name ParameterBinding -Expression {
-    echoargs this -p1 is -p2 'a test' --verbose
+    ./echoargs this -p1 is -p2 'a test' --verbose
 } -PSHost -Option ExecutionFlow, WriteLine
 
 #--------------------------------------------------------------------------------
