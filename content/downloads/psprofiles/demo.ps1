@@ -3,12 +3,10 @@
 #-------------------------------------------------------
 # Title  : Optimizing Your PowerShell Profile
 # Author : Sean Wheeler (sean.wheeler@microsoft.com)
-# Event  : SQL Saturday 2023 #1060 - Baton Rouge, LA
-#          https://sqlsaturday.com/2023-07-29-sqlsaturday1060/
 throw "You're not supposed to run the entire script. Use F8 not F5!"
 #-------------------------------------------------------
 #endregion
-#-------------------------------------------------------
+#------------------------------------------------------
 $PSVersionTable
 #-------------------------------------------------------
 #region Profile basics
