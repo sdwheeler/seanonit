@@ -1,7 +1,7 @@
 ---
 title: Resources & Links
 weight: 13
-navWeight: 2
+navWeight: 1
 featured: false
 draft: false
 comment: false
@@ -20,8 +20,8 @@ Tools
 
 Markdown resources
 
-- Markdown reference
-- CommonMark Specification
+- [Markdown reference](https://learn.microsoft.com/contribute/content/markdown-reference)
+- [CommonMark Specification](https://spec.commonmark.org/current/)
 
 <!-- link references -->
 [01]: ./images/contributedocs/slide13.png

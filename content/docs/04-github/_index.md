@@ -21,9 +21,8 @@ PowerShell Users Group (RTPSUG).
   your commit history. I also cover how to keep your repository clean.
 
 ---
-<div style="text-align:center;" >
-<a href='./slide2'>What are Git and GitHub? ❯</a>
-</div>
+
+[**Next page &gt;**](./slide2)
 
 <!-- link references -->
 [01]: https://www.youtube.com/watch?v=5TPR66fFrsQ

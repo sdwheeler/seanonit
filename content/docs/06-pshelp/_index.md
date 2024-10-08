@@ -7,6 +7,9 @@ navWeight: -6000
 ---
 
 ![Unlocking the secrets of PowerShell Help][01]
+\---
+
+[**Next page &gt;**](./slide2)
 
 <!-- link references -->
 [01]: pshelp.png

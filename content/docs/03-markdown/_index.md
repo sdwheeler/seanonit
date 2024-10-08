@@ -32,6 +32,10 @@ forums, and to create rich text using a plain text editor.
 The goal of this presentation is to explain what Markdown is and what it's used for, provide a brief
 overview of the markup syntax, and teach you where to find more information.
 
+---
+
+[**Next page &gt;**](./slide2)
+
 <!-- link references -->
 [01]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/markdown/Markdown-Essentials.pdf
 [02]: markdown-essentials.png

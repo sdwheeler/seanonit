@@ -18,10 +18,13 @@ The presentations are available in PDF format, and the source code is available 
 - [Contribute to Docs like a Microsoft Insider][01]
   - [PowerShell+DevOps Summit 2022 - Bellevue, WA - <i class="fab fa-youtube"></i> YouTube][25]
   - [PowerShell+DevOps Summit 2023 - Bellevue, WA - <i class="fab fa-youtube"></i> YouTube][29]
-- [How to contribute to an Open Source project][02]
-  - [SpiceWorld][22] 2022 - Austin, TX
 - How anyone can contribute to the MS Docs website!
   - [RTPSUG - 2020-09-16 - <i class="fab fa-youtube"></i> YouTube][23]
+
+## Build your resume by contributing to Open Source
+
+- [How to contribute to an Open Source project][02]
+  - [SpiceWorld][22] 2022 - Austin, TX
 
 ## Markdown Essentials
 
@@ -52,15 +55,11 @@ The presentations are available in PDF format, and the source code is available 
 
 - [Geting started with Crescendo][07]
   - [Automation+DevOps Summit - 2021-11-16 - <i class="fab fa-youtube"></i> YouTube][26]
-- My Crescendo Journey - blog series
-  - [My Crescendo journey][11]
-  - [Converting string output to objects][10]
-  - [A closer look at the parsing code of a Crescendo output handler][09]
-  - [A closer look at the Crescendo configuration][08]
+
 
 ## PowerShell Parameter Binding
 
-- [Understanding & troubleshooting PowerShell Parameter Binding][32]
+- [Understanding & troubleshooting PowerShell Parameter Binding][08]
 
 ## Other appearances
 
@@ -84,11 +83,7 @@ PowerShell Podcast - [website][17] - [RSS][12]
 [05]: ./05-psprofiles/
 [06]: ./06-pshelp/
 [07]: ./07-crescendo/
-[32]: ./08-binding/
-[08]: https://devblogs.microsoft.com/powershell-community/a-closer-look-at-the-crescendo-configuration/
-[09]: https://devblogs.microsoft.com/powershell-community/a-closer-look-at-the-parsing-code-of-a-crescendo-output-handler/
-[10]: https://devblogs.microsoft.com/powershell-community/converting-string-output-to-objects/
-[11]: https://devblogs.microsoft.com/powershell-community/my-crescendo-journey/
+[08]: ./08-binding/
 [12]: https://feed.podbean.com/powershellpodcast/feed.xml
 [13]: https://github.com/sdwheeler/presentations
 [14]: https://learn-video.azurefd.net/vod/player?id=afb384b7-fd83-474d-a3f2-23dfacc127cf

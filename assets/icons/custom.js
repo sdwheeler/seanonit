@@ -12,7 +12,9 @@ import {
 
 const icons = [
     faBook, faBlog, faFile, faNewspaper, faTerminal, faLessThan, faPlay, faScroll, faUserPen,
+
     faAddressBook, faFilePdf, faCircleQuestion,
+
     faAmazon, faGoogle, faMarkdown, faOsi
 ];
 export default icons;

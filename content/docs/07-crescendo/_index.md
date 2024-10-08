@@ -2,6 +2,7 @@
 linkTitle: PowerShell Crescendo
 linkTitleIcon: <i class="fas fa-less-than"></i>
 title: Getting started with PowerShell Crescendo
+weight: 7
 navWeight: -7000
 ---
 <!-- markdownlint-disable MD041 -->
@@ -18,6 +19,10 @@ In this presentation you will learn:
 - How to author a Crescendo configurations
 - How to build a PowerShell module from your Crescendo configuration
 - Understand the advanced features of Crescendo
+
+---
+
+[**Next page &gt;**](./slide02)
 
 <!-- link references -->
 [02]: crescendo.png

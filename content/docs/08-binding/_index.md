@@ -23,9 +23,8 @@ This presentation covers the following topics:
 - How parameter binding works for native commands
 
 ---
-<div style="text-align:center;" >
-<a href='./slide2'>Command syntax ❯</a>
-</div>
+
+[**Next page &gt;**](./slide2)
 
 <!-- link references -->
 [01]: parameter-binding.png
