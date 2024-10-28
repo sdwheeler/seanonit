@@ -1,0 +1,310 @@
+404_title:
+  other: Oops! Page not found.
+404_info:
+  other: We can't seems to find the page you're looking for.
+about_me:
+  other: About Me
+actions:
+  other: Actions
+alert_caution:
+  other: Caution
+alert_important:
+  other: Important
+alert_note:
+  other: Note
+alert_tip:
+  other: Tip
+alert_warning:
+  other: Warning
+alipay:
+  other: Alipay
+all:
+  other: All
+archives:
+  other: Archives
+authors:
+  other: Authors
+browse_docs:
+  other: Browse docs
+button_copy_url:
+  other: Copy URL
+button_fullscreen:
+  other: Fullscreen
+button_reload:
+  other: Reload
+button_run_game:
+  other: Run game
+button_social_share:
+  other: Share
+button_submit:
+  other: Submit
+buy_me_a_coffee:
+  other: Buy me a coffee
+categories:
+  other: Categories
+color_blue:
+  other: Blue
+color_blue_gray:
+  other: Blue Gray
+color_brown:
+  other: Brown
+color_cyan:
+  other: Cyan
+color_green:
+  other: Green
+color_indigo:
+  other: Indigo
+color_orange:
+  other: Orange
+color_pink:
+  other: Pink
+color_purple:
+  other: Purple
+color_red:
+  other: Red
+color_teal:
+  other: Teal
+color_yellow:
+  other: Yellow
+comments:
+  other: Comments
+comments_email:
+  other: Email
+comments_message:
+  other: Message
+comments_name:
+  other: Name
+comments_reply:
+  other: Reply
+comments_reply_to:
+  other: Reply to
+comments_submit:
+  other: Submit
+comments_url:
+  other: URL
+contact_name:
+  other: Name
+contact_email:
+  other: Email
+contact_email_help:
+  other: We'll never share your email with anyone else.
+contact_file:
+  other: File
+contact_subject:
+  other: Subject
+contact_message:
+  other: Message
+copyright:
+  other: Copyright
+featured_posts:
+  other: Featured Posts
+font_size:
+  other: Font Size
+font_size_lg:
+  other: Large
+font_size_md:
+  other: Medium
+font_size_sm:
+  other: Small
+font_size_xl:
+  other: Extra Large
+font_size_xs:
+  other: Extra Small
+funding_alipay:
+  other: Alipay
+funding_buymeacoffee:
+  other: Buy Me a Coffee
+funding_ko_fi:
+  other: Ko-fi
+funding_open_collective:
+  other: Open Collective
+funding_patreon:
+  other: Patreon
+funding_wechat:
+  other: Wechat
+go_back:
+  other: Go back
+home:
+  other: Home
+language:
+  other: Language
+liberapay:
+  other: Liberapay
+load:
+  other: Load
+load_more:
+  other: Load More
+mode:
+  other: Mode
+noscript_info:
+  other: Your browser does not support JavaScript.
+offline_title:
+  other: Oops! You're offline.
+offline_info:
+  other: >
+    <p>It seems there is a problem of your connection, please check your network
+    status.</p>
+
+    <p>Please get in touch with us if you think this is a server error. Thank you.</p>
+pagination_title:
+  other: Page {{ .PageNumber }}
+palette:
+  other: Palette
+patreon:
+  other: Patreon
+paypal:
+  other: Paypal
+post_count:
+  one: "{{ .Count }} post in total"
+  other: "{{ .Count }} posts in total"
+post_date:
+  other: created on {{ .createdOn }}{{ with .updatedOn }}, updated on {{ . }}{{
+    end }}.
+posts:
+  other: Posts
+profile:
+  other: Profile
+read_more:
+  other: Read More
+reading_time:
+  other: "{{ .ReadingTime }} min read"
+recent_posts:
+  other: Recent Posts
+related_posts:
+  other: Related Posts
+repo_action_edit:
+  other: Edit this page
+repo_action_view:
+  other: View page source
+repo_title:
+  other: Repository
+search:
+  other: Search
+search_advanced:
+  other: Advanced
+search_date:
+  other: Date
+search_input_placeholder:
+  other: Type to search
+search_missing_keywords:
+  other: Please enter search keywords
+search_no_results:
+  other: No results found
+search_score:
+  other: Score
+search_shortcut:
+  other: Press {{ .Shortcut }} to search
+search_sorting:
+  other: Sorting
+search_stat:
+  other: Found {{ .Total }} results
+sections:
+  other: Sections
+series:
+  other: Series
+settings:
+  other: Settings
+social_artstation:
+  other: ArtStation
+social_bilibili:
+  other: Bilibili
+social_bitbucket:
+  other: Bitbucket
+social_bluesky:
+  other: Bluesky
+social_discord:
+  other: Discord
+social_discourse:
+  other: Discourse
+social_dockerhub:
+  other: Docker Hub
+social_email:
+  other: Email
+social_facebook:
+  other: Facebook
+social_facebookgroup:
+  other: Facebook Group
+social_github:
+  other: GitHub
+social_gitlab:
+  other: GitLab
+social_instagram:
+  other: Instagram
+social_itchio:
+  other: itch.io
+social_kaggle:
+  other: Kaggle
+social_lastfm:
+  other: Last.fm
+social_liberapay:
+  other: Liberapay
+social_linkedin:
+  other: LinkedIn
+social_mastodon:
+  other: Mastodon
+social_medium:
+  other: Medium
+social_patreon:
+  other: Patreon
+social_paypal:
+  other: PayPal
+social_pinterest:
+  other: Pinterest
+social_qq:
+  other: QQ
+social_quora:
+  other: Quora
+social_reddit:
+  other: Reddit
+social_rss:
+  other: RSS
+social_sessionize:
+  other: Sessionize
+social_stackoverflow:
+  other: Stack Overflow
+social_telegram:
+  other: Telegram
+social_tipeee:
+  other: Tipeee
+social_tiktok:
+  other: TikTok
+social_tumblr:
+  other: Tumblr
+social_twitter:
+  other: Twitter
+social_website:
+  other: Website
+social_weibo:
+  other: Weibo
+social_xing:
+  other: XING
+social_x-twitter:
+  other: X
+social_youtube:
+  other: YouTube
+social_zhihu:
+  other: Zhihu
+stats:
+  other: Stats
+table_of_contents:
+  other: Contents
+tags:
+  other: Tags
+taxonomies:
+  other: Taxonomies
+theme_auto:
+  other: Auto
+theme_dark:
+  other: Dark
+theme_light:
+  other: Light
+tipeee:
+  other: Tipeee
+toggle_sidebar:
+  other: Toggle sidebar
+translations:
+  other: Translations
+try_again:
+  other: Try again
+wechat:
+  other: WeChat

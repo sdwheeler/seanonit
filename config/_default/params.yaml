@@ -14,12 +14,13 @@ author:
     layout: compact
   social:
     # email: swsamwa@live.com
-    github: sdwheeler
-    linkedin: scriptingsean
-    mastodon: https://sdwheeler@fosstodon.org
     rss: "" # Remove RSS
-    twitter: swsamwa
-    website: https://sessionize.com/sean-wheeler
+    github: https://github.com/sdwheeler
+    linkedin: https://linkedin.com/in/scriptingsean
+    mastodon: https://sdwheeler@fosstodon.org
+    x-twitter: https://x.com/swsamwa
+    bluesky: https://bsky.app/profile/sdwheeler.bsky.social
+    sessionize: https://sessionize.com/sean-wheeler
 brand: Sean on IT
 breadcrumb: true
 carouselpostcount: 5
@@ -149,11 +150,12 @@ sidebartaxonomies:
   - tags
   - series
 social:
-  github: sdwheeler
-  linkedin: scriptingsean
-  mastodon: https://sdwheeler@fosstodon.org
-  twitter: swsamwa
-  website: https://sessionize.com/sean-wheeler
+    github: https://github.com/sdwheeler
+    linkedin: https://linkedin.com/in/scriptingsean
+    mastodon: https://sdwheeler@fosstodon.org
+    x-twitter: https://x.com/swsamwa
+    bluesky: https://bsky.app/profile/sdwheeler.bsky.social
+    sessionize: https://sessionize.com/sean-wheeler
 taxonomypaginate: 10
 taxonomypostcount: 20
 titlecase: true
@@ -165,9 +167,10 @@ topappbar:
   coloredindark: true
   dropdownmenutoggle: true
   social:
-    github: sdwheeler
-    linkedin: scriptingsean
+    github: https://github.com/sdwheeler
+    linkedin: https://linkedin.com/in/scriptingsean
     mastodon: https://sdwheeler@fosstodon.org
-    twitter: swsamwa
-    website: https://sessionize.com/sean-wheeler
+    x-twitter: https://x.com/swsamwa
+    bluesky: https://bsky.app/profile/sdwheeler.bsky.social
+    sessionize: https://sessionize.com/sean-wheeler
 viewer: true
