@@ -141,7 +141,7 @@ sidebar:
   # series: true
   authors: true
   collapsed: true
-  # postsToggle: false
+  postsToggle: true
   featuredPosts: false
   fixed: false
   recentPosts: false
