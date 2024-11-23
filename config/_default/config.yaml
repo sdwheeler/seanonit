@@ -12,6 +12,8 @@ enableEmoji: true
 enableRobotsTxt: true
 environment: production
 i18nDir: i18n
+ignoreLogs:
+  - warning-goldmark-raw-html
 layoutDir: layouts
 mainSections:
   - blog
