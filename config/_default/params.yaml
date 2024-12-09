@@ -28,7 +28,7 @@ codeblock:
   #maxLines: 50
   linenos: true
 color: light ### light, dark or auto. Default to auto.
-comment: false ### Toggle comment widget on/off
+comment: true ### Toggle comment widget on/off
 counttaxonomyposts: true
 #customCSS:
 #  - css/main.css
@@ -67,6 +67,19 @@ fontsize:
   extrasmall: .8rem
   large: 1.1rem
   small: .9rem
+giscus:
+  repo: sdwheeler/seanonit
+  repo-id: R_kgDOKHe1gw
+  category: Site comments
+  category-id: DIC_kwDOKHe1g84ClEjV
+  mapping: og:title
+  strict: 1
+  reactions-enabled: 1
+  emit-metadata: 0
+  input-position: bottom
+  theme: cobalt
+  lang: en
+  loading: lazy
 keywords: PowerShell, technical writing
 logo: images/OnIT.png
 mainsections:
