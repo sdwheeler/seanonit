@@ -4,6 +4,7 @@ title: Understanding & Troubleshooting PowerShell Parameter Binding
 linkTitleIcon: <i class="fa-solid fa-terminal"></i>
 weight: 8
 navWeight: -8000
+date: 2024-08-09
 ---
 <!-- markdownlint-disable MD041 -->
 

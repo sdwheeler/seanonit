@@ -4,10 +4,10 @@ linkTitleIcon: <i class="fa-regular fa-circle-question"></i>
 title: Unlocking the secrets of PowerShell Help
 weight: 6
 navWeight: -6000
+date: 2023-08-15
 ---
 
 ![Unlocking the secrets of PowerShell Help][01]
-\---
 
 [**Next page &gt;**](./slide2)
 

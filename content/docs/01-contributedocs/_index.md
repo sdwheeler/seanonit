@@ -2,6 +2,7 @@
 linkTitle: Contribute to Docs
 linkTitleIcon: <i class="fa-solid fa-user-pen"></i>
 title: Contribute to Docs like a Microsoft Insider
+date: 2022-04-01
 weight: 1
 navWeight: -1000
 ---

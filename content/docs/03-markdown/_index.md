@@ -11,6 +11,7 @@ series:
 weight: 3
 navWeight: -3000
 type: docs
+date: 2024-04-01
 ---
 ![Markdown Essentials][02]
 

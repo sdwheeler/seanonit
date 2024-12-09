@@ -4,6 +4,7 @@ title: Taming Git and GitHub with PowerShell
 linkTitleIcon: <i class="fab fa-github"></i>
 weight: 4
 navWeight: -4000
+date: 2023-07-05
 ---
 # Taming Git and GitHub with PowerShell
 <!-- markdownlint-disable MD041 -->

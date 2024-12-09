@@ -4,6 +4,7 @@ linkTitleIcon: <i class="fab fa-osi"></i>
 title: How to Contribute to an Open Source Project
 weight: 2
 navWeight: -2000
+date: 2022-09-01
 ---
 <!-- markdownlint-disable MD041 -->
 ![How to Contribute to an Open Source Project][01]
