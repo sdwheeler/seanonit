@@ -133,19 +133,20 @@ repo:
 rss: home
 sass_transpiler: dartsass
 search:
-  # resultContentWordCount: 240 ### The maximum word count of result content for displaying.
+  resultContentWordCount: 240 ### 240 maximum word count of result display
   # Fuse.js options. See https://fusejs.io/api/options.html.
   fuse:
-    # ignoreLocation: true
-    # location: 0
-    # isCaseSensitive: false
+    ignoreLocation: true
+    location: 0
+    includeScore: true
+    isCaseSensitive: false
     minMatchCharLength: 3
-    threshold: 0.6
-    # distance: 100
-    # useExtendedSearch: true
-  paginate: 5 ### Pagination. Default to 10.
-
-searchBar: false
+    threshold: 0.1
+    distance: 5
+    shouldSort: true
+    useExtendedSearch: true
+  paginate: 10 ### Pagination. Default to 10.
+searchBar: true
 sidebar:
   # archives: true
   # taxonomiesToggle: false

@@ -4,6 +4,7 @@ linkTitleIcon: <i class="fas fa-less-than"></i>
 title: Getting started with PowerShell Crescendo
 weight: 7
 navWeight: -7000
+date: 2021-11-09
 ---
 <!-- markdownlint-disable MD041 -->
 ![Getting started with PowerShell Crescendo][02]
