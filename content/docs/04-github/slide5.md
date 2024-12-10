@@ -28,9 +28,9 @@ fork.
 
 | Steps |       Description of steps        |                                                                                              Git command / GitHub actions                                                                                              |
 | :---: | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   A   | Fork the repo                     | Browse to `https://github.com/PowerShell-Docs/PowerShell-Docs` and select the **Fork** button (top right). Open the **Choose and owner** dropdown and select your personal account. Select the **Create fork** button. |
+|   A   | Fork the repo                     | Browse to `https://github.com/MicrosoftDocs/PowerShell-Docs` and select the **Fork** button (top right). Open the **Choose and owner** dropdown and select your personal account. Select the **Create fork** button. |
 |   B   | Clone the repo (once per machine) | `git clone https://github.com/<your-account>/PowerShell-Docs.git`                                                                                                                                                      |
-|   C   | Add the upstream remote           | `git remote add upstream https://github.com/PowerShell-Docs/PowerShell-Docs.git`                                                                                                                                       |
+|   C   | Add the upstream remote           | `git remote add upstream https://github.com/MicrosoftDocs/PowerShell-Docs.git`                                                                                                                                       |
 
 For a full discussion of forking, see [Contributing to projects][01] in the GitHub documentation.
 
