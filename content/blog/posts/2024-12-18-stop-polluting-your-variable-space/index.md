@@ -1,7 +1,7 @@
 ---
 title: Stop polluting your variable space
-date: 2024-12-18-stop-polluting-your-variable-space
-draft: false
+date: 2024-12-18
+draft: true
 showReadTime: false
 categories:
   - PowerShell
