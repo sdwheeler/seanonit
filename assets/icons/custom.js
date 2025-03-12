@@ -8,7 +8,7 @@ import {
 } from '@fortawesome/free-regular-svg-icons';
 
 import {
-    faAmazon, faGoogle, faMarkdown, faOsi, faBluesky, faXTwitter
+    faAmazon, faGoogle, faMarkdown, faOsi, faBluesky, faXTwitter, faGitAlt
 } from '@fortawesome/free-brands-svg-icons';
 
 const icons = [
@@ -17,6 +17,6 @@ const icons = [
 
     faAddressBook, faFilePdf, faCircleQuestion,
 
-    faAmazon, faGoogle, faMarkdown, faOsi, faBluesky, faXTwitter
+    faAmazon, faGoogle, faMarkdown, faOsi, faBluesky, faXTwitter, faGitAlt
 ];
 export default icons;
