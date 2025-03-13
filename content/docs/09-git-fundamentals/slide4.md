@@ -34,12 +34,31 @@ The files in your working directory can be in one of two states: tracked or untr
 The following screenshots show the progression of changes to the working directory and how they are
 tracked by Git.
 
-The first screenshot shows the working directory with untracked files.
+In the first screenshot, you can see that the local working directory contains one file,
+`README.md`. The `git status` command shows the working tree is clean. Next, the `README.md` files
+is edited and two license files are copied from another location. The `git status` command shows one
+modified file and two untracked files. Notice how the prompt changes with each command.
 
 ![Step 1 - Create and update files](images/gitfundamentals/s4-git-cmd-01.png)
+
+The `git add` command is used to add a license file to the staging area. The `git status` command
+shows that `LICENSE-CODE.md` is now staged.
+
 ![Step 2 - Add a file to the index](images/gitfundamentals/s4-git-cmd-02.png)
+
+The `git add -A` command adds all files to the staging area. The `git status` command shows that all
+three files are now staged.
+
 ![Step 3 - Add all files to the index and commit](images/gitfundamentals/s4-git-cmd-03.png)
+
+The `git commit` command is used to save the changes to the local repository. Finally, the
+`git push` command is used to push the changes to GitHub.
+
 ![Step 4 - Push changes to GitHub](images/gitfundamentals/s4-git-cmd-04.png)
+
+Now we can see the changes in GitHub. The `README.md` file is shown with the changes and the two
+license files are shown as new files.
+
 ![Step 5 - Show file in GitHub](images/gitfundamentals/s4-git-cmd-05.png)
 
 <!-- link references -->
