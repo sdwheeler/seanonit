@@ -31,5 +31,16 @@ The files in your working directory can be in one of two states: tracked or untr
 - `git add` - Adds changes to the staging area
 - `git commit` - Saves the snapshot permanently in your Git directory
 
+The following screenshots show the progression of changes to the working directory and how they are
+tracked by Git.
+
+The first screenshot shows the working directory with untracked files.
+
+![Step 1 - Create and update files](images/gitfundamentals/s4-git-cmd-01.png)
+![Step 2 - Add a file to the index](images/gitfundamentals/s4-git-cmd-02.png)
+![Step 3 - Add all files to the index and commit](images/gitfundamentals/s4-git-cmd-03.png)
+![Step 4 - Push changes to GitHub](images/gitfundamentals/s4-git-cmd-04.png)
+![Step 5 - Show file in GitHub](images/gitfundamentals/s4-git-cmd-05.png)
+
 <!-- link references -->
 [02]: images/gitfundamentals/slide4.png
