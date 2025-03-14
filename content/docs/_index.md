@@ -1,5 +1,5 @@
 ---
-title: Presentations
+title: Talks
 archetype: presentations
 linkTitleIcon: <i class="fas fa-book fa-fw text-primary"></i>
 featured: true
@@ -17,33 +17,34 @@ slides and code samples where available.
 
 ---
 
-## Contributing to Open Source and Docs
+## Contribute to Open Source and Docs
 
-- [Contribute to Docs like a Microsoft Insider][01]
+- [**Contribute to Docs like a Microsoft Insider**][01]
   - [PowerShell+DevOps Summit 2022 - Bellevue, WA - <i class="fab fa-youtube"></i> YouTube][yt03]
   - [PowerShell+DevOps Summit 2023 - Bellevue, WA - <i class="fab fa-youtube"></i> YouTube][yt07]
-- How anyone can contribute to the MS Docs website!
+- **How anyone can contribute to the MS Docs website!**
   - [RTPSUG - 2020-09-16 - <i class="fab fa-youtube"></i> YouTube][yt01]
 
 ---
 
 ## Build your resume by contributing to Open Source
 
-- [How to contribute to an Open Source project][02]
+- [**How to contribute to an Open Source project**][02]
   - [SpiceWorld][spice] 2022 - Austin, TX
 
 ---
 
-## Markdown Essentials
+## Markdown essentials
 
-- [Markdown-Essentials][03]
+- [**Markdown essentials**][03]
   - PowerShell+DevOps Summit 2024 - Bellevue, WA
 
 ---
 
-## Using Git and GitHub
+## Use Git and GitHub
 
-- [Taming Git and GitHub with PowerShell][04]
+- [**Git Fun(damentals)**][09]
+- [**Taming Git and GitHub with PowerShell**][04]
   - [RTPSUG - 2023-07-05 - <i class="fab fa-youtube"></i> YouTube][yt02]
   - [GNVPSUG - 2024-02-13 - <i class="fab fa-youtube"></i> YouTube][yt06]
   - [SQL Saturday Baton Rouge 2024-07-27 (#1076)][sql1076] (no video)
@@ -52,7 +53,7 @@ slides and code samples where available.
 
 ## PowerShell profile scripts
 
-- [Make your PowerShell profile work cross-platform][05]
+- [**Make your PowerShell profile work cross-platform**][05]
   - [SQL Saturday Baton Rouge 2023-07-29 (#1060)][sql1060] (no video)
   - [RTPSUG - 2023-11-01 - <i class="fab fa-youtube"></i> YouTube][yt05]
 
@@ -60,23 +61,23 @@ slides and code samples where available.
 
 ## PowerShell Help System
 
-- [Creating documentation for your PowerShell module][howdocs]
+- [**Create documentation for your PowerShell module**][howdocs]
   - PowerShell on the River 2023 - Chattanooga, TN
-- [Unlocking the secrets of PowerShell Help][06]
+- [**Unlock the secrets of PowerShell Help**][06]
   - PowerShell on the River 2023 - Chattanooga, TN
 
 ---
 
 ## PowerShell Crescendo
 
-- [Geting started with Crescendo][07]
+- [**Get started with Crescendo**][07]
   - [Automation+DevOps Summit - 2021-11-16 - <i class="fab fa-youtube"></i> YouTube][yt04]
 
 ---
 
 ## PowerShell Parameter Binding
 
-- [Understanding & troubleshooting PowerShell Parameter Binding][08]
+- [**Understand & troubleshoot PowerShell Parameter Binding**][08]
 
 ---
 
@@ -108,6 +109,7 @@ slides and code samples where available.
 [06]: ./06-pshelp/
 [07]: ./07-crescendo/
 [08]: ./08-binding/
+[09]: ./09-git-fundamentals/
 
 [metaskills]: https://learn-video.azurefd.net/vod/player?id=afb384b7-fd83-474d-a3f2-23dfacc127cf
 [contrib]: https://learn.microsoft.com/contribute/

@@ -1,5 +1,5 @@
 ---
-linkTitle: GitHub
+linkTitle: GitHub workflow
 title: Taming Git and GitHub with PowerShell
 linkTitleIcon: <i class="fab fa-github"></i>
 weight: 4

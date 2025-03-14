@@ -31,5 +31,5 @@ themesDir: themes
 timeout: 30s
 timezone: America/Chicago
 title: Sean on IT
-titleCaseStyle: chicago
+titleCaseStyle: none
 # workingDir: D:\Git\My-Repos\seanonit
