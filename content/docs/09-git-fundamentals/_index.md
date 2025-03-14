@@ -6,7 +6,7 @@ weight: 4
 navWeight: -4000
 date: 2025-03-12
 ---
-# Have fun with Git without going mental!
+## Have fun with Git without going mental!
 
 ![Git Fundamentals][01]
 

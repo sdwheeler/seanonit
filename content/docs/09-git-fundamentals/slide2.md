@@ -1,7 +1,7 @@
 ---
 title: What is Git?
 weight: 2
-navWeight: 7
+navWeight: 8
 featured: false
 draft: false
 comment: false

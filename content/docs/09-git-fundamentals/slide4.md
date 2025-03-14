@@ -1,7 +1,7 @@
 ---
 title: Tracking changes
 weight: 4
-navWeight: 7
+navWeight: 6
 featured: false
 draft: false
 comment: false
