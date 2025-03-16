@@ -1,5 +1,5 @@
 module github.com/sdwheeler/seanonit
 
-go 1.23
+go 1.24
 
-require github.com/razonyang/hugo-theme-bootstrap v1.9.3 // indirect
+require github.com/razonyang/hugo-theme-bootstrap v1.13.1 // indirect
