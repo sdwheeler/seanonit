@@ -1,7 +1,7 @@
 ---
 title: Git's three states
 weight: 3
-navWeight: 7
+navWeight: 8
 featured: false
 draft: false
 comment: false

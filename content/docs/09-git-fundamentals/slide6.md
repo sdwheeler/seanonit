@@ -1,7 +1,7 @@
 ---
 title: What is a branch?
 weight: 6
-navWeight: 4
+navWeight: 5
 featured: false
 draft: false
 comment: false

@@ -1,7 +1,7 @@
 ---
 title: Lab 1 - Create a new repository and add files
 weight: 5
-navWeight: 5
+navWeight: 6
 featured: false
 draft: false
 comment: false
@@ -36,20 +36,21 @@ There are two ways to create a new repository when you want to host a copy of it
 ### Option 1 - Create a new repository on GitHub and clone it
 
 GitHub lets you add a README file at the same time you create your new repository. GitHub also
-offers other common options such as a license file, but you do not have to select any of them now.
+offers other common options such as a license file, but you don't have to select any of them now.
 
 1. In the upper-right corner of any page, select `+` , then click **New repository**.
 
    ![New repository][05]
 
-1. In the **Repository name** box, type in a name for your project (no spaces or special characters).
+1. In the **Repository name** box, type in a name for your project (no spaces or special
+   characters). For this lab, choose a name that's different from your lab partner's name. For
+   example, you could add your initials to create a name like `sdwGitFun`.
 1. In the **Description** box, type a short description. For example, type "This repository is for
    practicing the GitHub Flow."
-1. Select whether your repository will be **Public** or **Private**.
+1. Select whether your repository to be **Public** or **Private**.
 1. Select **Add a README** file.
 1. Click **Create** repository.
-1. Copy the URL of the repository. You will need this URL to clone the repository to your local
-   machine.
+1. Copy the URL of the repository. You need this URL to clone the repository to your local machine.
 
    ![Clone repository URL][04]
 

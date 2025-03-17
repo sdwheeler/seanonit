@@ -1,6 +1,6 @@
 ---
 title: Appendix - GitHub CLI commands
-weight: 9
+weight: 10
 navWeight: 1
 featured: false
 draft: false
