@@ -35,7 +35,7 @@ overview of the markup syntax, and teach you where to find more information.
 
 ---
 
-[**Next page &gt;**](./slide2)
+[**Start &#x23F5;**](./slide2)
 
 <!-- link references -->
 [01]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/markdown/Markdown-Essentials.pdf

@@ -3,7 +3,7 @@ linkTitle: PowerShell Crescendo
 linkTitleIcon: <i class="fas fa-less-than"></i>
 title: Getting started with PowerShell Crescendo
 weight: 7
-navWeight: -7000
+navWeight: -9000
 date: 2021-11-09
 ---
 <!-- markdownlint-disable MD041 -->
@@ -23,7 +23,7 @@ In this presentation you will learn:
 
 ---
 
-[**Next page &gt;**](./slide02)
+[**Start &#x23F5;**](./slide02)
 
 <!-- link references -->
 [02]: crescendo.png

@@ -6,6 +6,8 @@ weight: 4
 navWeight: -4000
 date: 2025-03-12
 ---
+<!-- markdownlint-disable MD041 -->
+
 ## Have fun with Git without going mental!
 
 ![Git Fundamentals][01]
@@ -23,7 +25,7 @@ information, see [**Setting up Git for PowerShell**][03].
 
 ---
 
-[**Next page &gt;**][02]
+[**Start &#x23F5;**][02]
 
 <!-- link references -->
 [01]: slide1.png

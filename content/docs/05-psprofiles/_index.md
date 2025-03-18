@@ -20,7 +20,7 @@ This presentation was first delivered at [SQL Saturday #1016 - Baton Rouge 2023-
 
 ---
 
-[**Next page &gt;**](./slide04)
+[**Start &#x23F5;**](./slide04)
 
 <!-- link references -->
 [01]: https://sqlsaturday.com/2023-07-29-sqlsaturday1060/
