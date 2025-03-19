@@ -44,6 +44,27 @@ For this rewrite, **PlatyPS** uses markdig for Markdown and [YamlDotNet][02] for
 However, the current release is very functional and can be used to generate help for your own
 projects.
 
+## What does PlatyPS actually do?
+
+Historically, people have misunderstood what **platyPS** does. Some of the common questions I hear
+are:
+
+Q: Does it write the documentation for me?
+: A: No, you still have to write the documentation.
+
+Q: Can PlatyPS extracts comments from my code to create documentation?
+: A: PlatyPS can use comment-based help content to create documentation for script-based commands
+  (functions and scripts). But it can't extract comments from your code C#.
+
+Q: Can PlatyPS read documentation strings from another source?
+: A: This is not possible with the old platyPS module. The new PlatyPS created `[CommandHelp]`
+  objects. You can alter the properties of these objects before exporting them to Markdown.
+
+There are two immutable truths about using PlatyPS:
+
+- There will always be a manual step that requires you to write the documentation (somewhere).
+- You still need to alter the Markdown to ensure accuracy and completeness.
+
 <!-- link references -->
 [01]: https://commonmark.org/
 [02]: https://github.com/aaubry/YamlDotNet
