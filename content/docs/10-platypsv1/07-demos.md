@@ -17,13 +17,10 @@ index: true
 
 ## Demos
 
-New object model
-Typical workflow for
-New module
-Update module
-Create MAML
-Performance example
-Tool example - test docs using object model
+You can get the demo script and data files for these demos from the following links:
+
+- [Demo script](https://github.com/sdwheeler/seanonit/blob/main/content/downloads/platyps/demo.ps1)
+- [Demo data](https://github.com/sdwheeler/seanonit/blob/main/content/downloads/platyps/demo-data.zip)
 
 <!-- link references -->
 [01]: images/platypsv1/07-demos.png
