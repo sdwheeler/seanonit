@@ -31,6 +31,7 @@ code sample shows the process for creating new Help files for a module.
 <##################################
 ## Create markdown for a new module
 #>
+
 ## Step 1: Create Markdown for a new module
 Import-Module Microsoft.PowerShell.PlatyPS
 $v2path = '.\v2'
@@ -51,7 +52,7 @@ dir $mdpath -Recurse -Filter *.md |
     Export-MamlCommandHelp -OutputFolder .\maml -Force -Verbose
 ```
 
-## List of command in Microsoft.PowerShell.PlatyPS
+## List of commands in Microsoft.PowerShell.PlatyPS
 
 [Microsoft.PowerShell.PlatyPS documentation][01]
 

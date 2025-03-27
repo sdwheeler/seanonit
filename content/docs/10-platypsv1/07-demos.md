@@ -13,14 +13,18 @@ index: true
 ---
 <!-- markdownlint-disable MD041 -->
 
-![Demos][01]
+![Demos][04]
 
 ## Demos
 
 You can get the demo script and data files for these demos from the following links:
 
-- [Demo script](https://github.com/sdwheeler/seanonit/blob/main/content/downloads/platyps/demo.ps1)
-- [Demo data](https://github.com/sdwheeler/seanonit/blob/main/content/downloads/platyps/demo-data.zip)
+- [Demo script][02]
+- [Test-ParameterInfo.ps1][03]
+- [Demo data][01]
 
 <!-- link references -->
-[01]: images/platypsv1/07-demos.png
+[01]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/platyps/demo-data.zip
+[02]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/platyps/demo.ps1
+[03]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/platyps/Test-ParameterInfo.ps1
+[04]: images/platypsv1/07-demos.png
