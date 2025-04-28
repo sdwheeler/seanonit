@@ -1,22 +1,33 @@
 ### https://gohugo.io/getting-started/configuration-markup/
 markup:
-  defaultmarkdownhandler: goldmark
-  asciidocext:
+  defaultMarkdownHandler: goldmark
+  asciidocExt:
+    attributes: {}
     backend: html5
-    failurelevel: fatal
-    noheaderorfooter: true
-    safemode: unsafe
+    extensions: []
+    failureLevel: fatal
+    noHeaderOrFooter: true
+    preserveTOC: false
+    safeMode: unsafe
+    sectionNumbers: false
+    trace: false
+    verbose: false
+    workingFolderCurrent: false
   goldmark:
+    duplicateResourceFiles: false
     extensions:
-      definitionlist: true
+      definitionList: true
       footnote: true
       linkify: true
-      linkifyprotocol: https
-      strikethrough: true
+      linkifyProtocol: https
+      strikethrough: false
       table: true
-      tasklist: true
-      cjk:
-        eastasianlinebreaksstyle: simple
+      taskList: true
+      CJK:
+        eastAsianLineBreaks: false
+        eastAsianLineBreaksStyle: simple
+        enable: false
+        escapedSpace: false
       extras:
         delete:
           enable: true
@@ -29,37 +40,55 @@ markup:
         superscript:
           enable: true
       passthrough:
-        delimiters: {}
+        delimiters:
+          block: []
+          inline: []
+        enable: false
       typographer:
         apostrophe: '&rsquo;'
+        disable: false
         ellipsis: '&hellip;'
-        emdash: '&mdash;'
-        endash: '&ndash;'
-        leftanglequote: '&laquo;'
-        leftdoublequote: '&ldquo;'
-        leftsinglequote: '&lsquo;'
-        rightanglequote: '&raquo;'
-        rightdoublequote: '&rdquo;'
-        rightsinglequote: '&rsquo;'
+        emDash: '&mdash;'
+        enDash: '&ndash;'
+        leftAngleQuote: '&laquo;'
+        leftDoubleQuote: '&ldquo;'
+        leftSingleQuote: '&lsquo;'
+        rightAngleQuote: '&raquo;'
+        rightDoubleQuote: '&rdquo;'
+        rightSingleQuote: '&rsquo;'
     parser:
-      autoheadingid: true
-      autoheadingidtype: github
       attribute:
         block: true
         title: true
-    renderer:
-      unsafe: true
-    renderhooks:
+      autoDefinitionTermID: true
+      autoHeadingID: true
+      autoIDType: github
+      withAttribute: true
+      wrapStandAloneImageWithinParagraph: true
+    renderHooks:
       image:
-        enabledefault: true
+        enableDefault: true
       link:
-        enabledefault: true
+        enableDefault: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
   highlight:
-    codefences: true
-    linenostart: 1
-    linenumbersintable: true
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    hl_inline: false
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
     style: github
-    tabwidth: 4
-  tableofcontents:
-    endlevel: 3
-    startlevel: 2
+    tabWidth: 4
+    wrapperClass: highlight
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2

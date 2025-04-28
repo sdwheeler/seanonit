@@ -1,19 +1,18 @@
 ---
 title: Talks
-archetype: presentations
 linkTitleIcon: <i class="fas fa-book fa-fw text-primary"></i>
 featured: true
 toc: true
 navWeight: 1000
 series:
   - Presentations
-date: 2024-08-09
+date: 2025-04-28
 ---
 <!-- markdownlint-disable MD041 MD033 -->
 
-This site contains a collection of talks I've given at various user groups and conferences.
-Many of these have been recorded and are available on YouTube. I've also included links to the
-slides and code samples where available.
+This is a collection of talks I've given at various user groups and conferences. Many of these have
+been recorded and are available on <i class="fab fa-youtube"></i>YouTube. I've also included links
+to the slides and code samples where available.
 
 ---
 
@@ -44,7 +43,9 @@ slides and code samples where available.
 ## Use Git and GitHub
 
 - [**Git Fun(damentals)**][09]
+  - PowerShell+DevOps Summit 2025 - Bellevue, WA
 - [**Taming Git and GitHub with PowerShell**][04]
+  - PowerShell+DevOps Summit 2025 - Bellevue, WA
   - [RTPSUG - 2023-07-05 - <i class="fab fa-youtube"></i> YouTube][yt02]
   - [GNVPSUG - 2024-02-13 - <i class="fab fa-youtube"></i> YouTube][yt06]
   - [SQL Saturday Baton Rouge 2024-07-27 (#1076)][sql1076] (no video)
@@ -101,38 +102,38 @@ slides and code samples where available.
 - [Episode 10 - Contributing to PowerShell Made Easy][pspod010]
 
 <!-- link references -->
-[01]: ./01-contributedocs/
-[02]: ./02-opensource/
-[03]: ./03-markdown/
-[04]: ./04-github/
-[05]: ./05-psprofiles/
-[06]: ./06-pshelp/
-[07]: ./07-crescendo/
-[08]: ./08-binding/
-[09]: ./09-git-fundamentals/
+[01]: ./01-contributedocs/ "Contribute to Docs"
+[02]: ./02-opensource/ "Open Source"
+[03]: ./03-markdown/ "Markdown"
+[04]: ./04-github/ "GitHub workflow"
+[05]: ./05-psprofiles/ "Cross-platform profile"
+[06]: ./06-pshelp/ "PowerShell Help"
+[07]: ./07-crescendo/ "Crescendo"
+[08]: ./08-binding/ "Parameter Binding"
+[09]: ./09-git-fundamentals/ "Git Fun(damentals)"
 
-[metaskills]: https://learn-video.azurefd.net/vod/player?id=afb384b7-fd83-474d-a3f2-23dfacc127cf
-[contrib]: https://learn.microsoft.com/contribute/
-[howdocs]: https://mikefrobbins.github.io/psdocs-how-to
+[metaskills]: https://learn-video.azurefd.net/vod/player?id=afb384b7-fd83-474d-a3f2-23dfacc127cf "Meta Skills - Contributing to Communities and Careers"
+[contrib]: https://learn.microsoft.com/contribute/ "Microsoft Learn Contributor Community Series"
+[howdocs]: https://mikefrobbins.github.io/psdocs-how-to "How to create documentation for your PowerShell module"
 
-[pspod]: https://powershellpodcast.podbean.com/
-[pspodfeed]: https://feed.podbean.com/powershellpodcast/feed.xml
-[pspod010]: https://powershellpodcast.podbean.com/e/contributing-to-powershell-made-easy-with-sean-wheeler/
-[pspod068]: https://powershellpodcast.podbean.com/e/hickory-dickory-docs/
-[pspod105]: https://powershellpodcast.podbean.com/e/roadmapping-your-powershell-journey-with-sean-wheeler/
-[pspod116]: https://powershellpodcast.podbean.com/e/the-powershell-and-devops-global-summit-2024-bar-session-3/
-[pspod148]: https://powershellpodcast.podbean.com/e/powershell-evolution-with-sean-wheeler-whats-new-in-ps-75-aishell-more/
+[pspod]: https://powershellpodcast.podbean.com/ "PowerShell Podcast website"
+[pspodfeed]: https://feed.podbean.com/powershellpodcast/feed.xml "PowerShell Podcast feed"
+[pspod010]: https://powershellpodcast.podbean.com/e/contributing-to-powershell-made-easy-with-sean-wheeler/ "Episode 10"
+[pspod068]: https://powershellpodcast.podbean.com/e/hickory-dickory-docs/ "Episode 68"
+[pspod105]: https://powershellpodcast.podbean.com/e/roadmapping-your-powershell-journey-with-sean-wheeler/ "Episode 105"
+[pspod116]: https://powershellpodcast.podbean.com/e/the-powershell-and-devops-global-summit-2024-bar-session-3/ "Episode 116"
+[pspod148]: https://powershellpodcast.podbean.com/e/powershell-evolution-with-sean-wheeler-whats-new-in-ps-75-aishell-more/ "Episode 148"
 
-[spice]: https://www.spiceworks.com/spiceworld/
-[sql1060]: https://sqlsaturday.com/2023-07-29-sqlsaturday1060/
-[sql1076]: https://sqlsaturday.com/2024-07-27-sqlsaturday1076/
-[eu-2407]: https://psconf.eu/recordings/minicon-2024/
+[spice]: https://www.spiceworks.com/spiceworld/ "SpiceWorld"
+[sql1060]: https://sqlsaturday.com/2023-07-29-sqlsaturday1060/ "SQL Saturday Baton Rouge 2023 (#1060)"
+[sql1076]: https://sqlsaturday.com/2024-07-27-sqlsaturday1076/ "SQL Saturday Baton Rouge 2024 (#1076)"
+[eu-2407]: https://psconf.eu/recordings/minicon-2024/ "PSConfEU Minicon 2024"
 
-[yt01]: https://www.youtube.com/watch?v=0_DEB61YOMc
-[yt02]: https://www.youtube.com/watch?v=5TPR66fFrsQ
-[yt03]: https://www.youtube.com/watch?v=9-_VPIu6zLw
-[yt04]: https://www.youtube.com/watch?v=acynivRDg7g
-[yt05]: https://www.youtube.com/watch?v=sajRAA9dkEY
-[yt06]: https://www.youtube.com/watch?v=SuNCSbDzaow
-[yt07]: https://www.youtube.com/watch?v=ZQODV8krq1Q
-[yt08]: https://www.youtube.com/watch?v=MxbLovkvOC0
+[yt01]: https://www.youtube.com/watch?v=0_DEB61YOMc "How anyone can contribute to the MS Docs website!"
+[yt02]: https://www.youtube.com/watch?v=5TPR66fFrsQ "Taming Git and GitHub with PowerShell"
+[yt03]: https://www.youtube.com/watch?v=9-_VPIu6zLw "Contribute to Docs like a Microsoft Insider"
+[yt04]: https://www.youtube.com/watch?v=acynivRDg7g "Get started with Crescendo"
+[yt05]: https://www.youtube.com/watch?v=sajRAA9dkEY "Make your PowerShell profile work cross-platform"
+[yt06]: https://www.youtube.com/watch?v=SuNCSbDzaow "Taming Git and GitHub with PowerShell"
+[yt07]: https://www.youtube.com/watch?v=ZQODV8krq1Q "Contribute to Docs like a Microsoft Insider"
+[yt08]: https://www.youtube.com/watch?v=MxbLovkvOC0 "What's new in PowerShell 7.5"
