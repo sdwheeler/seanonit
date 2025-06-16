@@ -11,6 +11,8 @@ $PSVersionTable
 #-------------------------------------------------------
 #region Profile basics
 #-------------------------------------------------------
+# What type is $profile?
+$profile | Get-Member -MemberType Properties
 $profile | Select-Object *
 
 #-------------------------------------------------------
