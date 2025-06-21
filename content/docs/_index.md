@@ -6,7 +6,7 @@ toc: true
 navWeight: 1000
 series:
   - Presentations
-date: 2025-04-28
+date: 2025-06-21
 ---
 <!-- markdownlint-disable MD041 MD033 -->
 
@@ -23,7 +23,8 @@ to the slides and code samples where available.
   - [PowerShell+DevOps Summit 2023 - Bellevue, WA - <i class="fab fa-youtube"></i> YouTube][yt07]
 - **How anyone can contribute to the MS Docs website!**
   - [RTPSUG - 2020-09-16 - <i class="fab fa-youtube"></i> YouTube][yt01]
-
+- [**What's new in PlatyPS**][10]
+  - [PowerShell+DevOps Summit 2023 - Bellevue, WA - <i class="fab fa-youtube"></i> YouTube][yt09]
 ---
 
 ## Build your resume by contributing to Open Source
@@ -57,6 +58,7 @@ to the slides and code samples where available.
 - [**Make your PowerShell profile work cross-platform**][05]
   - [SQL Saturday Baton Rouge 2023-07-29 (#1060)][sql1060] (no video)
   - [RTPSUG - 2023-11-01 - <i class="fab fa-youtube"></i> YouTube][yt05]
+  - [ PowerShell Wednesday 2025-05-28 - <i class="fab fa-youtube"></i> YouTube][yt10]
 
 ---
 
@@ -66,6 +68,8 @@ to the slides and code samples where available.
   - PowerShell on the River 2023 - Chattanooga, TN
 - [**Unlock the secrets of PowerShell Help**][06]
   - PowerShell on the River 2023 - Chattanooga, TN
+- [**What's new in PlatyPS**][10]
+  - [PowerShell+DevOps Summit 2025 - Bellevue, WA  - <i class="fab fa-youtube"></i> YouTube][yt09]
 
 ---
 
@@ -93,6 +97,10 @@ to the slides and code samples where available.
 - [Meta Skills - Contributing to Communities and Careers - <i class="fa-solid fa-play"></i> Video][metaskills]
   -	September 21 & 27, 2023 - copresented with Mikey Lombardi
 
+[**PowerShell Wednesdays hosted by PDQ**][pdqw]
+
+- 2025-05-28 Cross-Platform PowerShell Profiles
+
 [**PowerShell Podcast** - website][pspod] - [RSS][pspodfeed]
 
 - [Episode 148 - PowerShell Evolution with Sean Wheeler: What's new in PS 7.5, AIShell, & More!][pspod148]
@@ -111,10 +119,13 @@ to the slides and code samples where available.
 [07]: ./07-crescendo/ "Crescendo"
 [08]: ./08-binding/ "Parameter Binding"
 [09]: ./09-git-fundamentals/ "Git Fun(damentals)"
+[10]: ./10-platypsv1/ "What's new in PlatyPS"
 
 [metaskills]: https://learn-video.azurefd.net/vod/player?id=afb384b7-fd83-474d-a3f2-23dfacc127cf "Meta Skills - Contributing to Communities and Careers"
 [contrib]: https://learn.microsoft.com/contribute/ "Microsoft Learn Contributor Community Series"
 [howdocs]: https://mikefrobbins.github.io/psdocs-how-to "How to create documentation for your PowerShell module"
+
+[pdqw]: https://discord.gg/RC9gcG9N?event=1383087640794103928 "PowerShell Wednesdays hosted by PDQ on Discord"
 
 [pspod]: https://powershellpodcast.podbean.com/ "PowerShell Podcast website"
 [pspodfeed]: https://feed.podbean.com/powershellpodcast/feed.xml "PowerShell Podcast feed"
@@ -137,3 +148,5 @@ to the slides and code samples where available.
 [yt06]: https://www.youtube.com/watch?v=SuNCSbDzaow "Taming Git and GitHub with PowerShell"
 [yt07]: https://www.youtube.com/watch?v=ZQODV8krq1Q "Contribute to Docs like a Microsoft Insider"
 [yt08]: https://www.youtube.com/watch?v=MxbLovkvOC0 "What's new in PowerShell 7.5"
+[yt09]: https://www.youtube.com/watch?v=G8s035gz8nQ "What's new in PlatyPS"
+[yt10]: https://www.youtube.com/watch?v=TpxaGIoyyIM "Cross-Platform PowerShell Profiles"
