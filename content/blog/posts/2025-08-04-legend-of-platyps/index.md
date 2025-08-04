@@ -9,7 +9,7 @@ tags:
   - PlatyPS
   - Fun with Microsoft Copilot
 description: >
-  Telling the story of how PlatyPS using Microsoft Copilot.
+  Telling the story of PlatyPS using Microsoft Copilot.
 ---
 <!-- markdownlint-disable-file MD041 -->
 
