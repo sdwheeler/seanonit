@@ -6,23 +6,18 @@ sidebar: true
 toc: true
 ---
 
-{{% clearfix %}}
-![Blog logo][06]
 I started this blog to share my the things I have learned during the course of my career in IT. The
 logo and the name were meant to reflect the "IT" part of my career. Most of the content here is
 about PowerShell However, I will also write about other topics that interest me. So the "IT" may
 just become "it".
 
 I hope you find it useful.
-{{% /clearfix %}}
-
-&nbsp;<br>
-&nbsp;<br>
 
 ## About me
 
 {{% clearfix %}}
-![Sean D. Wheeler][05] Hi, I'm Sean Wheeler. I'm the lead documentarian for [PowerShell][02] at
+![Blog logo][06]
+Hi, I'm Sean Wheeler. I'm the lead documentarian for [PowerShell][01] at
 Microsoft. For over 25 years at Microsoft, I've delivered many workshops on scripting, debugging,
 and advanced troubleshooting. Using scripting, I created tools to help customers collect and analyze
 data used to troubleshoot and optimize their environments.
@@ -41,8 +36,8 @@ without access to a computer. My first computer was the Netronics ELF II built f
 
 |                                             |                                 |
 | :-----------------------------------------: | :-----------------------------: |
-|            ![Elf 2 graphics][04]            | ![Netronics Elf 2 computer][01] |
-| source: [Popular Electronics July 1977][08] | source: [oldcomputers.net][07]  |
+|            ![Elf 2 graphics][07]            | ![Netronics Elf 2 computer][05] |
+| source: [Popular Electronics July 1977][04] | source: [oldcomputers.net][02]  |
 
 Later, I saved up my money and bought an Apple //e. It got me through my first two years of college.
 By then, the PC Clone market was starting to heat up and I bought a Turbo XT clone, the first of
@@ -65,11 +60,10 @@ of any of my employers - past, present, or future.
 _Dry clean only. Use a cool iron. Don't get it wet. Don't feed it after midnight._
 
 <!-- link references -->
-[01]: netronics-elf.jpg "Netronics ELF II"
-[02]: https://learn.microsoft.com/powershell
+[01]: https://learn.microsoft.com/powershell
+[02]: https://oldcomputers.net/netronics-elf.html
 [03]: https://opensource.org/licenses/MIT
-[04]: tvgrafik.png "Elf 2 graphics"
-[05]: Profile-20190514-4x5.jpg?height=200px#float-start "Sean D. Wheeler"
-[06]: OnIT-15x15.png#float-start "Sean On IT"
-[07]: https://oldcomputers.net/netronics-elf.html
-[08]: https://www.americanradiohistory.com/Archive-Poptronics/70s/1977/Poptronics-1977-07.pdf
+[04]: https://www.americanradiohistory.com/Archive-Poptronics/70s/1977/Poptronics-1977-07.pdf
+[05]: netronics-elf.jpg "Netronics ELF II"
+[06]: Profile-sticker-15x15.png#float-start "Sean On IT"
+[07]: tvgrafik.png "Elf 2 graphics"
