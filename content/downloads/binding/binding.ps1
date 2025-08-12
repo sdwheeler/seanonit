@@ -75,6 +75,13 @@ return
 #--------------------------------------------------------------------------------
 #region Examples
 #--------------------------------------------------------------------------------
+# Parameter sets
+Show-Command Remove-Item
+Show-Command Where-Object
+
+#Parameter attributes
+(Get-Command Remove-Item).Parameters['Path']
+(Get-Command Remove-Item).Parameters['Path'].Attributes
 
 # Show simple binding example - all values are on command line
 Trace-Command -Name ParameterBinding -Expression {
@@ -104,6 +111,10 @@ Trace-Command -Name ParameterBinding -Expression {
 #--------------------------------------------------------------------------------
 
 # Show parameter binding for native commands
+Trace-Command -Name ParameterBinding -Expression {
+    ping localhost -n 8
+} -PSHost -Option ExecutionFlow, WriteLine
+
 Trace-Command -Name ParameterBinding -Expression {
     ./echoargs this -p1 is -p2 'a test' --verbose
 } -PSHost -Option ExecutionFlow, WriteLine
