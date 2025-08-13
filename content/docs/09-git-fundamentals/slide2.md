@@ -48,8 +48,8 @@ Integrity
 Git only adds data
 
 - Nearly every operation adds information to the database
-- It is nearly impossible to delete anything
-- This allows you to easily a recover previous state
+- It's nearly impossible to delete anything
+- This allows you to easily recover a previous state
 
 <!-- link references -->
 [02]: images/gitfundamentals/slide2.png
