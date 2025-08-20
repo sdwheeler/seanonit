@@ -47,7 +47,7 @@ to the slides and code samples where available.
 - Meta Skills - Contributing to Communities and Careers
 ---
 
-## Public speaking appearance and media
+## Public speaking appearances and media
 
 Conferences
 
@@ -57,7 +57,7 @@ Conferences
   - PowerShell sessions - [2023][sql1060], [2024][sql1076], [2025][sql1110]
   - PowerShell workshop - 2025
 - [TechMentor @ MSFT HQ][con-tm]
-  - PowerShell workshop and breakout sessions - [2025][con-tm2025]
+  - PowerShell workshop + breakout sessions - [2025][con-tm2025]
 - [SpiceWorld][con-spice] in Austin, TX
   - PowerShell workshop + breakout sessions - 2022, 2023, 2024, 2025
 - [Commit Your Code][con-cyc] in Plano, TX
