@@ -21,6 +21,7 @@ author:
     x-twitter: https://x.com/swsamwa
     bluesky: https://bsky.app/profile/sdwheeler.bsky.social
     sessionize: https://sessionize.com/sean-wheeler
+    stickermule: https://www.stickermule.com/sdwheeler
 brand: Sean on IT
 breadcrumb: true
 carouselpostcount: 5
@@ -170,6 +171,7 @@ social:
     x-twitter: https://x.com/swsamwa
     bluesky: https://bsky.app/profile/sdwheeler.bsky.social
     sessionize: https://sessionize.com/sean-wheeler
+    stickermule: https://www.stickermule.com/sdwheeler
 taxonomypaginate: 10
 taxonomypostcount: 20
 titlecase: true
@@ -187,4 +189,5 @@ topappbar:
     x-twitter: https://x.com/swsamwa
     bluesky: https://bsky.app/profile/sdwheeler.bsky.social
     sessionize: https://sessionize.com/sean-wheeler
+    stickermule: https://www.stickermule.com/sdwheeler
 viewer: true
