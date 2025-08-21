@@ -1,6 +1,6 @@
 import {
     faBlog, faBook, faFile, faNewspaper, faTerminal, faLessThan, faPlay, faScroll, faUserPen,
-    faBullhorn
+    faBullhorn, faEnvelope
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
@@ -13,7 +13,7 @@ import {
 
 const icons = [
     faBook, faBlog, faFile, faNewspaper, faTerminal, faLessThan, faPlay, faScroll, faUserPen,
-    faBullhorn,
+    faBullhorn, faEnvelope,
 
     faAddressBook, faFilePdf, faCircleQuestion,
 

@@ -14,14 +14,14 @@ author:
     layout: compact
   social:
     # email: swsamwa@live.com
-    rss: "" # Remove RSS
+    # mastodon: https://sdwheeler@fosstodon.org
+    bluesky: https://bsky.app/profile/sdwheeler.bsky.social
     github: https://github.com/sdwheeler
     linkedin: https://linkedin.com/in/scriptingsean
-    mastodon: https://sdwheeler@fosstodon.org
-    x-twitter: https://x.com/swsamwa
-    bluesky: https://bsky.app/profile/sdwheeler.bsky.social
+    rss: "" # Remove RSS
     sessionize: https://sessionize.com/sean-wheeler
     stickermule: https://www.stickermule.com/sdwheeler
+    x-twitter: https://x.com/swsamwa
 brand: Sean on IT
 breadcrumb: true
 carouselpostcount: 5
@@ -81,6 +81,10 @@ giscus:
   theme: cobalt
   lang: en
   loading: lazy
+contact:
+  endpoint: https://forms.un-static.com/forms/0a549d00d00f09c262ebdd17977d004558de66d0
+  reCaptcha:
+    siteKey: 6Lfi7q0rAAAAADmX_w5mHTXGgAxp0SQKQEpTYbkp
 keywords: PowerShell, technical writing
 logo: images/OnIT.png
 mainsections:
@@ -165,13 +169,13 @@ sidebartaxonomies:
   - tags
   - series
 social:
-    github: https://github.com/sdwheeler
-    linkedin: https://linkedin.com/in/scriptingsean
-    mastodon: https://sdwheeler@fosstodon.org
-    x-twitter: https://x.com/swsamwa
-    bluesky: https://bsky.app/profile/sdwheeler.bsky.social
-    sessionize: https://sessionize.com/sean-wheeler
-    stickermule: https://www.stickermule.com/sdwheeler
+  # mastodon: https://sdwheeler@fosstodon.org
+  bluesky: https://bsky.app/profile/sdwheeler.bsky.social
+  github: https://github.com/sdwheeler
+  linkedin: https://linkedin.com/in/scriptingsean
+  sessionize: https://sessionize.com/sean-wheeler
+  stickermule: https://www.stickermule.com/sdwheeler
+  x-twitter: https://x.com/swsamwa
 taxonomypaginate: 10
 taxonomypostcount: 20
 titlecase: true
@@ -183,11 +187,11 @@ topappbar:
   coloredindark: true
   dropdownmenutoggle: true
   social:
+    # mastodon: https://sdwheeler@fosstodon.org
+    bluesky: https://bsky.app/profile/sdwheeler.bsky.social
     github: https://github.com/sdwheeler
     linkedin: https://linkedin.com/in/scriptingsean
-    mastodon: https://sdwheeler@fosstodon.org
-    x-twitter: https://x.com/swsamwa
-    bluesky: https://bsky.app/profile/sdwheeler.bsky.social
     sessionize: https://sessionize.com/sean-wheeler
     stickermule: https://www.stickermule.com/sdwheeler
+    x-twitter: https://x.com/swsamwa
 viewer: true

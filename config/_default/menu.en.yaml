@@ -8,6 +8,9 @@ main:
   - name: About
     pageRef: /about
     weight: -106
+  - name: Contact
+    pageRef: /contact
+    weight: -105
 
 ########################################################################################
 ## Menu documentation: https://gohugo.io/content-management/menus/#properties-front-matter
