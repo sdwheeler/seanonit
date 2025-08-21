@@ -84,7 +84,7 @@ giscus:
 contact:
   endpoint: https://forms.un-static.com/forms/0a549d00d00f09c262ebdd17977d004558de66d0
   reCaptcha:
-    siteKey: 6Lfi7q0rAAAAADmX_w5mHTXGgAxp0SQKQEpTYbkp
+    siteKey: 6LcoBq4rAAAAACz1lPeciF5dErcHPHbzQd-hMBJh
 keywords: PowerShell, technical writing
 logo: images/OnIT.png
 mainsections:
