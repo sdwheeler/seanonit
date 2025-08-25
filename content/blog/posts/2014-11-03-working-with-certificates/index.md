@@ -12,6 +12,8 @@ description: >
   An example script for working with certificates. The example also illustrates some advanced
   PowerShell scripting techniques like, parameter sets, comment-based help, and error handling.
 ---
+<!-- markdownlint-disable MD041 -->
+> [!NOTE]
 > This article was originally posted to my old [WordPress blog][wp]. The content is still relevant
 > but some details may have changed.
 

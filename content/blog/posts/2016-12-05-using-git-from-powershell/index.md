@@ -12,7 +12,7 @@ tags:
 description: >
   How to set up your PowerShell environment to use Git and GitHub.
 ---
-
+<!-- markdownlint-disable MD041 -->
 > [!NOTE]
 > This article was originally posted to my old [WordPress blog][wp]. The content is still relevant
 > but some details may have changed. For a more up-to-date discussion of this topic, see

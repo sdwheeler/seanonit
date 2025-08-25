@@ -11,8 +11,10 @@ tags:
   - distribution list
   - ADSI
 description: >
-  Work around the limitation of the ActiveDirectory module using the `[adsi]` type accelerator.
+  Work around the limitation of the ActiveDirectory module using the [adsi] type accelerator.
 ---
+<!-- markdownlint-disable MD041 -->
+> [!NOTE]
 > This article was originally posted to my old [WordPress blog][wp]. The content is still relevant
 > but some details may have changed.
 

@@ -13,7 +13,7 @@ tags:
 description: >
   How to avoid polluting your variable space in PowerShell.
 ---
-<!-- markdownlint-disable-file MD041 -->
+<!-- markdownlint-disable MD041 -->
 There are three general types of variables in PowerShell.
 
 - Automatic variables: These variables are created by PowerShell, and PowerShell changes their

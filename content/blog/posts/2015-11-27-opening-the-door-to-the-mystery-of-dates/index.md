@@ -12,6 +12,8 @@ description: >
   Different applications and operating systems store dates in differing formats. This article
   summarizes the most common formats and how to convert between them.
 ---
+<!-- markdownlint-disable MD041 -->
+> [!NOTE]
 > This article was originally posted to my old [WordPress blog][wp].
 
 Formatting and converting dates can be very confusing. Every programming language, operating system,

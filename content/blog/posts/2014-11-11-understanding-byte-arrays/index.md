@@ -14,6 +14,8 @@ description: >
   Not all strings are created equal. Text encoding can change how strings are stored in memory.
   Learn how to use byte arrays to work with binary data in PowerShell.
 ---
+<!-- markdownlint-disable MD041 -->
+> [!NOTE]
 > This article was originally posted to my old [WordPress blog][wp]. The content is still relevant
 > but some details may have changed.
 

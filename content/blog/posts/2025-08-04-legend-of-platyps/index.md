@@ -11,8 +11,7 @@ tags:
 description: >
   Telling the story of PlatyPS using Microsoft Copilot.
 ---
-<!-- markdownlint-disable-file MD041 -->
-
+<!-- markdownlint-disable MD041 -->
 Recently I have been working on a big project to rewrite the [PlatyPS module][01]. This is the
 module we use at Microsoft to create and maintain the PowerShell documentation. As part of this
 project, I spent a long time fixing existing PowerShell content so that it would work with the new

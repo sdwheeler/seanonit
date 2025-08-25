@@ -13,6 +13,8 @@ description: >
   Some advanced techniques for handling paramters, parsing results, and creating subroutines
   (functions) in Windows Command Shell batch files.
 ---
+<!-- markdownlint-disable MD041 -->
+> [!NOTE]
 > This article was originally posted to my old [WordPress blog][wp]. The content is still relevant
 > but some details may have changed.
 

@@ -11,6 +11,8 @@ tags:
 description: >
   Another example of using PowerShell and Exchange Web Services to manage your email.
 ---
+<!-- markdownlint-disable MD041 -->
+> [!NOTE]
 > This article was originally posted to my old [WordPress blog][wp]. The content is still relevant
 > but some details may have changed.
 
