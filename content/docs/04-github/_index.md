@@ -1,7 +1,7 @@
 ---
 linkTitle: GitHub workflow
 title: Taming Git and GitHub with PowerShell
-linkTitleIcon: <i class="fab fa-github"></i>
+linkTitleIcon: <i class="fab fa-github text-tertiary"></i>
 weight: 4
 navWeight: -4000
 date: 2023-07-05

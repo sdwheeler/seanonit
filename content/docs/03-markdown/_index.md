@@ -1,7 +1,7 @@
 ---
 linkTitle: Markdown
 title: Markdown Essentials
-linkTitleIcon: <i class="fab fa-markdown"></i>
+linkTitleIcon: <i class="fab fa-markdown text-warning"></i>
 featured: true
 comment: false
 toc: true

@@ -1,6 +1,6 @@
 ---
 linkTitle: Open Source
-linkTitleIcon: <i class="fab fa-osi"></i>
+linkTitleIcon: <i class="fab fa-osi text-dark"></i>
 title: How to Contribute to an Open Source Project
 weight: 2
 navWeight: -2000

@@ -1,7 +1,7 @@
 ---
 linkTitle: Git Fun(damentals)
 title: Git Fun(damentals)
-linkTitleIcon: <i class="fab fa-git-alt"></i>
+linkTitleIcon: <i class="fab fa-git-alt text-tertiary"></i>
 weight: 4
 navWeight: -4000
 date: 2025-03-12

@@ -1,6 +1,6 @@
 ---
 linkTitle: Cross-platform profile
-linkTitleIcon: <i class="fa-solid fa-scroll"></i>
+linkTitleIcon: <i class="fa-solid fa-scroll text-secondary"></i>
 title: Make your PowerShell profile work cross-platform
 weight: 5
 navWeight: -5000

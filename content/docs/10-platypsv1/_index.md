@@ -1,7 +1,7 @@
 ---
 linkTitle: PlatyPS v1.0
 title: PlatyPS v1.0
-linkTitleIcon: <i class="fab fa-markdown"></i>
+linkTitleIcon: <i class="fab fa-markdown text-warning"></i>
 weight: 8
 navWeight: -7000
 date: 2025-03-18

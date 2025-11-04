@@ -1,6 +1,6 @@
 ---
 linkTitle: Contribute to Docs
-linkTitleIcon: <i class="fa-solid fa-user-pen"></i>
+linkTitleIcon: <i class="fa-solid fa-user-pen text-primary"></i>
 title: Contribute to Docs like a Microsoft Insider
 date: 2022-04-01
 weight: 1
