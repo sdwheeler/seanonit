@@ -1,4 +1,4 @@
-actionspanel:
+actionsPanel:
   disabled: true
 archive:
   paginate: 20 ### Archive pagination. Default to 100.
@@ -24,17 +24,17 @@ author:
     x-twitter: https://x.com/swsamwa
 brand: Sean on IT
 breadcrumb: true
-carouselpostcount: 5
+carouselPostCount: 5
 codeblock:
   #maxLines: 50
-  linenos: true
+  lineNos: true
 color: light ### light, dark or auto. Default to auto.
 comment: true ### Toggle comment widget on/off
-counttaxonomyposts: true
+countTaxonomyPosts: true
 #customCSS:
 #  - css/main.css
-dateformat: ":date_long" ## Possible values - https://gohugo.io/functions/time/format/
-description: Random thoughts and things I have learned in my IT journey.
+dateFormat: "2023-01-27" ## Possible values - https://gohugo.io/functions/time/format/
+description: Sharing the things I have learned in my IT journey.
 docs:
   copyright: false ### Whether to display copyright section on each post.
   featuredImage: true ### Show the featured image above the content.
@@ -59,13 +59,13 @@ favicon:
     - rel: apple-touch-icon
       size: 180x180
     - size: 192x192
-featuredpostcount: 5
+featuredPostCount: 5
 feeds:
   content: true
-fixedheader: true
-fontsize:
-  extralarge: 1.2rem
-  extrasmall: .8rem
+fixedHeader: true
+fontSize:
+  extraLarge: 1.2rem
+  extraSmall: .8rem
   large: 1.1rem
   small: .9rem
 giscus:
@@ -87,11 +87,11 @@ contact:
     siteKey: 6LcoBq4rAAAAACz1lPeciF5dErcHPHbzQd-hMBJh
 keywords: PowerShell, technical writing
 logo: images/OnIT.png
-mainsections:
+mainSections:
   - blog
   - posts ### Default is 'posts'
   # - docs    ### Adding 'docs' puts docs in the main page list
-metarobots: index, follow ### Empty value disables Meta Tag robots
+metaRobots: index, follow ### Empty value disables Meta Tag robots
 palette: blue
 palettes:
   - blue
@@ -106,18 +106,16 @@ palettes:
   - red
   - teal
   - yellow
-pinnedpost: true
-pinnedpostcount: 3
+pinnedPost: true
+pinnedPostCount: 3
 post:
   # excerptMaxLength: 120
   copyright: false
   excerpt: description
-  # plainifyExcerpt: false   ### Format excerpt in HTML if false.
+  plainifyExcerpt: false   ### Format excerpt in HTML if false.
   featuredImage: true ### Show the featured image above the content.
   numberifyHeadings: false ### Count headings automatically.
-  # numberifyHeadingsEndLevel: 4  ### The depth of headings to count. Default to 6.
-  # numberifyHeadingsSeparator: . ### The separator between of number and headings.
-  tocStyleType: disc ### The TOC's CSS list-style-type property.
+  tocStyleType: disc ### The TOC's CSS list-style-type property. See https://www.w3schools.com/cssref/pr_list-style-type.php
   # imageTitleAsCaption: true
   # panel: false
   # nav: false
@@ -126,9 +124,9 @@ post:
   ### Support manual summary splitting via <!--more-->.
   # readMoreFromContent: true
 postdate: true
-poweredBy: false
+poweredBy: true
 readingTime: false
-recentpostcount: 5
+recentPostCount: 0
 relatedPostCount: false ### The number of related posts.
 repo:
   branch: main
@@ -164,7 +162,7 @@ sidebar:
   featuredPosts: false
   fixed: false
   recentPosts: false
-sidebartaxonomies:
+sidebarTaxonomies:
   - categories
   - tags
   - series
@@ -176,16 +174,15 @@ social:
   sessionize: https://sessionize.com/sean-wheeler
   stickermule: https://www.stickermule.com/sdwheeler
   x-twitter: https://x.com/swsamwa
-taxonomypaginate: 10
-taxonomypostcount: 20
-titlecase: true
-titleseparator: "-"
+taxonomyPaginate: 10
+taxonomyPostCount: 20
+titleCase: true
+titleSeparator: "-"
+tocPosition: sidebar
 tocWordCount: 208 # TOC is displayed only if the post's word count exceeds this value.
-tocposition: content
-tocwordcount: 208
-topappbar:
-  coloredindark: true
-  dropdownmenutoggle: true
+topAppBar:
+  coloredInDark: true
+  dropdownMenuToggle: true
   social:
     # mastodon: https://sdwheeler@fosstodon.org
     bluesky: https://bsky.app/profile/sdwheeler.bsky.social

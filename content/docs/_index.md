@@ -54,12 +54,13 @@ Conferences
 - [PowerShell+DevOps Summit][con-summit] in Bellevue, WA
   - Multiple sessions - 2022, 2023, 2024, 2025
 - [SQL Saturday Baton Rouge][con-sqlbtr]
-  - PowerShell sessions - [2023][sql1060], [2024][sql1076], [2025][sql1110]
-  - PowerShell workshop - 2025
+  - PowerShell workshop + sessions - [2023][sql1060], [2024][sql1076], [2025][sql1110]
 - [TechMentor @ MSFT HQ][con-tm]
-  - PowerShell workshop + breakout sessions - [2025][con-tm2025]
+  - PowerShell workshop + breakout sessions - 2025
+    - Workshop handouts: [Labs][tm-labs] - [Labs w/ answers][tm-answers] - [Slides][tm-slides]
 - [SpiceWorld][con-spice] in Austin, TX
   - PowerShell workshop + breakout sessions - 2022, 2023, 2024, 2025
+    - Handouts: [AI Shell][spice-aishell] - [Git fundamentals][spice-git] - [PowerShell Toolmaking][spice-pstool]
 - [Commit Your Code][con-cyc] in Plano, TX
   - PowerShell workshop - 2025
 - [PSConfEU Minicon 2024][eu-2407]
@@ -132,17 +133,22 @@ Other
 [pspod189]: https://powershellpodcast.podbean.com/e/live-from-techmentor-profiles-people-and-powershell-progress-with-sean-wheeler-and-james-petty/ "Episode 189"
 
 <!-- conferences -->
-[con-summit]: https://www.powershellsummit.org/ "PowerShell+DevOps Global Summit"
+[con-cyc]: https://www.commityourcode.com/ "Commit Your Code"
 [con-spice]: https://www.spiceworks.com/spiceworld/ "SpiceWorld"
-[con-tm]: https://techmentorevents.com/home.aspx "TechMentor Events"
-[con-tm2025]: https://techmentorevents.com/events/microsofthq-2025/home.aspx "TechMentor @ MSFT HQ 2025"
+[spice-aishell]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/spiceworld/Chat%20with%20AI%20in%20PowerShell%20using%20AIIshell.pdf
+[spice-git]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/spiceworld/Have%20fun%20with%20Git%20without%20going%20mental.pdf
+[spice-pstool]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/spiceworld/SpiceWorld%202025%20-%20PowerShell%20Toolmaking.pdf
 [con-sqlbtr]: https://www.sqlsatbr.com/ "SQL Saturday Baton Rouge"
+[con-summit]: https://www.powershellsummit.org/ "PowerShell+DevOps Global Summit"
+[con-tm]: https://techmentorevents.com/home.aspx "TechMentor Events"
+[tm-labs]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/techmentor/TMMSHQ25_M01_PowerShell_HOL_Labs.pdf
+[tm-answers]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/techmentor/TMMSHQ25_M01_PowerShell_HOL_Labs_Answers.pdf
+[tm-slides]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/techmentor/TMMSHQ25_M01_PowerShell_HOL_Slides.pdf
+[contrib]: https://learn.microsoft.com/contribute/ "Microsoft Learn Contributor Community Series"
+[eu-2407]: https://psconf.eu/recordings/minicon-2024/ "PSConfEU Minicon 2024"
 [sql1060]: https://sqlsaturday.com/2023-07-29-sqlsaturday1060/ "SQL Saturday Baton Rouge 2023 (#1060)"
 [sql1076]: https://sqlsaturday.com/2024-07-27-sqlsaturday1076/ "SQL Saturday Baton Rouge 2024 (#1076)"
 [sql1110]: https://sqlsaturday.com/2025-07-26-sqlsaturday1110/ "SQL Saturday Baton Rouge 2025 (#1110)"
-[con-cyc]: https://www.commityourcode.com/ "Commit Your Code"
-[eu-2407]: https://psconf.eu/recordings/minicon-2024/ "PSConfEU Minicon 2024"
-[contrib]: https://learn.microsoft.com/contribute/ "Microsoft Learn Contributor Community Series"
 
 <!-- videos -->
 [yt01]: https://www.youtube.com/watch?v=0_DEB61YOMc "How anyone can contribute to the MS Docs website!"

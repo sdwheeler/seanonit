@@ -13,7 +13,7 @@ used in markdown files.
 You can use ATX Headers to divide your content into sections. The number of `#` characters at the
 beginning of the line indicates the level of the header. For example, `##` is a level 2 header.
 
-> This is an example of a blockquote. It is often used to highlight a quote or a section of text.
+> This is an example of a blockquote. It's often used to highlight a quote or a section of text.
 > You create a blockquote by adding a `>` character at the beginning of the line. This markup was
 > common in the early days of email and is still used in many email clients.
 

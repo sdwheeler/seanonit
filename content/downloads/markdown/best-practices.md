@@ -29,12 +29,21 @@ closed (ends) when a new block starting marker is found.
 
 <!-- markdownlint-disable MD001 MD022 MD023 MD025 -->
 
-  # H1 - File title
-  ## H2 - Top-level topics
-  ### H3 - Sub-topics
-  #### H4 - Sub-topics
-  ##### H5 - Sub-topics
-  ###### H6 - Sub-topics
+```markdown
+# H1 - File title
+## H2 - Top-level topics
+### H3 - Sub-topics
+#### H4 - Sub-topics
+##### H5 - Sub-topics
+###### H6 - Sub-topics
+```
+
+# H1 - File title
+## H2 - Top-level topics
+### H3 - Sub-topics
+#### H4 - Sub-topics
+##### H5 - Sub-topics
+###### H6 - Sub-topics
 
 <!-- markdownlint-enable MD001 MD022 MD023 MD025 -->
 
@@ -45,19 +54,25 @@ character.
 
 Single-line paragraph:
 
+```markdown
 > This is a single-line paragraph in a blockquote. The paragraph must start with a `>` character. All sentences in the paragraph are on the same line. This is discouraged because it makes the paragraph difficult to read. Use the reflow extension to reformat the paragraph.
+```
 
 Block marker on first line only:
 
+```markdown
 > This is a multi-line paragraph in a blockquote. The paragraph must start with a `>` character.
 Subsequent lines might or might not start with a `>` character. This is discouraged because it's
 unclear that the author intended the paragraph to continue or if they forgot to add a blank line to
 signal the end of the block. Use the reflow extension to reformat the paragraph.
+```
 
 Block marker on every line (preferred):
 
+```markdown
 > This is a multi-line paragraph in a blockquote. The paragraph must start with a `>` character.
 > Subsequent lines might or might not start with a `>` character.
+```
 
 ### Unordered lists (bullets)
 
@@ -81,7 +96,7 @@ Markdown allows alternate starting characters for unordered list items. Use one 
 This is the recommended style.
 
 - The number list item starts with a number followed by a `.` or `)` character
-- The value of the number is not important because the Markdown parser will automatically number the
+- The value of the number isn't important because the Markdown parser will automatically number the
   list items (don't use 0 - not supported by all parsers)
 - Indent block lines with 3 spaces to continue the list item
 - Indent block lines with 3 spaces to create a nested list

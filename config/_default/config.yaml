@@ -1,9 +1,7 @@
 ### https://gohugo.io/getting-started/configuration/
 archetypeDir: archetypes
 assetDir: assets
-# baseUrl: https://sdwheeler.github.io/seanonit/
 baseUrl: https://seanonit.org/
-# cacheDir: C:\Users\sewhee\AppData\Local\hugo_cache
 capitalizeListTitles: true
 contentDir: content
 copyright: Copyright © 2014-{year} Sean D. Wheeler. All Rights Reserved.
@@ -33,4 +31,3 @@ timeout: 30s
 timezone: America/Chicago
 title: Sean on IT
 titleCaseStyle: none
-# workingDir: D:\Git\My-Repos\seanonit
