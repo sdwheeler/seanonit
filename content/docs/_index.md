@@ -135,9 +135,9 @@ Other
 <!-- conferences -->
 [con-cyc]: https://www.commityourcode.com/ "Commit Your Code"
 [con-spice]: https://www.spiceworks.com/spiceworld/ "SpiceWorld"
-[spice-aishell]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/spiceworld/Chat%20with%20AI%20in%20PowerShell%20using%20AIIshell.pdf
-[spice-git]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/spiceworld/Have%20fun%20with%20Git%20without%20going%20mental.pdf
-[spice-pstool]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/spiceworld/SpiceWorld%202025%20-%20PowerShell%20Toolmaking.pdf
+[spice-aishell]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/spiceworld/Chat-with-AI-in-PowerShell-using-AIIshell.pdf
+[spice2025-files]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/spiceworld/Have-fun-with-Git-without-going-mental.pdf
+[spice-pstool]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/spiceworld/SpiceWorld-2025-PowerShell-Toolmaking.pdf
 [con-sqlbtr]: https://www.sqlsatbr.com/ "SQL Saturday Baton Rouge"
 [con-summit]: https://www.powershellsummit.org/ "PowerShell+DevOps Global Summit"
 [con-tm]: https://techmentorevents.com/home.aspx "TechMentor Events"
