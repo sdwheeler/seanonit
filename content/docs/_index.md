@@ -61,8 +61,6 @@ Conferences
 - [SpiceWorld][con-spice] in Austin, TX
   - PowerShell workshop + breakout sessions - 2022, 2023, 2024, 2025
     - Handouts: [AI Shell][spice-aishell] - [Git fundamentals][spice-git] - [PowerShell Toolmaking][spice-pstool]
-- [Commit Your Code][con-cyc] in Plano, TX
-  - PowerShell workshop - 2025
 - [PSConfEU Minicon 2024][eu-2407]
 - PowerShell on the River 2023 in Chattanooga, TN
 - Automation+DevOps Summit 2021 (virtual)
@@ -133,7 +131,6 @@ Other
 [pspod189]: https://powershellpodcast.podbean.com/e/live-from-techmentor-profiles-people-and-powershell-progress-with-sean-wheeler-and-james-petty/ "Episode 189"
 
 <!-- conferences -->
-[con-cyc]: https://www.commityourcode.com/ "Commit Your Code"
 [con-spice]: https://www.spiceworks.com/spiceworld/ "SpiceWorld"
 [spice-aishell]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/spiceworld/Chat-with-AI-in-PowerShell-using-AIShell.pdf
 [spice-git]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/spiceworld/Have-fun-with-Git-without-going-mental.pdf
