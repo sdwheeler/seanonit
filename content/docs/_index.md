@@ -89,6 +89,7 @@ Other
 - [Taming Git and GitHub with PowerShell - RTPSUG - 2023-07-05 - <i class="fab fa-youtube"></i> YouTube][yt02]
 - [What's new in PlatyPS - 2025 - <i class="fab fa-youtube"></i> YouTube][yt09]
 - [What's new in PowerShell 7.5 - <i class="fab fa-youtube"></i> YouTube][yt08]
+- [PowerShell Parameter Binding Explained - PowerShell Wednesday 2025-11-05 - <i class="fab fa-youtube"></i> YouTube][yt11]
 
 ### PowerShell Podcast recordings
 
@@ -158,4 +159,5 @@ Other
 [yt08]: https://www.youtube.com/watch?v=MxbLovkvOC0 "What's new in PowerShell 7.5"
 [yt09]: https://www.youtube.com/watch?v=G8s035gz8nQ "What's new in PlatyPS"
 [yt10]: https://www.youtube.com/watch?v=TpxaGIoyyIM "Cross-Platform PowerShell Profiles"
+[yt11]: https://www.youtube.com/watch?v=nejXX6QD6wU&t=13s "PowerShell Parameter Binding Explained"
 [metaskills]: https://learn-video.azurefd.net/vod/player?id=afb384b7-fd83-474d-a3f2-23dfacc127cf "Meta Skills - Contributing to Communities and Careers"
