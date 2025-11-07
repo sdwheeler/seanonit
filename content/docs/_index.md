@@ -90,6 +90,7 @@ Other
 - [What's new in PlatyPS - 2025 - <i class="fab fa-youtube"></i> YouTube][yt09]
 - [What's new in PowerShell 7.5 - <i class="fab fa-youtube"></i> YouTube][yt08]
 - [PowerShell Parameter Binding Explained - PowerShell Wednesday 2025-11-05 - <i class="fab fa-youtube"></i> YouTube][yt11]
+- [The Road to Spiceworld : Season Finale - 2025-11-07 - <i class="fab fa-youtube"></i> YouTube][yt12]
 
 ### PowerShell Podcast recordings
 
@@ -160,4 +161,5 @@ Other
 [yt09]: https://www.youtube.com/watch?v=G8s035gz8nQ "What's new in PlatyPS"
 [yt10]: https://www.youtube.com/watch?v=TpxaGIoyyIM "Cross-Platform PowerShell Profiles"
 [yt11]: https://www.youtube.com/watch?v=nejXX6QD6wU&t=13s "PowerShell Parameter Binding Explained"
+[yt12]: https://www.youtube.com/watch?v=BCh4w8y2jLA "The Road to Spiceworld : 2025 Season Finale"
 [metaskills]: https://learn-video.azurefd.net/vod/player?id=afb384b7-fd83-474d-a3f2-23dfacc127cf "Meta Skills - Contributing to Communities and Careers"
