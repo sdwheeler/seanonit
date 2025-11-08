@@ -93,19 +93,19 @@ mainSections:
   # - docs    ### Adding 'docs' puts docs in the main page list
 metaRobots: index, follow ### Empty value disables Meta Tag robots
 palette: blue
-palettes:
-  - blue
-  - blue gray
-  - brown
-  - cyan
-  - green
-  - indigo
-  - orange
-  - pink
-  - purple
-  - red
-  - teal
-  - yellow
+palettes: false
+#  - blue
+#  - blue gray
+#  - brown
+#  - cyan
+#  - green
+#  - indigo
+#  - orange
+#  - pink
+#  - purple
+#  - red
+#  - teal
+#  - yellow
 pinnedPost: true
 pinnedPostCount: 3
 post:
