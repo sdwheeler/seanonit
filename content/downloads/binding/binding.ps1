@@ -86,12 +86,12 @@ Show-Command Where-Object
 # Show simple binding example - all values are on command line
 Trace-Command -Name ParameterBinding -Expression {
     Show-Binding1 -Number 4 -ComputerName $env:COMPUTERNAME 'a', 'b' 'c' 2
-} -PSHost -Option ExecutionFlow, WriteLine
+} -PSHost -Option ExecutionFlow, WriteLine -FilePath ShowBinding1-1.log
 
 # Show binding when some values come from the pipeline
 Trace-Command -Name ParameterBinding -Expression {
     4 | Show-Binding1 'a', 'b' 'c' 2
-} -PSHost -Option ExecutionFlow, WriteLine
+} -PSHost -Option ExecutionFlow, WriteLine -FilePath ShowBinding1-2.log
 
 # Examine the input object
 $inputObject | Get-Member -MemberType Properties
@@ -99,25 +99,25 @@ $inputObject | Get-Member -MemberType Properties
 # Show binding a complex object from the pipeline
 Trace-Command -Name ParameterBinding -Expression {
     $inputObject | Show-Binding1 'a', 'b' 'c' 2
-} -PSHost -Option ExecutionFlow, WriteLine
+} -PSHost -Option ExecutionFlow, WriteLine -FilePath ShowBinding1-3.log
 
 #--------------------------------------------------------------------------------
 
 # Now look at the bind when using ValueFromPipeline and ValueFromPipelineByPropertyName together
 Trace-Command -Name ParameterBinding -Expression {
     $inputObject | Show-Binding2 'a', 'b' 'c' 2
-} -PSHost -Option ExecutionFlow, WriteLine
+} -PSHost -Option ExecutionFlow, WriteLine -FilePath ShowBinding2-1.log
 
 #--------------------------------------------------------------------------------
 
 # Show parameter binding for native commands
 Trace-Command -Name ParameterBinding -Expression {
     ping localhost -n 8
-} -PSHost -Option ExecutionFlow, WriteLine
+} -PSHost -Option ExecutionFlow, WriteLine -FilePath NativePing.log
 
 Trace-Command -Name ParameterBinding -Expression {
     ./echoargs this -p1 is -p2 'a test' --verbose
-} -PSHost -Option ExecutionFlow, WriteLine
+} -PSHost -Option ExecutionFlow, WriteLine -FilePath EchoArgs.log
 
 #--------------------------------------------------------------------------------
 #endregion Examples
