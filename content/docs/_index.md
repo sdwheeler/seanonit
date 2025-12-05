@@ -95,6 +95,7 @@ Other
 ### PowerShell Podcast recordings
 
 - [website][pspod] - [RSS][pspodfeed]
+- [Episode 203 - Falling, Learning, and Laughing with PowerShell Friends][pspod203]
 - [Episode 189 - Live from TechMentor: Profiles, People, and PowerShell Progress with Sean Wheeler and James Petty][pspod189]
 - [Episode 149 - PowerShell Evolution with Sean Wheeler: What's new in PS 7.5, AIShell, & More!][pspod149]
 - [Episode 116 - The PowerShell and DevOps Global Summit 2024 Bar session 3][pspod116]
@@ -131,6 +132,7 @@ Other
 [pspod116]: https://powershellpodcast.podbean.com/e/the-powershell-and-devops-global-summit-2024-bar-session-3/ "Episode 116"
 [pspod149]: https://powershellpodcast.podbean.com/e/powershell-evolution-with-sean-wheeler-whats-new-in-ps-75-aishell-more/ "Episode 149"
 [pspod189]: https://powershellpodcast.podbean.com/e/live-from-techmentor-profiles-people-and-powershell-progress-with-sean-wheeler-and-james-petty/ "Episode 189"
+[pspod203]: https://powershellpodcast.podbean.com/e/falling-learning-and-laughing-with-powershell-friends/ "Episode 203"
 
 <!-- conferences -->
 [con-spice]: https://www.spiceworks.com/spiceworld/ "SpiceWorld"
