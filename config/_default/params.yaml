@@ -33,7 +33,7 @@ comment: true ### Toggle comment widget on/off
 countTaxonomyPosts: true
 #customCSS:
 #  - css/main.css
-dateFormat: "2023-01-27" ## Possible values - https://gohugo.io/functions/time/format/
+dateFormat: 2026-01-01 ## Possible values - https://gohugo.io/functions/time/format/
 description: Sharing the things I have learned in my IT journey.
 docs:
   copyright: false ### Whether to display copyright section on each post.
@@ -132,7 +132,7 @@ repo:
   branch: main
   url: https://github.com/sdwheeler/seanonit
   # subPath: exampleSite
-  # dateFormat: 02/01/2006, 15:04:05 PM
+  dateFormat: 2026-01-01
 rss: home
 sass_transpiler: dartsass
 search:

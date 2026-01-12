@@ -1,6 +1,6 @@
 ---
 title: Understanding Byte Arrays in PowerShell
-date: 2014-11-11T11:48:28
+date: 2014-11-11
 draft: false
 showReadTime: false
 categories:

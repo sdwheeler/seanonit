@@ -1,6 +1,6 @@
 ---
 title: Throwback Thursday - Windows Command Shell (Batch) scripting
-date: 2014-11-06T05:30:00
+date: 2014-11-06
 draft: false
 showReadTime: false
 categories:

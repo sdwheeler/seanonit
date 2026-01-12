@@ -1,6 +1,6 @@
 ---
 title: Using PowerShell and EWS to monitor a mailbox
-date: 2014-10-29T12:51:51
+date: 2014-10-29
 draft: false
 showReadTime: false
 categories:

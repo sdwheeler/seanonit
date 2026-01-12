@@ -1,6 +1,6 @@
 ---
 title: Adding a Contact to a Distribution List with PowerShell
-date: 2015-07-21T10:27:02
+date: 2015-07-21
 draft: false
 showReadTime: false
 categories:

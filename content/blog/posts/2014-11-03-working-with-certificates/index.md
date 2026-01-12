@@ -1,6 +1,6 @@
 ---
 title: Working with certificates in PowerShell
-date: 2014-11-03T16:27:22
+date: 2014-11-03
 draft: false
 showReadTime: false
 categories:

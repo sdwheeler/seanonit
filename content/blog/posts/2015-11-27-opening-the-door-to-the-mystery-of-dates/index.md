@@ -1,6 +1,6 @@
 ---
 title: Opening the door to the Mystery of Dates in PowerShell
-date: 2015-11-27T16:26:43
+date: 2015-11-27
 draft: false
 showReadTime: false
 categories:

@@ -1,6 +1,6 @@
 ---
 title: Use PowerShell and EWS to find out who is sending you email
-date: 2015-03-18T07:46:24
+date: 2015-03-18
 draft: false
 showReadTime: false
 categories:

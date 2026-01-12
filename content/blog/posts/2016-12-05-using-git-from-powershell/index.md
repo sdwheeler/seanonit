@@ -1,6 +1,6 @@
 ---
 title: Using Git from PowerShell
-date: 2016-12-05T13:37:09
+date: 2016-12-05
 draft: false
 showReadTime: false
 categories:

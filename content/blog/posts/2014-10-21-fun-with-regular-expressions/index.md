@@ -1,6 +1,6 @@
 ---
 title: Fun with Regular Expressions
-date: 2014-10-21T18:47:03
+date: 2014-10-21
 draft: false
 showReadTime: false
 categories:
