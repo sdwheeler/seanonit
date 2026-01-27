@@ -1,12 +1,14 @@
 tdewolff:
   css:
-    keepcss2: true
+    inline: false
+    precision: 0
+    version: 0
   html:
-    keepdefaultattrvals: true
-    keepdocumenttags: true
-    keependtags: true
-    keepspecialcomments: true
-    templatedelims:
+    keepDefaultAttrVals: true
+    keepDocumentTags: true
+    keepEndTags: true
+    keepSpecialComments: true
+    templateDelims:
       - ''
       - ''
   js:
