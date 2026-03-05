@@ -33,7 +33,8 @@ comment: true ### Toggle comment widget on/off
 countTaxonomyPosts: true
 #customCSS:
 #  - css/main.css
-dateFormat: 2026-01-01 ## Possible values - https://gohugo.io/functions/time/format/
+# See - https://gohugo.io/functions/time/format/
+# dateFormat: 2023-10-15 ## This is the format I want but it doesn't work.
 description: Sharing the things I have learned in my IT journey.
 docs:
   copyright: false ### Whether to display copyright section on each post.
