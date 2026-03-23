@@ -28,4 +28,4 @@ In this presentation, you will learn about:
 
 <!-- link references -->
 [01]: 01-title.png
-[02]: ./02-history
+[02]: ./02-help-system
