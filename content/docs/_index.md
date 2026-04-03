@@ -34,12 +34,13 @@ to the slides and code samples where available.
 
 ---
 
-## Use Git and GitHub
+## Source Control using Git and GitHub
 
-- [Git Fun(damentals)][09]
-- [Taming Git and GitHub with PowerShell][04]
+- [Source Control Fun(damentals)][04] - This presentation is a combined version of two other
+  presentations I previously delivered:
 
----
+  - Git Fun(damentals)
+  - Taming Git and GitHub with PowerShell
 
 ## Career skills
 
@@ -105,16 +106,15 @@ Other
 
 <!-- link references -->
 <!-- content -->
-[01]: ./01-contributedocs/ "Contribute to Docs"
-[02]: ./02-opensource/ "Open Source"
-[03]: ./03-markdown/ "Markdown"
-[04]: ./04-github/ "GitHub workflow"
-[05]: ./05-psprofiles/ "Cross-platform profile"
-[06]: ./06-pshelp/ "PowerShell Help"
-[07]: ./07-crescendo/ "Crescendo"
-[08]: ./08-binding/ "Parameter Binding"
-[09]: ./09-git-fundamentals/ "Git Fun(damentals)"
-[10]: ./10-platypsv1/ "What's new in PlatyPS"
+[01]: ./contribute-to-docs/ "Contribute to Docs"
+[02]: ./open-source/ "Open Source"
+[03]: ./markdown/ "Markdown"
+[04]: ./source-control/ "Source Control Fundamentals"
+[05]: ./powershell-profile/ "Cross-platform profile"
+[06]: ./powershell-help/ "PowerShell Help"
+[07]: ./crescendo/ "Crescendo"
+[08]: ./parameter-binding/ "Parameter Binding"
+[10]: ./platyps/ "What's new in PlatyPS"
 [howdocs]: https://mikefrobbins.github.io/psdocs-how-to "How to create documentation for your PowerShell module"
 
 <!-- user groups  -->
