@@ -1,5 +1,5 @@
 ---
-title: Lab 1 - Setup Git and posh-git
+title: Lab 1a - Setup Git and posh-git
 weight: 5
 navWeight: 12
 featured: false
