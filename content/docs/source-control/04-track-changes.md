@@ -63,7 +63,7 @@ license files are shown as new files.
 
 ---
 
-[**Next &#x23ED;**][01]
+[**Next &#x1F846;**][01]
 
 <!-- link references -->
 [01]: ../05-lab1a

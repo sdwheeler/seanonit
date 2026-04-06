@@ -32,7 +32,7 @@ This presentation includes hands-on labs where you will:
 
 ---
 
-[**Start &#x23F5;**][01]
+[**Start &#x1F846;**][01]
 
 <!-- link references -->
 [01]: ./02-what-is-source-control

@@ -9,7 +9,7 @@ date: 2026-03-23
 
 ![Unlocking the secrets of PowerShell Help][01]
 
-[**Start &#x23F5;**](./02-help-system)
+[**Start &#x1F846;**](./02-help-system)
 
 <!-- link references -->
 [01]: pshelp.png

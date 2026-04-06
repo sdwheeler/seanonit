@@ -24,7 +24,7 @@ In this presentation, you will learn about:
 
 ---
 
-[**Start &#x23F5;**][02]
+[**Start &#x1F846;**][02]
 
 <!-- link references -->
 [01]: 01-title.png

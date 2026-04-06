@@ -78,7 +78,7 @@ GitHub is a platform that:
 
 ---
 
-[**Next &#x23ED;**][01]
+[**Next &#x1F846;**][01]
 
 <!-- link references -->
 [01]: ../03-git-states

@@ -25,7 +25,7 @@ This presentation covers the following topics:
 
 ---
 
-[**Start &#x23F5;**](./slide2)
+[**Start &#x1F846;**](./slide2)
 
 <!-- link references -->
 [01]: parameter-binding.png

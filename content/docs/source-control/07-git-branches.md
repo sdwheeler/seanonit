@@ -58,7 +58,7 @@ commit message, author, date, and diffs. You can also see the branches and tags 
 
 ---
 
-[**Next &#x23ED;**][01]
+[**Next &#x1F846;**][01]
 
 <!-- link references -->
 [01]: ../08-lab2

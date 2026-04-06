@@ -33,7 +33,7 @@ The basic Git workflow goes something like this:
 
 ---
 
-[**Next &#x23ED;**][01]
+[**Next &#x1F846;**][01]
 
 <!-- link references -->
 [01]: ../04-track-changes

@@ -60,7 +60,7 @@ on. The numbered steps (in black) are described in the table below.
 
 ---
 
-[**Next &#x23ED;**][01]
+[**Next &#x1F846;**][01]
 
 <!-- link references -->
 [01]: ../10-workflow-collab-repo

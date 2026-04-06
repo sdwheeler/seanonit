@@ -25,7 +25,7 @@ This presentation was delivered at SpiceWorld 2022 in Austin, TX.
 
 ---
 
-[**Start &#x23F5;**](./slide03)
+[**Start &#x1F846;**](./slide03)
 
 <!-- link references -->
 [01]: open-source.png

@@ -20,7 +20,7 @@ Docs website. Watch the video recordings to see the demos in action.
 
 ---
 
-[**Start &#x23F5;**](./slide02)
+[**Start &#x1F846;**](./slide02)
 
 <!-- link references -->
 [02]: contribute-to-docs.png

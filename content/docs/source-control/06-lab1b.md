@@ -125,7 +125,7 @@ For example, a status of `[main ≡ +0 ~2 -1 | +1 ~1 -0]` corresponds to the fol
 
 ---
 
-[**Next &#x23ED;**][01]
+[**Next &#x1F846;**][01]
 
 <!-- link references -->
 [01]: ../07-git-branches
