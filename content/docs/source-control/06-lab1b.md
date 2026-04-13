@@ -43,12 +43,21 @@ Import-Module posh-git
 Once **posh-git** is installed and imported, you'll see Git status summary information in your
 prompt.
 
-![Animation showing the posh-git user experience][04]
+You should add the `Import-Module` command to your PowerShell profile script. If you haven't created
+a profile script yet, you can create one using the following command:
+
+```powershell
+New-Item -Path $PROFILE -ItemType File -Force
+```
+
+Then, open the profile script in a text editor and add the command.
 
 ## Step 3 - Explore the posh-git prompt
 
 The Git status summary information provides a wealth of "Git status" information at a glance, all
 the time in your prompt.
+
+![Animation showing the posh-git user experience][04]
 
 By default, the status summary has the following format:
 
