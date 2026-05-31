@@ -39,6 +39,10 @@ $newMarkdownCommandHelpSplat = @{
     WithModulePage = $true
 }
 New-MarkdownCommandHelp @newMarkdownCommandHelpSplat
+## Compare v1 and v2 folders
+## - This examples uses Beyond Compare
+## - Use the diff tool of your choice
+bc .\Microsoft.PowerShell.PlatyPS .\v2\Microsoft.PowerShell.PlatyPS
 #endregion New module workflow
 #-------------------------------------------------------------------------------
 #region Update module workflow
