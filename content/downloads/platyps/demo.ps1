@@ -12,8 +12,8 @@ Expand-Archive -Path .\demo-data.zip -DestinationPath . -Force
 #region Help object model
 $helpObj = Get-Help Get-Command -Full
 $helpObj
-$helpObj | Get-Member -MemberType Property
-$helpObj.Examples.example | Get-Member -MemberType Property
+$helpObj | Get-Member -MemberType Properties
+$helpObj.Examples.example | Get-Member -MemberType Properties
 $helpObj.Examples.example[0]
 #endregion
 #-------------------------------------------------------------------------------
