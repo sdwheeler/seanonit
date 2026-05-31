@@ -2,11 +2,19 @@
 #region Demo script for PlatyPS v1 presentation
 throw "This script is not meant to be executed. Use F8 to run selected code."
 # Setup the demo environment
-Install-PSResource -Module Microsoft.PowerShell.PlatyPS -Reinstall -Prerelease
+#Install-PSResource -Module Microsoft.PowerShell.PlatyPS -Reinstall -Prerelease
 Import-Module Microsoft.PowerShell.PlatyPS
 # Adjust the path to the demo data for your environment
-Set-Location D:\Git\My-Repos\seanonit\content\downloads\platyps
+Set-Location C:\Git\My-Repos\seanonit\content\downloads\platyps
 Expand-Archive -Path .\demo-data.zip -DestinationPath . -Force
+#endregion
+#-------------------------------------------------------------------------------
+#region Help object model
+$helpObj = Get-Help Get-Command -Full
+$helpObj
+$helpObj | Get-Member -MemberType Property
+$helpObj.Examples.example | Get-Member -MemberType Property
+$helpObj.Examples.example[0]
 #endregion
 #-------------------------------------------------------------------------------
 #region New object model
@@ -59,7 +67,7 @@ Show-HelpPreview -Path .\maml\Microsoft.PowerShell.PlatyPS\Microsoft.PowerShell.
 #region Performance example
 # Update the entire docset for PowerShell 7.5
 $start = Get-Date
-dir D:\Git\PS-Docs\PowerShell-Docs\reference\7.5\ -Recurse -Filter *-*.md -Exclude about_* |
+dir D:\Git\PS-Docs\PowerShell-Docs\reference\7.6\ -Recurse -Filter *-*.md -Exclude about_* |
     ForEach-Object {
         Update-CommandHelp -Path $_.FullName |
         Export-MarkdownCommandHelp -OutputFolder $v2path -Force
@@ -70,5 +78,5 @@ Write-Host "Elapsed time: $(($end - $start).TotalSeconds) seconds"
 #-------------------------------------------------------------------------------
 #region Tool example - test docs using object model
 . .\Test-ParameterInfo.ps1
-Test-ParameterInfo D:\Git\PS-Docs\PowerShell-Docs\reference\7.5\Microsoft.PowerShell.Management\Get-ChildItem.md
+Test-ParameterInfo D:\Git\PS-Docs\PowerShell-Docs\reference\7.6\Microsoft.PowerShell.Management\Get-ChildItem.md
 #endregion Tool example - test docs using object model
