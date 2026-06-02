@@ -7,9 +7,9 @@ cd $PSScriptRoot
 Switch-Prompt SimplePrompt
 Write-Host 'Setup 4 PowerShell terminals'
 Write-Host '- VS Code PowerShell extension'
-Write-Host '- Windows Terminal'
-Write-Host '- PowerShell ISE'
-Write-Host '- Console'
+Write-Host '- pwsh -noprofile'
+Write-Host '- WSL Ubuntu'
+Write-Host '- powerShell -noprofile'
 return
 #-------------------------------------------------------
 #endregion
@@ -21,7 +21,10 @@ $PSVersionTable
 # What type is $profile?
 $profile | Get-Member -MemberType Properties
 $profile | Select-Object *
-
+# How to create a profile if it doesn't exist
+if (-not (Test-Path $PROFILE)) {
+    New-Item -Path $PROFILE -ItemType File -Force
+}
 #-------------------------------------------------------
 #endregion
 #-------------------------------------------------------
