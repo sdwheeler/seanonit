@@ -3,7 +3,14 @@
 #-------------------------------------------------------
 # Title  : Optimizing Your PowerShell Profile
 # Author : Sean Wheeler (sean.wheeler@microsoft.com)
-throw "You're not supposed to run the entire script. Use F8 not F5!"
+cd $PSScriptRoot
+Switch-Prompt SimplePrompt
+Write-Host 'Setup 4 PowerShell terminals'
+Write-Host '- VS Code PowerShell extension'
+Write-Host '- Windows Terminal'
+Write-Host '- PowerShell ISE'
+Write-Host '- Console'
+return
 #-------------------------------------------------------
 #endregion
 #------------------------------------------------------
