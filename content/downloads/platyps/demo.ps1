@@ -71,7 +71,7 @@ Show-HelpPreview -Path .\maml\Microsoft.PowerShell.PlatyPS\Microsoft.PowerShell.
 #region Performance example
 # Update the entire docset for PowerShell 7.5
 $start = Get-Date
-dir D:\Git\PS-Docs\PowerShell-Docs\reference\7.6\ -Recurse -Filter *-*.md -Exclude about_* |
+dir C:\Git\PS-Docs\PowerShell-Docs\reference\7.6\ -Recurse -Filter *-*.md -Exclude about_* |
     ForEach-Object {
         Update-CommandHelp -Path $_.FullName |
         Export-MarkdownCommandHelp -OutputFolder $v2path -Force
@@ -82,5 +82,5 @@ Write-Host "Elapsed time: $(($end - $start).TotalSeconds) seconds"
 #-------------------------------------------------------------------------------
 #region Tool example - test docs using object model
 . .\Test-ParameterInfo.ps1
-Test-ParameterInfo D:\Git\PS-Docs\PowerShell-Docs\reference\7.6\Microsoft.PowerShell.Management\Get-ChildItem.md
+Test-ParameterInfo C:\Git\PS-Docs\PowerShell-Docs\reference\7.6\Microsoft.PowerShell.Management\Get-ChildItem.md
 #endregion Tool example - test docs using object model
