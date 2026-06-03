@@ -62,7 +62,9 @@ Conferences
 - [SpiceWorld][con-spice] in Austin, TX
   - PowerShell workshop + breakout sessions - 2022, 2023, 2024, 2025
     - Handouts: [AI Shell][spice-aishell] - [Git fundamentals][spice-git] - [PowerShell Toolmaking][spice-pstool]
-- [PSConfEU Minicon 2024][eu-2407]
+- PSConfEU
+  - [Minicon 2024][eu-2407]
+  - [PSConfEU 2026][eu-2606]
 - PowerShell on the River 2023 in Chattanooga, TN
 - Automation+DevOps Summit 2021 (virtual)
 
@@ -147,6 +149,7 @@ Other
 [tm-slides]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/techmentor/TMMSHQ25_M01_PowerShell_HOL_Slides.pdf
 [contrib]: https://learn.microsoft.com/contribute/ "Microsoft Learn Contributor Community Series"
 [eu-2407]: https://psconf.eu/recordings/minicon-2024/ "PSConfEU Minicon 2024"
+[eu-2606]: https://psconf.eu/ "PSConfEU 2026"
 [sql1060]: https://sqlsaturday.com/2023-07-29-sqlsaturday1060/ "SQL Saturday Baton Rouge 2023 (#1060)"
 [sql1076]: https://sqlsaturday.com/2024-07-27-sqlsaturday1076/ "SQL Saturday Baton Rouge 2024 (#1076)"
 [sql1110]: https://sqlsaturday.com/2025-07-26-sqlsaturday1110/ "SQL Saturday Baton Rouge 2025 (#1110)"
