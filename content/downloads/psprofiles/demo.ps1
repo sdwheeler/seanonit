@@ -18,13 +18,14 @@ $PSVersionTable
 #-------------------------------------------------------
 #region Profile basics
 #-------------------------------------------------------
-# What type is $profile?
-$profile | Get-Member -MemberType Properties
-$profile | Select-Object *
+$profile
 # How to create a profile if it doesn't exist
 if (-not (Test-Path $PROFILE)) {
     New-Item -Path $PROFILE -ItemType File -Force
 }
+# What type is $profile?
+$profile | Get-Member -MemberType Properties
+$profile | Select-Object *
 #-------------------------------------------------------
 #endregion
 #-------------------------------------------------------
