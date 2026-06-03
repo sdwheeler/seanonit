@@ -16,8 +16,8 @@ index: true
 ## Microsoft.PowerShell.PlatyPS v1.0.0
 
 - [Microsoft.PowerShell.PlatyPS cmdlet reference][05]
-- [Source code][01] - v2 branch
-- [Microsoft.PowerShell.PlatyPS 1.0.0-preview on the Gallery][06]
+- [Source code][01]
+- [Microsoft.PowerShell.PlatyPS on the PowerShell Gallery][06]
 
 ## Scripts and samples
 
@@ -27,7 +27,7 @@ index: true
   - [Test-ParameterInfo.ps1][04]
 
 <!-- link references -->
-[01]: https://github.com/PowerShell/platyPS/tree/v2/src
+[01]: https://github.com/PowerShell/platyPS/
 [02]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/platyps/demo-data.zip
 [03]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/platyps/demo.ps1
 [04]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/platyps/Test-ParameterInfo.ps1
