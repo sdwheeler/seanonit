@@ -46,6 +46,7 @@ to the slides and code samples where available.
 
 - [Build your resume by contributing to Open Source][02]
 - Meta Skills - Contributing to Communities and Careers
+
 ---
 
 ## Public speaking appearances and media
@@ -53,14 +54,17 @@ to the slides and code samples where available.
 Conferences
 
 - [PowerShell+DevOps Summit][con-summit] in Bellevue, WA
-  - Multiple sessions - 2022, 2023, 2024, 2025
+  - Multiple public sessions - 2022, 2023, 2024, 2025, 2026
+  - Multiple OnRamp sessions - 2025, 2026
+- [PSConfEU][con-eu] in Europe
+  - Multiple sessions - 2026
 - [SQL Saturday Baton Rouge][con-sqlbtr]
   - PowerShell workshop + sessions - [2023][sql1060], [2024][sql1076], [2025][sql1110]
 - [TechMentor @ MSFT HQ][con-tm]
-  - PowerShell workshop + breakout sessions - 2025
+  - PowerShell workshop + breakout sessions - 2025, 2026
     - Workshop handouts: [Labs][tm-labs] - [Labs w/ answers][tm-answers] - [Slides][tm-slides]
 - [SpiceWorld][con-spice] in Austin, TX
-  - PowerShell workshop + breakout sessions - 2022, 2023, 2024, 2025
+  - PowerShell workshop + breakout sessions - 2022, 2023, 2024, 2025, 2026
     - Handouts: [AI Shell][spice-aishell] - [Git fundamentals][spice-git] - [PowerShell Toolmaking][spice-pstool]
 - PSConfEU
   - [Minicon 2024][eu-2407]
@@ -87,24 +91,27 @@ Other
 - [How anyone can contribute to the MS Docs website! - 2020-09-16 - <i class="fab fa-youtube"></i> YouTube][yt01]
 - [Make your PowerShell profile work cross-platform - PowerShell Wednesday 2025-05-28 - <i class="fab fa-youtube"></i> YouTube][yt10]
 - [Make your PowerShell profile work cross-platform - RTPSUG 2023-11-01 - <i class="fab fa-youtube"></i> YouTube][yt05]
+- [Make a PowerShell profile that runs on any version or platform - PSConfEU 2026 - <i class="fab fa-youtube"></i> YouTube][yt15]
 - [Meta Skills - Contributing to Communities and Careers - <i class="fa-solid fa-play"></i> Video][metaskills]
+- [PowerShell Parameter Binding Explained - PowerShell Wednesday 2025-11-05 - <i class="fab fa-youtube"></i> YouTube][yt11]
 - [Taming Git and GitHub with PowerShell - GNVPSUG - 2024-02-13 - <i class="fab fa-youtube"></i> YouTube][yt06]
 - [Taming Git and GitHub with PowerShell - RTPSUG - 2023-07-05 - <i class="fab fa-youtube"></i> YouTube][yt02]
-- [What's new in PlatyPS - 2025 - <i class="fab fa-youtube"></i> YouTube][yt09]
+- [What's new in PlatyPS - PSSummit 2025 - <i class="fab fa-youtube"></i> YouTube][yt09]
+- [What's new in PlatyPS - PSConfEU 2026 - <i class="fab fa-youtube"></i> YouTube][yt13]
+- [Publish PowerShell help content using PlatyPS v1.0 with Stephen Valdinger - <i class="fab fa-youtube"></i> YouTube][yt14]
 - [What's new in PowerShell 7.5 - <i class="fab fa-youtube"></i> YouTube][yt08]
-- [PowerShell Parameter Binding Explained - PowerShell Wednesday 2025-11-05 - <i class="fab fa-youtube"></i> YouTube][yt11]
+
+### Podcasts and interviews
+
+- PowerShell Podcast [website][pspod] - [RSS][pspodfeed]
+  - [Episode 203 - Falling, Learning, and Laughing with PowerShell Friends][pspod203]
+  - [Episode 189 - Live from TechMentor: Profiles, People, and PowerShell Progress with Sean Wheeler and James Petty][pspod189]
+  - [Episode 149 - PowerShell Evolution with Sean Wheeler: What's new in PS 7.5, AIShell, & More!][pspod149]
+  - [Episode 116 - The PowerShell and DevOps Global Summit 2024 Bar session 3][pspod116]
+  - [Episode 105 - Roadmapping your PowerShell Journey][pspod105]
+  - [Episode 68 - Hickory Dickory Docs][pspod068]
+  - [Episode 10 - Contributing to PowerShell Made Easy][pspod010]
 - [The Road to Spiceworld : Season Finale - 2025-11-07 - <i class="fab fa-youtube"></i> YouTube][yt12]
-
-### PowerShell Podcast recordings
-
-- [website][pspod] - [RSS][pspodfeed]
-- [Episode 203 - Falling, Learning, and Laughing with PowerShell Friends][pspod203]
-- [Episode 189 - Live from TechMentor: Profiles, People, and PowerShell Progress with Sean Wheeler and James Petty][pspod189]
-- [Episode 149 - PowerShell Evolution with Sean Wheeler: What's new in PS 7.5, AIShell, & More!][pspod149]
-- [Episode 116 - The PowerShell and DevOps Global Summit 2024 Bar session 3][pspod116]
-- [Episode 105 - Roadmapping your PowerShell Journey][pspod105]
-- [Episode 68 - Hickory Dickory Docs][pspod068]
-- [Episode 10 - Contributing to PowerShell Made Easy][pspod010]
 
 <!-- link references -->
 <!-- content -->
@@ -137,6 +144,7 @@ Other
 [pspod203]: https://powershellpodcast.podbean.com/e/falling-learning-and-laughing-with-powershell-friends/ "Episode 203"
 
 <!-- conferences -->
+[con-eu]: https://psconf.eu/ "PSConfEU"
 [con-spice]: https://www.spiceworks.com/spiceworld/ "SpiceWorld"
 [spice-aishell]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/spiceworld/Chat-with-AI-in-PowerShell-using-AIShell.pdf
 [spice-git]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/spiceworld/Have-fun-with-Git-without-going-mental.pdf
@@ -155,6 +163,7 @@ Other
 [sql1110]: https://sqlsaturday.com/2025-07-26-sqlsaturday1110/ "SQL Saturday Baton Rouge 2025 (#1110)"
 
 <!-- videos -->
+[metaskills]: https://learn-video.azurefd.net/vod/player?id=afb384b7-fd83-474d-a3f2-23dfacc127cf "Meta Skills - Contributing to Communities and Careers"
 [yt01]: https://www.youtube.com/watch?v=0_DEB61YOMc "How anyone can contribute to the MS Docs website!"
 [yt02]: https://www.youtube.com/watch?v=5TPR66fFrsQ "Taming Git and GitHub with PowerShell"
 [yt03]: https://www.youtube.com/watch?v=9-_VPIu6zLw "Contribute to Docs like a Microsoft Insider"
@@ -167,4 +176,6 @@ Other
 [yt10]: https://www.youtube.com/watch?v=TpxaGIoyyIM "Cross-Platform PowerShell Profiles"
 [yt11]: https://www.youtube.com/watch?v=nejXX6QD6wU&t=13s "PowerShell Parameter Binding Explained"
 [yt12]: https://www.youtube.com/watch?v=BCh4w8y2jLA "The Road to Spiceworld : 2025 Season Finale"
-[metaskills]: https://learn-video.azurefd.net/vod/player?id=afb384b7-fd83-474d-a3f2-23dfacc127cf "Meta Skills - Contributing to Communities and Careers"
+[yt13]: https://www.youtube.com/watch?v=rWSI1pG5vKg "What's new in PlatyPS - PSConfEU 2026"
+[yt14]: https://www.youtube.com/watch?v=MBW2COScte0 "Publish PowerShell help content using PlatyPS v1.0 with Stephen Valdinger"
+[yt15]: https://www.youtube.com/@PowerShellConferenceEU/videos "Coming soon!"
