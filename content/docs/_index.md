@@ -6,7 +6,7 @@ toc: true
 navWeight: 1000
 series:
   - Presentations
-date: 2025-06-21
+date: 2026-08-13
 ---
 <!-- markdownlint-disable MD041 MD033 -->
 
@@ -178,4 +178,4 @@ Other
 [yt12]: https://www.youtube.com/watch?v=BCh4w8y2jLA "The Road to Spiceworld : 2025 Season Finale"
 [yt13]: https://www.youtube.com/watch?v=rWSI1pG5vKg "What's new in PlatyPS - PSConfEU 2026"
 [yt14]: https://www.youtube.com/watch?v=MBW2COScte0 "Publish PowerShell help content using PlatyPS v1.0 with Stephen Valdinger"
-[yt15]: https://www.youtube.com/@PowerShellConferenceEU/videos "Coming soon!"
+[yt15]: https://www.youtube.com/watch?v=bBCnZy45EUo "What's new in PlatyPS - PSConfEU 2026"

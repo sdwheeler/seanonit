@@ -13,7 +13,7 @@ index: true
 ---
 <!-- markdownlint-disable MD041 -->
 
-## Microsoft.PowerShell.PlatyPS v1.0.0
+## Microsoft.PowerShell.PlatyPS
 
 - [Microsoft.PowerShell.PlatyPS cmdlet reference][05]
 - [Source code][01]
