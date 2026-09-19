@@ -53,20 +53,20 @@ to the slides and code samples where available.
 
 Conferences
 
-- [PowerShell+DevOps Summit][con-summit] in Bellevue, WA
+- [PowerShell+DevOps Summit][con-ps] in Bellevue, WA
   - Multiple public sessions - 2022, 2023, 2024, 2025, 2026
   - Multiple OnRamp sessions - 2025, 2026
 - [PSConfEU][con-eu] in Europe
   - Multiple sessions - 2026
-- [SQL Saturday Baton Rouge][con-sqlbtr]
-  - PowerShell workshop + sessions - [2023][sql1060], [2024][sql1076], [2025][sql1110]
+- [SQL Saturday Baton Rouge][con-sql]
+  - PowerShell workshop + sessions - [2023][sql-1060], [2024][sql-1076], [2025][sql-1110]
 - [TechMentor @ MSFT HQ][con-tm]
   - PowerShell workshop + breakout sessions - 2025, 2026
     - 2025 Handouts: [Labs][tm25-labs] - [Labs w/ answers][tm25-answers] - [Slides][tm25-slides]
     - 2026 Handouts: [Lab kit][tm26-labs]
-- [SpiceWorld][con-spice] in Austin, TX
+- [SpiceWorld][con-sw] in Austin, TX
   - PowerShell workshop + breakout sessions - 2022, 2023, 2024, 2025, 2026
-    - Handouts: [AI Shell][spice-aishell] - [Git fundamentals][spice-git] - [PowerShell Toolmaking][spice-pstool]
+    - 2025 Handouts: [AI Shell][sw-aish] - [Git fundamentals][sw-git] - [PowerShell Toolmaking][sw-pstool]
 - PSConfEU
   - [Minicon 2024][eu-2407]
   - [PSConfEU 2026][eu-2606]
@@ -146,23 +146,23 @@ Other
 
 <!-- conferences -->
 [con-eu]: https://psconf.eu/ "PSConfEU"
-[con-spice]: https://www.spiceworks.com/spiceworld/ "SpiceWorld"
-[spice-aishell]: https://github.com/sdwheeler/presentations/blob/main/SpiceWorld/2025/AIShell/Chat-with-AI-in-PowerShell-using-AIShell.pdf
-[spice-git]: https://github.com/sdwheeler/presentations/blob/main/SpiceWorld/2025/GitFundamentals/Have-fun-with-Git-without-going-mental.pdf
-[spice-pstool]: https://github.com/sdwheeler/presentations/blob/main/SpiceWorld/2025/workshop/SpiceWorld-2025-PowerShell-Toolmaking.pdf
-[con-sqlbtr]: https://www.sqlsatbr.com/ "SQL Saturday Baton Rouge"
-[con-summit]: https://www.powershellsummit.org/ "PowerShell+DevOps Global Summit"
+[con-ps]: https://www.powershellsummit.org/ "PowerShell+DevOps Global Summit"
+[con-sql]: https://www.sqlsatbr.com/ "SQL Saturday Baton Rouge"
+[con-sw]: https://www.spiceworks.com/spiceworld/ "SpiceWorld"
 [con-tm]: https://techmentorevents.com
-[tm25-labs]: https://github.com/sdwheeler/presentations/blob/main/TechMentor/2025/Workshop/TMMSHQ25_M01_PowerShell_HOL_Labs.pdf
-[tm26-labs]: https://github.com/sdwheeler/presentations/blob/main/TechMentor/2026/workshop/TMMSFT2026-THOL01.zip
-[tm25-answers]: https://github.com/sdwheeler/presentations/blob/main/TechMentor/2025/Workshop/TMMSHQ25_M01_PowerShell_HOL_Labs_Answers.pdf
-[tm25-slides]: https://github.com/sdwheeler/presentations/blob/main/TechMentor/2025/Workshop/TMMSHQ25_M01_PowerShell_HOL_Slides.pdf
 [contrib]: https://learn.microsoft.com/contribute/ "Microsoft Learn Contributor Community Series"
 [eu-2407]: https://psconf.eu/recordings/minicon-2024/ "PSConfEU Minicon 2024"
 [eu-2606]: https://psconf.eu/ "PSConfEU 2026"
-[sql1060]: https://sqlsaturday.com/2023-07-29-sqlsaturday1060/ "SQL Saturday Baton Rouge 2023 (#1060)"
-[sql1076]: https://sqlsaturday.com/2024-07-27-sqlsaturday1076/ "SQL Saturday Baton Rouge 2024 (#1076)"
-[sql1110]: https://sqlsaturday.com/2025-07-26-sqlsaturday1110/ "SQL Saturday Baton Rouge 2025 (#1110)"
+[sql-1060]: https://sqlsaturday.com/2023-07-29-sqlsaturday1060/ "SQL Saturday Baton Rouge 2023 (#1060)"
+[sql-1076]: https://sqlsaturday.com/2024-07-27-sqlsaturday1076/ "SQL Saturday Baton Rouge 2024 (#1076)"
+[sql-1110]: https://sqlsaturday.com/2025-07-26-sqlsaturday1110/ "SQL Saturday Baton Rouge 2025 (#1110)"
+[sw-aish]: https://github.com/sdwheeler/presentations/blob/main/SpiceWorld/2025/AIShell/Chat-with-AI-in-PowerShell-using-AIShell.pdf
+[sw-git]: https://github.com/sdwheeler/presentations/blob/main/SpiceWorld/2025/GitFundamentals/Have-fun-with-Git-without-going-mental.pdf
+[sw-pstool]: https://github.com/sdwheeler/presentations/blob/main/SpiceWorld/2025/workshop/SpiceWorld-2025-PowerShell-Toolmaking.pdf
+[tm25-answers]: https://github.com/sdwheeler/presentations/blob/main/TechMentor/2025/Workshop/TMMSHQ25_M01_PowerShell_HOL_Labs_Answers.pdf
+[tm25-labs]: https://github.com/sdwheeler/presentations/blob/main/TechMentor/2025/Workshop/TMMSHQ25_M01_PowerShell_HOL_Labs.pdf
+[tm25-slides]: https://github.com/sdwheeler/presentations/blob/main/TechMentor/2025/Workshop/TMMSHQ25_M01_PowerShell_HOL_Slides.pdf
+[tm26-labs]: https://github.com/sdwheeler/presentations/blob/main/TechMentor/2026/workshop/TMMSFT2026-THOL01.zip
 
 <!-- videos -->
 [metaskills]: https://learn-video.azurefd.net/vod/player?id=afb384b7-fd83-474d-a3f2-23dfacc127cf "Meta Skills - Contributing to Communities and Careers"
