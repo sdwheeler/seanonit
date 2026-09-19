@@ -66,7 +66,8 @@ Conferences
     - 2026 Handouts: [Lab kit][tm26-labs]
 - [SpiceWorld][con-sw] in Austin, TX
   - PowerShell workshop + breakout sessions - 2022, 2023, 2024, 2025, 2026
-    - 2025 Handouts: [AI Shell][sw-aish] - [Git fundamentals][sw-git] - [PowerShell Toolmaking][sw-pstool]
+    - 2025 Handouts: [AI Shell][sw25-aish] - [Git fundamentals][sw25-git] - [PowerShell Toolmaking][sw25-pstool]
+    - 2026 Handouts: [Content][sw26-pres] - [Lab manual][sw26-lab]
 - PSConfEU
   - [Minicon 2024][eu-2407]
   - [PSConfEU 2026][eu-2606]
@@ -79,6 +80,7 @@ User Group meetings - multiple appearances
 - [GNVPSUG][ug-gnv]
 - [NTPCUG PowerShell SIG][ug-ntpc]
 - [PowerShell Wednesdays hosted by PDQ][ug-pdqw]
+- [PowerShell Ohio][ug-ohio]
 
 Other
 
@@ -132,6 +134,7 @@ Other
 [ug-pdqw]: https://discord.gg/RC9gcG9N?event=1383087640794103928 "PowerShell Wednesdays hosted by PDQ on Discord"
 [ug-ntpc]: https://ntpcug.org/powershell-sig/ "NTPCUG PowerShell SIG"
 [ug-gnv]: https://gnvpsug.com/ "Gainesville PowerShell User Group"
+[ug-ohio]: https://psoh.io/
 
 <!-- podcasts  -->
 [pspod]: https://powershellpodcast.podbean.com/ "PowerShell Podcast website"
@@ -156,9 +159,11 @@ Other
 [sql-1060]: https://sqlsaturday.com/2023-07-29-sqlsaturday1060/ "SQL Saturday Baton Rouge 2023 (#1060)"
 [sql-1076]: https://sqlsaturday.com/2024-07-27-sqlsaturday1076/ "SQL Saturday Baton Rouge 2024 (#1076)"
 [sql-1110]: https://sqlsaturday.com/2025-07-26-sqlsaturday1110/ "SQL Saturday Baton Rouge 2025 (#1110)"
-[sw-aish]: https://github.com/sdwheeler/presentations/blob/main/SpiceWorld/2025/AIShell/Chat-with-AI-in-PowerShell-using-AIShell.pdf
-[sw-git]: https://github.com/sdwheeler/presentations/blob/main/SpiceWorld/2025/GitFundamentals/Have-fun-with-Git-without-going-mental.pdf
-[sw-pstool]: https://github.com/sdwheeler/presentations/blob/main/SpiceWorld/2025/workshop/SpiceWorld-2025-PowerShell-Toolmaking.pdf
+[sw25-aish]: https://github.com/sdwheeler/presentations/blob/main/SpiceWorld/2025/AIShell/Chat-with-AI-in-PowerShell-using-AIShell.pdf
+[sw25-git]: https://github.com/sdwheeler/presentations/blob/main/SpiceWorld/2025/GitFundamentals/Have-fun-with-Git-without-going-mental.pdf
+[sw25-pstool]: https://github.com/sdwheeler/presentations/blob/main/SpiceWorld/2025/workshop/SpiceWorld-2025-PowerShell-Toolmaking.pdf
+[sw26-pres]: https://github.com/sdwheeler/presentations/blob/main/SpiceWorld/2026/Have-fun-with-Git-without-going-mental.pdf
+[sw26-lab]: https://github.com/sdwheeler/presentations/blob/main/SpiceWorld/2026/Lab-manual.pdf
 [tm25-answers]: https://github.com/sdwheeler/presentations/blob/main/TechMentor/2025/Workshop/TMMSHQ25_M01_PowerShell_HOL_Labs_Answers.pdf
 [tm25-labs]: https://github.com/sdwheeler/presentations/blob/main/TechMentor/2025/Workshop/TMMSHQ25_M01_PowerShell_HOL_Labs.pdf
 [tm25-slides]: https://github.com/sdwheeler/presentations/blob/main/TechMentor/2025/Workshop/TMMSHQ25_M01_PowerShell_HOL_Slides.pdf
@@ -180,4 +185,4 @@ Other
 [yt12]: https://www.youtube.com/watch?v=BCh4w8y2jLA "The Road to Spiceworld : 2025 Season Finale"
 [yt13]: https://www.youtube.com/watch?v=rWSI1pG5vKg "What's new in PlatyPS - PSConfEU 2026"
 [yt14]: https://www.youtube.com/watch?v=MBW2COScte0 "Publish PowerShell help content using PlatyPS v1.0 with Stephen Valdinger"
-[yt15]: https://www.youtube.com/watch?v=bBCnZy45EUo "What's new in PlatyPS - PSConfEU 2026"
+[yt15]: https://www.youtube.com/watch?v=bBCnZy45EUo "Make a PowerShell profile that runs on any version or platform - PSConfEU 2026"
