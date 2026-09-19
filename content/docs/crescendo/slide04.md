@@ -197,5 +197,5 @@ added to a PowerShell object.
 
 <!-- link references -->
 [01]: images/crescendo/slide4.png
-[02]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/crescendo/native-output/
+[02]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/crescendo/native-output.zip
 [03]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/crescendo/vssparsers.ps1

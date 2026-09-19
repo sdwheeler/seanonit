@@ -146,15 +146,14 @@ Other
 <!-- conferences -->
 [con-eu]: https://psconf.eu/ "PSConfEU"
 [con-spice]: https://www.spiceworks.com/spiceworld/ "SpiceWorld"
-[spice-aishell]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/spiceworld/Chat-with-AI-in-PowerShell-using-AIShell.pdf
-[spice-git]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/spiceworld/Have-fun-with-Git-without-going-mental.pdf
-[spice-pstool]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/spiceworld/SpiceWorld-2025-PowerShell-Toolmaking.pdf
+[spice-aishell]: https://github.com/sdwheeler/presentations/blob/main/SpiceWorld/2025/AIShell/Chat-with-AI-in-PowerShell-using-AIShell.pdf
+[spice-git]: https://github.com/sdwheeler/presentations/blob/main/SpiceWorld/2025/GitFundamentals/Have-fun-with-Git-without-going-mental.pdf
+[spice-pstool]: https://github.com/sdwheeler/presentations/blob/main/SpiceWorld/2025/workshop/SpiceWorld-2025-PowerShell-Toolmaking.pdf
 [con-sqlbtr]: https://www.sqlsatbr.com/ "SQL Saturday Baton Rouge"
 [con-summit]: https://www.powershellsummit.org/ "PowerShell+DevOps Global Summit"
-[con-tm]: https://techmentorevents.com/home.aspx "TechMentor Events"
-[tm-labs]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/techmentor/TMMSHQ25_M01_PowerShell_HOL_Labs.pdf
-[tm-answers]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/techmentor/TMMSHQ25_M01_PowerShell_HOL_Labs_Answers.pdf
-[tm-slides]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/techmentor/TMMSHQ25_M01_PowerShell_HOL_Slides.pdf
+[con-tm]: https://github.com/sdwheeler/presentations/blob/main/TechMentor/2025/Workshop/TMMSHQ25_M01_PowerShell_HOL_Labs.pdf
+[tm-answers]: https://github.com/sdwheeler/presentations/blob/main/TechMentor/2025/Workshop/TMMSHQ25_M01_PowerShell_HOL_Labs_Answers.pdf
+[tm-slides]: https://github.com/sdwheeler/presentations/blob/main/TechMentor/2025/Workshop/TMMSHQ25_M01_PowerShell_HOL_Slides.pdf
 [contrib]: https://learn.microsoft.com/contribute/ "Microsoft Learn Contributor Community Series"
 [eu-2407]: https://psconf.eu/recordings/minicon-2024/ "PSConfEU Minicon 2024"
 [eu-2606]: https://psconf.eu/ "PSConfEU 2026"
