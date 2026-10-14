@@ -1,4 +1,4 @@
-{{ if and .Site.Params.umami.enabled (not .Site.IsServer) }}
+{{ if .Site.Params.umami.enabled }}
 <script async defer
   data-website-id="{{ .Site.Params.umami.websiteId }}"
   src="{{ .Site.Params.umami.scriptUrl }}"
