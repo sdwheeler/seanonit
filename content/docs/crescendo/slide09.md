@@ -81,5 +81,5 @@ This is useful for testing your module during development, because you don't hav
 module if you need to make changes to one of the output handler scripts.
 
 <!-- link references -->
-[01]: images/crescendo/slide9.png
+[01]: /images/crescendo/slide9.png
 [03]: https://github.com/sharkdp/pastel

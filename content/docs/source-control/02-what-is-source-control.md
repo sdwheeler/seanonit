@@ -83,4 +83,4 @@ GitHub is a platform that:
 <!-- link references -->
 [01]: ../03-git-states
 [02]: https://docs.github.com/get-started/using-git/about-git
-[03]: images/source-control/02-what-are-git-github.png
+[03]: /images/source-control/02-what-are-git-github.png

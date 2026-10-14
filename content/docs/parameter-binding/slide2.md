@@ -119,4 +119,4 @@ The syntax diagrams use the following symbols:
 [01]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_command_syntax
 [02]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/get-command
 [03]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/get-help
-[04]: images/parameter-binding/slide2.png
+[04]: /images/parameter-binding/slide2.png

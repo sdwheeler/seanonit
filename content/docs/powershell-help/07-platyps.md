@@ -50,4 +50,4 @@ For more information, see:
 <!-- link references -->
 [01]: ../../10-platypsv1/ "What's new in PlatyPS"
 [02]: https://learn.microsoft.com/powershell/utility-modules/platyps/overview
-[03]: images/powershell-help/07-platyps.png
+[03]: /images/powershell-help/07-platyps.png

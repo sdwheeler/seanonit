@@ -65,4 +65,4 @@ Focus on the features of the tool you need to accomplish your goals. If a tool h
 you only need the functionality of three, don't waste effort on the other nine.
 
 <!-- link references -->
-[02]: images/crescendo/slide3.png
+[02]: /images/crescendo/slide3.png

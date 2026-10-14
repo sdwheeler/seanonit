@@ -123,4 +123,4 @@ AptPackage         0.0.2              PSGallery  PowerShell Crescendo-generated 
 ```
 
 <!-- link references -->
-[01]: images/crescendo/slide8.png
+[01]: /images/crescendo/slide8.png

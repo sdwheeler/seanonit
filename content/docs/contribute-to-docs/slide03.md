@@ -47,7 +47,7 @@ skills are becoming more important as more companies are moving to a DevOps mode
 improving these skills can help you advance your career.
 
 <!-- link references -->
-[01]: ./images/contribute-to-docs/slide03.png
+[01]: /images/contribute-to-docs/slide03.png
 [02]: https://learn.microsoft.com/powershell/scripting/community/community-update
 [03]: https://learn.microsoft.com/powershell/scripting/community/hall-of-fame
 [04]: https://mvp.microsoft.com/mvp/overview

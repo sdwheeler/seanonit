@@ -1,16 +1,10 @@
 ---
 archetype: presentations
 title: Basic markup
-navWeight: 3
 weight: 4
-featured: false
-draft: false
-comment: false
 toc: true
-pinned: false
-postDate: false
+type: docs
 date: 2024-04-01
-index: true
 ---
 
 ![Basic markup][01]
@@ -37,6 +31,6 @@ Compare the plaintext (Raw) view to the syntax-highlighted view (Code) to the re
 (Preview).
 
 <!-- link references -->
-[01]: images/markdown/slide4.png
+[01]: /images/markdown/slide4.png
 [02]: https://daringfireball.net/projects/markdown/syntax#philosophy
 [03]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/markdown/simple-example.md

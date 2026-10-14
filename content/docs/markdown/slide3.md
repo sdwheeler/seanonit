@@ -1,16 +1,10 @@
 ---
 archetype: presentations
 title: Flavors of Markdown
-navWeight: 4
 weight: 3
-featured: false
-draft: false
-comment: false
 toc: true
-pinned: false
-postDate: false
+type: docs
 date: 2024-04-01
-index: true
 ---
 
 ![Flavors of Markdown][01]
@@ -54,7 +48,7 @@ Markdig is a .NET library that implements CommonMark and several popular extensi
 provides a framework to add more extensions.
 
 <!-- link references -->
-[01]: images/markdown/slide3.png
+[01]: /images/markdown/slide3.png
 [02]: https://commonmark.org
 [03]: https://daringfireball.net/projects/markdown/syntax
 [04]: https://docs.github.com/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax

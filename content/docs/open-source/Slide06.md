@@ -51,6 +51,6 @@ Understanding your motivations helps you set expectations and helps you find the
 align with your goals.
 
 <!-- link references -->
-[01]: images/open-source/slide06.png
+[01]: /images/open-source/slide06.png
 [02]: https://developer.mozilla.org/docs/MDN/Community/Open_source_etiquette "Open source etiquette - The MDN Web Docs project | MDN (mozilla.org)"
 [03]: https://developer.mozilla.org/docs/MDN/Community "Community guidelines - The MDN Web Docs project | MDN"

@@ -47,4 +47,4 @@ descriptions of parameters. Others features require you to add metadata attribut
 code.
 
 <!-- link references -->
-[01]: images/powershell-help/03-history.png
+[01]: /images/powershell-help/03-history.png

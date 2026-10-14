@@ -65,4 +65,4 @@ between flexibility and ease of use. You must weigh the benefits of using Cresce
 associated with the requirements of the framework.
 
 <!-- link references -->
-[01]: images/crescendo/slide2.png
+[01]: /images/crescendo/slide2.png

@@ -1,13 +1,8 @@
 ---
 title: Sean Wheeler & Mike Robbins
 weight: 2
-navWeight: 12
-featured: false
-draft: false
-comment: false
 toc: true
-pinned: false
-postDate: false
+type: docs
 date: 2022-04-01
 index: true
 ---
@@ -21,4 +16,4 @@ index: true
 <!-- link references -->
 [01]: /about/
 [02]: https://mikefrobbins.com/about/
-[03]: images/contribute-to-docs/slide02.png
+[03]: /images/contribute-to-docs/slide02.png

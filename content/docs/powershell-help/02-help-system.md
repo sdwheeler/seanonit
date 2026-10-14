@@ -79,6 +79,6 @@ The PowerShell help system has some limitations:
 
 <!-- link references -->
 [01]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_comment_based_help
-[02]: images/powershell-help/02-HelpObjectExample.png
-[03]: images/powershell-help/02-HelpObjectModel.png
-[04]: images/powershell-help/02-help-system.png
+[02]: /images/powershell-help/02-HelpObjectExample.png
+[03]: /images/powershell-help/02-HelpObjectModel.png
+[04]: /images/powershell-help/02-help-system.png

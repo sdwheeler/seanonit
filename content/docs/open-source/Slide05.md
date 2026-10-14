@@ -69,6 +69,6 @@ status.**
 - [How to advance your career by contributing to open source projects][03]
 
 <!-- link references -->
-[01]: images/open-source/slide05.png
+[01]: /images/open-source/slide05.png
 [02]: https://medium.com/@sitapati/the-impact-github-is-having-on-your-software-career-right-now-6ce536ec0b50 "The Impact GitHub is Having on Your Software Career, Right Now… | by Josh Wulf | Medium"
 [03]: https://open-source.com/article/19/5/how-get-job-doing-open-source

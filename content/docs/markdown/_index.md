@@ -1,15 +1,9 @@
 ---
 linkTitle: Markdown
 title: Markdown Essentials
-linkTitleIcon: <i class="fab fa-markdown text-warning"></i>
-featured: true
-comment: false
+icon: fab fa-markdown text-warning
 toc: true
-pinned: false
-series:
-  - Presentations
 weight: 3
-navWeight: -4000
 type: docs
 date: 2024-04-01
 ---

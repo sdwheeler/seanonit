@@ -1,9 +1,10 @@
 ---
 linkTitle: Open Source
-linkTitleIcon: <i class="fab fa-osi text-dark"></i>
+icon: fab fa-osi text-dark
 title: How to Contribute to an Open Source Project
 weight: 2
 navWeight: -1000
+type: docs
 date: 2022-09-01
 ---
 <!-- markdownlint-disable MD041 -->

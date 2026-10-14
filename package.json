@@ -1,67 +1,11 @@
 {
-  "comments": {
-    "dependencies": {
-      "@algolia/autocomplete-js": "github.com/razonyang/hugo-theme-bootstrap",
-      "@algolia/autocomplete-theme-classic": "github.com/razonyang/hugo-theme-bootstrap",
-      "@docsearch/js": "github.com/razonyang/hugo-theme-bootstrap",
-      "@fortawesome/fontawesome-svg-core": "github.com/razonyang/hugo-theme-bootstrap",
-      "@fortawesome/free-brands-svg-icons": "github.com/razonyang/hugo-theme-bootstrap",
-      "@fortawesome/free-regular-svg-icons": "github.com/razonyang/hugo-theme-bootstrap",
-      "@fortawesome/free-solid-svg-icons": "github.com/razonyang/hugo-theme-bootstrap",
-      "@fullhuman/postcss-purgecss": "github.com/razonyang/hugo-theme-bootstrap",
-      "@popperjs/core": "github.com/razonyang/hugo-theme-bootstrap",
-      "algoliasearch": "github.com/razonyang/hugo-theme-bootstrap",
-      "autoprefixer": "github.com/razonyang/hugo-theme-bootstrap",
-      "bootstrap": "github.com/razonyang/hugo-theme-bootstrap",
-      "date-fns": "github.com/razonyang/hugo-theme-bootstrap",
-      "fuse.js": "github.com/razonyang/hugo-theme-bootstrap",
-      "katex": "github.com/razonyang/hugo-theme-bootstrap",
-      "mark.js": "github.com/razonyang/hugo-theme-bootstrap",
-      "masonry-layout": "github.com/razonyang/hugo-theme-bootstrap",
-      "mermaid": "github.com/razonyang/hugo-theme-bootstrap",
-      "mustache": "github.com/razonyang/hugo-theme-bootstrap",
-      "onchange": "github.com/razonyang/hugo-theme-bootstrap",
-      "postcss-cli": "github.com/razonyang/hugo-theme-bootstrap",
-      "rtlcss": "github.com/razonyang/hugo-theme-bootstrap",
-      "viewerjs": "github.com/razonyang/hugo-theme-bootstrap",
-      "workbox-cacheable-response": "github.com/razonyang/hugo-theme-bootstrap",
-      "workbox-expiration": "github.com/razonyang/hugo-theme-bootstrap",
-      "workbox-precaching": "github.com/razonyang/hugo-theme-bootstrap",
-      "workbox-routing": "github.com/razonyang/hugo-theme-bootstrap",
-      "workbox-strategies": "github.com/razonyang/hugo-theme-bootstrap"
-    },
-    "devDependencies": {}
+  "workspaces": [
+    "packages/hugoautogen"
+  ],
+  "scripts": {
+    "hugo": "hugo"
   },
-  "dependencies": {
-    "@algolia/autocomplete-js": "^1.7.3",
-    "@algolia/autocomplete-theme-classic": "^1.7.3",
-    "@docsearch/js": "^3.5.2",
-    "@fortawesome/fontawesome-svg-core": "^7.2.0",
-    "@fortawesome/free-brands-svg-icons": "^7.2.0",
-    "@fortawesome/free-regular-svg-icons": "^7.2.0",
-    "@fortawesome/free-solid-svg-icons": "^7.2.0",
-    "@fullhuman/postcss-purgecss": "^8.0.0",
-    "@popperjs/core": "^2.11.2",
-    "algoliasearch": "^4.14.2",
-    "autoprefixer": "^10.4.2",
-    "bootstrap": "^5.3.2",
-    "date-fns": "^2.29.3",
-    "fuse.js": "^6.5.3",
-    "katex": "^0.16.21",
-    "mark.js": "^8.11.1",
-    "masonry-layout": "^4.2.2",
-    "mermaid": "^10.9.8",
-    "mustache": "^4.2.0",
-    "onchange": "^7.1.0",
-    "postcss-cli": "^9.1.0",
-    "rtlcss": "^3.5.0",
-    "viewerjs": "^1.10.4",
-    "workbox-cacheable-response": "^6.4.2",
-    "workbox-expiration": "^6.4.2",
-    "workbox-precaching": "^6.4.2",
-    "workbox-routing": "^6.4.2",
-    "workbox-strategies": "^6.4.2"
-  },
-  "name": "seanonit",
-  "version": "0.1.0"
+  "devDependencies": {
+    "@docsy/theme": "^0.18.0"
+  }
 }

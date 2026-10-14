@@ -28,4 +28,4 @@ Published M-F at 10am and 3pm PST
 Azure PowerShell release schedule
 
 <!-- link references -->
-[01]: ./images/contribute-to-docs/slide07.png
+[01]: /images/contribute-to-docs/slide07.png

@@ -36,4 +36,4 @@ index: true
   information.
 
 <!-- link references -->
-[01]: ./images/powershell-profile/slide07.png
+[01]: /images/powershell-profile/slide07.png

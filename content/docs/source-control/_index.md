@@ -1,9 +1,9 @@
 ---
 linkTitle: Source Control Fundamentals
 title: Source Control Fundamentals
-linkTitleIcon: <i class="fab fa-git-alt text-tertiary"></i>
-weight: 1
-navWeight: -2000
+icon: fab fa-git-alt text-tertiary
+type: docs
+toc: true
 date: 2026-04-04
 ---
 <!-- markdownlint-disable MD041 -->

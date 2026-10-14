@@ -184,7 +184,7 @@ have `sudo` permission. Accessing this list requires elevation.
 ```
 
 <!-- link references -->
-[01]: images/crescendo/slide10.png
+[01]: /images/crescendo/slide10.png
 [02]: https://github.com/gerardog/gsudo
 
 [05]: https://learn.microsoft.com/powershell/utility-modules/crescendo/advanced/handling-errors

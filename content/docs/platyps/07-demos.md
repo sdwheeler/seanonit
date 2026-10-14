@@ -27,4 +27,4 @@ You can get the demo script and data files for these demos from the following li
 [01]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/platyps/demo-data.zip
 [02]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/platyps/demo.ps1
 [03]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/platyps/Test-ParameterInfo.ps1
-[04]: images/platyps/07-demos.png
+[04]: /images/platyps/07-demos.png

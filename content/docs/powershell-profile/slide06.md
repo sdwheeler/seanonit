@@ -125,7 +125,7 @@ index: true
 - [Environment.NewLine Property][02]
 
 <!-- link references -->
-[01]: ./images/powershell-profile/slide06.png
+[01]: /images/powershell-profile/slide06.png
 [02]: https://learn.microsoft.com/dotnet/api/system.environment.newline
 [03]: https://learn.microsoft.com/dotnet/api/system.io.path
 [04]: https://learn.microsoft.com/powershell/scripting/whats-new/cmdlet-versions

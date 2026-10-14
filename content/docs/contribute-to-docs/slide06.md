@@ -20,4 +20,4 @@ index: true
 - Published M-F at 3pm PST
 
 <!-- link references -->
-[01]: ./images/contribute-to-docs/slide06.png
+[01]: /images/contribute-to-docs/slide06.png

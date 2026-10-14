@@ -22,4 +22,4 @@ PowerShell Community Blog
 Great way to start writing and get free code and content reviews
 
 <!-- link references -->
-[01]: ./images/contribute-to-docs/slide11.png
+[01]: /images/contribute-to-docs/slide11.png

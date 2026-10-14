@@ -1,9 +1,10 @@
 ---
 linkTitle: PlatyPS v1.0
 title: PlatyPS v1.0
-linkTitleIcon: <i class="fab fa-markdown text-warning"></i>
+icon: fab fa-markdown text-warning
 weight: 8
 navWeight: -6000
+type: docs
 date: 2026-03-23
 ---
 <!-- markdownlint-disable MD041 -->

@@ -93,6 +93,6 @@ The PowerShell help system has some limitations:
   that need to explain the context of the code.
 
 <!-- link references -->
-[01]: images/platyps/02-history.png
-[04]: images/platyps/02-HelpObjectExample.png
-[05]: images/platyps/02-HelpObjectModel.png
+[01]: /images/platyps/02-history.png
+[04]: /images/platyps/02-HelpObjectExample.png
+[05]: /images/platyps/02-HelpObjectModel.png

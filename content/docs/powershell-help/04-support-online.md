@@ -55,4 +55,4 @@ For more information, see the following articles:
 <!-- link references -->
 [01]: https://learn.microsoft.com/dotnet/api/system.management.automation.cmdletbindingattribute
 [02]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_functions_cmdletbindingattribute
-[04]: images/powershell-help/04-support-online.png
+[04]: /images/powershell-help/04-support-online.png

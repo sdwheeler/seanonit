@@ -27,4 +27,4 @@ The **Microsoft.PowerShell.PlatyPS** module is still a work in progress.
   - Can we create a formatter that outputs `Get-Help` objects?
 
 <!-- link references -->
-[01]: images/platyps/09-future.png
+[01]: /images/platyps/09-future.png

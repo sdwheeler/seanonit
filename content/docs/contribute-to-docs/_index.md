@@ -1,10 +1,9 @@
 ---
 linkTitle: Contribute to Docs
-linkTitleIcon: <i class="fa-solid fa-user-pen text-primary"></i>
+icon: fa-solid fa-user-pen text-primary
 title: Contribute to Docs like a Microsoft Insider
 date: 2022-04-01
 weight: 1
-navWeight: -3000
 ---
 <!-- markdownlint-disable MD041 -->
 ![Contribute to Docs like a Microsoft Insider][02]

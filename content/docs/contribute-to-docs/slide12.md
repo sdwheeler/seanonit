@@ -26,4 +26,4 @@ The process is the same for contributing to any docs.microsoft.com content
 - PowerShell content is everywhere – Azure, Office, Windows, SQL, etc.
 
 <!-- link references -->
-[01]: ./images/contribute-to-docs/slide12.png
+[01]: /images/contribute-to-docs/slide12.png

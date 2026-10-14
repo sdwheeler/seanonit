@@ -32,4 +32,4 @@ can then paste the command into a script or the console.
 <!-- link references -->
 [01]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_parameter_binding
 [02]: https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/show-command
-[03]: images/parameter-binding/slide4.png
+[03]: /images/parameter-binding/slide4.png

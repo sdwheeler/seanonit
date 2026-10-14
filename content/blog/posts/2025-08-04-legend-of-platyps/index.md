@@ -23,6 +23,8 @@ wrangle PowerShell documentation.
 
 ![PlatyPS and Content Wrangler][02]
 
+---
+
 Out on the wild edges of the PowerShell frontier, where modules multiplied and help files were as
 scarce as water in the Death Valley, there rode a man named **Sean Wheeler**. With a laptop in one
 hand and a coffee-stained cowboy hat in the other. Sean was a rare breed: part coder, part cowboy,
@@ -37,7 +39,8 @@ by `Update-Help`, Sean and PlatyPS rode in, calm as a Sunday morning, turning ch
 With a single command, Sean could turn complex cmdlets into clean, readable markdown:
 
 ```powershell
-Get-Command -Module TrailblazerTools | New-MarkdownCommandHelp -OutputFolder .\docs
+Get-Command -Module TrailblazerTools |
+    New-MarkdownCommandHelp -OutputFolder .\docs
 ```
 
 Need to refresh it after a long day on the dev range?
@@ -49,7 +52,8 @@ Update-MarkdownHelp -Path .\docs
 And when it was time to publish those help files for the whole PowerShell posse to use:
 
 ```powershell
-Import-MarkdownCommandHelp .\docs | Export-MamlCommandHelp -OutputPath .\en-US
+Import-MarkdownCommandHelp .\docs |
+    Export-MamlCommandHelp -OutputPath .\en-US
 ```
 
 Thanks to Sean and PlatyPS, no module went undocumented, and no parameter went unexplained. They

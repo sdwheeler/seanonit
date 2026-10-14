@@ -1,5 +1,5 @@
-module github.com/sdwheeler/seanonit
+module docsy-site
 
-go 1.26
+go 1.27.0
 
-require github.com/razonyang/hugo-theme-bootstrap v1.13.3 // indirect
+require github.com/docsy/docsy/theme v0.18.0 // indirect

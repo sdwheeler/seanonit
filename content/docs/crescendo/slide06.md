@@ -145,5 +145,5 @@ The following steps show how to create Crescendo objects using the cmdlets.
 > yet.
 
 <!-- link references -->
-[02]: images/crescendo/slide6.png
+[02]: /images/crescendo/slide6.png
 [217]: https://github.com/PowerShell/Crescendo/pull/217

@@ -164,5 +164,5 @@ $RECYCLE.BIN/
 [01]: ../06-lab1b
 [02]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
 [03]: https://git-scm.com/downloads
-[04]: images/source-control/05-git-install.png
-[05]: images/source-control/05-setup-title.png
+[04]: /images/source-control/05-git-install.png
+[05]: /images/source-control/05-setup-title.png

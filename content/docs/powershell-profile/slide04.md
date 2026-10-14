@@ -73,5 +73,5 @@ you can dot-source the profile script to load it.
 For more information, see [about_Profiles][02].
 
 <!-- link references -->
-[01]: ./images/powershell-profile/slide04.png
+[01]: /images/powershell-profile/slide04.png
 [02]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_profiles

@@ -1,9 +1,10 @@
 ---
 linkTitle: PowerShell Crescendo
-linkTitleIcon: <i class="fas fa-less-than text-success"></i>
+icon: fas fa-less-than text-success
 title: Getting started with PowerShell Crescendo
 weight: 7
 navWeight: -9000
+type: docs
 date: 2021-11-09
 ---
 <!-- markdownlint-disable MD041 -->

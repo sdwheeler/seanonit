@@ -68,4 +68,4 @@ DEBUG: 2024-08-09 15:14:09.3177 ParameterBinding Information: 0 : CALLING BeginP
 [02]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_parsing
 [03]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_quoting_rules
 [04]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_special_characters
-[05]: images/parameter-binding/slide7.png
+[05]: /images/parameter-binding/slide7.png

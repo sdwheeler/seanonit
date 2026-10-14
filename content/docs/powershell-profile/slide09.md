@@ -49,4 +49,4 @@ index: true
   - Use the `$global:` scope to create and manage the variables you want to be available everywhere.
 
 <!-- link references -->
-[01]: ./images/powershell-profile/slide09.png
+[01]: /images/powershell-profile/slide09.png

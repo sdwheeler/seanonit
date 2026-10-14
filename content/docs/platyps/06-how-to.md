@@ -86,4 +86,4 @@ dir $mdpath -Recurse -Filter *.md |
 
 <!-- link references -->
 [01]: https://learn.microsoft.com/powershell/module/microsoft.powershell.platyps/
-[02]: images/platyps/06-how-to.png
+[02]: /images/platyps/06-how-to.png

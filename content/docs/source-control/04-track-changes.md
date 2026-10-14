@@ -67,9 +67,9 @@ license files are shown as new files.
 
 <!-- link references -->
 [01]: ../05-lab1a
-[02]: images/source-control/04-tracking-changes.png
-[03]: images/source-control/04-git-cmd-01.png
-[04]: images/source-control/04-git-cmd-02.png
-[05]: images/source-control/04-git-cmd-03.png
-[06]: images/source-control/04-git-cmd-04.png
-[07]: images/source-control/04-git-cmd-05.png
+[02]: /images/source-control/04-tracking-changes.png
+[03]: /images/source-control/04-git-cmd-01.png
+[04]: /images/source-control/04-git-cmd-02.png
+[05]: /images/source-control/04-git-cmd-03.png
+[06]: /images/source-control/04-git-cmd-04.png
+[07]: /images/source-control/04-git-cmd-05.png

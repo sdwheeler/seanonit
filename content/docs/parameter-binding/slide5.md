@@ -104,4 +104,4 @@ TypeId     : System.Management.Automation.AliasAttribute
 
 <!-- link references -->
 [01]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters#attributes-of-parameters
-[02]: images/parameter-binding/slide5.png
+[02]: /images/parameter-binding/slide5.png

@@ -40,4 +40,4 @@ XML file.
 
 <!-- link references -->
 [01]: https://learn.microsoft.com/powershell/scripting/developer/help/how-to-create-the-cmdlet-help-file
-[03]: images/powershell-help/05-support-update.png
+[03]: /images/powershell-help/05-support-update.png

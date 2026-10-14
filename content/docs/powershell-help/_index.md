@@ -1,9 +1,10 @@
 ---
 linkTitle: PowerShell Help
-linkTitleIcon: <i class="fa-regular fa-circle-question text-danger"></i>
+icon: fa-regular fa-circle-question text-danger
 title: Unlocking the secrets of PowerShell Help
 weight: 6
 navWeight: -5000
+type: docs
 date: 2026-03-23
 ---
 

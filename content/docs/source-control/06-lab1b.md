@@ -140,4 +140,4 @@ For example, a status of `[main ≡ +0 ~2 -1 | +1 ~1 -0]` corresponds to the fol
 [01]: ../07-git-branches
 [02]: https://github.com/dahlbyk/posh-git
 [03]: https://www.powershellgallery.com/packages/posh-git
-[04]: images/source-control/06-using-posh-git.gif
+[04]: /images/source-control/06-using-posh-git.gif

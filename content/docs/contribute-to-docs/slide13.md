@@ -25,4 +25,4 @@ Markdown resources
 - [CommonMark Specification](https://spec.commonmark.org/current/)
 
 <!-- link references -->
-[01]: ./images/contribute-to-docs/slide13.png
+[01]: /images/contribute-to-docs/slide13.png

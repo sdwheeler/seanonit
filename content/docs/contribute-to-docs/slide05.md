@@ -22,4 +22,4 @@ See https://docs.microsoft.com/en-us/contribute/
 - Use the full workflow for complex changes and multiple files
 
 <!-- link references -->
-[01]: ./images/contribute-to-docs/slide05.png
+[01]: /images/contribute-to-docs/slide05.png

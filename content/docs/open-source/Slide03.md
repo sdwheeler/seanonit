@@ -35,7 +35,7 @@ find new ways to solve problems in their communities and industries.
 - [Open-source license][03]
 
 <!-- link references -->
-[01]: images/open-source/slide03.png
+[01]: /images/open-source/slide03.png
 [02]: https://wikipedia.org/wiki/Open_source "Wikipedia"
 [03]: https://wikipedia.org/wiki/Open-source_license "Wikipedia"
 [04]: https://wikipedia.org/wiki/Open-source_software "Wikipedia"

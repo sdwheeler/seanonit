@@ -72,4 +72,4 @@ own code to read strings from another source and add them to the objects.
 [01]: https://commonmark.org/
 [02]: https://github.com/aaubry/YamlDotNet
 [03]: https://github.com/xoofx/markdig
-[04]: images/platyps/05-platypsv1.png
+[04]: /images/platyps/05-platypsv1.png

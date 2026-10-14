@@ -28,4 +28,4 @@ PowerShell best practices
 - No prompts unless documenting the prompt behavior
 
 <!-- link references -->
-[01]: ./images/contribute-to-docs/slide10.png
+[01]: /images/contribute-to-docs/slide10.png

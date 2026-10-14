@@ -1,16 +1,10 @@
 ---
 archetype: presentations
 title: What is Markdown?
-navWeight: 5
 weight: 2
-featured: false
-draft: false
-comment: false
 toc: true
-pinned: false
-postDate: false
+type: docs
 date: 2024-04-01
-index: true
 ---
 
 ![What is Markdown?][02]
@@ -27,4 +21,4 @@ specification and test suite for Markdown." -- source: [Wikipedia][01]
 
 <!-- link references -->
 [01]: https://wikipedia.org/wiki/Markdown
-[02]: images/markdown/slide2.png
+[02]: /images/markdown/slide2.png

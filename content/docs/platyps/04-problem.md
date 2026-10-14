@@ -47,4 +47,4 @@ The **platyPS** module has several limitations:
 support or maintain this version of the module.
 
 <!-- link references -->
-[01]: images/platyps/04-problem.png
+[01]: /images/platyps/04-problem.png

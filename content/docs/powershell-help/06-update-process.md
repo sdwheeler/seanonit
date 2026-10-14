@@ -105,4 +105,4 @@ There are several important details to keep in mind when you publish help for yo
   - `<Locale>` uses lowercase language code and uppercase country code, for example `en-US`
 
 <!-- link references -->
-[02]: images/powershell-help/06-update-process.png
+[02]: /images/powershell-help/06-update-process.png

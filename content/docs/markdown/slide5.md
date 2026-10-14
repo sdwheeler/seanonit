@@ -1,16 +1,10 @@
 ---
 archetype: presentations
 title: Use cases
-navWeight: 2
 weight: 5
-featured: false
-draft: false
-comment: false
 toc: true
-pinned: false
-postDate: false
+type: docs
 date: 2024-04-01
-index: true
 ---
 ![Use cases][01]
 
@@ -37,7 +31,7 @@ index: true
 - [Obsidian][04]
 
 <!-- link references -->
-[01]: images/markdown/slide5.png
+[01]: /images/markdown/slide5.png
 [02]: https://devblogs.microsoft.com/powershell-community/
 [03]: https://gohugo.io/
 [04]: https://obsidian.md/

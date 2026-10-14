@@ -82,7 +82,7 @@ index: true
 - [PSStyle module](https://www.powershellgallery.com/packages/PSStyle)
 
 <!-- link references -->
-[01]: ./images/powershell-profile/slide08.png
+[01]: /images/powershell-profile/slide08.png
 [02]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_prompts
 [03]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_parameters_default_values
 [04]: https://learn.microsoft.com/powershell/module/psreadline/set-psreadlineoption

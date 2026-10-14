@@ -1,16 +1,10 @@
 ---
 archetype: presentations
 title: Best practices
-navWeight: 1
 weight: 6
-featured: false
-draft: false
-comment: false
 toc: true
-pinned: false
-postDate: false
+type: docs
 date: 2024-04-01
-index: true
 ---
 ![Best practices][01]
 
@@ -108,7 +102,7 @@ Reflow Markdown
   ```
 
 <!-- link references -->
-[01]: images/markdown/slide6.png
+[01]: /images/markdown/slide6.png
 [02]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/markdown/best-practices.md
 [03]: https://learn.microsoft.com/powershell/scripting/community/contributing/editorial-checklist
 [04]: https://learn.microsoft.com/powershell/scripting/community/contributing/powershell-style-guide

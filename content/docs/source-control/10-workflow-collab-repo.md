@@ -77,4 +77,4 @@ The numbered steps (in black) are described in the table below.
 [01]: ../11-lab3
 [02]: https://docs.github.com/get-started/exploring-projects-on-github/contributing-to-a-project
 [03]: https://docs.github.com/get-started/quickstart/github-flow
-[04]: images/source-control/10-gitflow-collab.png
+[04]: /images/source-control/10-gitflow-collab.png

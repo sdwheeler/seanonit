@@ -1,0 +1,26 @@
+/*
+Projects can override this file. For details, see:
+https://www.docsy.dev/docs/content/lookandfeel/#project-style-files
+*/
+@import 'td/code-dark';
+
+.td-page-meta__child {
+  display: none;
+}
+
+.td-page-meta__edit {
+  display: none;
+}
+
+.td-page-meta__issue {
+  display: none;
+}
+
+.td-page-meta__project-issue {
+  display: none;
+}
+
+.td-page-meta__lastmod {
+  display: none;
+}
+

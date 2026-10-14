@@ -28,4 +28,4 @@ Markdown reference for docs.microsoft.com
 Using the Microsoft Doc Authoring Pack
 
 <!-- link references -->
-[01]: ./images/contribute-to-docs/slide04.png
+[01]: /images/contribute-to-docs/slide04.png

@@ -1,0 +1,122 @@
+# cSpell:ignore docsy github goldmark linkify netlify hugo
+
+baseURL: https://seanonit.org/
+title: Sean on IT
+disableKinds: [taxonomy]
+theme: ['@docsy/theme']
+themesDir: node_modules
+enableGitInfo: false
+ignoreLogs:
+  - warning-goldmark-raw-html
+mainSections:
+  - docs
+  - blog
+timeout: 30s
+timezone: America/Chicago
+titleCaseStyle: firstupper
+
+module:
+  proxy: direct
+  hugoVersion:
+    extended: true
+    min: 0.160.1
+  imports:
+    - path: github.com/docsy/docsy/theme
+      disable: false
+
+outputs:
+  docs: [HTML, markdown, rss, LLMS]
+  blog: [HTML, markdown, rss, LLMS]
+  section: [HTML, markdown]
+
+markup:
+  goldmark:
+    extensions:
+      linkify: false
+    parser:
+      attribute:
+        block: true
+      wrapStandAloneImageWithinParagraph: false
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false # Required for dark-mode
+    style: vulcan
+  tableOfContents: { endLevel: 4 }
+
+imaging:
+  resampleFilter: CatmullRom # cspell:disable-line
+  anchor: Smart
+
+params:
+  copyright:
+    authors: >-
+      Sean D. Wheeler | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0)
+    from_year: 2024
+    # to_year: 2026
+  # privacy_policy: https://www.linuxfoundation.org/legal/privacy-policy
+  # github_repo: https://github.com/sdwheeler/seanonit
+  offlineSearch: true
+  ui:
+    feedback:
+      enable: false
+    navbar_logo: true
+    showLightDarkModeMenu: true
+    sidebar_cache_limit: 100
+    sidebar_menu_compact: true
+    sidebar_menu_foldable: true
+    sidebar_search_disable: false
+    ul_show: 1
+
+  giscus:
+    repo: sdwheeler/seanonit
+    repo-id: R_kgDOKHe1gw
+    category: Site comments
+    category-id: DIC_kwDOKHe1g84ClEjV
+    mapping: og:title
+    reactions-enabled: 1
+    emit-metadata: 0
+    input-position: bottom
+    theme: transparent_dark
+    lang: en
+    loading: lazy
+
+  umami:
+    enabled: true
+    websiteId: a73c775c-ed4c-478f-810f-b59a402ce38f
+    scriptUrl: https://cloud.umami.is/script.js
+
+  # Text macros: use with _param
+  btn-lg: class="btn btn-lg btn-{1}" role="button"
+  FA: <i class="fa-{1} fa-{2} text-{3} px-1"></i>
+
+  links: # CUSTOMIZE
+    user:
+      #- email: swsamwa@live.com
+      - name: LinkedIn
+        url: https://linkedin.com/in/scriptingsean
+        icon: fa-brands fa-linkedin
+      - name: Bluesky
+        url: https://bsky.app/profile/sdwheeler.bsky.social
+        icon: fa-brands fa-bluesky
+      - name: X/Twitter
+        url: https://x.com/swsamwa
+        icon: fa-brands fa-x-twitter
+      - name: GitHub Profile
+        url: https://github.com/sdwheeler
+        icon: fa-brands fa-github
+      - name: Sessionize
+        url: https://sessionize.com/sean-wheeler
+        icon: fa-solid fa-bullhorn
+      - name: Stickermule
+        url: https://www.stickermule.com/sdwheeler
+        icon: fa-brands fa-sticker-mule
+    developer:
+      - name: RSS feed
+        url: /index.xml
+        icon: fa-solid fa-rss
+        desc: RSS feed
+      - name: GitHub
+        url: https://github.com/sdwheeler/seanonit
+        icon: fa-brands fa-github
+        desc: GitHub repository for this site

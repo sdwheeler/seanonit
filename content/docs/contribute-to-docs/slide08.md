@@ -17,4 +17,4 @@ index: true
 See video for demo
 
 <!-- link references -->
-[01]: ./images/contribute-to-docs/slide08.png
+[01]: /images/contribute-to-docs/slide08.png

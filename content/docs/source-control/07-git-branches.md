@@ -63,5 +63,5 @@ commit message, author, date, and diffs. You can also see the branches and tags 
 <!-- link references -->
 [01]: ../08-lab2
 [02]: https://git-school.github.io/visualizing-git/
-[03]: images/source-control/07-gitk-graph.png
-[04]: images/source-control/07-what-is-a-branch.png
+[03]: /images/source-control/07-gitk-graph.png
+[04]: /images/source-control/07-what-is-a-branch.png

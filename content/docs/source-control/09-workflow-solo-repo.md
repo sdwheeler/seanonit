@@ -65,4 +65,4 @@ on. The numbered steps (in black) are described in the table below.
 <!-- link references -->
 [01]: ../10-workflow-collab-repo
 [02]: https://docs.github.com/get-started/quickstart/github-flow
-[03]: images/source-control/09-gitflow-solo.png
+[03]: /images/source-control/09-gitflow-solo.png

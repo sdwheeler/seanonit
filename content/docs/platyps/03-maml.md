@@ -47,4 +47,4 @@ maintaining MAML-based help files, but it has limitations as well:
 
 <!-- link references -->
 [01]: https://ewsoftware.github.io/SHFB/html/bd1ddb51-1c4f-434f-bb1a-ce2135d3a909.htm
-[02]: images/platyps/03-maml.png
+[02]: /images/platyps/03-maml.png

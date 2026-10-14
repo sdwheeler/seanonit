@@ -1,0 +1,13 @@
+{{ $pages := .CurrentSection.Pages.ByWeight.Reverse }}
+<ul class="list-unstyled d-flex justify-content-between align-items-center mb-0 pt-5">
+  <li>
+    {{with $pages.Prev . }}
+       <a href="{{.RelPermalink}}" aria-label="Previous" class="btn btn-primary"><span class="me-1">← Previous</span></a>
+    {{ end }}
+  </li>
+  <li>
+    {{with $pages.Next . }}
+       <a href="{{.RelPermalink}}" aria-label="Next" class="btn btn-primary"><span class="me-1">Next →</span></a>
+    {{ end }}
+  </li>
+</ul>

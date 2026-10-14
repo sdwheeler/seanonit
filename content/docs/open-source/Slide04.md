@@ -54,4 +54,4 @@ made transparently.
 
 <!-- link references -->
 [01]: https://wikipedia.org/wiki/Open_source
-[02]: images/open-source/slide04.png
+[02]: /images/open-source/slide04.png

@@ -37,4 +37,4 @@ The basic Git workflow goes something like this:
 
 <!-- link references -->
 [01]: ../04-track-changes
-[02]: images/source-control/03-gits-three-states.png
+[02]: /images/source-control/03-gits-three-states.png

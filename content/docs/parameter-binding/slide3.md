@@ -45,4 +45,4 @@ define a default by making the unique parameter of each parameter set a mandator
 
 <!-- link references -->
 [01]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_parameter_sets
-[02]: images/parameter-binding/slide3.png
+[02]: /images/parameter-binding/slide3.png

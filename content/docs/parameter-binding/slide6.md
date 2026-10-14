@@ -67,4 +67,4 @@ in action and compare the trace information to the results in `$PSBoundParameter
 [02]: https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-tracesource
 [03]: https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/trace-command
 [04]: https://learn.microsoft.com/powershell/scripting/learn/deep-dives/visualize-parameter-binding
-[05]: images/parameter-binding/slide6.png
+[05]: /images/parameter-binding/slide6.png

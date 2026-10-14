@@ -58,4 +58,4 @@ There are two ways to create a Crescendo definition file:
    ```
 
 <!-- link references -->
-[01]: images/crescendo/slide5.png
+[01]: /images/crescendo/slide5.png

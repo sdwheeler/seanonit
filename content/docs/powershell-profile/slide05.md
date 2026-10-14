@@ -117,7 +117,7 @@ index: true
 - [about_Character_Encoding][03]
 
 <!-- link references -->
-[01]: ./images/powershell-profile/slide05.png
+[01]: /images/powershell-profile/slide05.png
 [02]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_ANSI_Terminals
 [03]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_character_encoding
 [04]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_Operators

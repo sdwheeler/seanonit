@@ -1,9 +1,10 @@
 ---
 linkTitle: Parameter Binding
 title: Understanding & Troubleshooting PowerShell Parameter Binding
-linkTitleIcon: <i class="fa-solid fa-terminal text-primary"></i>
+icon: fa-solid fa-terminal text-primary
 weight: 8
 navWeight: -8000
+type: docs
 date: 2024-08-09
 ---
 <!-- markdownlint-disable MD041 -->
