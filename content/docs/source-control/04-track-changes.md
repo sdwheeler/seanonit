@@ -61,10 +61,6 @@ license files are shown as new files.
 
 ![Step 5 - Show file in GitHub][07]
 
----
-
-[**Next &#x1F846;**][01]
-
 <!-- link references -->
 [01]: ../05-lab1a
 [02]: /images/source-control/04-tracking-changes.png

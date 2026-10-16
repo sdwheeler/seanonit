@@ -156,10 +156,6 @@ $RECYCLE.BIN/
 .LSOverride
 ```
 
----
-
-[**Next &#x1F846;**][01]
-
 <!-- link references -->
 [01]: ../06-lab1b
 [02]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration

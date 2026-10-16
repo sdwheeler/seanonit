@@ -69,10 +69,6 @@ The numbered steps (in black) are described in the table below.
 |  10   | Cleanup unneeded branch info | `git checkout main; git push origin --delete my-new-branch; git branch -D my-new-branch`<br><br>The `git push` command deletes the branch in your fork and deletes the tracking branch from your local repo. The `git branch` command deletes the branch from your local repo.                                                  |
 |  11   | Start new change             | Go to step 0                                                                                                                                                                                                                                                                                                                    |
 
----
-
-[**Next &#x1F846;**][01]
-
 <!-- link references -->
 [01]: ../11-lab3
 [02]: https://docs.github.com/get-started/exploring-projects-on-github/contributing-to-a-project

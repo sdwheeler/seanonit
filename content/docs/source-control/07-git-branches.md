@@ -56,10 +56,6 @@ commit message, author, date, and diffs. You can also see the branches and tags 
 - `gitk` - Show a graphical representation of the commit history
 - `tig` - Show a text-based graphical representation of the commit history
 
----
-
-[**Next &#x1F846;**][01]
-
 <!-- link references -->
 [01]: ../08-lab2
 [02]: https://git-school.github.io/visualizing-git/

@@ -31,10 +31,6 @@ The basic Git workflow goes something like this:
 1. You do a commit, which takes the files as they are in the staging area and stores that snapshot
    permanently to your `.git` directory.
 
----
-
-[**Next &#x1F846;**][01]
-
 <!-- link references -->
 [01]: ../04-track-changes
 [02]: /images/source-control/03-gits-three-states.png
