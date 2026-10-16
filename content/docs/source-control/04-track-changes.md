@@ -62,7 +62,6 @@ license files are shown as new files.
 ![Step 5 - Show file in GitHub][07]
 
 <!-- link references -->
-[01]: ../05-lab1a
 [02]: /images/source-control/04-tracking-changes.png
 [03]: /images/source-control/04-git-cmd-01.png
 [04]: /images/source-control/04-git-cmd-02.png

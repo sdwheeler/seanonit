@@ -32,5 +32,4 @@ The basic Git workflow goes something like this:
    permanently to your `.git` directory.
 
 <!-- link references -->
-[01]: ../04-track-changes
 [02]: /images/source-control/03-gits-three-states.png
