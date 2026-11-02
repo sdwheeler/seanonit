@@ -1,0 +1,17 @@
+{{/* cSpell:ignore plantuml */ -}}
+{{/* Body-end script dispatcher. Architecture and override points:
+  https://www.docsy.dev/project/design/script-loading/ */ -}}
+
+{{ if .Site.Params.plantuml.enable -}}
+  {{ partial "scripts/plantuml-deflate.html" . -}}
+{{ end -}}
+
+{{ if .Page.Store.Get "hasMath" -}}
+  {{ partial "scripts/katex.html" . -}}
+{{ end -}}
+
+{{ partial "scripts/main-bundle.html" . -}}
+{{ partial "scripts/prism.html" . -}}
+{{ partial "scripts/algolia.html" . -}}
+{{ partial "scripts/plugins.html" . -}}
+{{ partial "hooks/body-end.html" . -}}

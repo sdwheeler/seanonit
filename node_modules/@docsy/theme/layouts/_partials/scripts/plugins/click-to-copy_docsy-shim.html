@@ -1,0 +1,16 @@
+{{/* Shim for click-to-copy: fixed deferred loading (the plugin is a one-shot
+  scan of the parsed document) and the copy-button opt-outs that predate
+  plugins.
+  Contract: https://www.docsy.dev/project/implementation/script-loading/#shims
+  Delete the deprecated branch with its cycle. */ -}}
+{{ $entry := merge .Plugin (dict "_defer" true) -}}
+{{ with .Page.Site.Params -}}
+  {{ if in (slice true "true" 1) .disable_click2copy_chroma -}}
+    {{ warnidf "docsy-c2c-legacy" "params.disable_click2copy_chroma is deprecated since Docsy 0.18: set `enable: false` on the click-to-copy entry under params.docsy.plugins instead. See https://www.docsy.dev/docs/content/plugins/." -}}
+    {{ $entry = merge $entry (dict "enable" false) -}}
+  {{ end -}}
+  {{ if in (slice true "true" 1) .prism_syntax_highlighting -}}
+    {{ $entry = merge $entry (dict "enable" false) -}}
+  {{ end -}}
+{{ end -}}
+{{ return $entry -}}
