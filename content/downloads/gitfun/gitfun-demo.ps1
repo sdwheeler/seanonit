@@ -3,7 +3,7 @@
 throw "This script is not meant to be executed. Use F8 to run selected code."
 # Setup the demo environment
 # Adjust the path to the demo data for your environment
-Set-Location D:\Git\My-Repos
+Set-Location C:\Git\My-Repos
 #endregion
 #-------------------------------------------------------------------------------
 #region Create a new Git repository
