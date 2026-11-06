@@ -22,6 +22,7 @@ Modules
 Docs
 
 - [about_Profiles][03]
+- [about_Case-Sensitivity][14]
 - [Differences between Windows PowerShell 5.1 and PowerShell 7.x][06]
 - [about_Special_Characters][04]
 - [about_ANSI_Terminals][01]
@@ -51,3 +52,4 @@ Demo scripts
 [11]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/psprofiles/demo.ps1
 [12]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/psprofiles/Microsoft.PowerShell_profile.ps1
 [13]: https://github.com/sdwheeler/seanonit/blob/main/content/downloads/psprofiles/Microsoft.VSCode_profile.ps1
+[14]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_case-sensitivity

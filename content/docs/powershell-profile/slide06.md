@@ -57,6 +57,8 @@ index: true
   True
   ```
 
+For a full discussion of case sensitivity, see [about_Case-Sensitivity][06].
+
 - PowerShell on Windows has several aliases that mimic native commands on non-Windows platforms
 
   ```powershell
@@ -130,3 +132,4 @@ index: true
 [03]: https://learn.microsoft.com/dotnet/api/system.io.path
 [04]: https://learn.microsoft.com/powershell/scripting/whats-new/cmdlet-versions
 [05]: https://learn.microsoft.com/powershell/scripting/whats-new/unix-support
+[06]: https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_case-sensitivity

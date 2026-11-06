@@ -76,6 +76,7 @@ User Group meetings - multiple appearances
 
 - [RTPSUG][ug-rtp]
 - [GNVPSUG][ug-gnv]
+- [Ohio PowerShell User Group][ug-ohio]
 - [NTPCUG PowerShell SIG][ug-ntpc]
 - [PowerShell Wednesdays hosted by PDQ][ug-pdqw]
 
@@ -89,17 +90,18 @@ Other
 - [Contribute to Docs like a Microsoft Insider (2023) - <i class="fab fa-youtube"></i> YouTube][yt07]
 - [Get started with Crescendo (2021) - <i class="fab fa-youtube"></i> YouTube][yt04]
 - [How anyone can contribute to the MS Docs website! - 2020-09-16 - <i class="fab fa-youtube"></i> YouTube][yt01]
+- [Make a PowerShell profile that runs on any version or platform - PSConfEU 2026 - <i class="fab fa-youtube"></i> YouTube][yt15]
 - [Make your PowerShell profile work cross-platform - PowerShell Wednesday 2025-05-28 - <i class="fab fa-youtube"></i> YouTube][yt10]
 - [Make your PowerShell profile work cross-platform - RTPSUG 2023-11-01 - <i class="fab fa-youtube"></i> YouTube][yt05]
-- [Make a PowerShell profile that runs on any version or platform - PSConfEU 2026 - <i class="fab fa-youtube"></i> YouTube][yt15]
 - [Meta Skills - Contributing to Communities and Careers - <i class="fa-solid fa-play"></i> Video][metaskills]
 - [PowerShell Parameter Binding Explained - PowerShell Wednesday 2025-11-05 - <i class="fab fa-youtube"></i> YouTube][yt11]
+- [Publish PowerShell help content using PlatyPS v1.0 with Stephen Valdinger - <i class="fab fa-youtube"></i> YouTube][yt14]
 - [Taming Git and GitHub with PowerShell - GNVPSUG - 2024-02-13 - <i class="fab fa-youtube"></i> YouTube][yt06]
 - [Taming Git and GitHub with PowerShell - RTPSUG - 2023-07-05 - <i class="fab fa-youtube"></i> YouTube][yt02]
-- [What's new in PlatyPS - PSSummit 2025 - <i class="fab fa-youtube"></i> YouTube][yt09]
 - [What's new in PlatyPS - PSConfEU 2026 - <i class="fab fa-youtube"></i> YouTube][yt13]
-- [Publish PowerShell help content using PlatyPS v1.0 with Stephen Valdinger - <i class="fab fa-youtube"></i> YouTube][yt14]
+- [What's new in PlatyPS - PSSummit 2025 - <i class="fab fa-youtube"></i> YouTube][yt09]
 - [What's new in PowerShell 7.5 - <i class="fab fa-youtube"></i> YouTube][yt08]
+- [Make a PowerShell Profile That Runs on Any Version or Platform - Ohio PowerShell User Group - <i class="fab fa-youtube"></i> YouTube][yt16]
 
 ### Podcasts and interviews
 
@@ -131,6 +133,7 @@ Other
 [ug-pdqw]: https://discord.gg/RC9gcG9N?event=1383087640794103928 "PowerShell Wednesdays hosted by PDQ on Discord"
 [ug-ntpc]: https://ntpcug.org/powershell-sig/ "NTPCUG PowerShell SIG"
 [ug-gnv]: https://gnvpsug.com/ "Gainesville PowerShell User Group"
+[ug-ohio]: https://psoh.io/ "Ohio PowerShell User Group"
 
 <!-- podcasts  -->
 [pspod]: https://powershellpodcast.podbean.com/ "PowerShell Podcast website"
@@ -181,3 +184,4 @@ Other
 [yt13]: https://www.youtube.com/watch?v=rWSI1pG5vKg "What's new in PlatyPS - PSConfEU 2026"
 [yt14]: https://www.youtube.com/watch?v=MBW2COScte0 "Publish PowerShell help content using PlatyPS v1.0 with Stephen Valdinger"
 [yt15]: https://www.youtube.com/watch?v=bBCnZy45EUo "What's new in PlatyPS - PSConfEU 2026"
+[yt16]: https://youtu.be/zdxP_pzuybo "Make a PowerShell Profile That Runs on Any Version or Platform"
